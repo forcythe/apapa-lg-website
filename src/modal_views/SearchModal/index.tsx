@@ -35,7 +35,7 @@ const SearchModal = ({
           <div className="w-full">
             <div className="w-fit mx-auto mb-[46px] flex items-center justify-center flex-col">
               <SearchIconBig className="max-w-[70px] min-w-[70px] max-h-[70px] min-h-[70px]" />
-              <h6 className="font-bold text-[18px] leading-[28px]">
+              <h6 className="font-[FuturaLTBold] text-[18px] leading-[28px]">
                 20 Search Results
               </h6>
             </div>

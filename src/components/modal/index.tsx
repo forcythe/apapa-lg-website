@@ -74,7 +74,7 @@ const Modal = ({
               }`}
             >
               {topHeadText && (
-                <h6 className="text-[#000000] font-bold text-[24px] leading-[28px] mb-8">
+                <h6 className="text-[#000000] font-[FuturaLTBold] text-[24px] leading-[28px] mb-8">
                   {topHeadText}
                 </h6>
               )}

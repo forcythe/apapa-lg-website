@@ -36,7 +36,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 xxl:grid-cols-4 xxxl:grid-cols-5 mb-[150px] md:mb-[244px] gap-[24px] mg:gap-[32px]">
         {Object.entries(footerLinks).map(([sectionTitle, links]) => (
           <div key={sectionTitle} className="w-full">
-            <h3 className="text-[20px] leading-[28px] font-bold mb-8">
+            <h3 className="text-[20px] leading-[28px] font-[FuturaLTBold] mb-8">
               {sectionTitle}
             </h3>
             <ul className="flex flex-col gap-5">
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         ))}
         <div className="w-full">
-          <h3 className="text-[18px] leading-[8px] font-bold mb-6"></h3>
+          <h3 className="text-[18px] leading-[8px] font-[FuturaLTBold] mb-6"></h3>
           <ul className="flex flex-wrap md:flex-nowrap items-center gap-4 md:gap-8 w-fit">
             {socialLinks.map(({ id, link, Icon }) => (
               <RenderSocialLinks key={id} Icon={Icon} link={link} />
@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
       <div className="copyright w-full">
         <p className="text-[14px] leading-[24px] text-left">
-          © 2025 DC Innovate. All rights reserved.
+          © 2025 Apapa Local Government. All rights reserved.
         </p>
       </div>
     </div>

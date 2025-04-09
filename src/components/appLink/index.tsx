@@ -40,7 +40,7 @@ const AppLink = ({
   const [isSideBarSubLink, setIsSideBarSubLinks] = useState(false);
 
   const isActive =
-    pathname === `${path}` ? "text-accent font-bold" : "text-primary";
+    pathname === `${path}` ? "text-accent font-[FuturaLTBold]" : "text-primary";
 
   const isMobile = useIsMobile(1024);
 

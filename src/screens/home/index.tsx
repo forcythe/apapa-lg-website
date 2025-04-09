@@ -1,12 +1,18 @@
 import React from "react";
 
 import { AppWrapper } from "@/components";
-import { Hero } from "./_partials";
+import {
+  GetInvolvedAndStayConnected,
+  Hero,
+  RealTimeInsight,
+} from "./_partials";
 
 const HomePage = () => {
   return (
     <AppWrapper>
       <Hero />
+      <RealTimeInsight />
+      <GetInvolvedAndStayConnected />
     </AppWrapper>
   );
 };

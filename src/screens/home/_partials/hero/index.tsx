@@ -37,7 +37,7 @@ const Hero = () => {
               Welcome to Apapa
             </p>
           </div>
-          <h6 className="mb-6 text-center max-w-[700px] mx-auto text-[28px] leading-[44px] md:text-[56px] md:leading-[84px] font-bold">
+          <h6 className="mb-6 text-center max-w-[700px] mx-auto text-[28px] leading-[44px] md:text-[56px] md:leading-[84px] font-[FuturaLTBold]">
             Nigeria’s Gateway to Global Trade
           </h6>
           <p className="text-[#000000] text-base md:text-[18px] md:leading-[28px] max-w-[700px] mx-auto text-center">
@@ -144,14 +144,14 @@ const Hero = () => {
         alt="crane-img"
         width={550}
         height={500}
-        className="absolute top-0 left-0 z-[1] max-w-[150px] min-w-[150px] max-h-[190px] min-h-[190px] xxxs:max-w-[200px] xxxs:min-w-[200px] xxxs:max-h-[190px] xxxs:min-h-[190px] xs:max-w-[260px] xs:min-w-[260px] xs:max-h-[210px] xs:min-h-[210px] md:max-w-[300px] md:min-w-[300px] md:max-h-[250px] md:min-h-[250px] xxl:max-w-[500px] xxl:min-w-[500px] xxl:max-h-[450px] xxl:min-h-[450px] xxxxl:max-w-[600px] xxxxl:min-w-[600px] xxxxl:max-h-[550px] xxxxl:min-h-[550px]"
+        className="absolute top-0 left-0 z-[1] max-w-[150px] min-w-[150px] max-h-[190px] min-h-[190px] xxxs:max-w-[200px] xxxs:min-w-[200px] xxxs:max-h-[190px] xxxs:min-h-[190px] xs:max-w-[260px] xs:min-w-[260px] xs:max-h-[210px] xs:min-h-[210px] md:max-w-[300px] md:min-w-[300px] md:max-h-[250px] md:min-h-[250px] xxl:max-w-[400px] xxl:min-w-[400px] xxl:max-h-[350px] xxl:min-h-[350px] xxxxl:max-w-[600px] xxxxl:min-w-[600px] xxxxl:max-h-[550px] xxxxl:min-h-[550px]"
       />
       <Image
         src="/svgs/crane.svg"
         alt="crane-img"
         width={600}
         height={550}
-        className="absolute top-0 right-0 z-[3] transform scale-x-[-1] max-w-[150px] min-w-[150px] max-h-[190px] min-h-[190px] xxxs:max-w-[200px] xxxs:min-w-[200px] xxxs:max-h-[190px] xxxs:min-h-[190px] xs:max-w-[260px] xs:min-w-[260px] xs:max-h-[210px] xs:min-h-[210px] md:max-w-[300px] md:min-w-[300px] md:max-h-[250px] md:min-h-[250px] xxl:max-w-[500px] xxl:min-w-[500px] xxl:max-h-[450px] xxl:min-h-[450px] xxxxl:max-w-[600px] xxxxl:min-w-[600px] xxxxl:max-h-[550px] xxxxl:min-h-[550px]"
+        className="absolute top-0 right-0 z-[3] transform scale-x-[-1] max-w-[150px] min-w-[150px] max-h-[190px] min-h-[190px] xxxs:max-w-[200px] xxxs:min-w-[200px] xxxs:max-h-[190px] xxxs:min-h-[190px] xs:max-w-[260px] xs:min-w-[260px] xs:max-h-[210px] xs:min-h-[210px] md:max-w-[300px] md:min-w-[300px] md:max-h-[250px] md:min-h-[250px] xxl:max-w-[400px] xxl:min-w-[400px] xxl:max-h-[350px] xxl:min-h-[350px] xxxxl:max-w-[600px] xxxxl:min-w-[600px] xxxxl:max-h-[550px] xxxxl:min-h-[550px]"
       />
     </div>
   );
