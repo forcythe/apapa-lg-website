@@ -7,6 +7,11 @@
   src: url("../../public/fonts/FuturaLT.ttf");
 }
 
+@font-face {
+  font-family: FuturaLTBold;
+  src: url("../../public/fonts/FuturaLT-Bold.ttf");
+}
+
 input,
 textarea,
 button,
@@ -23,7 +28,7 @@ div {
 body {
   color: var(--primary-background);
   background: transparent;
-  font-family: ClashDisplay, sans-serif;
+  font-family: FuturaLT, ClashDisplay, sans-serif;
   font-optical-sizing: auto;
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;

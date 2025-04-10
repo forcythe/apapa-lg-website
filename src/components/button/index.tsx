@@ -25,7 +25,8 @@ const Button = ({
       onClick={onClick}
       type={type}
       className={`py-[12px] px-[21.5px] ${
-        !variant && "bg-accent hover:bg-[#5e0892] text-white font-bold"
+        !variant &&
+        "bg-accent hover:bg-[#5e0892] text-white font-[FuturaLTBold]"
       } ${
         isLoading ? "cursor-not-allowed" : "cursor-pointer"
       }  rounded-[32px] text-base flex items-center gap-4 transition duration-300 border-[4px] border-accent2 ${className}`}
