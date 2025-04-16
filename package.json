@@ -9,8 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dabeng/react-orgchart": "^1.0.3",
+    "@dormammuuuuu/nextjs-orgchart": "^1.0.1-a",
     "framer-motion": "^12.6.3",
+    "i": "^0.3.7",
     "next": "15.2.4",
+    "nextjs-orgchart": "^1.0.8",
+    "npm": "^11.3.0",
     "react": "^19.0.0",
     "react-click-away-listener": "^2.3.0",
     "react-countup": "^6.5.3",

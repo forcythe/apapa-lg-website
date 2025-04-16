@@ -5,6 +5,7 @@ import {
   GetInvolvedAndStayConnected,
   Hero,
   RealTimeInsight,
+  DiscoverAndBlogs,
 } from "./_partials";
 
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Hero />
       <RealTimeInsight />
       <GetInvolvedAndStayConnected />
+      <DiscoverAndBlogs />
     </AppWrapper>
   );
 };

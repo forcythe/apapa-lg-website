@@ -72,7 +72,7 @@ const GetInvolvedAndStayConnected = () => {
               </p>
               <div className="flex items-center gap-2">
                 <p className="text-base md:text-[20px] md:leading-[32px] text-accent">
-                  Apply Now!
+                  {link.btnTitle}
                 </p>
                 <FooterArrow fill="#aa8b00" />
               </div>

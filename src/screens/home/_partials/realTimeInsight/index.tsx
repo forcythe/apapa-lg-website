@@ -377,7 +377,7 @@ const RealTimeInsight = () => {
         </div>
         <Image
           src="/svgs/boat-bg.svg"
-          className="absolute top-[300px] -left-[300px] z-[-1] max-w-[1800px] min-w-[1800px] max-h-[1100px] min-h-[1100px] opacity-50"
+          className="absolute top-[300px] z-[-1] max-w-[1800px] min-w-[1800px] max-h-[1100px] min-h-[1100px]"
           alt=""
           width={1800}
           height={1100}

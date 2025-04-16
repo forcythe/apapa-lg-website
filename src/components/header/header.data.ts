@@ -22,7 +22,7 @@ export const headerRoutes = [
       },
       {
         id: 2,
-        path: "/government/council-manager-profile",
+        path: "/government/organizational-structure/council-manager",
         title: "Council Manager’s Profile",
       },
       {
@@ -75,6 +75,7 @@ export const headerRoutes = [
   {
     id: 4,
     title: "Services",
+    path: "/services",
     bgTop: "/svgs/services-t.svg",
     bgBottom: "/svgs/services-b.svg",
     width: "760px",
