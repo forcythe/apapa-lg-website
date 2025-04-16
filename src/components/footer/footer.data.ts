@@ -2,28 +2,45 @@ export const footerLinks = {
   "Apapa Local Government": [
     {
       id: 1,
-      path: "/about-us",
-      title: "About us",
+      path: "/government/organizational-structure",
+      title: "Organizational structure",
     },
     {
       id: 2,
-      path: "/chairman-profile",
-      title: "Chairman’s profile",
+      path: "/government/organizational-structure/council-manager",
+      title: "Council manager’s profile",
     },
     {
       id: 3,
+      path: "/projects",
+      title: "Projects",
+    },
+    {
+      id: 4,
+      path: "/budget-and-financial-report",
+      title: "Budget and financial report",
+    },
+  ],
+  "About Us": [
+    {
+      id: 1,
+      path: "/about-us",
+      title: "About Us",
+    },
+    {
+      id: 2,
       path: "/history-of-apapa",
       title: "History of Apapa",
+    },
+    {
+      id: 3,
+      path: "/chairmans-profile",
+      title: "Chairman’s profile",
     },
     {
       id: 4,
       path: "/departments-and-units",
       title: "Departments and units",
-    },
-    {
-      id: 5,
-      path: "/events",
-      title: "Events",
     },
   ],
   Services: [
@@ -40,7 +57,7 @@ export const footerLinks = {
     {
       id: 3,
       path: "/services/business-permits-and-licenss",
-      title: "Business permits and licenss",
+      title: "Business permits and licenses",
     },
     {
       id: 4,
@@ -52,24 +69,22 @@ export const footerLinks = {
       path: "/services/education-and-scholarships",
       title: "Education and scholarships",
     },
+    {
+      id: 6,
+      path: "/services/security-and-emergency",
+      title: "Security and emergency",
+    },
+    {
+      id: 7,
+      path: "/services/e-government-services",
+      title: "E-government services",
+    },
   ],
   Community: [
     {
       id: 1,
-      path: "/volunteer-opportunities",
-      title: "Volunteer opportunities",
-    },
-    {
-      id: 2,
-      path: "/polls-and-surveys",
-      title: "Polls and surveys",
-    },
-  ],
-  Support: [
-    {
-      id: 1,
-      path: "/faqs",
-      title: "FAQs",
+      path: "/events",
+      title: "Events",
     },
     {
       id: 2,
@@ -78,8 +93,28 @@ export const footerLinks = {
     },
     {
       id: 3,
-      path: "/emergency-and-safety",
-      title: "Emergency and safety",
+      path: "/polls-and-surveys",
+      title: "Polls and surveys",
+    },
+    {
+      id: 4,
+      path: "/volunteer-opportunities",
+      title: "Volunteer opportunities",
+    },
+    {
+      id: 5,
+      path: "/faqs",
+      title: "FAQs",
+    },
+    {
+      id: 6,
+      path: "/initiatives",
+      title: "Initiatives",
+    },
+    {
+      id: 7,
+      path: "/innovation-hub",
+      title: "Innovation hub",
     },
   ],
 };

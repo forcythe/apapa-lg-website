@@ -4,6 +4,8 @@
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import ClickAwayListener from "react-click-away-listener";
+import Link from "next/link";
+
 import ArrowHeadIcon from "../../../public/svg-component/ArrowHeadIcon";
 import useIsMobile from "@/utils/helpers/useMobile";
 
@@ -40,7 +42,13 @@ const AppLink = ({
   const [isSideBarSubLink, setIsSideBarSubLinks] = useState(false);
 
   const isActive =
-    pathname === `${path}` ? "text-accent font-[FuturaLTBold]" : "text-primary";
+    path === "/"
+      ? pathname === "/"
+        ? "text-accent font-[FuturaLTBold]"
+        : "text-primary"
+      : pathname.startsWith(path)
+      ? "text-accent font-[FuturaLTBold]"
+      : "text-primary";
 
   const isMobile = useIsMobile(1024);
 
@@ -69,7 +77,7 @@ const AppLink = ({
           <ArrowHeadIcon
             className={`${
               isSideBarSubLink ? "rotate-180" : ""
-            } transition-transform duration-300 ease-in-out text-[#121212] group-hover:text-accent`}
+            } transition-transform duration-300 ease-in-out ${isActive} group-hover:text-accent`}
           />
         </div>
         {isSideBarSubLink && (
@@ -83,11 +91,11 @@ const AppLink = ({
               {columns.map((chunk, idx) => (
                 <ul key={idx} className={`flex flex-col gap-2`}>
                   {chunk.map(({ id, path, title }) => (
-                    <a key={id} className={className} href={path}>
+                    <Link key={id} className={className} href={path}>
                       <li className="flex items-center mb-3 cursor-pointer text-primary text-[18px] whitespace-nowrap leading-[28px]">
                         <span>{title}</span>
                       </li>
-                    </a>
+                    </Link>
                   ))}
                 </ul>
               ))}
@@ -118,13 +126,17 @@ const AppLink = ({
   }
 
   return (
-    <a
-      className={`${className} ${isActive} hover:text-accent transition-colors duration-200 flex items-start gap-2`}
+    <Link
+      className={`${className} ${isActive} group hover:text-accent transition-colors duration-200 flex items-start gap-2`}
       href={path}
     >
       <span>{title}</span>
-      {Icon && <Icon fill={isActive ? "#AA8B00" : "#121212"} />}
-    </a>
+      {Icon && (
+        <Icon
+          className={`${isActive} group-hover:text-accent transition-colors duration-200`}
+        />
+      )}
+    </Link>
   );
 };
 

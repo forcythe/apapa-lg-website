@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import "nextjs-orgchart/dist/ChartContainer.css";
+import "nextjs-orgchart/dist/ChartNode.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
