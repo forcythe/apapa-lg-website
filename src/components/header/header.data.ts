@@ -37,7 +37,7 @@ export const headerRoutes = [
       },
       {
         id: 5,
-        path: "/government/performance-dashboard",
+        path: "/government/projects",
         title: "Performance Dashboard",
       },
     ],

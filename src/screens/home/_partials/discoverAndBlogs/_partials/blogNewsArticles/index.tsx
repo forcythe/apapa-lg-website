@@ -30,7 +30,7 @@ const BlogNewsArticles = () => {
         variants={itemVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.1 }}
         className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-3"
       >
         <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
@@ -41,7 +41,7 @@ const BlogNewsArticles = () => {
         variants={itemVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.1 }}
         className="text-xl leading-[32px] md:text-[36px] md:leading-[52px] text-[#000000] text-center font-[FuturaLTBold] max-w-[564px] mx-auto mb-[20px]"
       >
         Stay Informed With the Latest Updates
@@ -92,7 +92,7 @@ const BlogNewsArticles = () => {
         key={activeTab}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true }}
         className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[40px] sm:gap-y-6 gap-x-[30px] md:auto-rows-[minmax(524px,1fr)] place-items-center"
       >
         {blogsNavigation.items[activeTab].map((item) => (
