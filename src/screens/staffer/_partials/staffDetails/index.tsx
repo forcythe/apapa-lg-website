@@ -110,7 +110,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
               variants={itemVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true }}
               className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-6"
             >
               <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
@@ -121,7 +121,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true }}
               className="flex flex-wrap gap-4 items-center justify-center"
             >
               {activeRole.keyFunctions.map((card: any, index: number) => (
@@ -171,7 +171,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                 variants={itemVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true }}
                 className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center max-w-[700px] mx-auto mb-[40px] md:mb-[60px]"
               >
                 Hon. Senbanjo is dedicated to transforming Apapa into a modern
@@ -182,7 +182,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true }}
                 className="flex flex-wrap gap-4 items-center justify-center mb-[40px] md:mb-[120px]"
               >
                 {visionMissionItems.map((item, idx) => (
@@ -215,7 +215,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                   variants={itemVariants}
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: true, amount: 0.3 }}
+                  viewport={{ once: true }}
                   className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-3"
                 >
                   <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
@@ -226,7 +226,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                   variants={itemVariants}
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: true, amount: 0.3 }}
+                  viewport={{ once: true }}
                   className="text-[20px] leading-[30px] md:text-[36px] md:leading-[52px] text-[#000000] text-center mb-6 font-[FuturaLTBold]"
                 >
                   S.H.E.E
@@ -235,7 +235,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                   variants={itemVariants}
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: true, amount: 0.3 }}
+                  viewport={{ once: true }}
                   className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center max-w-[700px] mx-auto mb-[40px] md:mb-[60px]"
                 >
                   Our manifesto was anchored on four focus areas which includes
@@ -283,7 +283,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                         variants={itemVariants}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.3 }}
+                        viewport={{ once: true }}
                         className="w-fit bg-accent3 rounded-[8px] p-3 mb-5"
                       >
                         <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
