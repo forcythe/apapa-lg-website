@@ -62,7 +62,7 @@ export const headerRoutes = [
       },
       {
         id: 3,
-        path: "/about-us/chairmans-profile",
+        path: "/government/organizational-structure/executive-chairman",
         title: "Chairman’s Profile",
       },
       {
