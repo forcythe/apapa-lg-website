@@ -40,7 +40,7 @@ const AboutUsReUseSection = ({
         variants={itemVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-3"
       >
         <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">

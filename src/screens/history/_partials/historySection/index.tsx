@@ -33,11 +33,13 @@ const HistorySection = ({
   badge,
   headTitle,
   subTitle,
+  image,
   reversed,
 }: {
   badge: string;
   headTitle?: string;
   subTitle: string;
+  image?: string;
   reversed?: boolean;
 }) => (
   <div className="section-padding pb-[80px] md:pb-[120px]">
@@ -83,12 +85,7 @@ const HistorySection = ({
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
-        <Image
-          src="/svgs/history-section.svg"
-          alt=""
-          width={808}
-          height={544}
-        />
+        <Image src={image as string} alt="" width={808} height={544} />
       </motion.div>
     </div>
   </div>

@@ -42,12 +42,7 @@ const EvolutionOfApapa = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
           >
-            <Image
-              src="/svgs/history-section-half.svg"
-              alt=""
-              width={364}
-              height={544}
-            />
+            <Image src="/svgs/history-l.svg" alt="" width={364} height={544} />
           </motion.div>
         </div>
 
@@ -96,12 +91,7 @@ const EvolutionOfApapa = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
           >
-            <Image
-              src="/svgs/history-section-half.svg"
-              alt=""
-              width={364}
-              height={544}
-            />
+            <Image src="/svgs/history-r.svg" alt="" width={364} height={544} />
           </motion.div>
         </div>
       </div>

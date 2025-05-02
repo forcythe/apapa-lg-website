@@ -11,7 +11,7 @@ const Banner = ({ type }: { type: string }) => {
           backgroundPosition: "center",
         }}
       ></div>
-      <h6 className="max-w-[646px] w-full mx-auto text-center font-[FuturaLTBold] text-[20px] leading-[28px] md:text-[28px] md:leading-[40px] tex-white text-white">
+      <h6 className="w-full max-w-[646px] mx-auto text-center font-[FuturaLTBold] text-[20px] leading-[28px] md:text-[28px] md:leading-[40px] tex-white text-white">
         {type}
       </h6>
     </div>
