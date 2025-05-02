@@ -105,7 +105,7 @@ export const projects: Project[] = [
     imageSrc: "/image/project-img-7.png",
   },
   {
-    id: 8,
+    id: 9,
     title: "Fishery Empowerment",
     progress: 69,
     expectedCompletion: "Expected Completion in May 2025",

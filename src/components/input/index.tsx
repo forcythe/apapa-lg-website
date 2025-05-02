@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React from "react";
@@ -6,21 +7,24 @@ const InputField = ({
   name,
   value,
   type = "text",
-  label,
+  placeholder,
   onBlur,
   onChange,
   error,
+  LeftIcon,
 }: {
   name: string;
   value: string;
   type?: string;
+  placeholder?: string;
   label?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
   error?: string;
+  LeftIcon?: any;
 }) => {
   return (
-    <div className="relative">
+    <div className="relative min-h-[64px]">
       <input
         id={name}
         name={name}
@@ -28,21 +32,15 @@ const InputField = ({
         type={type}
         onChange={onChange}
         onBlur={onBlur}
-        placeholder=" "
-        className="peer text-primary outline-none font-medium w-full min-h-[60px] rounded-[32px] border border-[#DDDDDD] py-4 px-6"
+        placeholder={placeholder}
+        className="w-full outline-none border border-[#22222226] rounded-[12px] py-4 px-3 min-h-[64px] bg-white text-base md:text-[20px] md:leading-[32px] placeholder:text-[#B0B0B0]"
       />
-      <div
-        className={`absolute left-6 pointer-events-none transform transition-all ease-in-out duration-200 ${
-          value
-            ? "top-[6px] text-[10px] leading-[16px] text-[#454545]"
-            : "top-[30px] -translate-y-1/2 text-[#747474] text-base"
-        }`}
-      >
-        {label}
-      </div>
-      {error && (
-        <p className="absolute text-[10px] left-6 text-red-700">{error}</p>
+      {LeftIcon && (
+        <div className="absolute right-[12px] top-1/2 transform -translate-y-1/2">
+          {LeftIcon}
+        </div>
       )}
+      {error && <p className="absolute text-[10px] text-red-700">{error}</p>}
     </div>
   );
 };

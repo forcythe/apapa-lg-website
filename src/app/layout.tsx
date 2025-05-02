@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ToastContainer } from "react-toastify";
 import "nextjs-orgchart/dist/ChartContainer.css";
 import "nextjs-orgchart/dist/ChartNode.css";
 import "./globals.css";
@@ -15,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <ToastContainer style={{ zIndex: 9999999999 }} />
+      </body>
     </html>
   );
 }

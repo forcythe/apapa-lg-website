@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
 import { ProjectDashboard, ProjectDetails } from "./_partials";
+import { projects } from "./_partials/projectDetails/projectDetails.data";
 
 const ProjectsPage = () => {
   return (
@@ -16,7 +17,11 @@ const ProjectsPage = () => {
         <div className="section-padding">
           <div className="w-full mx-auto max-w-[1488px]">
             <ProjectDashboard />
-            <ProjectDetails />
+            <div className="w-full flex flex-col gap-[80px] md:gap-[120px]">
+              {projects.map((p) => (
+                <ProjectDetails key={p.id} p={p} />
+              ))}
+            </div>
           </div>
         </div>
         <Image

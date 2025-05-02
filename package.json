@@ -11,6 +11,7 @@
   "dependencies": {
     "@dabeng/react-orgchart": "^1.0.3",
     "@dormammuuuuu/nextjs-orgchart": "^1.0.1-a",
+    "formik": "^2.4.6",
     "framer-motion": "^12.6.3",
     "i": "^0.3.7",
     "next": "15.2.4",
@@ -21,7 +22,8 @@
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-intersection-observer": "^9.16.0",
-    "react-toastify": "^11.0.5"
+    "react-toastify": "^11.0.5",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
