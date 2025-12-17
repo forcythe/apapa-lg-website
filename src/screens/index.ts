@@ -1,3 +1,15 @@
 export { default as HomePage } from "./home";
 export { default as StafferPage } from "./staffer";
 export { default as OrganizationalStructurePage } from "./organizationalStructure";
+export { default as ProjectsPage } from "./projects";
+export { default as DepartmentsAndUnitsPage } from "./departmentsAndUnits";
+export { default as AboutUsPage } from "./aboutUs";
+export { default as HistoryPage } from "./history";
+export { default as InitiativesPage } from "./initiatives";
+export { default as EventsPage } from "./events";
+export { default as FaqsPage } from "./faqs";
+export { default as VolunteerOpportunitiesPage } from "./volunteerOpportunities";
+export { default as FeedbackPortalPage } from "./feedbackPortal";
+export { default as PollsAndSurveyPage } from "./pollsAndSurvey";
+export { default as HousingServicesPage } from "./housingServices";
+export { default as SingleHousingServicesPage } from "./singleHousingServices";

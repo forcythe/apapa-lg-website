@@ -12,7 +12,7 @@ export const footerLinks = {
     },
     {
       id: 3,
-      path: "/projects",
+      path: "/government/projects",
       title: "Projects",
     },
     {
@@ -29,17 +29,17 @@ export const footerLinks = {
     },
     {
       id: 2,
-      path: "/history-of-apapa",
+      path: "/about-us/history-of-apapa",
       title: "History of Apapa",
     },
     {
       id: 3,
-      path: "/chairmans-profile",
+      path: "/government/organizational-structure/executive-chairman",
       title: "Chairman’s profile",
     },
     {
       id: 4,
-      path: "/departments-and-units",
+      path: "/about-us/departments-and-units",
       title: "Departments and units",
     },
   ],

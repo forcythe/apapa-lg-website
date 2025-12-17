@@ -37,7 +37,7 @@ export const headerRoutes = [
       },
       {
         id: 5,
-        path: "/government/performance-dashboard",
+        path: "/government/projects",
         title: "Performance Dashboard",
       },
     ],
@@ -62,7 +62,7 @@ export const headerRoutes = [
       },
       {
         id: 3,
-        path: "/about-us/chairmans-profile",
+        path: "/government/organizational-structure/executive-chairman",
         title: "Chairman’s Profile",
       },
       {
@@ -121,12 +121,12 @@ export const headerRoutes = [
   },
   {
     id: 5,
-    isRightPositioned: true,
     path: "/community",
     title: "Community",
-    width: "589px",
     bgTop: "/svgs/event-img-t.svg",
     bgBottom: "/svgs/event-img-b.svg",
+    width: "760px",
+    isRightPositioned: true,
     subTabs: [
       {
         id: 1,
@@ -152,6 +152,16 @@ export const headerRoutes = [
         id: 5,
         path: "/community/faqs",
         title: "FAQs",
+      },
+      {
+        id: 6,
+        path: "/community/initiatives",
+        title: "Initiatives",
+      },
+      {
+        id: 7,
+        path: "/community/innovation-hub",
+        title: "Innovation Hub",
       },
     ],
   },

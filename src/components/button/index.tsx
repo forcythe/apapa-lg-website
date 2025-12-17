@@ -1,43 +1,36 @@
 import React from "react";
 
-const Button = ({
-  title,
-  Icon,
-  className,
-  variant,
-  onClick,
-  disabled,
-  isLoading,
-  type,
-}: {
-  title: string;
-  Icon?: React.ReactNode;
-  className?: string;
-  variant?: boolean;
-  onClick?: () => void;
-  disabled?: boolean;
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isLoading?: boolean;
-  type?: "submit" | "button";
+}
+
+const Button: React.FC<ButtonProps> = ({
+  children = "Become a Volunteer",
+  className = "",
+  isLoading,
+  disabled = false,
+  ...props
 }) => {
+  const isDisabled = disabled || isLoading;
   return (
     <button
-      disabled={disabled}
-      onClick={onClick}
-      type={type}
-      className={`py-[12px] px-[21.5px] ${
-        !variant &&
-        "bg-accent hover:bg-[#5e0892] text-white font-[FuturaLTBold]"
-      } ${
-        isLoading ? "cursor-not-allowed" : "cursor-pointer"
-      }  rounded-[32px] text-base flex items-center gap-4 transition duration-300 border-[4px] border-accent2 ${className}`}
+      {...props}
+      {...props}
+      disabled={isDisabled}
+      className={`
+        ${
+          className ||
+          `border-none bg-[#AA8B00] ${
+            isDisabled
+              ? "opacity-50 cursor-not-allowed"
+              : "hover:bg-[#8C6A00] transition-colors duration-200 ease-in-out text-white"
+          }`
+        } w-full outline-none rounded-[44px] py-3 px-6 text-base md:text-[20px] leading-[32px] flex items-center justify-center`}
     >
       {isLoading ? (
-        <div className="w-5 h-5 border-2 border-accent2 border-t-transparent rounded-full animate-spin"></div>
+        <div className="w-5 h-5 border-2 border-accent3 border-t-transparent rounded-full animate-spin"></div>
       ) : (
-        <>
-          {title}
-          {Icon && <span>{Icon}</span>}
-        </>
+        <>{children}</>
       )}
     </button>
   );

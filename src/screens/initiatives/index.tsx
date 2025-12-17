@@ -1,0 +1,88 @@
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+import { AppWrapper, Header } from "@/components";
+import { Banner } from "../_partials";
+import { ProjectDetails } from "../projects/_partials";
+import { initiatives } from "./initiatives.data";
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const InitiativesPage = () => {
+  return (
+    <AppWrapper>
+      <div className="sticky top-0 z-[10]">
+        <Header />
+      </div>
+      <Banner type="Initiatives" />
+      <div className="w-full max-w-[2000px] mx-auto relative py-[80px] md:py-[120px] overflow-hidden">
+        <div className="section-padding">
+          <div className="w-full max-w-[1488px] mx-auto">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="w-full max-w-[700px] mx-auto mb-[80px] md:mb-[120px]"
+            >
+              <motion.div
+                variants={itemVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.1 }}
+                className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-6"
+              >
+                <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
+                  Driving Change, One Initiative at a Time
+                </p>
+              </motion.div>
+              <motion.p
+                variants={itemVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center"
+              >
+                From education and health to infrastructure and innovation, our
+                initiatives are designed to uplift every resident of Apapa.
+                Explore the impactful projects shaping a stronger, safer, and
+                more prosperous community.
+              </motion.p>
+            </motion.div>
+            <div className="w-full flex flex-col gap-[80px] md:gap-[120px]">
+              {initiatives.map((initiative) => (
+                <ProjectDetails key={initiative.id} p={initiative} />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="w-full absolute top-0 z-[-1] mx-auto">
+          <Image
+            src="/svgs/boat-bg.svg"
+            alt=""
+            width={1450}
+            height={1300}
+            className="w-full max-w-[1450px] mx-auto"
+          />
+        </div>
+      </div>
+    </AppWrapper>
+  );
+};
+
+export default InitiativesPage;
