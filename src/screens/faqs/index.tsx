@@ -1,21 +1,42 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
 import { faqsNavigation } from "./faqs.data";
 import QuestionsAndAnswers from "./questionsAndAnswers";
-import { TabId } from "./faq.type";
+import { FaqItem, TabId } from "./faq.type";
 
 const Faqs = () => {
+  const [faqs, setFaqs] = useState<FaqItem[]>([]);
+  const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState(
     faqsNavigation.tabs[0].id as TabId
   );
 
-  const activeFaq = faqsNavigation?.faqs[activeTab];
+  useEffect(() => {
+    const fetchFaqs = async () => {
+      try {
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/faqs`
+        );
+        const json = await res.json();
+        setFaqs(json.data || []);
+      } catch (error) {
+        console.error("Failed to fetch FAQs:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFaqs();
+  }, []);
+
+  // const activeFaq = faqsNavigation?.faqs[activeTab];
+  const activeFaqs = faqs.filter((faq) => faq.category === activeTab);
+
   return (
     <AppWrapper>
       <div className="sticky top-0 z-[10]">
@@ -48,7 +69,7 @@ const Faqs = () => {
               ))}
             </div>
             <div className="max-w-[900px] mx-auto flex flex-col gap-6 w-full">
-              {activeFaq && activeFaq.length > 0 ? (
+              {/* {activeFaq && activeFaq.length > 0 ? (
                 activeFaq.map((faq) => (
                   <QuestionsAndAnswers
                     key={`${activeTab}-${faq.id}`}
@@ -58,6 +79,19 @@ const Faqs = () => {
               ) : (
                 <p className="text-center text-gray-500 w-full">
                   No results found for &quot;{activeTab}&quot;.
+                </p>
+              )} */}
+              {!loading && activeFaqs.length > 0 ? (
+                activeFaqs.map((faq) => (
+                  <QuestionsAndAnswers key={faq.documentId} faq={faq} />
+                ))
+              ) : !loading ? (
+                <p className="text-center text-gray-500 w-full">
+                  No results found for &quot;{activeTab}&quot;.
+                </p>
+              ) : (
+                <p className="text-center text-gray-400 w-full">
+                  Loading FAQs…
                 </p>
               )}
             </div>

@@ -30,11 +30,11 @@ export const headerRoutes = [
         path: "/government/projects",
         title: "Projects",
       },
-      {
-        id: 4,
-        path: "/government/budget-and-financial-report",
-        title: "Budget and Financial Report",
-      },
+      // {
+      //   id: 4,
+      //   path: "/government/budget-and-financial-report",
+      //   title: "Budget and Financial Report",
+      // },
       {
         id: 5,
         path: "/government/projects",
@@ -158,11 +158,11 @@ export const headerRoutes = [
         path: "/community/initiatives",
         title: "Initiatives",
       },
-      {
-        id: 7,
-        path: "/community/innovation-hub",
-        title: "Innovation Hub",
-      },
+      // {
+      //   id: 7,
+      //   path: "/community/innovation-hub",
+      //   title: "Innovation Hub",
+      // },
     ],
   },
 ];

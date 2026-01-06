@@ -12,7 +12,10 @@ export const faqsNavigation = {
       id: "community",
       label: "Community",
     },
-    { id: "services", label: "Services" },
+    {
+      id: "services",
+      label: "Services",
+    },
   ],
 
   faqs: {

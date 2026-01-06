@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
-import { tabId } from "./blogNewsArticles.types";
+import { BlogItem, tabId } from "./blogNewsArticles.types";
 import { blogsNavigation } from "./blogNewsArticles.data";
 
 import FooterArrow from "../../../../../../../public/svg-component/FooterArrow";
@@ -21,9 +21,52 @@ const itemVariants = {
 };
 
 const BlogNewsArticles = () => {
-  const [activeTab, setActiveTab] = React.useState(
-    blogsNavigation.tabs[0].id as tabId
-  );
+  // const [activeTab, setActiveTab] = React.useState(
+  //   blogsNavigation.tabs[0].id as tabId
+  // );
+  const [activeTab, setActiveTab] = React.useState<tabId>("blogs");
+  const [loading, setLoading] = React.useState(true);
+  const [items, setItems] = React.useState<{
+    blogs: BlogItem[];
+    news: BlogItem[];
+    articles: BlogItem[];
+  }>({
+    blogs: [],
+    news: [],
+    articles: [],
+  });
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/blogs?populate=*`
+        );
+        const json = await res.json();
+
+        const blogs: BlogItem[] = [];
+        const news: BlogItem[] = [];
+        const articles: BlogItem[] = [];
+
+        json.data.forEach((item: BlogItem) => {
+          if (item.category === "blog") blogs.push(item);
+          if (item.category === "news") news.push(item);
+          if (item.category === "article") articles.push(item);
+        });
+
+        setItems({ blogs, news, articles });
+      } catch (err) {
+        console.error("Failed to load blogs", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
+
+  const backendUrl = process.env.NEXT_PUBLIC_STRAPI_URL;
+
   return (
     <div className="pt-[100px] md:pt-[120px] max-w-[1488px] mx-auto">
       <motion.div
@@ -87,46 +130,54 @@ const BlogNewsArticles = () => {
         ))}
       </div>
 
-      <motion.div
-        variants={containerVariants}
-        key={activeTab}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[40px] sm:gap-y-6 gap-x-[30px] md:auto-rows-[minmax(524px,1fr)] place-items-center"
-      >
-        {blogsNavigation.items[activeTab].map((item) => (
-          <motion.div
-            key={item.id}
-            variants={itemVariants}
-            className="w-full max-w-[476px] sm:min-h-[524px]"
-          >
-            <div className="w-full p-2 min-h-[256px] rounded-[32px] bg-white shadow-md mb-6">
-              <div
-                className="w-full min-h-[240px] rounded-[24px] bg-red-200 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url('${item.img}')`,
-                }}
-              ></div>
-            </div>
-            <p className="text-[14px] leading-[24px] md:text-base text-[#B0B0B0] mb-3">
-              {item.createdAt}
-            </p>
-            <h6 className="mb-2 font-[FuturaLTBold] text-base md:text-[20px] md:leading-[28px]">
-              {item.title}
-            </h6>
-            <p className="text-[#667085] text-base md:text-[20px] md:leading-[32px] mb-3">
-              {item.desc}
-            </p>
-            <div className="flex items-center gap-2">
-              <p className="text-base md:text-[20px] md:leading-[32px] text-accent">
-                Read more
+      {loading ? (
+        <div className="w-full min-h-[524px] flex items-center justify-center">
+          <p className="text-base md:text-[18px] text-[#667085]">
+            Loading content…
+          </p>
+        </div>
+      ) : (
+        <motion.div
+          variants={containerVariants}
+          key={activeTab}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[40px] sm:gap-y-6 gap-x-[30px] md:auto-rows-[minmax(524px,1fr)] place-items-center"
+        >
+          {items[activeTab].map((item) => (
+            <motion.div
+              key={item.id}
+              variants={itemVariants}
+              className="w-full max-w-[476px] sm:min-h-[524px]"
+            >
+              <div className="w-full p-2 min-h-[256px] rounded-[32px] bg-white shadow-md mb-6">
+                <div
+                  className="w-full min-h-[240px] rounded-[24px] bg-red-200 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url('${item.coverImage?.url ? backendUrl + item.coverImage.url : "/fallback.svg"}')`,
+                  }}
+                ></div>
+              </div>
+              <p className="text-[14px] leading-[24px] md:text-base text-[#B0B0B0] mb-3">
+                {new Date(item.createdAt).toDateString()}
               </p>
-              <FooterArrow fill="#aa8b00" />
-            </div>
-          </motion.div>
-        ))}
-      </motion.div>
+              <h6 className="mb-2 font-[FuturaLTBold] text-base md:text-[20px] md:leading-[28px]">
+                {item.title}
+              </h6>
+              <p className="text-[#667085] text-base md:text-[20px] md:leading-[32px] mb-3">
+                {item.description}
+              </p>
+              <div className="flex items-center gap-2">
+                <p className="text-base md:text-[20px] md:leading-[32px] text-accent">
+                  Read more
+                </p>
+                <FooterArrow fill="#aa8b00" />
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      )}
     </div>
   );
 };
