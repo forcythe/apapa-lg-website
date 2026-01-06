@@ -1,13 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
 import { ProjectDetails } from "../projects/_partials";
-import { initiatives } from "./initiatives.data";
+// import { initiatives } from "./initiatives.data";
+import { Project } from "../projects/_partials/projectDetails/projectDetails.types";
+import { mapInitiativesAndProjects } from "@/libs/initiative.mapper";
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -24,6 +26,27 @@ const containerVariants = {
 };
 
 const InitiativesPage = () => {
+  const [initiatives, setInitiatives] = useState<Project[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchInitiatives = async () => {
+      try {
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/initiatives?populate=*`
+        );
+        const json = await res.json();
+        setInitiatives(mapInitiativesAndProjects(json));
+      } catch (error) {
+        console.error("Failed to fetch initiatives", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchInitiatives();
+  }, []);
+
   return (
     <AppWrapper>
       <div className="sticky top-0 z-[10]">
@@ -65,9 +88,13 @@ const InitiativesPage = () => {
               </motion.p>
             </motion.div>
             <div className="w-full flex flex-col gap-[80px] md:gap-[120px]">
-              {initiatives.map((initiative) => (
-                <ProjectDetails key={initiative.id} p={initiative} />
-              ))}
+              {loading ? (
+                <p className="text-center">Loading initiatives...</p>
+              ) : (
+                initiatives.map((initiative) => (
+                  <ProjectDetails key={initiative.id} p={initiative} />
+                ))
+              )}
             </div>
           </div>
         </div>

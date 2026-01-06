@@ -1,13 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
-import { polls } from "./pollsAndSurvey.data";
+// import { polls } from "./pollsAndSurvey.data";
 import Polls from "./Polls";
+import { Poll } from "./pollsAndSurvey.types";
 
 const containerVariants = {
   hidden: {},
@@ -22,7 +23,61 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
+const formatDateWithOrdinal = (isoDate: string) => {
+  const date = new Date(isoDate);
+
+  const day = date.getDate();
+  const month = date.toLocaleString("en-GB", { month: "long" });
+  const year = date.getFullYear();
+
+  const getOrdinal = (n: number) => {
+    if (n > 3 && n < 21) return "th";
+    switch (n % 10) {
+      case 1:
+        return "st";
+      case 2:
+        return "nd";
+      case 3:
+        return "rd";
+      default:
+        return "th";
+    }
+  };
+
+  return `${day}${getOrdinal(day)} ${month} ${year}`;
+};
+
 const PollsAndSurveyPage = () => {
+  const [polls, setPolls] = useState<Poll[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchPolls = async () => {
+      try {
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/polls-and-surveys?populate=*`
+        );
+        const json = await res.json();
+
+        const mappedPolls: Poll[] = json.data.map((poll: any) => ({
+          id: poll.documentId,
+          question: poll.question,
+          options: poll.options,
+          ends: formatDateWithOrdinal(poll.endsAt),
+          totalVotes: poll.totalVotes,
+        }));
+
+        setPolls(mappedPolls);
+      } catch (error) {
+        console.error("Failed to fetch polls:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPolls();
+  }, []);
+
   return (
     <>
       <AppWrapper>
@@ -59,9 +114,15 @@ const PollsAndSurveyPage = () => {
               </motion.div>
 
               <div className="flex flex-col gap-4">
-                {polls?.map((poll) => (
-                  <Polls key={poll?.id} poll={poll} />
-                ))}
+                {loading && (
+                  <div className="w-full text-center py-20">
+                    <p className="text-base text-[#667085]">
+                      Loading polls and surveys...
+                    </p>
+                  </div>
+                )}
+                {!loading &&
+                  polls?.map((poll) => <Polls key={poll?.id} poll={poll} />)}
               </div>
             </div>
           </div>
