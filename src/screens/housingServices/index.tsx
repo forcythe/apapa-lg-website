@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -11,6 +11,7 @@ import { services } from "./housingServices.data";
 import { slugify } from "@/utils/helpers/slugify";
 
 import FooterArrow from "../../../public/svg-component/FooterArrow";
+import HousingServiceIcon from "../../../public/svg-component/HousingServiceIcon";
 // import { ProjectDetails } from "../projects/_partials";
 
 const itemVariants = {
@@ -28,6 +29,8 @@ const containerVariants = {
 };
 
 const HousingServicesPage = () => {
+  
+
   return (
     <AppWrapper>
       <div className="sticky top-0 z-[10]">
@@ -104,7 +107,7 @@ const HousingServicesPage = () => {
                 >
                   <div className="bg-[#FFF6CC] rounded-[12px] p-2 mb-4 min-h-[56px] max-h-[56px] max-w-[56px] min-w-[56px] md:min-h-[72px] md:min-w-[72px] md:max-h-[72px] md:max-w-[72px] flex items-center justify-center">
                     {
-                      <service.icon className="max-w-[40px] min-w-[40px] min-h-[40px] max-h-[40px] md:max-w-[56px] md:min-w-[56px] md:max-h-[56px] md:min-h-[56px]" />
+                      <HousingServiceIcon className="max-w-[40px] min-w-[40px] min-h-[40px] max-h-[40px] md:max-w-[56px] md:min-w-[56px] md:max-h-[56px] md:min-h-[56px]" />
                     }
                   </div>
                   <h6 className="font-[FuturaLTBold] text-[18px] leading-[28px] md:text-[20px] md:leading-[28px] md:mb-2">

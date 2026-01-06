@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { slidesData } from "./events.data";
+// import { slidesData } from "./events.data";
 import useIsMobile from "@/utils/helpers/useMobile";
 
 import ArrowLeftIcon from "../../../../../../../public/svg-component/ArrowLeftIcon";
@@ -29,6 +29,48 @@ export default function Events() {
       (prev) => (prev - 1 + slidesData.length) % slidesData.length
     );
   };
+
+  const [slidesData, setSlidesData] = React.useState<any[]>([]);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/event-sliders?populate=*`
+        );
+        const json = await res.json();
+
+        const normalized = json.data.map((item: any) => {
+          const dateObj = new Date(item.date);
+
+          return {
+            title: item.title,
+            date: dateObj.toLocaleDateString("en-GB", {
+              weekday: "short",
+              day: "numeric",
+              month: "short",
+              year: "numeric",
+            }),
+            time: dateObj.toLocaleTimeString("en-US", {
+              hour: "numeric",
+              minute: "2-digit",
+            }),
+            location: item.location,
+            image: `${process.env.NEXT_PUBLIC_STRAPI_URL}${item.image.url}`,
+          };
+        });
+
+        setSlidesData(normalized);
+      } catch (err) {
+        console.error("Failed to fetch events", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchEvents();
+  }, []);
 
   const gap = isMobile ? 4 : 16;
 
@@ -90,117 +132,126 @@ export default function Events() {
       </div>
 
       <div className="relative w-full overflow-hidden flex items-center justify-center h-[648px] md:h-[672px]">
-        <div className="relative w-full h-full">
-          {slidesData.map((slide, index) => {
-            let distance = index - currentIndex;
-            const n = slidesData.length;
-            if (distance > n / 2) distance -= n;
-            if (distance < -n / 2) distance += n;
+        {loading ? (
+          <div className="relative w-full h-[648px] md:h-[672px] flex items-center justify-center">
+            <p className="text-base md:text-[18px] text-[#667085]">
+              Loading upcoming events…
+            </p>
+          </div>
+        ) : (
+          <div className="relative w-full overflow-hidden flex items-center justify-center h-[648px] md:h-[672px]">
+            <div className="relative w-full h-full">
+              <div className="relative w-full h-full">
+                {slidesData.map((slide, index) => {
+                  let distance = index - currentIndex;
+                  const n = slidesData.length;
+                  if (distance > n / 2) distance -= n;
+                  if (distance < -n / 2) distance += n;
 
-            let offset = 0;
-            if (distance === 0) {
-              offset = 0;
-            } else if (Math.abs(distance) === 1) {
-              offset = distance > 0 ? offsetImmediate : -offsetImmediate;
-            } else if (Math.abs(distance) === 2) {
-              offset = distance > 0 ? offsetFar : -offsetFar;
-            } else {
-              offset = distance > 0 ? offsetFar : -offsetFar;
-            }
+                  let offset = 0;
+                  if (distance === 0) {
+                    offset = 0;
+                  } else if (Math.abs(distance) === 1) {
+                    offset = distance > 0 ? offsetImmediate : -offsetImmediate;
+                  } else if (Math.abs(distance) === 2) {
+                    offset = distance > 0 ? offsetFar : -offsetFar;
+                  } else {
+                    offset = distance > 0 ? offsetFar : -offsetFar;
+                  }
 
-            let effectiveWidth, effectiveHeight;
-            let opacity = 1;
-            let blur = 0;
-            let zIndex = 20;
-            if (distance === 0) {
-              effectiveWidth = CENTER_WIDTH;
-              effectiveHeight = CENTER_HEIGHT;
-              opacity = 1;
-              blur = 0;
-              zIndex = 30;
-            } else if (Math.abs(distance) === 1) {
-              effectiveWidth = NEIGHBOR_WIDTH;
-              effectiveHeight = NEIGHBOR_HEIGHT;
-              opacity = 1;
-              blur = 0;
-              zIndex = 20;
-            } else if (Math.abs(distance) === 2) {
-              effectiveWidth = FAR_WIDTH;
-              effectiveHeight = FAR_HEIGHT;
-              opacity = 0.8;
-              blur = 3;
-              zIndex = 10;
-            } else {
-              effectiveWidth = FAR_WIDTH;
-              effectiveHeight = FAR_HEIGHT;
-              opacity = 0;
-              blur = 3;
-              zIndex = 0;
-            }
+                  let effectiveWidth, effectiveHeight;
+                  let opacity = 1;
+                  let blur = 0;
+                  let zIndex = 20;
+                  if (distance === 0) {
+                    effectiveWidth = CENTER_WIDTH;
+                    effectiveHeight = CENTER_HEIGHT;
+                    opacity = 1;
+                    blur = 0;
+                    zIndex = 30;
+                  } else if (Math.abs(distance) === 1) {
+                    effectiveWidth = NEIGHBOR_WIDTH;
+                    effectiveHeight = NEIGHBOR_HEIGHT;
+                    opacity = 1;
+                    blur = 0;
+                    zIndex = 20;
+                  } else if (Math.abs(distance) === 2) {
+                    effectiveWidth = FAR_WIDTH;
+                    effectiveHeight = FAR_HEIGHT;
+                    opacity = 0.8;
+                    blur = 3;
+                    zIndex = 10;
+                  } else {
+                    effectiveWidth = FAR_WIDTH;
+                    effectiveHeight = FAR_HEIGHT;
+                    opacity = 0;
+                    blur = 3;
+                    zIndex = 0;
+                  }
 
-            let titleClasses = "";
-            if (isMobile) {
-              if (distance === 0) {
-                titleClasses = "text-[16px] leading-[24px]";
-              } else if (Math.abs(distance) === 1) {
-                titleClasses = "text-[12px] leading-[18px]";
-              } else {
-                titleClasses = "text-[9px] leading-[11px]";
-              }
-            } else {
-              if (distance === 0) {
-                titleClasses = "text-[20px] leading-[28px]";
-              } else if (Math.abs(distance) === 1) {
-                titleClasses = "text-[16px] leading-[24px]";
-              } else {
-                titleClasses = "text-[9px] leading-[11px]";
-              }
-            }
+                  let titleClasses = "";
+                  if (isMobile) {
+                    if (distance === 0) {
+                      titleClasses = "text-[16px] leading-[24px]";
+                    } else if (Math.abs(distance) === 1) {
+                      titleClasses = "text-[12px] leading-[18px]";
+                    } else {
+                      titleClasses = "text-[9px] leading-[11px]";
+                    }
+                  } else {
+                    if (distance === 0) {
+                      titleClasses = "text-[20px] leading-[28px]";
+                    } else if (Math.abs(distance) === 1) {
+                      titleClasses = "text-[16px] leading-[24px]";
+                    } else {
+                      titleClasses = "text-[9px] leading-[11px]";
+                    }
+                  }
 
-            let infoClasses = "";
-            if (isMobile) {
-              if (distance === 0) {
-                infoClasses = "text-[16px] leading-[24px]";
-              } else if (Math.abs(distance) === 1) {
-                infoClasses = "text-[12px] leading-[18px]";
-              } else {
-                infoClasses = "text-[6px] leading-[10px]";
-              }
-            } else {
-              if (distance === 0) {
-                infoClasses = "text-[18px] leading-[28px]";
-              } else if (Math.abs(distance) === 1) {
-                infoClasses = "text-[14px] leading-[20px]";
-              } else {
-                infoClasses = "text-[6.79px] leading-[10.18px]";
-              }
-            }
+                  let infoClasses = "";
+                  if (isMobile) {
+                    if (distance === 0) {
+                      infoClasses = "text-[16px] leading-[24px]";
+                    } else if (Math.abs(distance) === 1) {
+                      infoClasses = "text-[12px] leading-[18px]";
+                    } else {
+                      infoClasses = "text-[6px] leading-[10px]";
+                    }
+                  } else {
+                    if (distance === 0) {
+                      infoClasses = "text-[18px] leading-[28px]";
+                    } else if (Math.abs(distance) === 1) {
+                      infoClasses = "text-[14px] leading-[20px]";
+                    } else {
+                      infoClasses = "text-[6.79px] leading-[10.18px]";
+                    }
+                  }
 
-            return (
-              <div
-                key={index}
-                className="absolute transition-all duration-500 ease-in-out"
-                style={{
-                  left: "50%",
-                  top: "50%",
-                  transform: `translate(calc(-50% + ${offset}px), -50%)`,
-                  filter: `blur(${blur}px)`,
-                  opacity,
-                  zIndex,
-                }}
-              >
-                <div
-                  className="shadow-lg flex flex-col bg-white p-2 rounded-[32px]"
-                  style={{
-                    width: `${effectiveWidth}px`,
-                    height: `${effectiveHeight}px`,
-                  }}
-                >
-                  <div className="shadow-lg relative overflow-hidden z-[1] flex flex-col justify-between text-white px-4 py-5 md:p-[28px] rounded-[24px] w-full h-full">
+                  return (
                     <div
-                      className="absolute z-[-1] inset-0 w-full"
+                      key={index}
+                      className="absolute transition-all duration-500 ease-in-out"
                       style={{
-                        backgroundImage: `
+                        left: "50%",
+                        top: "50%",
+                        transform: `translate(calc(-50% + ${offset}px), -50%)`,
+                        filter: `blur(${blur}px)`,
+                        opacity,
+                        zIndex,
+                      }}
+                    >
+                      <div
+                        className="shadow-lg flex flex-col bg-white p-2 rounded-[32px]"
+                        style={{
+                          width: `${effectiveWidth}px`,
+                          height: `${effectiveHeight}px`,
+                        }}
+                      >
+                        <div className="shadow-lg relative overflow-hidden z-[1] flex flex-col justify-between text-white px-4 py-5 md:p-[28px] rounded-[24px] w-full h-full">
+                          <div
+                            className="absolute z-[-1] inset-0 w-full"
+                            style={{
+                              backgroundImage: `
                             linear-gradient(
                                 180deg,
                                 rgba(0, 0, 0, 1) 0%,
@@ -209,45 +260,48 @@ export default function Events() {
                                 rgba(0, 0, 0, 1) 100%
                             )
                             `,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
-                    ></div>
-                    <div
-                      className="absolute z-[-2] inset-0 w-full"
-                      style={{
-                        backgroundImage: `url(${slide.image})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
-                    ></div>
-                    <h3
-                      className={`font-[FuturaLTBold] text-white ${titleClasses}`}
-                    >
-                      {slide.title}
-                    </h3>
-                    <div>
-                      <div className="flex items-center gap-4 mb-3">
-                        <div className="flex items-center gap-2">
-                          <CalenderIcon />
-                          <p className={infoClasses}>{slide.date}</p>
+                              backgroundSize: "cover",
+                              backgroundPosition: "center",
+                            }}
+                          ></div>
+                          <div
+                            className="absolute z-[-2] inset-0 w-full"
+                            style={{
+                              backgroundImage: `url(${slide.image})`,
+                              backgroundSize: "cover",
+                              backgroundPosition: "center",
+                            }}
+                          ></div>
+                          <h3
+                            className={`font-[FuturaLTBold] text-white ${titleClasses}`}
+                          >
+                            {slide.title}
+                          </h3>
+                          <div>
+                            <div className="flex items-center gap-4 mb-3">
+                              <div className="flex items-center gap-2">
+                                <CalenderIcon />
+                                <p className={infoClasses}>{slide.date}</p>
+                              </div>
+                              <div className="flex items-center gap-2">
+                                <TimeIcon />
+                                <p className={infoClasses}>{slide.time}</p>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <LocationIcon />
+                              <p className={infoClasses}>{slide.location}</p>
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex items-center gap-2">
-                          <TimeIcon />
-                          <p className={infoClasses}>{slide.time}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <LocationIcon />
-                        <p className={infoClasses}>{slide.location}</p>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  );
+                })}
               </div>
-            );
-          })}
-        </div>
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="mt-4 md:mt-6 w-full max-w-[144px] mx-auto flex items-center justify-between min-h-[56px]">

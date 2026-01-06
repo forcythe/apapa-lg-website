@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useFormik } from "formik";
@@ -16,6 +16,8 @@ import { validationSchema } from "./volunteerOpportunities.validation";
 import { FormValues } from "./volunteerOpportunities.types";
 import SelectOption from "@/components/selectOption";
 import { SuccessModal } from "@/modal_views";
+import { p } from "framer-motion/m";
+import { div } from "framer-motion/client";
 
 const containerVariants = {
   hidden: {},
@@ -31,13 +33,46 @@ const itemVariants = {
 };
 
 const VolunteerOpportunitiesPage = () => {
+  //fetch Volunteers
+  const [volunteers, setVolunteers] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchVolunteers = async () => {
+      try {
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/volunteer-opportunities?populate=*`
+        );
+        const json = await res.json();
+        setVolunteers(json.data || []);
+      } catch (error) {
+        console.error("Failed to fetch events:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchVolunteers();
+  }, []);
+
+  const getImageUrl = (image: any) => {
+    if (!image) return ""; // fallback
+    return `${process.env.NEXT_PUBLIC_STRAPI_URL}${image.formats?.medium?.url || image.url}`;
+  };
+
   const [isShowSuccessModal, setIsShowSuccessModal] = useState(false);
-  const groups = Math.ceil(data.length / 4);
+  const groups = volunteers.length ? Math.ceil(volunteers.length / 4) : 0;
   const rowsPerGroup = 3;
   const rowHeightsPerGroup = ["472px", "308px", "160px"];
-  const gridTemplateRows = Array.from({ length: groups * rowsPerGroup })
-    .map((_, i) => rowHeightsPerGroup[i % rowsPerGroup])
-    .join(" ");
+  // const gridTemplateRows = Array.from({ length: groups * rowsPerGroup })
+  //   .map((_, i) => rowHeightsPerGroup[i % rowsPerGroup])
+  //   .join(" ");
+  const gridTemplateRows = useMemo(() => {
+    if (!volunteers.length) return "";
+    return Array.from({ length: groups * rowsPerGroup })
+      .map((_, i) => rowHeightsPerGroup[i % rowsPerGroup])
+      .join(" ");
+  }, [volunteers.length]);
 
   const [isLoading, setIsLoading] = useState(false);
   const formik = useFormik<FormValues>({
@@ -99,34 +134,43 @@ const VolunteerOpportunitiesPage = () => {
                 </motion.div>
               </motion.div>
 
-              <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                className="w-full max-w-[1488px] mb-[80px] md:mb-[120px] hidden lg:grid grid-cols-3 gap-[36px]"
-                style={{ gridTemplateRows }}
-              >
-                {data.map((card, index) => {
-                  const group = Math.floor(index / 6);
-                  const patternIndex = index % 6;
-                  const computedRowStart =
-                    basePattern[patternIndex].rowStart + group * rowsPerGroup;
-                  const rowSpanClass =
-                    basePattern[patternIndex].rowSpan === 2 ? "row-span-2" : "";
-                  const dynamicClass = `row-start-${computedRowStart} ${rowSpanClass}`;
+              {loading && (
+                <div>
+                  <p className="text-center m-auto">Loading...</p>
+                </div>
+              )}
 
-                  return (
-                    <motion.div
-                      key={card.id}
-                      variants={itemVariants}
-                      className={`shadow-[0px_12px_24px_0px_rgba(0,0,0,0.1)] bg-white relative overflow-hidden w-full rounded-[32px] p-2 flex flex-col justify-end ${dynamicClass}`}
-                    >
-                      <div className="w-full h-full rounded-[24px] p-[28px] relative flex flex-col justify-end group overflow-hidden">
-                        <div
-                          className="absolute inset-0 transition-transform duration-500 ease-in-out group-hover:scale-105"
-                          style={{
-                            backgroundImage: `
+              {!loading && volunteers.length > 0 && (
+                <motion.div
+                  variants={containerVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.2 }}
+                  className="w-full max-w-[1488px] mb-[80px] md:mb-[120px] hidden lg:grid grid-cols-3 gap-[36px]"
+                  style={{ gridTemplateRows }}
+                >
+                  {volunteers.map((card, index) => {
+                    const group = Math.floor(index / 6);
+                    const patternIndex = index % 6;
+                    const computedRowStart =
+                      basePattern[patternIndex].rowStart + group * rowsPerGroup;
+                    const rowSpanClass =
+                      basePattern[patternIndex].rowSpan === 2
+                        ? "row-span-2"
+                        : "";
+                    const dynamicClass = `row-start-${computedRowStart} ${rowSpanClass}`;
+
+                    return (
+                      <motion.div
+                        key={card.documentId}
+                        variants={itemVariants}
+                        className={`shadow-[0px_12px_24px_0px_rgba(0,0,0,0.1)] bg-white relative overflow-hidden w-full rounded-[32px] p-2 flex flex-col justify-end ${dynamicClass}`}
+                      >
+                        <div className="w-full h-full rounded-[24px] p-[28px] relative flex flex-col justify-end group overflow-hidden">
+                          <div
+                            className="absolute inset-0 transition-transform duration-500 ease-in-out group-hover:scale-105"
+                            style={{
+                              backgroundImage: `
                               linear-gradient(
                                 180deg,
                                 rgba(0, 0, 0, 0) 0%,
@@ -136,8 +180,60 @@ const VolunteerOpportunitiesPage = () => {
                                 #000 83.33%,
                                 #000 100%
                               ),
-                              url(${card.image})
+                              url(${getImageUrl(card.image)})
                             `,
+                              backgroundSize: "cover",
+                              backgroundPosition: "center",
+                              willChange: "transform",
+                            }}
+                          />
+
+                          <div className="relative z-10">
+                            <h1 className="text-[20px] leading-[28px] font-[FuturaLTBold] text-white mb-2">
+                              {card.title}
+                            </h1>
+                            <p className="text-base md:text-[20px] md:leading-[32px] font-medium text-white">
+                              {card.description}
+                            </p>
+                          </div>
+                        </div>
+                      </motion.div>
+                    );
+                  })}
+                </motion.div>
+              )}
+
+              {/* Mobile Grid (optional animation) */}
+              {!loading && volunteers.length > 0 && (
+                <motion.div
+                  variants={containerVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.2 }}
+                  className="grid grid-cols-1 md:grid-cols-2 lg:hidden gap-4"
+                >
+                  {volunteers.map((card) => (
+                    <motion.div
+                      key={card.documentId}
+                      variants={itemVariants}
+                      className="shadow-[0px_12px_24px_0px_rgba(0,0,0,0.1)] bg-white relative overflow-hidden w-full rounded-[32px] p-2 flex flex-col justify-end min-h-[600px]"
+                    >
+                      <div className="w-full h-full rounded-[24px] p-[28px] relative flex flex-col justify-end group overflow-hidden">
+                        <div
+                          className="absolute inset-0 transition-transform duration-500 ease-in-out group-hover:scale-105"
+                          style={{
+                            backgroundImage: `
+                            linear-gradient(
+                              180deg,
+                              rgba(0, 0, 0, 0) 0%,
+                              rgba(0, 0, 0, 0.08) 14.58%,
+                              rgba(0, 0, 0, 0.78) 50%,
+                              #000 70.83%,
+                              #000 83.33%,
+                              #000 100%
+                            ),
+                            url(${getImageUrl(card.image)})
+                          `,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                           }}
@@ -152,58 +248,11 @@ const VolunteerOpportunitiesPage = () => {
                         </div>
                       </div>
                     </motion.div>
-                  );
-                })}
-              </motion.div>
+                  ))}
+                </motion.div>
+              )}
 
-              {/* Mobile Grid (optional animation) */}
-              <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                className="grid grid-cols-1 md:grid-cols-2 lg:hidden gap-4"
-              >
-                {data.map((card) => (
-                  <motion.div
-                    key={card.id}
-                    variants={itemVariants}
-                    className="shadow-[0px_12px_24px_0px_rgba(0,0,0,0.1)] bg-white relative overflow-hidden w-full rounded-[32px] p-2 flex flex-col justify-end min-h-[600px]"
-                  >
-                    <div className="w-full h-full rounded-[24px] p-[28px] relative flex flex-col justify-end group overflow-hidden">
-                      <div
-                        className="absolute inset-0 transition-transform duration-500 ease-in-out group-hover:scale-105"
-                        style={{
-                          backgroundImage: `
-                            linear-gradient(
-                              180deg,
-                              rgba(0, 0, 0, 0) 0%,
-                              rgba(0, 0, 0, 0.08) 14.58%,
-                              rgba(0, 0, 0, 0.78) 50%,
-                              #000 70.83%,
-                              #000 83.33%,
-                              #000 100%
-                            ),
-                            url(${card.image})
-                          `,
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                        }}
-                      />
-                      <div className="relative z-10">
-                        <h1 className="text-[20px] leading-[28px] font-[FuturaLTBold] text-white mb-2">
-                          {card.title}
-                        </h1>
-                        <p className="text-base md:text-[20px] md:leading-[32px] font-medium text-white">
-                          {card.description}
-                        </p>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-              </motion.div>
-
-              <motion.div
+              {/* <motion.div
                 variants={itemVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -296,7 +345,7 @@ const VolunteerOpportunitiesPage = () => {
                     </Button>
                   </div>
                 </form>
-              </motion.div>
+              </motion.div> */}
             </div>
           </div>
 
@@ -312,7 +361,7 @@ const VolunteerOpportunitiesPage = () => {
         </div>
       </AppWrapper>
 
-      {isShowSuccessModal && (
+      {/* {isShowSuccessModal && (
         <SuccessModal
           headText="Volunteer Application"
           subText="We have received your volunteer application and truly appreciate your
@@ -328,7 +377,7 @@ const VolunteerOpportunitiesPage = () => {
             setIsShowSuccessModal(false);
           }}
         />
-      )}
+      )} */}
     </>
   );
 };
