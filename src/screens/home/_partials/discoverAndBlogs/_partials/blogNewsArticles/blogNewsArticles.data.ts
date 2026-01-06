@@ -47,14 +47,14 @@ export const blogsNavigation = {
       {
         id: 5,
         createdAt: "19 Jan 2022",
-        title: "Transforming Our Community",
+        title: "Transforming Our Community B",
         desc: "Apapa, the heart of commerce and culture in Lagos, has long been a beacon of resilience and progress. As our community continues to grow, we face both challenges and opportunities.",
         img: "/svgs/image-5.svg",
       },
       {
         id: 6,
         createdAt: "19 Jan 2022",
-        title: "Transforming Our Community",
+        title: "Transforming Our Community B1",
         desc: "Apapa, the heart of commerce and culture in Lagos, has long been a beacon of resilience and progress. As our community continues to grow, we face both challenges and opportunities.",
         img: "/svgs/image-6.svg",
       },
@@ -86,7 +86,7 @@ export const blogsNavigation = {
       {
         id: 2,
         createdAt: "19 Jan 2022",
-        title: "Transforming Our Community A",
+        title: "Transforming Our Community A1",
         desc: "Apapa, the heart of commerce and culture in Lagos, has long been a beacon of resilience and progress. As our community continues to grow, we face both challenges and opportunities.",
         img: "/svgs/image-2.svg",
       },
