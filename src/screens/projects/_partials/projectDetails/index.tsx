@@ -75,7 +75,7 @@ const ProjectDetails = ({ p }: { p: Project }) => {
               <HourGlassIcon />
             </motion.div>
             <p className="text-[#616161] text-sm md:text-base">
-              {p.expectedCompletion}
+              {`Expected Completion ${p.expectedCompletion}`}
             </p>
           </div>
         </motion.div>
