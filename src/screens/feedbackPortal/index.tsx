@@ -88,7 +88,7 @@ const FeedbackPortalPage = () => {
         <div className="w-full max-w-[2000px] mx-auto relative py-[80px] md:py-[120px] overflow-hidden">
           <div className="section-padding">
             <div className="w-full mx-auto max-w-[1488px]">
-              <div className="mb-6 flex gap-2 w-full max-w-[275px] md:max-w-[361px] mx-auto overflow-x-auto scrollbar-hide">
+              <div className="mb-6 flex justify-center gap-2 w-full max-w-[275px] md:max-w-[361px] mx-auto overflow-x-auto scrollbar-hide">
                 {navigation.tabs.map((tab) => (
                   <motion.div
                     key={tab.id}
@@ -241,7 +241,8 @@ const FeedbackPortalPage = () => {
         <SuccessModal
           headText="Thank You for Your Feedback!"
           copyText="APAPA-20250115-12345"
-          subText="You can use this ID to track the status of your submission on our Track Feedback page. If you have any questions, please contact us at feedback@apapalga.ng or call our support line at +234 800 123 4567. We value your input and are committed to addressing your concerns promptly."
+          // subText="You can use this ID to track the status of your submission on our Track Feedback page. If you have any questions, please contact us at feedback@apapalga.ng or call our support line at +234 800 123 4567. We value your input and are committed to addressing your concerns promptly."
+          subText="If you have any questions, please contact us at feedback@apapalga.ng or call our support line at +234 800 123 4567. We value your input and are committed to addressing your concerns promptly."
           isShowSuccessModal={isShowSuccessModal}
           onClickAwaySuccessModal={() => {
             setIsShowSuccessModal(false);

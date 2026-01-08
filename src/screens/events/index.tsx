@@ -33,7 +33,7 @@ const Events = () => {
     const fetchEvents = async () => {
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events`
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?populate=*`
         );
         const json = await res.json();
         setEvents(json.data || []);
@@ -69,6 +69,22 @@ const Events = () => {
     return `${formatTime(start)} - ${formatTime(end)}`;
   };
 
+  const getEventImageUrl = (image: any) => {
+    const imageUrl = image?.formats?.medium?.url ?? image?.url;
+
+    if (!imageUrl) return "";
+
+    if (imageUrl.startsWith("http")) return imageUrl;
+
+    const baseUrl = (process.env.NEXT_PUBLIC_STRAPI_URL || "").replace(
+      /\/$/,
+      ""
+    );
+    const path = imageUrl.startsWith("/") ? imageUrl : `/${imageUrl}`;
+
+    return `${baseUrl}${path}`;
+  };
+
   return (
     <AppWrapper>
       <div className="sticky top-0 z-[10]">
@@ -98,15 +114,22 @@ const Events = () => {
                     className="overflow-hidden relative w-full max-w-[476px] min-h-[528px] "
                   >
                     <div className="mb-6 rounded-[24px] md:rounded-[32px] min-h-[256px] bg-white border border-[#D0D0D0] p-2">
+                      {(() => {
+                        const eventImageUrl = getEventImageUrl(event.image);
+                        return (
                       <div
-                        className="w-full min-h-[240px]  rounded-[16px] md:rounded-[24px] bg-contain bg-center"
+                        className="w-full min-h-[240px] rounded-[16px] md:rounded-[24px] bg-cover bg-center"
                         style={{
-                          backgroundImage: "url('/image/card-img.png')",
-                          backgroundSize: "contain",
+                          backgroundImage: eventImageUrl
+                            ? `url('${eventImageUrl}')`
+                            : "none",
+                          backgroundSize: "cover",
                           backgroundPosition: "center",
                           backgroundRepeat: "no-repeat",
                         }}
                       ></div>
+                        );
+                      })()}
                     </div>
                     <h6 className="text-base md:text-[20px] md:leading-[28px] text-[#101828] font-[FuturaLTBold] mb-2">
                       {event.title}

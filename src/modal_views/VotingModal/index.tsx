@@ -16,14 +16,8 @@ const VotingModal = ({
   onClickAwayVotingModal,
   onCloseVotingModal,
 }: IVotingModal) => {
-  const options: any = [
-    { id: "roads", label: "Improved road infrastructure", percentage: "50%" },
-    { id: "schools", label: "Better school facilities", percentage: "30%" },
-    { id: "health", label: "Upgraded health centers", percentage: "15%" },
-    { id: "parks", label: "More public parks", percentage: "5%" },
-  ];
-  const formik = useFormik<{ selectedOption: string }>({
-    initialValues: { selectedOption: "" },
+  const formik = useFormik<{ selectedOption: number | null }>({
+    initialValues: { selectedOption: null },
     validationSchema: validationSchema,
     onSubmit: () => {
       onActionClick?.();
@@ -50,54 +44,44 @@ const VotingModal = ({
       </div>
       <div className="relative">
         <h6 className="text-[#101828] font-[FuturaLTBold] text-[20px] text-left leading-[28px] mb-[32px]">
-          What should be Apapa’s top development priority in 2025
+          {poll?.question}
         </h6>
         <form action="" onSubmit={formik.handleSubmit} className="mb-[60px]">
           <div className="mb-[60px] flex flex-col gap-6">
-            {options?.map(
-              ({
-                id,
-                label,
-                percentage,
-              }: {
-                id: string;
-                label: string;
-                percentage: string;
-              }) => {
-                const selected = formik.values.selectedOption === id;
-                return (
-                  <div
-                    key={id}
-                    onClick={() => formik.setFieldValue("selectedOption", id)}
-                    className={`
+            {poll?.options?.map((opt: any) => {
+              const selected = formik.values.selectedOption === opt.id;
+              return (
+                <div
+                  key={opt.id}
+                  onClick={() => formik.setFieldValue("selectedOption", opt.id)}
+                  className={`
                         flex items-center justify-between
                         rounded-[12px] py-6 px-4
                         cursor-pointer border border-[#009A44]
                       `}
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className="cursor-pointer">
-                        {selected ? (
-                          <CheckedIcon />
-                        ) : (
-                          <div className="max-w-6 min-w-6 max-h-6 min-h-6 border border-[#009A44] rounded-[8px]" />
-                        )}
-                      </div>
-                      <p
-                        className={`text-base md:text-[20px] md:leading-[32px] text-left text-[#009A44]`}
-                      >
-                        {label}
-                      </p>
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="cursor-pointer">
+                      {selected ? (
+                        <CheckedIcon />
+                      ) : (
+                        <div className="max-w-6 min-w-6 max-h-6 min-h-6 border border-[#009A44] rounded-[8px]" />
+                      )}
                     </div>
-                    <h6
-                      className={`text-base md:text-[20px] md:leading-[28px] font-[FuturaLTBold] text-[#009A44]`}
+                    <p
+                      className={`text-base md:text-[20px] md:leading-[32px] text-left text-[#009A44]`}
                     >
-                      {percentage}
-                    </h6>
+                      {opt.label}
+                    </p>
                   </div>
-                );
-              }
-            )}
+                  <h6
+                    className={`text-base md:text-[20px] md:leading-[28px] font-[FuturaLTBold] text-[#009A44]`}
+                  >
+                    {opt.percentage}%
+                  </h6>
+                </div>
+              );
+            })}
           </div>
           <Button type="submit">Submit Vote</Button>
         </form>

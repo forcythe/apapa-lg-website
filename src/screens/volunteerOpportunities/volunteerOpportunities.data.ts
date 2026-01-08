@@ -27,14 +27,14 @@ export const data = [
   },
 ];
 
-export const basePattern = [
-  { rowSpan: 2, rowStart: 1 },
-  { rowSpan: 1, rowStart: 1 },
-  { rowSpan: 2, rowStart: 1 },
-  { rowSpan: 2, rowStart: 2 },
-  { rowSpan: 1, rowStart: 2 },
-  { rowSpan: 1, rowStart: 3 },
-];
+// export const basePattern = [
+//   { rowSpan: 2, rowStart: 1 },
+//   { rowSpan: 1, rowStart: 1 },
+//   { rowSpan: 2, rowStart: 1 },
+//   { rowSpan: 2, rowStart: 2 },
+//   { rowSpan: 1, rowStart: 2 },
+//   { rowSpan: 1, rowStart: 3 },
+// ];
 
 export const feedbackCategories = [
   { id: 1, title: "Real Estate Development" },
