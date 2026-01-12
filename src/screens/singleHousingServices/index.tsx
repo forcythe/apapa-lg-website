@@ -2,6 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { useFormik } from "formik";
 
 import {
@@ -17,7 +18,11 @@ import { FormValues } from "./singleHousingServices.types";
 import { shareSchema } from "./singleHousingServices.validations";
 import { feedbackCategories } from "./singleHousingServices.data";
 import InputLocationIcon from "../../../public/svg-component/InputLocationIcon";
-import { SuccessModal } from "@/modal_views";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
+
+const SuccessModal = dynamic(() => import("@/modal_views/SuccessModal"), {
+  loading: () => null,
+});
 
 const SingleHousingServicesPage = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -67,6 +72,9 @@ const SingleHousingServicesPage = () => {
                   className="xl:max-w-[462px] xl:min-w-[462px] xxl:max-w-[562px] xxl:min-w-[562px] xxxl:max-w-[662px] xxxl:min-w-[662px]"
                   width={662}
                   height={544}
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                 />
               </div>
               <div className="w-full shadow-lg xl:max-w-[736px] rounded-[16px] md:rounded-[32px] py-[30px] md:py-[60px] px-6 md:px-[44px] bg-white">
@@ -222,6 +230,9 @@ const SingleHousingServicesPage = () => {
               width={1450}
               height={1300}
               className="w-full max-w-[1450px] mx-auto"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
             />
           </div>
         </div>

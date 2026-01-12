@@ -2,6 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { useFormik } from "formik";
 
@@ -16,7 +17,11 @@ import { Banner } from "../_partials";
 import { feedbackCategories, navigation } from "./feedbackPortal.data";
 import { FormValues, TabId } from "./feedbackPortal.type";
 import { shareSchema, trackSchema } from "./feedbackPortal.validation";
-import { SuccessModal } from "@/modal_views";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
+
+const SuccessModal = dynamic(() => import("@/modal_views/SuccessModal"), {
+  loading: () => null,
+});
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -233,6 +238,9 @@ const FeedbackPortalPage = () => {
               width={1450}
               height={1300}
               className="w-full max-w-[1450px] mx-auto"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
             />
           </div>
         </div>

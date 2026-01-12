@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 const leftContainer = {
   hidden: {},
@@ -42,7 +43,16 @@ const EvolutionOfApapa = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
           >
-            <Image src="/svgs/history-l.svg" alt="" width={364} height={544} />
+            <Image
+              src="/svgs/history-l.svg"
+              alt=""
+              width={364}
+              height={544}
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
+              className="rotate-180"
+            />
           </motion.div>
         </div>
 
@@ -91,7 +101,16 @@ const EvolutionOfApapa = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
           >
-            <Image src="/svgs/history-r.svg" alt="" width={364} height={544} />
+            <Image
+              src="/svgs/history-r.svg"
+              alt=""
+              width={364}
+              height={544}
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
+              className="rotate-180"
+            />
           </motion.div>
         </div>
       </div>

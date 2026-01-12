@@ -5,6 +5,7 @@ import React, { useState, useRef, ChangeEvent } from "react";
 
 import { FileInputFieldProps } from "./fileInputField.types";
 import { truncateData } from "@/utils/helpers/truncateData";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 import FileIcon from "../../../public/svg-component/FileIcon";
 
@@ -68,6 +69,9 @@ const FileInputField: React.FC<FileInputFieldProps> = ({
                     height={40}
                     className="rounded-lg object-cover"
                     unoptimized
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                   />
                 ) : (
                   <FileIcon />

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { useFormik } from "formik";
 
@@ -15,9 +16,13 @@ import { Banner } from "../_partials";
 import { validationSchema } from "./volunteerOpportunities.validation";
 import { FormValues } from "./volunteerOpportunities.types";
 import SelectOption from "@/components/selectOption";
-import { SuccessModal } from "@/modal_views";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 import { p } from "framer-motion/m";
 import { div } from "framer-motion/client";
+
+const SuccessModal = dynamic(() => import("@/modal_views/SuccessModal"), {
+  loading: () => null,
+});
 
 const containerVariants = {
   hidden: {},
@@ -377,6 +382,9 @@ const VolunteerOpportunitiesPage = () => {
               width={1450}
               height={1300}
               className="w-full max-w-[1450px] mx-auto"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
             />
           </div>
         </div>

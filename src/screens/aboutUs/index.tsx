@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
 import { AboutUsReUseSection, CoreValues } from "./_partials";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 const AboutUsPage = () => {
   return (
@@ -51,6 +52,9 @@ const AboutUsPage = () => {
           alt=""
           width={1450}
           height={1300}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
         />
       </div>
     </AppWrapper>

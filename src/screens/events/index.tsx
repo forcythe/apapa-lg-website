@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 // import { cards } from "./events.data";
 import CalenderIcon from "../../../public/svg-component/CalenderIcon";
 import LocationIcon from "../../../public/svg-component/LocationIcon";
@@ -98,7 +99,7 @@ const Events = () => {
               variants={containerVariants}
               whileInView="visible"
               viewport={{ once: true }}
-              className="flex flex-wrap gap-4 md:gap-x-[30px] md:gap-y-[40px] items-center justify-center"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-x-[30px] md:gap-y-[40px] items-center justify-center"
             >
               {loading && (
                 <div className="w-full text-center py-20">
@@ -167,6 +168,9 @@ const Events = () => {
             width={1450}
             height={1300}
             className="w-full max-w-[1450px] mx-auto"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
           />
         </div>
       </div>

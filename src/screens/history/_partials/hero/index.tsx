@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 const letterContainer = {
   hidden: {},
@@ -70,6 +71,9 @@ const Hero = () => {
                 width={1200}
                 height={746}
                 className="w-full mx-auto max-w-[280px] min-w-[280px] max-h-[180px] min-h-[180px] xxxs:max-w-[380px] xxxs:min-w-[380px] xxxs:max-h-[280px] xxxs:min-h-[280px] xxs:max-w-[420px] xxs:min-w-[420px] xxs:max-h-[300px] xxs:min-h-[300px] xs:max-w-[480px] xs:min-w-[480px] xs:max-h-[380px] xs:min-h-[380px] sm:max-w-[630px] sm:min-w-[630px] sm:max-h-[440px] sm:min-h-[440px] md:max-w-[900px] md:min-w-[900px] md:max-h-[500px] md:min-h-[500px] xl:max-w-[1200px] xl:min-w-[1200px] xl:max-h-[746px] xl:min-h-[746px]"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
               />
             </motion.div>
           </div>
@@ -82,6 +86,9 @@ const Hero = () => {
           width={1450}
           height={1300}
           className="w-full max-w-[1450px] mx-auto"
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
         />
       </div>
       <div className="absolute right-0 left-0 w-full h-[80px] bottom-[10px] xxs:bottom-[10px] xs:bottom-[30px] sm:bottom-[40px] md:bottom-[60px] xl:bottom-[50px] bg-gradient-to-t from-white to-transparent opacity-100 z-[9]" />

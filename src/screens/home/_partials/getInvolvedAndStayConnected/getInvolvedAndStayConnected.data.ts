@@ -19,6 +19,7 @@ export const quickLinks = [
       "Apply for public housing and renovation grants with ease. Get information on eligibility and application steps.",
     icon: HousingServiceIcon,
     btnTitle: "Apply Now!",
+    href: "https://lagosstate.gov.ng/services/housingandlands",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ export const quickLinks = [
       "Locate health centers and access emergency medical services. Stay updated on public health initiatives.",
     icon: HCSIcon,
     btnTitle: "Apply Now!",
+    href: "https://lagosstate.gov.ng/services/healthservices",
   },
   {
     id: 3,
@@ -35,6 +37,7 @@ export const quickLinks = [
       "Access key information on cargo handling, port regulations, shipping operations and logistics.",
     icon: PSIcon,
     btnTitle: "Apply Now!",
+    href: "/",
   },
   {
     id: 4,
@@ -43,6 +46,7 @@ export const quickLinks = [
       "Explore the latest events, meetings, and activities happening in Apapa and participate in local government initiatives.",
     icon: AEIcon,
     btnTitle: "Apply Now!",
+    href: "/community/events",
   },
   {
     id: 5,
@@ -51,6 +55,7 @@ export const quickLinks = [
       "Stay updated on the status of your service requests, permits, and complaints in real time.",
     icon: TAIcon,
     btnTitle: "Track Application",
+    href: "/",
   },
   {
     id: 6,
@@ -59,6 +64,7 @@ export const quickLinks = [
       "Help us improve the community by reporting infrastructural problems, safety concerns, or other issues.",
     icon: GFIcon,
     btnTitle: "Give Feedback",
+    href: "/community/feedback-portal",
   },
   {
     id: 7,
@@ -67,6 +73,7 @@ export const quickLinks = [
       "Pay your taxes, levies, and business permits securely online. Avoid delays with easy payment tracking.",
     icon: LPIcon,
     btnTitle: "Pay Levy",
+    href: "https://lagosstate.gov.ng/services/tax",
   },
   {
     id: 8,
@@ -75,6 +82,7 @@ export const quickLinks = [
       "Apply for or renew business licenses quickly. View processing timelines and required documents.",
     icon: BPLIcon,
     btnTitle: "Apply Now!",
+    href: "https://lagosstate.gov.ng/services/business_trade_commerce",
   },
   {
     id: 9,
@@ -83,6 +91,7 @@ export const quickLinks = [
       "Get the latest updates and official government notices. Stay informed about policies and community news.",
     icon: BlogIcon,
     btnTitle: "Read Blogs",
+    href: "/",
   },
   {
     id: 10,
@@ -91,6 +100,7 @@ export const quickLinks = [
       "Access emergency hotlines for police, fire, and medical services. Report safety concerns or suspicious activities.",
     icon: SEIcon,
     btnTitle: "Access Hotlines",
+    href: "https://lagosstate.gov.ng/services/disasters_emergencies",
   },
   {
     id: 11,
@@ -99,6 +109,7 @@ export const quickLinks = [
       "Apply for government community volunteer programs. Contribute to Apapa’s growth and development.",
     icon: VOIcon,
     btnTitle: "Apply Now!",
+    href: "/community/volunteer-opportunities",
   },
   {
     id: 12,
@@ -107,5 +118,6 @@ export const quickLinks = [
       "Find answers to common questions about services, policies, community initiatives and government processes.",
     icon: FAQIcon,
     btnTitle: "View FAQs",
+    href: "/community/faqs",
   },
 ];
