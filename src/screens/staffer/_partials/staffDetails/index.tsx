@@ -4,6 +4,7 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 import PastChairMen from "./PastChairMen";
 
@@ -145,6 +146,9 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                     alt=""
                     width={200}
                     height={200}
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                   />
                 </motion.div>
               ))}

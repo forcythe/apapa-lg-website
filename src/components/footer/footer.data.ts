@@ -15,11 +15,11 @@ export const footerLinks = {
       path: "/government/projects",
       title: "Projects",
     },
-    {
-      id: 4,
-      path: "/budget-and-financial-report",
-      title: "Budget and financial report",
-    },
+    // {
+    //   id: 4,
+    //   path: "/budget-and-financial-report",
+    //   title: "Budget and financial report",
+    // },
   ],
   "About Us": [
     {
@@ -46,76 +46,76 @@ export const footerLinks = {
   Services: [
     {
       id: 1,
-      path: "/services/housing-services",
+      path: "https://lagosstate.gov.ng/services/housingandlands",
       title: "Housing services",
     },
     {
       id: 2,
-      path: "/services/health-services",
+      path: "https://lagosstate.gov.ng/services/healthservices",
       title: "Health services",
     },
     {
       id: 3,
-      path: "/services/business-permits-and-licenss",
+      path: "https://lagosstate.gov.ng/services/business_trade_commerce",
       title: "Business permits and licenses",
     },
     {
       id: 4,
-      path: "/services/tax-payment",
+      path: "https://lagosstate.gov.ng/services/tax",
       title: "Tax payment",
     },
     {
       id: 5,
-      path: "/services/education-and-scholarships",
+      path: "https://lagosstate.gov.ng/services/education",
       title: "Education and scholarships",
     },
     {
       id: 6,
-      path: "/services/security-and-emergency",
+      path: "https://lagosstate.gov.ng/services/disasters_emergencies",
       title: "Security and emergency",
     },
     {
       id: 7,
-      path: "/services/e-government-services",
+      path: "https://lagosstate.gov.ng/services/governmentbenefits",
       title: "E-government services",
     },
   ],
   Community: [
     {
       id: 1,
-      path: "/events",
+      path: "/community/events",
       title: "Events",
     },
     {
       id: 2,
-      path: "/feedback-portal",
+      path: "/community/feedback-portal",
       title: "Feedback portal",
     },
     {
       id: 3,
-      path: "/polls-and-surveys",
+      path: "/community/polls-and-surveys",
       title: "Polls and surveys",
     },
     {
       id: 4,
-      path: "/volunteer-opportunities",
+      path: "/community/volunteer-opportunities",
       title: "Volunteer opportunities",
     },
     {
       id: 5,
-      path: "/faqs",
+      path: "/community/faqs",
       title: "FAQs",
     },
     {
       id: 6,
-      path: "/initiatives",
+      path: "/community/initiatives",
       title: "Initiatives",
     },
-    {
-      id: 7,
-      path: "/innovation-hub",
-      title: "Innovation hub",
-    },
+    // {
+    //   id: 7,
+    //   path: "/innovation-hub",
+    //   title: "Innovation hub",
+    // },
   ],
 };
 
@@ -141,7 +141,7 @@ export const socialLinks = [
   {
     id: 4,
     type: "Instagram",
-    link: "/",
+    link: "https://www.instagram.com/apapalocalgov/",
     Icon: "/svgs/instagram.svg",
   },
 
@@ -149,6 +149,6 @@ export const socialLinks = [
     id: 5,
     type: "Facebook",
     Icon: "/svgs/facebook.svg",
-    link: "/",
+    link: "https://web.facebook.com/Apapalocalgovernmentarea",
   },
 ];

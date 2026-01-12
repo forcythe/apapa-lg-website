@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import { Header } from "@/components";
 import useIsMobile from "@/utils/helpers/useMobile";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 const Hero = () => {
   const isMobile = useIsMobile(768);
@@ -94,6 +95,9 @@ const Hero = () => {
                       className="xxxs:max-w-[380px] xxxs:min-w-[380px] xxxs:max-h-[240px] xxxs:min-h-[240px] xxs:max-w-[420px] xxs:min-w-[420px] xxs:max-h-[280px] xxs:min-h-[280px] xs:max-w-[480px] xs:min-w-[480px] xs:max-h-[340px] xs:min-h-[340px] sm:max-w-[580px] sm:min-w-[580px] sm:max-h-[440px] sm:min-h-[440px] md:max-w-[680px] md:min-w-[680px] md:max-h-[540px] md:min-h-[540px] lg:max-w-[780px] lg:min-w-[780px] lg:max-h-[640px] lg:min-h-[640px]"
                       width={780}
                       height={640}
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                     />
                   </motion.div>
                 </motion.div>
@@ -122,6 +126,9 @@ const Hero = () => {
                       className="max-w-[250px] min-w-[250px] min-h-[150px] max-h-[150px] xxxs:max-w-[320px] xxxs:min-w-[320px] xxxs:max-h-[210px] xxxs:min-h-[210px] xxs:max-w-[420px] xxs:min-w-[420px] xxs:max-h-[220px] xxs:min-h-[220px] xs:max-w-[480px] xs:min-w-[480px] xs:max-h-[230px] xs:min-h-[230px] sm:max-w-[580px] sm:min-w-[580px] sm:max-h-[250px] sm:min-h-[250px] md:max-w-[680px] md:min-w-[680px] md:max-h-[320px] md:min-h-[320px] lg:max-w-[536px] lg:min-w-[980px] lg:max-h-[436px] lg:min-h-[436px] xxl:max-w-[1328px] xxl:min-w-[1328px] xxl:max-h-[540px] xxl:min-h-[540px] xxxl:max-w-[1500px] xxxl:min-w-[1500px] xxxl:max-h-[640px] xxxl:min-h-[640px] xxxxl:max-w-[1728px] xxxxl:min-w-[1728px] xxxxl:max-h-[640px] xxxxl:min-h-[640px]"
                       width={1728}
                       height={640}
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                     />
                   </motion.div>
                 </motion.div>
@@ -137,6 +144,9 @@ const Hero = () => {
           alt=""
           width={1000}
           height={616}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
         />
       </div>
       <Image
@@ -145,6 +155,9 @@ const Hero = () => {
         width={550}
         height={500}
         className="absolute top-0 left-0 z-[1] max-w-[150px] min-w-[150px] max-h-[190px] min-h-[190px] xxxs:max-w-[200px] xxxs:min-w-[200px] xxxs:max-h-[190px] xxxs:min-h-[190px] xs:max-w-[260px] xs:min-w-[260px] xs:max-h-[210px] xs:min-h-[210px] md:max-w-[300px] md:min-w-[300px] md:max-h-[250px] md:min-h-[250px] xxl:max-w-[400px] xxl:min-w-[400px] xxl:max-h-[350px] xxl:min-h-[350px] xxxxl:max-w-[600px] xxxxl:min-w-[600px] xxxxl:max-h-[550px] xxxxl:min-h-[550px]"
+        loading="lazy"
+        placeholder="blur"
+        blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
       />
       <Image
         src="/svgs/crane.svg"
@@ -152,6 +165,9 @@ const Hero = () => {
         width={600}
         height={550}
         className="absolute top-0 right-0 z-[3] transform scale-x-[-1] max-w-[150px] min-w-[150px] max-h-[190px] min-h-[190px] xxxs:max-w-[200px] xxxs:min-w-[200px] xxxs:max-h-[190px] xxxs:min-h-[190px] xs:max-w-[260px] xs:min-w-[260px] xs:max-h-[210px] xs:min-h-[210px] md:max-w-[300px] md:min-w-[300px] md:max-h-[250px] md:min-h-[250px] xxl:max-w-[400px] xxl:min-w-[400px] xxl:max-h-[350px] xxl:min-h-[350px] xxxxl:max-w-[600px] xxxxl:min-w-[600px] xxxxl:max-h-[550px] xxxxl:min-h-[550px]"
+        loading="lazy"
+        placeholder="blur"
+        blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
       />
     </div>
   );

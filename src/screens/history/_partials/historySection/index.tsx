@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 const leftContainer = {
   hidden: {},
@@ -85,7 +86,15 @@ const HistorySection = ({
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
-        <Image src={image as string} alt="" width={808} height={544} />
+        <Image
+          src={image as string}
+          alt=""
+          width={808}
+          height={544}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
+        />
       </motion.div>
     </div>
   </div>

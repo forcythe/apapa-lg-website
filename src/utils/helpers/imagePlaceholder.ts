@@ -1,0 +1,2 @@
+export const TRANSPARENT_IMAGE_PLACEHOLDER =
+  "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxJyBoZWlnaHQ9JzEnPjxyZWN0IHdpZHRoPScxJyBoZWlnaHQ9JzEnIGZpbGw9JyNlNWU3ZWInLz48L3N2Zz4=";

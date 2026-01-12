@@ -1,12 +1,18 @@
 "use client";
 
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 
 import { Button } from "@/components";
 import { Poll } from "./pollsAndSurvey.types";
-import NinModal from "@/modal_views/NinModal";
-import VotingModal from "@/modal_views/VotingModal";
+
+const NinModal = dynamic(() => import("@/modal_views/NinModal"), {
+  loading: () => null,
+});
+const VotingModal = dynamic(() => import("@/modal_views/VotingModal"), {
+  loading: () => null,
+});
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },

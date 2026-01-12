@@ -83,38 +83,38 @@ export const headerRoutes = [
     subTabs: [
       {
         id: 1,
-        path: "/services/housing-services",
+        path: "https://lagosstate.gov.ng/services/housingandlands",
         title: "Housing Services",
       },
       {
         id: 2,
-        path: "/services/health-services",
+        path: "https://lagosstate.gov.ng/services/healthservices",
         title: "Health Services",
       },
       {
         id: 3,
-        path: "/services/business-permits-and-licenses ",
+        path: "https://lagosstate.gov.ng/services/business_trade_commerce",
         title: "Business Permits and Licenses ",
       },
       {
         id: 4,
-        path: "/services/tax-payments",
+        path: "https://lagosstate.gov.ng/services/tax",
         title: "Tax Payments",
       },
       {
         id: 5,
-        path: "/services/education-and-scholarships",
+        path: "https://lagosstate.gov.ng/services/education",
         title: "Education and Scholarships",
       },
 
       {
         id: 6,
-        path: "/services/security-and-emergency",
+        path: "https://lagosstate.gov.ng/services/disasters_emergencies",
         title: "Security and Emergency",
       },
       {
         id: 7,
-        path: "/services/e-government-services",
+        path: "https://lagosstate.gov.ng/services/governmentbenefits",
         title: "E-Government Services",
       },
     ],

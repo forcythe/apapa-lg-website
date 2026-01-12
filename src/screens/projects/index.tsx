@@ -1,14 +1,22 @@
-"use client"
+"use client";
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
-import { ProjectDashboard, ProjectDetails } from "./_partials";
 import { projects } from "./_partials/projectDetails/projectDetails.data";
 import { mapInitiativesAndProjects } from "@/libs/initiative.mapper";
 import { Project } from "./_partials/projectDetails/projectDetails.types";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
+
+const ProjectDashboard = dynamic(() => import("./_partials/projectDashboard"), {
+  loading: () => null,
+});
+const ProjectDetails = dynamic(() => import("./_partials/projectDetails"), {
+  loading: () => null,
+});
 
 const ProjectsPage = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -62,6 +70,9 @@ const ProjectsPage = () => {
           alt=""
           width={1450}
           height={1300}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
         />
       </div>
     </AppWrapper>

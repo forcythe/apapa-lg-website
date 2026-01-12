@@ -4,10 +4,10 @@ export const navigation = {
       id: "share-feedback",
       label: "Share Feedback",
     },
-    {
-      id: "track-feedback",
-      label: "Track Feedback",
-    },
+    // {
+    //   id: "track-feedback",
+    //   label: "Track Feedback",
+    // },
   ],
 
   faqs: {
@@ -109,7 +109,8 @@ export const navigation = {
 };
 
 export const feedbackCategories = [
-  { id: 1, title: "Real Estate Development" },
-  { id: 2, title: "Real Estate Agency" },
-  { id: 3, title: "Real Estate Management" },
+  // { id: 1, title: "Real Estate Development" },
+  // { id: 2, title: "Real Estate Agency" },
+  // { id: 3, title: "Real Estate Management" },
+  { id: 4, title: "........." },
 ];

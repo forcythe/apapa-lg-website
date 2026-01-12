@@ -2,8 +2,17 @@
 
 import React from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-import { BlogNewsArticles, Events } from "./_partials";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
+
+const BlogNewsArticles = dynamic(
+  () => import("./_partials/blogNewsArticles"),
+  { loading: () => null }
+);
+const Events = dynamic(() => import("./_partials/events"), {
+  loading: () => null,
+});
 
 const DiscoverAndBlogs = () => {
   return (
@@ -19,6 +28,9 @@ const DiscoverAndBlogs = () => {
           alt=""
           width={1800}
           height={1100}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
         />
 
         <Image
@@ -27,6 +39,9 @@ const DiscoverAndBlogs = () => {
           alt=""
           width={1800}
           height={1100}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
         />
       </div>
     </div>

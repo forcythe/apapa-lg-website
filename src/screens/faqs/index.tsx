@@ -8,6 +8,7 @@ import { Banner } from "../_partials";
 import { faqsNavigation } from "./faqs.data";
 import QuestionsAndAnswers from "./questionsAndAnswers";
 import { FaqItem, TabId } from "./faq.type";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 const Faqs = () => {
   const [faqs, setFaqs] = useState<FaqItem[]>([]);
@@ -104,6 +105,9 @@ const Faqs = () => {
             width={1450}
             height={1300}
             className="w-full max-w-[1450px] mx-auto"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
           />
         </div>
       </div>

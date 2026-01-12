@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 import { footerLinks, socialLinks } from "./footer.data";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 import FooterArrow from "../../../public/svg-component/FooterArrow";
 
@@ -19,7 +20,15 @@ export const RenderSocialLinks = ({
     target="_blank"
     className="w-[44px] h-[44px] cursor-pointer rounded-[100px] border border-white flex justify-center items-center"
   >
-    <Image alt="social_logo" src={Icon} height="24" width="24" />
+    <Image
+      alt="social_logo"
+      src={Icon}
+      height="24"
+      width="24"
+      loading="lazy"
+      placeholder="blur"
+      blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
+    />
   </a>
 );
 const Footer = () => {

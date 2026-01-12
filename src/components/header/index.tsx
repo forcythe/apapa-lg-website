@@ -4,17 +4,22 @@ import React, { useState } from "react";
 import ClickAwayListener from "react-click-away-listener";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { headerRoutes } from "./header.data";
 import AppLink from "../appLink";
-import { SearchModal } from "@/modal_views";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 import SearchIcon from "../../../public/svg-component/SearchIcon";
 import WorldIcon from "../../../public/svg-component/WorldIcon";
 import ArrowHeadIcon from "../../../public/svg-component/ArrowHeadIcon";
 import RadioIcon from "../../../public/svg-component/RadioIcon";
 import RadioIconChecked from "../../../public/svg-component/RadioIconChecked";
+
+const SearchModal = dynamic(() => import("@/modal_views/SearchModal"), {
+  loading: () => null,
+});
 
 const sidebarVariants = {
   hidden: { x: "-100%" },
@@ -136,6 +141,9 @@ const Header = () => {
                   className="max-w-[48px] max-h-[48px] min-w-[48px] min-h-[48px] md:max-w-[84px] md:max-h-[84px] md:min-w-[84px] md:min-h-[84px]"
                   width={84}
                   height={84}
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                 />
               </Link>
             </div>
@@ -151,6 +159,9 @@ const Header = () => {
                   width={48}
                   height={48}
                   className="w-[48px] h-[48px]"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                 />
               ) : (
                 <Image
@@ -159,6 +170,9 @@ const Header = () => {
                   width={32}
                   height={32}
                   className="w-[32px] h-[32px]"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                 />
               )}
             </div>
@@ -197,6 +211,9 @@ const Header = () => {
                       className="w-[68px] h-[68px]"
                       width={68}
                       height={68}
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                     />
                   </div>
 
@@ -279,6 +296,9 @@ const Header = () => {
                       height={48}
                       className="w-[48px] h-[48px]"
                       onClick={() => setIsSideBarLinks((prev) => !prev)}
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                     />
                   </div>
                 </motion.div>
@@ -291,6 +311,9 @@ const Header = () => {
                   height={48}
                   className="w-[48px] h-[48px]"
                   onClick={() => setIsSideBarLinks((prev) => !prev)}
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                 />
               </div>
             </motion.div>

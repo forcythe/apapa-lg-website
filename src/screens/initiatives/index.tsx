@@ -2,14 +2,20 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
-import { ProjectDetails } from "../projects/_partials";
 // import { initiatives } from "./initiatives.data";
 import { Project } from "../projects/_partials/projectDetails/projectDetails.types";
 import { mapInitiativesAndProjects } from "@/libs/initiative.mapper";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
+
+const ProjectDetails = dynamic(
+  () => import("../projects/_partials/projectDetails"),
+  { loading: () => null }
+);
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -105,6 +111,9 @@ const InitiativesPage = () => {
             width={1450}
             height={1300}
             className="w-full max-w-[1450px] mx-auto"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
           />
         </div>
       </div>
