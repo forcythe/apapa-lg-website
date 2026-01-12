@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 import ProfileIcon from "../../../../../public/svg-component/ProfileIcon";
 import CargoIcon from "../../../../../public/svg-component/CargoIcon";
@@ -381,6 +382,9 @@ const RealTimeInsight = () => {
           alt=""
           width={1800}
           height={1100}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
         />
       </div>
     </div>

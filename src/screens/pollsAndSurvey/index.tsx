@@ -2,13 +2,16 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
 // import { polls } from "./pollsAndSurvey.data";
-import Polls from "./Polls";
 import { Poll } from "./pollsAndSurvey.types";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
+
+const Polls = dynamic(() => import("./Polls"), { loading: () => null });
 
 const containerVariants = {
   hidden: {},
@@ -134,6 +137,9 @@ const PollsAndSurveyPage = () => {
               width={1450}
               height={1300}
               className="w-full max-w-[1450px] mx-auto"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
             />
           </div>
         </div>

@@ -1,9 +1,15 @@
- import React from "react";
+import React from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
-import { RowByRoleOrgChart } from "./_partials";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
+
+const RowByRoleOrgChart = dynamic(
+  () => import("./_partials/rowByRoleOrgChart"),
+  { loading: () => null }
+);
 
 const OrganizationalStructure = () => {
   return (
@@ -24,6 +30,9 @@ const OrganizationalStructure = () => {
           alt=""
           width={1450}
           height={1300}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
         />
       </div>
     </AppWrapper>

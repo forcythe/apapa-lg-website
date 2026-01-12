@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -68,7 +69,15 @@ const AboutUsReUseSection = ({
         {subTitle}
       </motion.p>
       <motion.div variants={itemVariants}>
-        <Image src={image} alt="" width={1488} height={544} />
+        <Image
+          src={image}
+          alt=""
+          width={1488}
+          height={544}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
+        />
       </motion.div>
     </motion.div>
   );

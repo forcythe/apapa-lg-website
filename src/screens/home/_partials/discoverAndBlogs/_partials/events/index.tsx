@@ -37,12 +37,12 @@ export default function Events() {
     const fetchEvents = async () => {
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/event-sliders?populate=*`
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?populate=*`
         );
         const json = await res.json();
 
         const normalized = json.data.map((item: any) => {
-          const dateObj = new Date(item.date);
+          const dateObj = new Date(item.startDate);
 
           return {
             title: item.title,
@@ -56,7 +56,7 @@ export default function Events() {
               hour: "numeric",
               minute: "2-digit",
             }),
-            location: item.location,
+            location: item.address,
             image: `${process.env.NEXT_PUBLIC_STRAPI_URL}${item.image.url}`,
           };
         });

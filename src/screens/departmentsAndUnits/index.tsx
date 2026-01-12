@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 import { cards } from "./departmentsAndUnitsPage.data";
 import FooterArrow from "../../../public/svg-component/FooterArrow";
 
@@ -64,6 +65,9 @@ const DepartmentsAndUnitsPage = () => {
                     alt=""
                     width={200}
                     height={200}
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
                   />
                 </motion.div>
               ))}
@@ -76,6 +80,9 @@ const DepartmentsAndUnitsPage = () => {
           alt=""
           width={1450}
           height={1300}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
         />
       </div>
     </AppWrapper>

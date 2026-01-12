@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 import { Project } from "./projectDetails.types";
 
@@ -135,7 +136,15 @@ const ProjectDetails = ({ p }: { p: Project }) => {
       </div>
 
       <motion.div variants={itemVariants}>
-        <Image src={p.imageSrc} alt={p.title} width={812} height={740} />
+        <Image
+          src={p.imageSrc}
+          alt={p.title}
+          width={812}
+          height={740}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
+        />
       </motion.div>
     </motion.div>
   );

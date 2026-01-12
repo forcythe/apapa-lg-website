@@ -9,6 +9,7 @@ import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
 import { services } from "./housingServices.data";
 import { slugify } from "@/utils/helpers/slugify";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 import FooterArrow from "../../../public/svg-component/FooterArrow";
 import HousingServiceIcon from "../../../public/svg-component/HousingServiceIcon";
@@ -79,6 +80,9 @@ const HousingServicesPage = () => {
                 width={1488}
                 height={544}
                 alt="services-bg"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
               />
             </div>
             <motion.div
@@ -139,6 +143,9 @@ const HousingServicesPage = () => {
             width={1450}
             height={1300}
             className="w-full max-w-[1450px] mx-auto"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
           />
         </div>
       </div>

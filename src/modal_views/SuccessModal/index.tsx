@@ -48,7 +48,7 @@ const SuccessModal = ({
         <h6 className="text-[#101828] font-[FuturaLTBold] text-[24px] leading-[32px] mb-4">
           {headText}
         </h6>
-        {copyText && (
+        {/* {copyText && (
           <div className="flex items-center gap-3 justify-center">
             <p className="text-accent font-[FuturaLTBold] text-base mb-1">
               Tracking ID: {copyText}
@@ -57,11 +57,11 @@ const SuccessModal = ({
               <CopyIcon />
             </span>
           </div>
-        )}
+        )} */}
         <p className="text-[#000000] text-[20px] leading-[32px] mb-8">
           {subText}
         </p>
-        <Button
+        {/* <Button
           onClick={() => {
             if (showOutlineBtn) {
               onActionClick?.();
@@ -71,13 +71,13 @@ const SuccessModal = ({
           }}
         >
           {actionBtnTitle || "Ok"}
-        </Button>
+        </Button> */}
         {showOutlineBtn && (
           <Button
             onClick={onCloseSuccessModal}
-            className="bg-transparent mt-5 outline-none border-[1.5px] border-[#AA8B00] text-[#AA8B00] transition-colors duration-200 ease-in-out"
+            // className="bg-transparent mt-5 outline-none border-[1.5px] border-[#AA8B00] text-[#AA8B00] transition-colors duration-200 ease-in-out"
           >
-            Maybe Later
+            Okay
           </Button>
         )}
       </div>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
 import { StaffDetails } from "./_partials";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 const StafferPage = ({ activeRole }: { activeRole: any }) => {
   return (
@@ -21,6 +22,9 @@ const StafferPage = ({ activeRole }: { activeRole: any }) => {
           alt=""
           width={1800}
           height={1100}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
         />
       </div>
     </AppWrapper>

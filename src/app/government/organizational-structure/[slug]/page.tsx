@@ -1,10 +1,14 @@
 "use client";
 
 import { useEffect } from "react";
+import dynamic from "next/dynamic";
 import { useParams, useRouter } from "next/navigation";
 
-import { StafferPage } from "@/screens";
 import { rowData } from "@/screens/organizationalStructure/_partials/rowByRoleOrgChart/rowByRoleOrgChart.data";
+
+const StafferPage = dynamic(() => import("@/screens/staffer"), {
+  loading: () => null,
+});
 
 export default function Staffer() {
   const { slug } = useParams();

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import { AppWrapper, Header } from "@/components";
 import { Banner } from "../_partials";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 // import { cards } from "./events.data";
 import CalenderIcon from "../../../public/svg-component/CalenderIcon";
 import LocationIcon from "../../../public/svg-component/LocationIcon";
@@ -33,7 +34,7 @@ const Events = () => {
     const fetchEvents = async () => {
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events`
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?populate=*`
         );
         const json = await res.json();
         setEvents(json.data || []);
@@ -69,6 +70,22 @@ const Events = () => {
     return `${formatTime(start)} - ${formatTime(end)}`;
   };
 
+  const getEventImageUrl = (image: any) => {
+    const imageUrl = image?.formats?.medium?.url ?? image?.url;
+
+    if (!imageUrl) return "";
+
+    if (imageUrl.startsWith("http")) return imageUrl;
+
+    const baseUrl = (process.env.NEXT_PUBLIC_STRAPI_URL || "").replace(
+      /\/$/,
+      ""
+    );
+    const path = imageUrl.startsWith("/") ? imageUrl : `/${imageUrl}`;
+
+    return `${baseUrl}${path}`;
+  };
+
   return (
     <AppWrapper>
       <div className="sticky top-0 z-[10]">
@@ -82,7 +99,7 @@ const Events = () => {
               variants={containerVariants}
               whileInView="visible"
               viewport={{ once: true }}
-              className="flex flex-wrap gap-4 md:gap-x-[30px] md:gap-y-[40px] items-center justify-center"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-x-[30px] md:gap-y-[40px] place-items-stretch"
             >
               {loading && (
                 <div className="w-full text-center py-20">
@@ -95,40 +112,47 @@ const Events = () => {
                   <motion.div
                     key={event.id}
                     variants={itemVariants}
-                    className="overflow-hidden relative w-full max-w-[476px] min-h-[528px] "
+                    className="overflow-hidden relative w-full max-w-none md:max-w-[476px] min-h-0 md:min-h-[528px] mx-auto flex flex-col"
                   >
-                    <div className="mb-6 rounded-[24px] md:rounded-[32px] min-h-[256px] bg-white border border-[#D0D0D0] p-2">
+                    <div className="mb-4 sm:mb-6 rounded-[24px] md:rounded-[32px] min-h-[200px] sm:min-h-[220px] md:min-h-[256px] bg-white border border-[#D0D0D0] p-2">
+                      {(() => {
+                        const eventImageUrl = getEventImageUrl(event.image);
+                        return (
                       <div
-                        className="w-full min-h-[240px]  rounded-[16px] md:rounded-[24px] bg-contain bg-center"
+                        className="w-full h-[200px] sm:h-[220px] md:h-[240px] rounded-[16px] md:rounded-[24px] bg-cover bg-center"
                         style={{
-                          backgroundImage: "url('/image/card-img.png')",
-                          backgroundSize: "contain",
+                          backgroundImage: eventImageUrl
+                            ? `url('${eventImageUrl}')`
+                            : "none",
+                          backgroundSize: "cover",
                           backgroundPosition: "center",
                           backgroundRepeat: "no-repeat",
                         }}
                       ></div>
+                        );
+                      })()}
                     </div>
                     <h6 className="text-base md:text-[20px] md:leading-[28px] text-[#101828] font-[FuturaLTBold] mb-2">
                       {event.title}
                     </h6>
-                    <p className="text-base md:text-[20px] md:leading-[32px] text-[#667085] mb-5">
+                    <p className="text-base md:text-[20px] md:leading-[32px] text-[#667085] mb-4 md:mb-5">
                       {event.description}
                     </p>
-                    <div className="flex items-center gap-2 mb-3">
+                    <div className="flex items-start gap-2 mb-3">
                       <CalenderIcon fill="#AA8B00" />
-                      <p className="text-[14px] leading-[20px] md:text-base text-[#121212]">
+                      <p className="text-[14px] leading-[20px] md:text-base text-[#121212] min-w-0 break-words">
                         {formatDate(event.startDate)}
                       </p>
                     </div>
-                    <div className="flex items-center gap-2 mb-3">
+                    <div className="flex items-start gap-2 mb-3">
                       <TimeIcon fill="#AA8B00" />
-                      <p className="text-[14px] leading-[20px] md:text-base text-[#121212]">
+                      <p className="text-[14px] leading-[20px] md:text-base text-[#121212] min-w-0 break-words">
                         {formatTimeRange(event.startDate, event.endDate)}
                       </p>
                     </div>
-                    <div className="flex items-center gap-2 mb-3">
+                    <div className="flex items-start gap-2 mb-3">
                       <LocationIcon fill="#AA8B00" />
-                      <p className="text-[14px] leading-[20px] md:text-base text-[#121212]">
+                      <p className="text-[14px] leading-[20px] md:text-base text-[#121212] min-w-0 break-words">
                         {event.address}
                       </p>
                     </div>
@@ -144,6 +168,9 @@ const Events = () => {
             width={1450}
             height={1300}
             className="w-full max-w-[1450px] mx-auto"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
           />
         </div>
       </div>
