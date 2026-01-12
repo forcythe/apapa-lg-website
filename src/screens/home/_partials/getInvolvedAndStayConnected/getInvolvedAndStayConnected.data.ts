@@ -27,7 +27,7 @@ export const quickLinks = [
     description:
       "Locate health centers and access emergency medical services. Stay updated on public health initiatives.",
     icon: HCSIcon,
-    btnTitle: "Apply Now!",
+    btnTitle: "Learn More!",
     href: "https://lagosstate.gov.ng/services/healthservices",
   },
   {
@@ -36,7 +36,7 @@ export const quickLinks = [
     description:
       "Access key information on cargo handling, port regulations, shipping operations and logistics.",
     icon: PSIcon,
-    btnTitle: "Apply Now!",
+    btnTitle: "Learn More!",
     href: "/",
   },
   {
@@ -45,18 +45,18 @@ export const quickLinks = [
     description:
       "Explore the latest events, meetings, and activities happening in Apapa and participate in local government initiatives.",
     icon: AEIcon,
-    btnTitle: "Apply Now!",
+    btnTitle: "Learn More!",
     href: "/community/events",
   },
-  {
-    id: 5,
-    title: "Track Applications",
-    description:
-      "Stay updated on the status of your service requests, permits, and complaints in real time.",
-    icon: TAIcon,
-    btnTitle: "Track Application",
-    href: "/",
-  },
+  // {
+  //   id: 5,
+  //   title: "Track Applications",
+  //   description:
+  //     "Stay updated on the status of your service requests, permits, and complaints in real time.",
+  //   icon: TAIcon,
+  //   btnTitle: "Track Application",
+  //   href: "/",
+  // },
   {
     id: 6,
     title: "Give Feedback",
