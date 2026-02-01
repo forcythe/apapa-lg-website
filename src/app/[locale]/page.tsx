@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import "./globals.css";
 
 const HomePage = dynamic(() => import("@/screens/home"), {
   loading: () => null,

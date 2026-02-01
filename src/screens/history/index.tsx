@@ -11,61 +11,66 @@ import {
   LandmarkAndInfluence,
 } from "./_partials";
 
+import { useTranslations } from "next-intl";
+
 const HistoryPage = () => {
+
+  const t = useTranslations("About.history");
+
   return (
     <AppWrapper>
       <div className="sticky top-0 z-[10]">
         <Header />
       </div>
-      <Banner type="History of Apapa" />
+      <Banner type={t("banner.title")} />
       <Hero />
       <div className="">
         <HistorySection
-          badge="The Rich Heritage and Legacy of Apapa"
-          headTitle="A Historic Maritime Gateway of Nigeria"
+          badge={t("history1.badge")}
+          headTitle={t("history1.headTitle")}
           image="/svgs/history-1.svg"
-          subTitle="Apapa Local Government Area (LGA) stands as one of the most historically and economically significant regions in Lagos State, Nigeria. From its modest beginnings as a fishing village to becoming Nigeria’s foremost maritime and commercial hub, Apapa has played a central role in the evolution of Lagos as a global city."
+          subTitle={t("history1.subTitle")}
         />
         <HistorySection
-          badge="Early Beginnings"
-          headTitle="A Waterfront Settlement"
+          badge={t("history2.badge")}
+          headTitle={t("history2.headTitle")}
           image="/svgs/history-2.svg"
-          subTitle="Long before urban development, Apapa was a quiet settlement inhabited by fishermen and traders who relied on its strategic waterfront location for sustenance and commerce. Its proximity to the Atlantic Ocean and Lagos Lagoon naturally made it a center for local trade, drawing merchants and settlers even in pre-colonial times."
+          subTitle={t("history2.subTitle")}
           reversed
         />
         <EvolutionOfApapa />
         <HistorySection
-          badge="The Economic Engine of Apapa"
-          headTitle="Birth of a Port Powerhouse"
+          badge={t("history3.badge")}
+          headTitle={t("history3.headTitle")}
           image="/svgs/history-3.svg"
-          subTitle="The early 20th century marked a significant milestone with the construction of the Apapa Port, laying the foundation for what would become Nigeria’s most vital maritime zone. This development was further expanded with the addition of Tin Can Island Port, positioning Apapa as home to two of Nigeria’s busiest seaports, handling an estimated 75% of the nation’s total import and export volume. Today, these ports serve as lifelines for the Nigerian economy, processing billions of naira worth of goods annually. In just the first quarter of 2023, the Apapa Customs Command generated over ₦212 billion in revenue, underscoring the area's financial significance."
+          subTitle={t("history3.subTitle")}
         />
         <HistorySection
-          badge="A Legacy of Governance"
-          headTitle="Formation of Apapa LGA"
+          badge={t("history4.badge")}
+          headTitle={t("history4.headTitle")}
           image="/svgs/history-4.svg"
-          subTitle="In 1977, Apapa was officially established as a Local Government Area by the Lagos State Government to decentralize administration and bring governance closer to its residents. As part of its evolution, areas like Apapa Iganmu were later carved out to create additional local development councils."
+          subTitle={t("history4.subTitle")}
           reversed
         />
         <HistorySection
-          badge="Driving National Prosperity"
-          headTitle="Lagos’s Economic Jewel"
+          badge={t("history5.badge")}
+          headTitle={t("history5.headTitle")}
           image="/svgs/history-5.svg"
-          subTitle="Situated in Lagos State, one of Africa’s largest economies with a GDP of approximately $259.75 billion (PPP) in 2023, Apapa is at the core of this economic power. Its contributions to trade, logistics, and revenue generation are unmatched, and its historical journey continues to inspire progress, innovation, and community development."
+          subTitle={t("history5.subTitle")}
         />
         <LandmarkAndInfluence />
         <HistorySection
-          badge="A Thriving Cultural Mosaic at the Heart of Nigeria’s Port City"
-          headTitle="Cultural and Community Strength"
+          badge={t("history6.badge")}
+          headTitle={t("history6.headTitle")}
           image="/svgs/history-6.svg"
-          subTitle="Apapa is not just a port city; it’s a diverse community filled with resilience and cultural richness. Residents from various ethnic backgrounds live and work together, making Apapa a true microcosm of Nigeria’s unity in diversity."
+          subTitle={t("history6.subTitle")}
           reversed
         />
         <HistorySection
-          badge="Overcoming Challenges to Restore Apapa’s Economic Vitality"
-          headTitle="Challenges and Ongoing Renewal"
+          badge={t("history7.badge")}
+          headTitle={t("history7.headTitle")}
           image="/svgs/history-7.svg"
-          subTitle="Despite its prominence, Apapa faces modern challenges such as infrastructure decay, flooding, and traffic gridlock—particularly from port-bound trucks. These issues are not just local inconveniences but national economic threats, with gridlock alone estimated to cost Nigeria up to ₦18 trillion annually. However, efforts from both the government and private sector are underway to revitalize the area, improve infrastructure, and restore Apapa’s glory as Nigeria’s economic engine."
+          subTitle={t("history7.subTitle")}
         />
       </div>
     </AppWrapper>

@@ -7,6 +7,8 @@ import { stats } from "./projectDashboard.data";
 
 import PieIcon from "../../../../../public/svg-component/PieIcon";
 
+import { useTranslations } from "next-intl";
+
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -22,6 +24,8 @@ const containerVariants = {
 };
 
 const ProjectDashboard = () => {
+  const t = useTranslations("Government.projects.projectsStats");
+
   return (
     <div className="mb-[80px] md:mb-[120px]">
       <motion.div
@@ -32,7 +36,7 @@ const ProjectDashboard = () => {
         className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-6"
       >
         <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-          Performance Dashboard
+          {t("badgeTitle")}
         </p>
       </motion.div>
       <motion.div
@@ -45,7 +49,7 @@ const ProjectDashboard = () => {
         {" "}
         {stats.map((stat) => (
           <motion.div
-            key={stat.label}
+            key={t(stat.label)}
             variants={itemVariants}
             className="p-2 md:p-8 relative overflow-hidden bg-white backdrop-blur-xl w-full max-w-[360px] min-h-[360px] rounded-[32px] border border-[#D0D0D0] flex flex-col items-center justify-center"
           >
@@ -56,7 +60,7 @@ const ProjectDashboard = () => {
               {stat.value}
             </h3>
             <p className="text-base text-center md:text-[20px] md:leading-[32px] text-primary">
-              {stat.label}
+              {t(stat.label)}
             </p>
             <div
               className="absolute inset-0 w-full h-full bg-cover bg-center"

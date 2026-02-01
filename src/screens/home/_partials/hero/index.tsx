@@ -8,6 +8,9 @@ import { Header } from "@/components";
 import useIsMobile from "@/utils/helpers/useMobile";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
+import { useTranslations } from "next-intl";
+
+
 const Hero = () => {
   const isMobile = useIsMobile(768);
   const waterImage = isMobile
@@ -23,6 +26,9 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const t = useTranslations("Home.hero");
+
+
   return (
     <div
       className="w-full h-full bg-white xxxl:min-h-[1176px] bg-cover bg-center relative"
@@ -35,17 +41,14 @@ const Hero = () => {
         <div className="section-padding mb-[35px] max-w-[1488px] mx-auto">
           <div className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-3">
             <p className="text-base md:text-[18px] md:leading-[28px] text-[#000000] text-center">
-              Welcome to Apapa
+              {t("pill")}
             </p>
           </div>
           <h6 className="mb-6 text-center max-w-[700px] mx-auto text-[28px] leading-[44px] md:text-[56px] md:leading-[84px] font-[FuturaLTBold]">
-            Nigeria’s Gateway to Global Trade
+            {t("title")}
           </h6>
           <p className="text-[#000000] text-base md:text-[18px] md:leading-[28px] max-w-[700px] mx-auto text-center">
-            Home to the nation’s busiest ports, Apapa powers commerce, connects
-            businesses, and drives economic growth. Explore opportunities in
-            shipping, logistics, and trade at the heart of Nigeria’s maritime
-            hub.
+            {t("desc")}
           </p>
         </div>
         <div className="w-full min-h-[190px] xxxs:min-h-[260px] xs:min-h-[340px] sm:min-h-[420px] md:min-h-[520px] lg:min-h-[650px] xxl:min-h-[650px] xxxl:min-h-[650px] bg-transparent relative z-[1] overflow-hidden">

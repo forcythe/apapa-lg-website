@@ -1,31 +1,31 @@
 export const coreValues = [
   {
-    title: "Accountability",
+    title: "title1",
     description:
-      "We uphold transparency and are answerable to the people we serve.",
+      "desc1",
   },
   {
-    title: "Excellence",
+    title: "title2",
     description:
-      "We strive for high standards in governance, service, and infrastructure.",
+      "desc2",
   },
   {
-    title: "Integrity",
+    title: "title3",
     description:
-      "We serve with honesty, fairness, and a deep sense of responsibility.",
+      "desc3",
   },
   {
-    title: "Inclusiveness",
-    description: "We embrace diversity and ensure no one is left behind.",
+    title: "title4",
+    description: "desc4",
   },
   {
-    title: "Innovation",
+    title: "title5",
     description:
-      "We apply smart solutions to solve local challenges efficiently.",
+      "desc5",
   },
   {
-    title: "Resilience",
+    title: "title6",
     description:
-      "We are committed to overcoming obstacles and adapting to changing circumstances for sustained progress.",
+      "desc6",
   },
 ];

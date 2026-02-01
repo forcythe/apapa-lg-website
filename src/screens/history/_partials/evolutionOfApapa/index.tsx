@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
+import { useTranslations } from "next-intl";
+
 const leftContainer = {
   hidden: {},
   visible: {
@@ -31,12 +33,15 @@ const rightItem = {
 };
 
 const EvolutionOfApapa = () => {
+
+  const t = useTranslations("About.history");
+
   return (
     <div className="pb-[80px] md:pb-[120px] section-padding">
       <div
         className={`relative w-full max-w-[1488px] mx-auto flex justify-center min-h-fit lg:min-h-[544px]`}
       >
-        <div className="w-fit mx-auto max-w-[364px] hidden lg:flex absolute left-0 opacity-10 xxxl:opacity-100">
+        <div className="w-fit mx-auto max-w-[364px] hidden lg:flex absolute left-0">
           <motion.div
             variants={rightItem}
             initial="hidden"
@@ -57,7 +62,7 @@ const EvolutionOfApapa = () => {
         </div>
 
         <motion.div
-          className="w-full max-w-[600px] mx-auto lg:mx-0"
+          className="w-full max-w-[600px] mx-auto lg:mx-0 px-4 lg:px-10"
           variants={leftContainer}
           initial="hidden"
           whileInView="visible"
@@ -71,30 +76,26 @@ const EvolutionOfApapa = () => {
             className="w-fit sm:mx-auto bg-accent3 rounded-[8px] p-3 mb-3"
           >
             <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-              Colonial Transformation and Growth
+              {t("evolutionOfApapa.badge")}
             </p>
           </motion.div>
 
           <motion.h6
-            className="text-xl leading-[32px] text-left sm:text-center md:text-[36px] font-[FuturaLTBold] text-[#000000] mb-3"
+            className="text-lg leading-[28px] text-left sm:text-center md:text-[30px] font-[FuturaLTBold] text-[#000000] mb-3"
             variants={leftItem}
           >
-            Evolution Of Apapa
+            {t("evolutionOfApapa.headTitle")}
           </motion.h6>
 
           <motion.p
-            className="text-base md:text-[20px] leading-[30px] text-left sm:text-center text-[#000000]"
+            className="text-sm md:text-[18px] leading-[28px] text-left sm:text-center text-[#000000]"
             variants={leftItem}
           >
-            During the British colonial era, Apapa’s potential was quickly
-            realized. The colonial administration established ports, warehouses,
-            and railway infrastructure to support the growing shipping and trade
-            industries. Apapa evolved rapidly into a crucial international
-            shipping hub and soon became the commercial heartbeat of Lagos.
+            {t("evolutionOfApapa.subTitle")}
           </motion.p>
         </motion.div>
 
-        <div className="w-fit mx-auto max-w-[364px] hidden lg:flex absolute right-0 opacity-10 xxxl:opacity-100">
+        <div className="w-fit mx-auto max-w-[364px] hidden lg:flex absolute right-0">
           <motion.div
             variants={rightItem}
             initial="hidden"

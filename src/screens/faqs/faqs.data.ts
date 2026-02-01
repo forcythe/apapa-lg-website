@@ -2,19 +2,19 @@ export const faqsNavigation = {
   tabs: [
     {
       id: "general",
-      label: "General",
+      label: "tabs.general",
     },
     {
       id: "government",
-      label: "Government",
+      label: "tabs.government",
     },
     {
       id: "community",
-      label: "Community",
+      label: "tabs.community",
     },
     {
       id: "services",
-      label: "Services",
+      label: "tabs.services",
     },
   ],
 

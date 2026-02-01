@@ -10,7 +10,12 @@ import QuestionsAndAnswers from "./questionsAndAnswers";
 import { FaqItem, TabId } from "./faq.type";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
+import { useTranslations } from "next-intl";
+
 const Faqs = () => {
+
+  const t = useTranslations("Community.faqs");
+
   const [faqs, setFaqs] = useState<FaqItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState(
@@ -43,7 +48,7 @@ const Faqs = () => {
       <div className="sticky top-0 z-[10]">
         <Header />
       </div>
-      <Banner type="Frequently Asked Questions: Your Guide to Community Engagement and Services" />
+      <Banner type={t("bannerTitle")} />
       <div className="w-full max-w-[2000px] mx-auto relative py-[80px] md:py-[120px] overflow-hidden">
         <div className="section-padding">
           <div className="w-full mx-auto max-w-[1488px]">
@@ -64,7 +69,7 @@ const Faqs = () => {
                   onClick={() => setActiveTab(tab.id as TabId)}
                 >
                   <p className="text-[14px] leading-[24px] md:text-[20px] md:leading-[32px]">
-                    {tab.label}
+                    {t(tab.label)}
                   </p>
                 </motion.div>
               ))}
@@ -92,7 +97,7 @@ const Faqs = () => {
                 </p>
               ) : (
                 <p className="text-center text-gray-400 w-full">
-                  Loading FAQs…
+                  {t("loadingFaqs")}
                 </p>
               )}
             </div>
