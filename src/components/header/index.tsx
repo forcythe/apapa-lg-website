@@ -20,6 +20,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 
 import { getHeaderRoutes } from "@/i18n/header.data.i18n";
+import { routing } from "@/i18n/routing";
 
 
 const SearchModal = dynamic(() => import("@/modal_views/SearchModal"), {
@@ -67,11 +68,14 @@ const Header = () => {
 
     // Expecting locale-prefixed routes: /en, /en/about, /yo/..., etc.
     const segments = pathname.split("/");
-    const hasLocalePrefix = segments.length > 1 && segments[1];
+    const maybeLocale = segments[1];
+    const hasLocalePrefix =
+      !!maybeLocale && routing.locales.includes(maybeLocale as never);
 
     if (!hasLocalePrefix) {
       // If for some reason you're not locale-prefixed, just push to /{locale}
-      router.push(`/${nextLocale}`);
+      const nextPath = pathname === "/" ? "" : pathname;
+      router.push(`/${nextLocale}${nextPath}`);
       setIsLocationOpen(false);
       return;
     }
