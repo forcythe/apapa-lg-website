@@ -1,130 +1,131 @@
-export const footerLinks = {
-  "Apapa Local Government": [
+type TFn = (key: string) => string;
+
+export type FooterLinkItem = {
+  id: number;
+  path: string;
+  title: string;
+  target?: string;
+};
+
+export type FooterLinksMap = Record<string, FooterLinkItem[]>;
+
+export const getFooterLinks = (t: TFn): FooterLinksMap => ({
+  [t("Footer.sections.apapaLg")]: [
     {
       id: 1,
       path: "/government/organizational-structure",
-      title: "Organizational structure",
+      title: t("Nav.organizationalStructure"),
     },
     {
       id: 2,
       path: "/government/organizational-structure/council-manager",
-      title: "Council manager’s profile",
+      title: t("Nav.councilManagerProfile"),
     },
     {
       id: 3,
       path: "/government/projects",
-      title: "Projects",
+      title: t("Nav.projects"),
     },
-    // {
-    //   id: 4,
-    //   path: "/budget-and-financial-report",
-    //   title: "Budget and financial report",
-    // },
   ],
-  "About Us": [
+  [t("Footer.sections.aboutUs")]: [
     {
       id: 1,
       path: "/about-us",
-      title: "About Us",
+      title: t("Nav.aboutUs"),
     },
     {
       id: 2,
       path: "/about-us/history-of-apapa",
-      title: "History of Apapa",
+      title: t("Nav.historyOfApapa"),
     },
     {
       id: 3,
       path: "/government/organizational-structure/executive-chairman",
-      title: "Chairman’s profile",
+      title: t("Nav.chairmanProfile"),
     },
     {
       id: 4,
       path: "/about-us/departments-and-units",
-      title: "Departments and units",
+      title: t("Nav.departmentsAndUnits"),
     },
   ],
-  Services: [
+  [t("Footer.sections.services")]: [
     {
       id: 1,
       path: "https://lagosstate.gov.ng/services/housingandlands",
-      title: "Housing services",
+      title: t("Nav.housingServices"),
       target: "_blank",
     },
     {
       id: 2,
       path: "https://lagosstate.gov.ng/services/healthservices",
-      title: "Health services",
+      title: t("Nav.healthServices"),
       target: "_blank",
     },
     {
       id: 3,
       path: "https://lagosstate.gov.ng/services/business_trade_commerce",
-      title: "Business permits and licenses",
+      title: t("Nav.businessPermits"),
       target: "_blank",
     },
     {
       id: 4,
       path: "https://lagosstate.gov.ng/services/tax",
-      title: "Tax payment",
+      title: t("Nav.taxPayments"),
       target: "_blank",
     },
     {
       id: 5,
       path: "https://lagosstate.gov.ng/services/education",
-      title: "Education and scholarships",
+      title: t("Nav.educationScholarships"),
       target: "_blank",
     },
     {
       id: 6,
       path: "https://lagosstate.gov.ng/services/disasters_emergencies",
-      title: "Security and emergency",
+      title: t("Nav.securityEmergency"),
       target: "_blank",
     },
     {
       id: 7,
       path: "https://lagosstate.gov.ng/services/governmentbenefits",
-      title: "E-government services",
+      title: t("Nav.eGovServices"),
       target: "_blank",
     },
   ],
-  Community: [
+  [t("Footer.sections.community")]: [
     {
       id: 1,
       path: "/community/events",
-      title: "Events",
+      title: t("Nav.events"),
     },
     {
       id: 2,
       path: "/community/feedback-portal",
-      title: "Feedback portal",
+      title: t("Nav.feedbackPortal"),
     },
     {
       id: 3,
       path: "/community/polls-and-surveys",
-      title: "Polls and surveys",
+      title: t("Nav.pollsSurveys"),
     },
     {
       id: 4,
       path: "/community/volunteer-opportunities",
-      title: "Volunteer opportunities",
+      title: t("Nav.volunteerOpportunities"),
     },
     {
       id: 5,
       path: "/community/faqs",
-      title: "FAQs",
+      title: t("Nav.faqs"),
     },
     {
       id: 6,
       path: "/community/initiatives",
-      title: "Initiatives",
+      title: t("Nav.initiatives"),
     },
-    // {
-    //   id: 7,
-    //   path: "/innovation-hub",
-    //   title: "Innovation hub",
-    // },
   ],
-};
+});
 
 export const socialLinks = [
   {

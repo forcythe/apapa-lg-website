@@ -19,6 +19,8 @@ import { FormValues, TabId } from "./feedbackPortal.type";
 import { shareSchema, trackSchema } from "./feedbackPortal.validation";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
+import { useTranslations } from "next-intl";
+
 const SuccessModal = dynamic(() => import("@/modal_views/SuccessModal"), {
   loading: () => null,
 });
@@ -29,6 +31,9 @@ const itemVariants = {
 };
 
 const FeedbackPortalPage = () => {
+
+  const t = useTranslations("Community")
+
   const containerRef = useRef<HTMLDivElement>(null);
   const handleScrollToTop = () => {
     containerRef?.current?.scrollTo({ top: 0, behavior: "smooth" });
@@ -89,7 +94,7 @@ const FeedbackPortalPage = () => {
         <div className="sticky top-0 z-[10]">
           <Header />
         </div>
-        <Banner type="Your Voice, Our Priority: Share and Track Feedback" />
+        <Banner type={t("feedback.bannerTitle")} />
         <div className="w-full max-w-[2000px] mx-auto relative py-[80px] md:py-[120px] overflow-hidden">
           <div className="section-padding">
             <div className="w-full mx-auto max-w-[1488px]">
@@ -110,7 +115,7 @@ const FeedbackPortalPage = () => {
                     onClick={() => setActiveTab(tab.id as TabId)}
                   >
                     <p className="text-[14px] leading-[24px] md:text-[20px] md:leading-[32px] whitespace-nowrap">
-                      {tab.label}
+                      {t(tab.label)}
                     </p>
                   </motion.div>
                 ))}
@@ -124,8 +129,8 @@ const FeedbackPortalPage = () => {
               >
                 <h6 className="text-center font-[FuturaLTBold] text-[24px] leading-[30px] md:text-[36px] md:leading-[52px] text-[#101828] mb-[52px]">
                   {activeTab === "share-feedback"
-                    ? "Share Feedback"
-                    : "Track Feedback"}
+                    ? t("feedback.activeTab")
+                    : t("feedback.activeTab2")}
                 </h6>
 
                 <form onSubmit={formik.handleSubmit}>
@@ -134,7 +139,7 @@ const FeedbackPortalPage = () => {
                       <InputField
                         type="text"
                         name="fullName"
-                        placeholder="Full Name"
+                        placeholder={t("feedback.fullname")}
                         value={formik.values.fullName}
                         onChange={formik.handleChange}
                         error={
@@ -147,7 +152,7 @@ const FeedbackPortalPage = () => {
                       />
                       <InputField
                         type="text"
-                        placeholder="Phone number"
+                        placeholder={t("feedback.phoneNumber")}
                         name="phone"
                         value={formik.values.phone}
                         onChange={formik.handleChange}
@@ -161,7 +166,7 @@ const FeedbackPortalPage = () => {
                       />
                       <InputField
                         type="text"
-                        placeholder="Email address"
+                        placeholder={t("feedback.emailAddress")}
                         name="email"
                         value={formik.values.email}
                         onChange={formik.handleChange}
@@ -174,7 +179,7 @@ const FeedbackPortalPage = () => {
                       />
                       <SelectOption
                         name="feedbackCategory"
-                        label="Feedback category"
+                        label={t("feedback.feedbackCategory")}
                         value={formik.values.feedbackCategory}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -188,7 +193,7 @@ const FeedbackPortalPage = () => {
                       />
                       <InputField
                         type="text"
-                        placeholder="Feedback"
+                        placeholder={t("feedback.feedbackMessage")}
                         name="feedback"
                         value={formik.values.feedback}
                         onChange={formik.handleChange}
@@ -223,8 +228,8 @@ const FeedbackPortalPage = () => {
                       disabled={isLoading}
                     >
                       {activeTab === "share-feedback"
-                        ? "Share Feedback"
-                        : "Track Feedback"}
+                        ? t("feedback.btn1")
+                        : t("feedback.btn2")}
                     </Button>
                   </div>
                 </form>
@@ -247,10 +252,10 @@ const FeedbackPortalPage = () => {
       </AppWrapper>
       {isShowSuccessModal && (
         <SuccessModal
-          headText="Thank You for Your Feedback!"
+          headText={t("feedback.successMessage.headText")}
           copyText="APAPA-20250115-12345"
           // subText="You can use this ID to track the status of your submission on our Track Feedback page. If you have any questions, please contact us at feedback@apapalga.ng or call our support line at +234 800 123 4567. We value your input and are committed to addressing your concerns promptly."
-          subText="If you have any questions, please contact us at feedback@apapalga.ng or call our support line at +234 800 123 4567. We value your input and are committed to addressing your concerns promptly."
+          subText={t("feedback.successMessage.subText")}
           isShowSuccessModal={isShowSuccessModal}
           onClickAwaySuccessModal={() => {
             setIsShowSuccessModal(false);

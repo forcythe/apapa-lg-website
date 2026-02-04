@@ -1,92 +1,92 @@
 export const cards = [
   {
-    title: "Admin & Human Resources Department",
+    title: "cards.title1",
     description:
-      "The Admin & Human Resources Department is critical in ensuring the smooth operation of the organization and managing its human capital. This department is responsible for a wide range of functions, including personnel management, office administration, and organizational development.",
+      "cards.description1",
   },
   {
-    title: "Finance & Accounts Department",
+    title: "cards.title2",
     description:
-      "The Finance & Accounts Department is responsible for managing the local government’s financial health, ensuring transparency, and maintaining financial integrity. This department oversees financial reporting, accounting practices, and compliance with applicable regulations.",
+      "cards.description2",
   },
   {
-    title: "Works and Infrastructure Department",
+    title: "cards.title3",
     description:
-      "Works and Infrastructure Department typically oversees the planning, development, and maintenance of infrastructure projects within an organization or municipality.",
+      "cards.description3",
   },
   {
-    title: "Agriculture and Social Services Department",
+    title: "cards.title4",
     description:
-      "Agriculture and Social Services Department typically focuses on enhancing agricultural productivity and promoting social welfare within a community or organization.",
+      "cards.description4",
   },
   {
-    title: "Education and Library Services Department",
+    title: "cards.title5",
     description:
-      "Education and Library Services Department is responsible for overseeing educational programs and library services within a community or organization.",
+      "cards.description5",
   },
   {
-    title: "Human Resources Department",
+    title: "cards.title6",
     description:
-      "Human Resources Department is critical in ensuring the smooth operation of the organization and managing its human capital. This department is responsible for a wide range of functions, including personnel management, office administration, and organizational development.",
+      "cards.description6",
   },
   {
-    title: "Planning, Budget, Research & Statistics",
+    title: "cards.title7",
     description:
-      "Planning, Budget, Research & Statistics is responsible for overseeing the planning, budgeting, research, and statistical functions within an organization or institution.",
+      "cards.description7",
   },
   {
-    title: "Women Affairs and Poverty Alleviation",
+    title: "cards.title8",
     description:
-      "Women Affairs and Poverty Alleviation is responsible for leading initiatives and programs aimed at improving the welfare of women and alleviating poverty within a community or organization.",
+      "cards.description8",
   },
   {
-    title: "Primary Health Care Service",
+    title: "cards.title9",
     description:
-      "Primary Health Care Service is responsible for overseeing the delivery of essential healthcare services at the community level, focusing on prevention, early detection, and treatment of common health issues.",
+      "cards.description9",
   },
   {
-    title: "Environmental Services",
+    title: "cards.title10",
     description:
-      "Environmental Services is responsible for overseeing the management and protection of the environment within an organization or community.",
+      "cards.description10",
   },
   {
-    title: "Clerk of the Legislative Arm",
+    title: "cards.title11",
     description:
-      "Clerk of the Legislative Arm is a key administrative official responsible for overseeing the legislative processes and ensuring the smooth operation of the legislative body, such as a parliament or council.",
+      "cards.description11",
   },
   {
-    title: "Public Affairs Unit",
+    title: "cards.title12",
     description:
-      "The Public Affairs Unit is responsible for managing the organization’s public relations, communications, and media strategies to ensure a positive image and effective communication with both internal and external stakeholders.",
+      "cards.description12",
   },
   {
-    title: "Audit Unit",
+    title: "cards.title13",
     description:
-      "The Audit Unit is responsible for overseeing the auditing processes within an organization to ensure financial integrity, compliance with laws and regulations, and the effective use of resources.",
+      "cards.description13",
   },
   {
-    title: "ICT (Information and Communication Technology) Unit",
+    title: "cards.title14",
     description:
-      "The Unit is responsible for overseeing the development, implementation, and management of the organization’s technology infrastructure and services.",
+      "cards.description14",
   },
   {
-    title: "Legal Unit",
+    title: "cards.title15",
     description:
-      "The Legal Unit is responsible for overseeing the legal affairs of an organization, providing legal advice, ensuring compliance with laws and regulations, and managing legal risks.",
+      "cards.description15",
   },
   {
-    title: "Tourism Unit",
+    title: "cards.title16",
     description:
-      "The Tourism Unit for a local government is responsible for overseeing and promoting tourism within the local jurisdiction, aiming to boost the local economy, preserve cultural heritage, and improve the overall visitor experience.",
+      "cards.description16",
   },
   {
-    title: "Procurement Unit",
+    title: "cards.title17",
     description:
-      "The Procurement Unit for a local government is responsible for managing and overseeing the procurement processes for goods, services, and works within the local government’s operations.",
+      "cards.description17",
   },
   {
-    title: "Council Manager",
+    title: "cards.title18",
     description:
-      "The Council Manager for a local government is responsible for the day-to-day administrative operations and management of the local government’s activities, serving as the chief executive officer.",
+      "cards.description18",
   },
 ];

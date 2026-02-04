@@ -11,6 +11,7 @@ import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder"
 import CalenderIcon from "../../../public/svg-component/CalenderIcon";
 import LocationIcon from "../../../public/svg-component/LocationIcon";
 import TimeIcon from "../../../public/svg-component/TimeIcon";
+import { useTranslations } from "next-intl";
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -27,6 +28,9 @@ const containerVariants = {
 };
 
 const Events = () => {
+
+  const t = useTranslations("Community.events");
+  
   const [events, setEvents] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -91,7 +95,7 @@ const Events = () => {
       <div className="sticky top-0 z-[10]">
         <Header />
       </div>
-      <Banner type="Apapa Events: Engage, Celebrate, and Connect" />
+      <Banner type={t("bannerTitle")} />
       <div className="w-full max-w-[2000px] mx-auto relative py-[80px] md:py-[120px] overflow-hidden">
         <div className="section-padding">
           <div className="w-full mx-auto max-w-[1488px]">
@@ -103,7 +107,7 @@ const Events = () => {
             >
               {loading && (
                 <div className="w-full text-center py-20">
-                  <p className="text-base text-[#667085]">Loading events...</p>
+                  <p className="text-base text-[#667085]">{t("loadingEvents")}</p>
                 </div>
               )}
 

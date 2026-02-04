@@ -11,6 +11,8 @@ import { mapInitiativesAndProjects } from "@/libs/initiative.mapper";
 import { Project } from "./_partials/projectDetails/projectDetails.types";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
+import { useTranslations } from "next-intl";
+
 const ProjectDashboard = dynamic(() => import("./_partials/projectDashboard"), {
   loading: () => null,
 });
@@ -19,6 +21,9 @@ const ProjectDetails = dynamic(() => import("./_partials/projectDetails"), {
 });
 
 const ProjectsPage = () => {
+
+  const t = useTranslations("Government.projects");
+
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -45,7 +50,7 @@ const ProjectsPage = () => {
       <div className="sticky top-0 z-[10]">
         <Header />
       </div>
-      <Banner type="Projects" />
+      <Banner type={t("bannerTitle")} />
       <div className="w-full max-w-[2000px] mx-auto relative py-[80px] md:py-[120px] overflow-hidden">
         <div className="section-padding">
           <div className="w-full mx-auto max-w-[1488px]">
@@ -54,7 +59,7 @@ const ProjectsPage = () => {
               {loading && (
                 <div className="w-full text-center py-20">
                   <p className="text-base text-[#667085]">
-                    Loading projects...
+                    {t("projectsLoading")}...
                   </p>
                 </div>
               )}

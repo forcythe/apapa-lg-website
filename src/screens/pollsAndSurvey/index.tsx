@@ -11,6 +11,8 @@ import { Banner } from "../_partials";
 import { Poll } from "./pollsAndSurvey.types";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
+import { useTranslations } from "next-intl";
+
 const Polls = dynamic(() => import("./Polls"), { loading: () => null });
 
 const containerVariants = {
@@ -51,6 +53,9 @@ const formatDateWithOrdinal = (isoDate: string) => {
 };
 
 const PollsAndSurveyPage = () => {
+
+  const t = useTranslations("Community.pollsAndSurveys");
+
   const [polls, setPolls] = useState<Poll[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -87,7 +92,7 @@ const PollsAndSurveyPage = () => {
         <div className="sticky top-0 z-[10]">
           <Header />
         </div>
-        <Banner type="Polls and Surveys" />
+        <Banner type={t("bannerTitle")} />
         <div className="w-full max-w-[2000px] mx-auto relative py-[80px] md:py-[120px] overflow-hidden">
           <div className="section-padding">
             <div className="w-full max-w-[1488px] mx-auto">
@@ -103,16 +108,14 @@ const PollsAndSurveyPage = () => {
                   className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-6"
                 >
                   <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-                    Active Polls
+                    {t("badgeTitle")}
                   </p>
                 </motion.div>
                 <motion.p
                   variants={itemVariants}
                   className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center mb-6"
                 >
-                  Participate in ongoing community surveys and cast your vote on
-                  key public issues that matter to you. Stay involved and make
-                  your voice heard in shaping Apapa&apos;s future.
+                  {t("description")}
                 </motion.p>
               </motion.div>
 
@@ -120,7 +123,7 @@ const PollsAndSurveyPage = () => {
                 {loading && (
                   <div className="w-full text-center py-20">
                     <p className="text-base text-[#667085]">
-                      Loading polls and surveys...
+                      {t("loadingPolls")}
                     </p>
                   </div>
                 )}

@@ -10,6 +10,8 @@ import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder"
 import { cards } from "./departmentsAndUnitsPage.data";
 import FooterArrow from "../../../public/svg-component/FooterArrow";
 
+import { useTranslations } from "next-intl";
+
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -25,12 +27,15 @@ const containerVariants = {
 };
 
 const DepartmentsAndUnitsPage = () => {
+
+  const t = useTranslations("About.deptAndUnits");
+
   return (
     <AppWrapper>
       <div className="sticky top-0 z-[10]">
         <Header />
       </div>
-      <Banner type="Departments & Units" />
+      <Banner type={t("banner.title")} />
       <div className="w-full max-w-[2000px] mx-auto relative py-[80px] md:py-[120px] overflow-hidden">
         <div className="section-padding">
           <div className="w-full mx-auto max-w-[1488px]">
@@ -48,14 +53,14 @@ const DepartmentsAndUnitsPage = () => {
                   className="overflow-hidden relative w-full rounded-[16px] md:rounded-[32px] max-w-[480px] border border-[#D0D0D0] min-h-[368px] bg-[#F7F7F7] p-4 md:p-6"
                 >
                   <h6 className="text-base md:text-[20px] md:leading-[28px] text-[#101828] font-[FuturaLTBold] mb-2">
-                    {card.title}
+                    {t(card.title)}
                   </h6>
                   <p className="text-base md:text-[20px] md:leading-[32px] text-[#667085] mb-5">
-                    {card.description}
+                    {t(card.description)}
                   </p>
                   <div className="flex items-center gap-2">
                     <p className="text-base md:text-[20px] md:leading-[32px] text-accent">
-                      Apply Now!
+                      {t("cards.btn")}
                     </p>
                     <FooterArrow fill="#aa8b00" />
                   </div>

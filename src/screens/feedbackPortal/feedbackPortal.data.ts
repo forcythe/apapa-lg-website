@@ -2,7 +2,7 @@ export const navigation = {
   tabs: [
     {
       id: "share-feedback",
-      label: "Share Feedback",
+      label: "feedback.activeTab",
     },
     // {
     //   id: "track-feedback",
@@ -112,5 +112,8 @@ export const feedbackCategories = [
   // { id: 1, title: "Real Estate Development" },
   // { id: 2, title: "Real Estate Agency" },
   // { id: 3, title: "Real Estate Management" },
-  { id: 4, title: "........." },
+  { id: 4, title: "options.opt1" },
+  { id: 5, title: "options.opt2" },
+  { id: 6, title: "options.opt3" },
+  { id: 7, title: "options.opt4" },
 ];

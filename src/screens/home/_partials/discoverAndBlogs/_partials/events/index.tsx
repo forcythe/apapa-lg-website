@@ -3,6 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+import { useLocale, useTranslations } from "next-intl";
+
 // import { slidesData } from "./events.data";
 import useIsMobile from "@/utils/helpers/useMobile";
 
@@ -17,6 +19,9 @@ const itemVariants = {
 };
 
 export default function Events() {
+  const t = useTranslations("Home.events");
+  const locale = useLocale();
+
   const [currentIndex, setCurrentIndex] = React.useState(2);
   const isMobile = useIsMobile(768);
 
@@ -116,7 +121,7 @@ export default function Events() {
           className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-3"
         >
           <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-            Events in Apapa
+           {t("pill")}
           </p>
         </motion.div>
 
@@ -127,7 +132,7 @@ export default function Events() {
           viewport={{ once: true, amount: 0.3 }}
           className="text-xl leading-[32px] md:text-[36px] md:leading-[52px] text-[#000000] text-center font-[FuturaLTBold] max-w-[564px] mx-auto mb-[30px]"
         >
-          Discover What is Happening in Apapa
+          {t("title")}
         </motion.h6>
       </div>
 
@@ -135,7 +140,7 @@ export default function Events() {
         {loading ? (
           <div className="relative w-full h-[648px] md:h-[672px] flex items-center justify-center">
             <p className="text-base md:text-[18px] text-[#667085]">
-              Loading upcoming events…
+              {t("loading")}
             </p>
           </div>
         ) : (

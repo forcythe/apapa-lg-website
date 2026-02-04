@@ -7,6 +7,8 @@ import { SelectOptionProps } from "./selectOption.types";
 
 import ArrowHeadIcon from "../../../public/svg-component/ArrowHeadIcon";
 
+import { useTranslations } from "next-intl";
+
 const SelectOption: React.FC<SelectOptionProps> = ({
   label,
   name,
@@ -16,6 +18,9 @@ const SelectOption: React.FC<SelectOptionProps> = ({
   error,
   options,
 }) => {
+
+  const t = useTranslations("Community.feedback");
+
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -97,7 +102,7 @@ const SelectOption: React.FC<SelectOptionProps> = ({
                 className="px-6 py-4 text-primary font-medium hover:bg-gray-100 cursor-pointer border-b border-[#DDDDDD] last:border-0"
                 onClick={() => handleOptionSelect(option.title)}
               >
-                {option.title}
+                {t(option.title)}
               </div>
             ))}
           </motion.div>

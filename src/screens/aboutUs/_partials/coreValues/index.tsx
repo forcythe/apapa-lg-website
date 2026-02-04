@@ -7,6 +7,8 @@ import { coreValues } from "./coreValues.data";
 
 import IdeaIcon from "../../../../../public/svg-component/IdeaIcon";
 
+import { useTranslations } from "next-intl";
+
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -22,6 +24,7 @@ const containerVariants = {
 };
 
 const CoreValues = () => {
+  const t = useTranslations("About.coreValues");
   return (
     <div>
       <motion.div
@@ -32,7 +35,7 @@ const CoreValues = () => {
         className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-[30px] md:mb-[60px]"
       >
         <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-          Core Values
+          {t("badge")}
         </p>
       </motion.div>
 
@@ -53,10 +56,10 @@ const CoreValues = () => {
               <IdeaIcon />
             </div>
             <h6 className="text-base md:text-[20px] md:leading-[28px] text-[#000000] font-[FuturaLTBold] mb-2">
-              {_.title}
+              {t(_.title)}
             </h6>
             <p className="text-base md:text-[20px] md:leading-[32px] text-[#667085]">
-              {_.description}
+              {t(_.description)}
             </p>
           </motion.div>
         ))}

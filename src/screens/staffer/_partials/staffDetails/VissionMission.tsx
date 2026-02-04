@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import { visionMissionItems } from "./staffDetails.data";
 
+import { useTranslations } from "next-intl";
+
 const containerVariants = {
   hidden: {},
   visible: {
@@ -19,6 +21,9 @@ const itemVariants = {
 };
 
 const VisionMission = () => {
+
+  const t = useTranslations("Government.rowData.executiveChairman.vision&Mission");
+
   return (
     <div className="section-padding">
       <div className="max-w-[1488px] w-full mx-auto">
@@ -30,7 +35,7 @@ const VisionMission = () => {
           className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-6"
         >
           <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-            Vision & Mission
+            {t("badgeTitle")}
           </p>
         </motion.div>
         <motion.h6
@@ -40,9 +45,7 @@ const VisionMission = () => {
           viewport={{ once: true }}
           className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center max-w-[700px] mx-auto mb-[40px] md:mb-[60px]"
         >
-          Hon. Senbanjo is dedicated to transforming Apapa into a modern port
-          city that provides effective grassroots governance and development.
-          Her administration focuses on:
+          {t("overview")}
         </motion.h6>
         <motion.div
           variants={containerVariants}
@@ -62,10 +65,10 @@ const VisionMission = () => {
                 {item.icon}
               </div>
               <h6 className="text-base md:text-[20px] md:leading-[28px] text-[#000000] font-[FuturaLTBold] mb-2">
-                {item.title}
+                {t(item.title)}
               </h6>
               <p className="text-base md:text-[20px] md:leading-[32px] text-[#667085]">
-                {item.description}
+                {t(item.description)}
               </p>
             </motion.div>
           ))}

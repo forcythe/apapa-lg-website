@@ -12,6 +12,8 @@ import { Project } from "../projects/_partials/projectDetails/projectDetails.typ
 import { mapInitiativesAndProjects } from "@/libs/initiative.mapper";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
+import { useTranslations } from "next-intl";
+
 const ProjectDetails = dynamic(
   () => import("../projects/_partials/projectDetails"),
   { loading: () => null }
@@ -32,6 +34,9 @@ const containerVariants = {
 };
 
 const InitiativesPage = () => {
+
+  const t = useTranslations("Community.initiatives");
+
   const [initiatives, setInitiatives] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -58,7 +63,7 @@ const InitiativesPage = () => {
       <div className="sticky top-0 z-[10]">
         <Header />
       </div>
-      <Banner type="Initiatives" />
+      <Banner type={t("bannerTitle")} />
       <div className="w-full max-w-[2000px] mx-auto relative py-[80px] md:py-[120px] overflow-hidden">
         <div className="section-padding">
           <div className="w-full max-w-[1488px] mx-auto">
@@ -77,7 +82,7 @@ const InitiativesPage = () => {
                 className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-6"
               >
                 <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-                  Driving Change, One Initiative at a Time
+                  {t("badgeTitle")}
                 </p>
               </motion.div>
               <motion.p
@@ -87,15 +92,12 @@ const InitiativesPage = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center"
               >
-                From education and health to infrastructure and innovation, our
-                initiatives are designed to uplift every resident of Apapa.
-                Explore the impactful projects shaping a stronger, safer, and
-                more prosperous community.
+                {t("description")}
               </motion.p>
             </motion.div>
             <div className="w-full flex flex-col gap-[80px] md:gap-[120px]">
               {loading ? (
-                <p className="text-center">Loading initiatives...</p>
+                <p className="text-center">{t("loadingInitiatives")}</p>
               ) : (
                 initiatives.map((initiative) => (
                   <ProjectDetails key={initiative.id} p={initiative} />

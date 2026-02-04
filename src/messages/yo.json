@@ -1,0 +1,1058 @@
+{
+  "Header": {
+    "topBanner": "Eyi ni oju opo wẹẹbu osise ti Ijọba Agbegbe Apapa",
+    "languages": {
+      "en": "Gẹ̀ẹ́sì",
+      "pcm": "Pijini",
+      "yo": "Yorùbá"
+    }
+  },
+  "Nav": {
+    "home": "Ile",
+    "government": "Ijọba",
+    "about": "Nipa",
+    "services": "Awọn Iṣẹ",
+    "community": "Agbegbe",
+    "organizationalStructure": "Ilana Ajo Iṣẹ",
+    "councilManagerProfile": "Profaili Alakoso Igbimọ",
+    "projects": "Awọn Ise Akanṣe",
+    "performanceDashboard": "Igbimọ Iṣe",
+    "aboutUs": "Nipa Wa",
+    "historyOfApapa": "Itan Apapa",
+    "chairmanProfile": "Profaili Alaga",
+    "departmentsAndUnits": "Awọn Ẹka ati Awọn Apakan",
+    "housingServices": "Awọn Iṣẹ Ile",
+    "healthServices": "Awọn Iṣẹ Ilera",
+    "businessPermits": "Awọn Aṣẹ ati Iwe-aṣẹ Iṣowo",
+    "taxPayments": "Sisan Owo-ori",
+    "educationScholarships": "Ẹkọ ati Awọn Sikolashipu",
+    "securityEmergency": "Aabo ati Pajawiri",
+    "eGovServices": "Awọn Iṣẹ Ijọba Itanna",
+    "events": "Awọn Iṣẹlẹ",
+    "feedbackPortal": "Ẹnu-ọna Esi",
+    "pollsSurveys": "Idibo ati Iwadi",
+    "volunteerOpportunities": "Awọn Aye Aṣekára",
+    "faqs": "Awọn Ibeere Ti A Maa N Beere",
+    "initiatives": "Awọn Eto Igbesẹ"
+  },
+  "Footer": {
+    "sections": {
+      "apapaLg": "Ìjọba Ìbílẹ̀ Apapa",
+      "aboutUs": "Nipa Wa",
+      "services": "Àwọn Ìṣẹ́",
+      "community": "Àgbègbè Àwọn Ará Ìlú"
+    },
+    "copyright": "© 2025 Apapa Local Government. All rights reserved."
+  },
+  "Home": {
+    "hero": {
+      "pill": "Kaabo si Apapa",
+      "title": "Ẹnu-ọna Naijiria si Iṣowo Kariaye",
+      "desc": "Apapa ni awọn ibudo oko oju omi ti o ṣiṣẹ ju lọ ni Naijiria. O n mu iṣowo lagbara, n so awọn ile-iṣẹ pọ, o si n ṣe idagbasoke eto-ọrọ aje. Ṣawari awọn aye ninu gbigbe ẹru, eekaderi, ati iṣowo ni aarin ibudo oko oju omi Naijiria."
+    },
+    "insight": {
+      "pill": "Akopọ Apapa",
+      "title": "Alaye Akoko-Gidi ati Awọn Akọkọ Pataki",
+      "population": "Iye Olugbe Lọwọlọwọ",
+      "cargo": "Tọnu Ẹru",
+      "throughput": "Iṣipopada Kọnteina",
+      "revenue": "Ikojọpọ Owo-wiwọle",
+      "shipsDocked": "Awọn Ọkọ Omi Ti Duro",
+      "investment": "Idoko-owo",
+      "truckTraffic": "Iṣipopada Kọlọkọ",
+      "economicContribution": "Ilowosi Eto-ọrọ Aje",
+      "chanceOfRain": "Seese Ojo",
+      "welcomeTitle": "Kaabo si oju opo wẹẹbu osise ti Ijọba Agbegbe Apapa.",
+      "welcomeDesc": "Gẹgẹ bi Alaga Alase ti Ijọba Agbegbe Apapa (Igbimọ Ilu Ibudo), inu mi dun lati ki yin si agbegbe wa ti o kun fun aye. Ni Ijọba Agbegbe Apapa, a ti pinnu lati yi agbegbe wa pada si ijọba agbegbe ti o ni boṣewa agbaye, ti yoo pese awọn iṣẹ to dara ati amayederun to peye fun awọn ara ilu wa. Iṣẹ apinfunni wa ni lati ṣẹda agbegbe alagbero ati alagbara ti yoo ṣe atilẹyin ilera ati aṣeyọri gbogbo ara ilu.",
+      "welcomeDesc2": "Lori oju opo wẹẹbu yii, ẹ o rii alaye nipa awọn iṣẹ akanṣe ti a n ṣe lọwọlọwọ, awọn iṣẹlẹ agbegbe, ati awọn iṣẹ wa. A pe yin lati ṣawari aaye yii, kọ ẹkọ diẹ sii nipa awọn eto wa, ki ẹ si kopa ninu idagbasoke agbegbe wa. A dupe fun ibẹwo yin, a si n reti lati ṣiṣẹ pọ lati kọ ọjọ iwaju to dara fun Apapa.",
+      "chairmanName": "Idowu Adejumoke Senbanjo",
+      "chairmanTitle": "Alaga Alase ti Ijọba Agbegbe Apapa"
+    },
+    "quickLinks": {
+      "pill": "Awọn Ọna Asopọ Yara",
+      "title": "Kopa ki o si Duro Ni Asopọ",
+      "housing": {
+        "title": "Awọn Iṣẹ Ile",
+        "description": "Bere fun ile ijọba ati awọn iranlowo atunṣe ile ni rọọrun. Gba alaye lori awọn ipo ati awọn igbesẹ ohun elo.",
+        "btn": "Bere Bayi!"
+      },
+      "healthcare": {
+        "title": "Awọn Iṣẹ Ilera",
+        "description": "Wa awọn ile-iṣẹ ilera ati gba awọn iṣẹ itọju pajawiri. Maa jẹ imudojuiwọn lori awọn eto ilera gbogbogbo.",
+        "btn": "Kọ Ẹkọ Siwaju!"
+      },
+      "port": {
+        "title": "Awọn Iṣẹ Ibudo",
+        "description": "Gba alaye pataki lori mimu ẹru, awọn ofin ibudo, awọn iṣẹ gbigbe oko omi ati eekaderi.",
+        "btn": "Kọ Ẹkọ Siwaju!"
+      },
+      "events": {
+        "title": "Awọn Iṣẹlẹ Apapa",
+        "description": "Ṣawari awọn iṣẹlẹ tuntun, awọn ipade, ati awọn iṣẹ ṣiṣe ni Apapa, ki o si kopa ninu awọn eto ijọba agbegbe.",
+        "btn": "Kọ Ẹkọ Siwaju!"
+      },
+      "feedback": {
+        "title": "Funni ni Esi",
+        "description": "Ran wa lọwọ lati mu agbegbe dara nipa jijabọ awọn iṣoro amayederun, awọn ifiyesi aabo, tabi awọn iṣoro miiran.",
+        "btn": "Funni ni Esi"
+      },
+      "levyPayment": {
+        "title": "Sisan Owo-ori ati Levy",
+        "description": "San owo-ori, awọn levy, ati awọn iwe-aṣẹ iṣowo rẹ lori ayelujara ni aabo. Tẹle sisanwo rẹ laisi idaduro.",
+        "btn": "San Bayi!"
+      },
+      "business": {
+        "title": "Awọn Iwe-aṣẹ ati Aṣẹ Iṣowo",
+        "description": "Bere fun tabi tunse iwe-aṣẹ iṣowo ni kiakia. Wo akoko ṣiṣe ati awọn iwe aṣẹ to nilo.",
+        "btn": "Bere Bayi!"
+      },
+      "blogs": {
+        "title": "Awọn Bulọọgi, Iroyin ati Awọn Àpilẹkọ",
+        "description": "Gba awọn imudojuiwọn tuntun ati awọn ikede ijọba osise. Maa jẹ imudojuiwọn lori awọn ilana ati iroyin agbegbe.",
+        "btn": "Ka Awọn Bulọọgi"
+      },
+      "emergency": {
+        "title": "Awọn Iṣẹ Pajawiri",
+        "description": "Gba awọn laini foonu pajawiri fun ọlọpa, ina, ati awọn iṣẹ iṣoogun. Jabo awọn ifiyesi aabo tabi awọn iṣe ifura.",
+        "btn": "Gba Awọn Laini Foonu"
+      },
+      "volunteer": {
+        "title": "Awọn Aye Aṣekára",
+        "description": "Bere fun awọn eto aṣekára ijọba agbegbe. Ṣe ilowosi si idagbasoke ati itesiwaju Apapa.",
+        "btn": "Bere Bayi!"
+      },
+      "faq": {
+        "title": "Awọn Ibeere Ti A Maa N Beere",
+        "description": "Wa awọn idahun si awọn ibeere ti o wọpọ nipa awọn iṣẹ, awọn ilana, awọn eto agbegbe, ati awọn ilana ijọba.",
+        "btn": "Wo Awọn Ibeere"
+      }
+    },
+    "discover": {
+      "blogsPill": "Awọn Bulọọgi, Iroyin ati Awọn Àpilẹkọ",
+      "blogsTitle": "Duro Ni Imudojuiwọn Pẹlu Alaye Tuntun",
+      "emailPlaceholder": "Tẹ imeeli rẹ sii",
+      "subscribe": "Forukọsilẹ",
+      "loadingContent": "Akoonu n gba lati ayelujara…",
+      "readMore": "Ka siwaju"
+    },
+    "events": {
+      "pill": "Awọn Iṣẹlẹ Ni Apapa",
+      "title": "Ṣawari Ohun Ti N Ṣẹlẹ Ni Apapa",
+      "loading": "Awọn iṣẹlẹ to n bọ n gba lati ayelujara…"
+    },
+    "tabs": {
+      "blogs": "Awọn Bulọọgi",
+      "news": "Iroyin",
+      "articles": "Awọn Àpilẹkọ"
+    }
+  },
+  "About": {
+    "banner": {
+      "title": "Nipa Wa"
+    },
+    "mission": {
+      "badge": "Ìṣé Wa",
+      "headTitle": "Títẹ̀síwájú Pẹ̀lú Ìṣàkóso àti Ìdàgbàsókè Tó Ní Ìtànkálẹ̀",
+      "subTitle": "Láti gbé ìdàgbàsókè alágbero kalẹ̀, láti mú ìṣàkóso tó munadoko ga, àti láti jẹ́ kó dára sí i fún ìgbé ayé gbogbo àwọn olùgbé nípasẹ̀ ìpèsè iṣẹ́ ìjọba tuntun, ìtúnṣe amáyédẹrùn, àti ìdàgbàsókè ọrọ̀-ajé tó kún fún gbogbo ènìyàn — ní lílo ipo Apapa gẹ́gẹ́ bí ìlú ibùdó òkun àkọ́kọ́ ní Nàìjíríà."
+    },
+    "vision": {
+      "badge": "Ìran Wa",
+      "subTitle": "Láti jẹ́ àpẹẹrẹ ìjọba agbègbè òkun àti ìlú — mímọ́, tí a so pọ̀ dáadáa, aláyọ̀, tí ó sì lè fara da ìpẹ̀yà — ibi tí àwọn ènìyàn ti ń là sí rere, tí ìṣòwò sì ń lọ láìsí ìdènà."
+    },
+    "coreValues": {
+      "badge": "Àwọn Iye Pátáki",
+      "title1": "Ìdájọ́ṣe",
+      "desc1": "A ń ṣètìlẹ́yìn fún ìmọ̀lára kedere, a sì jẹ́ onídájọ́ sí àwọn ènìyàn tí a ń sìn.",
+      "title2": "Didára Gíga",
+      "desc2": "A ń tiraka láti dé ìpele gíga nínú ìṣàkóso, ìpèsè iṣẹ́, àti amáyédẹrùn.",
+      "title3": "Ìwà Ọlọ́títọ́",
+      "desc3": "A ń pa ìpele gíga mọ́ nínú gbogbo iṣẹ́ àti ìṣiṣẹ́ wa.",
+      "title4": "Ìfarapọ̀ Gbogbo Ènìyàn",
+      "desc4": "A ń gba onírúurú ènìyàn, a sì ń rí i dájú pé a kò fi ẹnikẹ́ni sílẹ̀ lẹ́yìn.",
+      "title5": "Ìdàsílẹ̀ Ọgbọ́n Tuntun",
+      "desc5": "A ń lo àwọn ojútùú ọlọ́gbọ́n láti yanju ìṣòro agbègbè ní kíkún àti ní kíákíá.",
+      "title6": "Agbara Látí Farada",
+      "desc6": "A jẹ́wọ́ láti borí ìdènà, a sì ń fara da ayípadà láti lè rí ìtẹ̀síwájú tó péye."
+    },
+    "purpose": {
+      "badge": "Ètò-Ìdí Wa",
+      "subTitle": "Láti ṣàkóso ní ọ̀nà tó munadoko àti tó dọ́gba — ní lílo ọrọ̀-ajé ibùdó Apapa, àṣà àti ìtàn ọlọ́rọ̀ rẹ̀, àti agbára ènìyàn rẹ̀ láti mú ìdàgbàsókè tó níyelori wá, láti dá àṣà àtẹ́yìnwá bó, àti láti dá àǹfààní sílẹ̀ fún ìran òní àti ọjọ́ iwájú."
+    },
+    "commitment": {
+      "badge": "Ìlérí Wa",
+      "subTitle": "Ìjọba Àgbègbè Apapa ti jẹ́wọ́ láti mú amáyédẹrùn dára sí i bíi ọ̀nà, ètò ìṣàn omi, àti àyè ìlú àgbàlá-ayé láti ṣe ìtìlẹ́yìn fún àwọn olùgbé àti iṣẹ́ ibùdó; láti gbé agbára ọrọ̀-ajé ga nípasẹ̀ àwọn ìlànà tó rọrùn fún ìṣòwò àti ìtìlẹ́yìn fún àwọn ilé-iṣẹ́ abínibí; láti mú àbójútó àwùjọ lagbara nípasẹ̀ fífi ìwọ̀le sí ìlera, ẹ̀kọ́, ilé, àti àwọn iṣẹ́ pàtàkì míì gbooro; láti dáàbò bo àyíká nípasẹ̀ ìtójú ìkún omi, ìdọ̀tí, àti ìbàjẹ́ ayíká pẹ̀lú àwọn ojútùú tí ìjọba àti àwùjọ ṣiṣẹ́ pọ̀; àti láti mú ìfarahàn aráàlú lagbara nípasẹ̀ gbigbọ́ ohùn aráàlú, ìgbéga ìṣàkóso ìkópa, àti mímú ìbánisọ̀rọ̀ kedere wà."
+    },
+    "history": {
+      "banner": {
+        "title": "Ìtàn Apapa"
+      },
+      "history1": {
+        "badge": "Ìtàn Aṣà àti Ajogúnba Ọlọ́rọ̀ ti Apapa",
+        "headTitle": "Ọ̀nà Ìbòmọ́lẹ̀ Òkun Tó Ní Ìtàn Fún Nàìjíríà",
+        "subTitle": "Agbègbè Ìjọba Ìbílẹ̀ Apapa (LGA) jẹ́ ọ̀kan lára ​​àwọn agbègbè tó ṣe pàtàkì jù lọ nípa ìtàn àti ọrọ̀-ajé ní Ìpínlẹ̀ Èkó, Nàìjíríà. Láti ìbẹ̀rẹ̀ kékeré rẹ̀ gẹ́gẹ́ bí abúlé àwọn apẹja, títí di àkókò tí ó di àgbègbè ibùdó òkun àti ọjà pàtàkì jù lọ ní Nàìjíríà, Apapa ti kó ipa àárín gbùngbùn nínú ìdàgbàsókè Èkó gẹ́gẹ́ bí ìlú àgbáyé."
+      },
+      "history2": {
+        "badge": "Ìbẹ̀rẹ̀ Àtijọ́",
+        "headTitle": "Ìbugbe Etí Omi",
+        "subTitle": "Kí ìdàgbàsókè ìlú tó bẹ̀rẹ̀, Apapa jẹ́ ìbugbe ìdákẹ́jẹ̀ tí àwọn apẹja àti oníṣòwò ń gbé, tí wọ́n sì ń lo àyè etí omi rẹ̀ tó ṣe pàtàkì fún ìgbé ayé àti ìṣòwò. Ìsúnmọ́ rẹ̀ sí Òkun Atlantiki àti Adágún Èkó jẹ́ kó di àárín ìṣòwò láìsí ìpinnu kankan, tí ó sì ń fa àwọn oníṣòwò àti olùgbé wá láti ìgbà ṣáájú amúnisìn."
+      },
+      "evolutionOfApapa": {
+        "badge": "Ìyípadà Àkókò Amúnisìn àti Ìdàgbàsókè",
+        "headTitle": "Ìtẹ̀síwájú Apapa",
+        "subTitle": "Ní àkókò ìjọba amúnisìn Gẹ̀ẹ́sì, a rí àǹfààní Apapa lọ́rẹ̀ẹ́rẹ̀. Ìjọba amúnisìn dá àwọn ibùdó, ilé ìkópa ẹru, àti amáyédẹrùn reluwe kalẹ̀ láti ṣe ìtìlẹ́yìn fún ìṣòwò òkun tí ń dàgbà. Apapa sì yára dàgbà di àárín ìkó ọkọ̀ ojú omi àgbáyé, tí ó sì di ọkàn-àyà ìṣòwò ti Èkó."
+      },
+      "history3": {
+        "badge": "Ẹ̀rọ Ọrọ̀-ajé Apapa",
+        "headTitle": "Ìbí Agbára Ibùdó Òkun",
+        "subTitle": "Ìbẹ̀rẹ̀ ọ̀rúndún kẹrìnlélógún (20th century) jẹ́ àkókò pàtàkì pẹ̀lú ìkọ́lé Ibùdó Apapa, èyí tí ó fi ìpìlẹ̀ múlẹ̀ fún agbègbè òkun tó ṣe pàtàkì jù lọ ní Nàìjíríà. Lẹ́yìn náà, a fi Ibùdó Tin Can Island kún un, tí ó jẹ́ kó ṣeé ṣe kí Apapa gbà ilé fún méjì lára ​​àwọn ibùdó òkun tó kún jù lọ ní Nàìjíríà, tí ń ṣàkóso àfọwọ́kọ tó tó ìdá 75% ti gbogbo ìkó wọlé àti ìkó jáde orílẹ̀-èdè. Lónìí, àwọn ibùdó wọ̀nyí jẹ́ ẹ̀mí ìgbésí-ayé fún ọrọ̀-ajé Nàìjíríà, tí ń ṣiṣẹ́ ẹrù tó jẹ́ ọ̀pọ̀lọpọ̀ ọkẹ́ nàírà lọ́dọọdún. Ní ìdámẹ́rin àkọ́kọ́ ọdún 2023 nìkan, Ẹ̀ka Àṣàkóso Àṣàkóso Owo-ori (Customs) Apapa dá owó tó ju ₦212 bílíọ̀nù lọ sílẹ̀, tí ó fi hàn pé agbègbè yìí ṣe pàtàkì gan-an nípa ìṣúná."
+      },
+      "history4": {
+        "badge": "Ajogúnba Ìṣàkóso",
+        "headTitle": "Ìdásílẹ̀ LGA Apapa",
+        "subTitle": "Ní ọdún 1977, Ìjọba Ìpínlẹ̀ Èkó dá Apapa sílẹ̀ lọ́dọ̀ọdún gẹ́gẹ́ bí Agbègbè Ìjọba Ìbílẹ̀ láti tú ìṣàkóso ká, kí ìjọba sì sunmọ́ àwọn olùgbé. Gẹ́gẹ́ bí apakan ìtẹ̀síwájú rẹ̀, àwọn agbègbè bíi Apapa Iganmu ni a yọ kúrò láti dá àwọn ìgbìmọ̀ ìdàgbàsókè àgbègbè míì sílẹ̀."
+      },
+      "history5": {
+        "badge": "Mímú Ọlà Orílẹ̀-èdè Ga",
+        "headTitle": "Ìyebíye Ọrọ̀-ajé Èkó",
+        "subTitle": "Apapa wà ní Ìpínlẹ̀ Èkó, ọ̀kan lára ​​àwọn ọrọ̀-ajé tó tobi jù lọ ní Áfíríkà pẹ̀lú GDP tó fẹrẹ̀ jẹ́ $259.75 bílíọ̀nù (PPP) ní ọdún 2023. Apapa wà ní àárín agbára ọrọ̀-ajé yìí. Àfikún rẹ̀ sí ìṣòwò, lógístíìkì, àti ìṣelọpọ owó kò ní ìdíje, tí ìrìnàjò ìtàn rẹ̀ sì ń tẹ̀síwájú láti ru ìdàgbàsókè, ìdásílẹ̀ tuntun, àti ìtẹ̀síwájú àwùjọ lọ́kàn."
+      },
+      "landmarkAndInfluence": {
+        "badge": "Apapa Òde-Òní",
+        "headTitle": "Àwọn Ààmì-Ilẹ̀ àti Ìpa",
+        "subTitle": "Apapa lónìí jẹ́ àkúnya iṣẹ́ ibùgbé, ìṣòwò, àti ilé-iṣẹ́. Ó gbà ilé fún ọ̀pọ̀ ààmì-ilẹ̀ pàtàkì ti orílẹ̀-èdè àti agbègbè bíi:",
+        "coreValues": {
+          "title1": "Ọ́fiisi Àgbà NPA (Nigerian Ports Authority)",
+          "description1": "Ọ́fiisi Àgbà NPA ní Apapa jẹ́ àárín ìṣàkóso fún gbogbo iṣẹ́ ibùdó Nàìjíríà, tí ń ṣàbójútó iṣẹ́ ní gbogbo àwọn ibùdó òkun pàtàkì, tí ó sì ń rí i dájú pé ìṣòwò òkun ń lọ dáadáa.",
+          "title2": "Ibùdó Tin Can Island",
+          "description2": "Ọ̀kan lára ​​àwọn ibùdó òkun tó kún jù lọ àti tó ṣe pàtàkì jù lọ ní Nàìjíríà, Ibùdó Tin Can Island ń gba ẹrù apoti lọ́pọ̀lọpọ̀, tí ó sì ń ṣe ipa pàtàkì nínú ọrọ̀-ajé ìkó wọlé àti ìkó jáde orílẹ̀-èdè.",
+          "title3": "Eleganza Plaza",
+          "description3": "Eleganza Plaza jẹ́ ilé ìṣòwò olókìkí tí ó ní adalu ṣọ́ọ̀bù, ọ́fiisi, àti àwọn ilé títà apapọ̀, tí ó jẹ́ kó di àárín ìṣòwò àti ọjà tí kún fún ìgbésí-ayé ní àárín Apapa.",
+          "title4": "Ọgbà Ìdárayá Apapa",
+          "description4": "Àyè ìsinmi tó dára fún ìdílé, Ọgbà Ìdárayá Apapa ń pèsè eré, àwọn kẹ̀kẹ́ ìdárayá, àti àyè gbangba, tí ń jẹ́ ibi ìsimi tuntun fún àwọn olùgbé àti àlejò tí ń wá ìsinmi àti ìtura."
+        }
+      },
+      "history6": {
+        "badge": "Àjọṣe Àṣà Tó Ń Dàgbà Ní Àárín Ìlú Ibùdó Òkun Nàìjíríà",
+        "headTitle": "Agbára Àṣà àti Àwùjọ",
+        "subTitle": "Apapa kì í ṣe ìlú ibùdó nìkan; ó jẹ́ àwùjọ onírúurú ènìyàn tó kún fún ìfaradà àti àṣà ọlọ́rọ̀. Àwọn ará ẹ̀yà oríṣìíríṣìí ń gbé àti ṣiṣẹ́ pọ̀, tí ń jẹ́ kó di àpẹẹrẹ gidi ti ìṣọ̀kan nínú onírúurú Nàìjíríà."
+      },
+      "history7": {
+        "badge": "Bíbọ́ Láti Borí Ìṣòro Láti Tún Agbára Ọrọ̀-ajé Apapa Ṣe",
+        "headTitle": "Àwọn Ìpenija àti Ìtúnṣe Tó Ń Lọ",
+        "subTitle": "Bí ó tilẹ̀ jẹ́ pé Apapa ṣe pàtàkì gan-an, ó ń dojúkọ àwọn ìpenija òde-òní bíi ìbàjẹ́ amáyédẹrùn, ìkún omi, àti ìdákẹ́jẹ̀ ọkọ̀ ayọ́kẹ́lẹ́—paápàá jùlọ láti ọwọ́ àwọn kẹ̀kẹ́ ẹrù tí ń lọ sí ibùdó. Àwọn ìṣòro wọ̀nyí kì í ṣe ìṣòro àgbègbè nìkan; wọ́n ń halẹ̀ mọ́ ọrọ̀-ajé orílẹ̀-èdè, níbi tí ìdákẹ́jẹ̀ ọkọ̀ ayọ́kẹ́lẹ́ nìkan ti ń jẹ́ Nàìjíríà tó fẹrẹ̀ dé ₦18 tirílíọ̀nù lọ́dọọdún. Síbẹ̀, ìsapá láti ọdọ́ ìjọba àti apá aládàáni ń lọ lọwọlọwọ láti tún agbègbè náà ṣe, láti mú amáyédẹrùn dára sí i, àti láti mú ògo Apapa padà gẹ́gẹ́ bí ẹ̀rọ ọrọ̀-ajé Nàìjíríà."
+      }
+    },
+    "deptAndUnits": {
+      "banner": {
+        "title": "Àwọn Ẹ̀ka àti Àwọn Ẹ̀yà"
+      },
+      "cards": {
+        "title1": "Ẹ̀ka Ìṣàkóso àti Ètò Ẹnìyàn (Admin & Human Resources)",
+        "description1": "Ẹ̀ka Ìṣàkóso àti Ètò Ẹnìyàn jẹ́ pàtàkì gan-an láti rí i dájú pé ilé-iṣẹ́ ń ṣiṣẹ́ dáadáa àti pé ìṣàkóso àwọn òṣìṣẹ́ ń lọ ní kíkún. Wọ́n ń ṣàbójútó ìṣàkóso òṣìṣẹ́, iṣakoso ọ́fiisi, àti ìdàgbàsókè àjọṣe ilé-iṣẹ́.",
+
+        "title2": "Ẹ̀ka Ináwó àti Ìṣírò (Finance & Accounts)",
+        "description2": "Ẹ̀ka Ináwó àti Ìṣírò ń ṣàbójútó ìlera owó ìjọba àgbègbè, ń jẹ́ kó kedere, tí ń sì bójú tó ìwà-òtítọ́ owó. Wọ́n ń rí sí ìròyìn owó, iṣẹ́ ìṣírò, àti ìfarahàn sí àwọn òfin tó yẹ.",
+
+        "title3": "Ẹ̀ka Iṣẹ́ àti Amáyédẹrùn",
+        "description3": "Ẹ̀ka Iṣẹ́ àti Amáyédẹrùn ń bójú tó ètò, ìdàgbàsókè, àti ìtọju gbogbo àwọn iṣẹ́ amáyédẹrùn inú ìjọba àgbègbè.",
+
+        "title4": "Ẹ̀ka Ogbìn àti Ìṣẹ́ Awùjọ",
+        "description4": "Ẹ̀ka Ogbìn àti Ìṣẹ́ Awùjọ ń fojú kọ́ ìmúdàgba ogbin àti ìgbéga ìtójú àwùjọ láàárín agbègbè.",
+
+        "title5": "Ẹ̀ka Ẹ̀kọ́ àti Iṣẹ́ Ilé-Ìkàwé",
+        "description5": "Ẹ̀ka Ẹ̀kọ́ àti Iṣẹ́ Ilé-Ìkàwé ń ṣàbójútó àwọn ètò ẹ̀kọ́ àti iṣẹ́ ilé-ìkàwé inú ìjọba àgbègbè.",
+
+        "title6": "Ẹ̀ka Ètò Ẹnìyàn (Human Resources)",
+        "description6": "Ẹ̀ka Ètò Ẹnìyàn ń rí i dájú pé ìṣàkóso òṣìṣẹ́, iṣakoso ọ́fiisi, àti ìdàgbàsókè àjọṣe ilé-iṣẹ́ ń ṣiṣẹ́ dáadáa nínú ìjọba àgbègbè.",
+
+        "title7": "Ẹ̀ka Ètò, Ìṣúná, Ìwádìí àti Ìṣírò Ìtàn",
+        "description7": "Ẹ̀ka Ètò, Ìṣúná, Ìwádìí àti Ìṣírò Ìtàn ń ṣàbójútó ètò, ìṣúná, ìwádìí, àti ìṣírò ìtàn láti ṣe ìtìlẹ́yìn fún ìpinnu tó dá lórí ìmọ̀.",
+
+        "title8": "Ẹ̀ka Ọ̀ràn Àwọn Obìnrin àti Ìdínkù Ìyàjẹ́pọn",
+        "description8": "Ẹ̀ka Ọ̀ràn Àwọn Obìnrin àti Ìdínkù Ìyàjẹ́pọn ń darí àwọn ètò láti mú ìtójú àwọn obìnrin dára sí i àti láti dín ìyàjẹ́pọn kúrò ní àwùjọ.",
+
+        "title9": "Iṣẹ́ Ìlera Àkọ́kọ́",
+        "description9": "Iṣẹ́ Ìlera Àkọ́kọ́ ń ṣàbójútó ìpèsè àwọn iṣẹ́ ìlera pàtàkì ní ìpele àwùjọ, pẹ̀lú ìdí lé e lórí ìdènà àrùn, ìmúlòlùfẹ̀ àrùn kíákíá, àti ìtọ́jú àrùn tí ó wọ́pọ̀.",
+
+        "title10": "Ẹ̀ka Iṣẹ́ Ayíká",
+        "description10": "Ẹ̀ka Iṣẹ́ Ayíká ń ṣàbójútó ìtọju àti ààbò ayíká, pẹ̀lú ìmúlòlùfẹ̀ ìmótótó àti ìdàgbàsókè ayíká alágbero.",
+
+        "title11": "Akòwé Ẹka Aṣòfin",
+        "description11": "Akòwé Ẹka Aṣòfin ń bójú tó gbogbo ìlànà aṣòfin, tí ń sì rí i dájú pé iṣẹ́ Ẹka Aṣòfin ń lọ láìsí ìṣòro.",
+
+        "title12": "Ẹ̀yà Ọ̀ràn Ìbánisọ̀rọ̀ Àwùjọ (Public Affairs)",
+        "description12": "Ẹ̀yà Ọ̀ràn Ìbánisọ̀rọ̀ Àwùjọ ń ṣàbójútó ìbáṣepọ̀ pẹ̀lú àwùjọ, ìbánisọ̀rọ̀, àti ìfarahàn sí àwọn ilé-iṣẹ́ ìròyìn láti jẹ́ kó rọrùn fún ìtànkálẹ̀ ìròyìn.",
+
+        "title13": "Ẹ̀yà Àyẹ̀wò Ìṣúná (Audit)",
+        "description13": "Ẹ̀yà Àyẹ̀wò Ìṣúná ń ṣàbójútó ìlànà àyẹ̀wò owó láti jẹ́ kó dájú pé owó ń lọ ní òdodo, a sì ń tẹ̀lé gbogbo àṣẹ òfin, tí a sì ń lo ohun-ini dáadáa.",
+
+        "title14": "Ẹ̀yà ICT (Ìmọ̀ Ẹ̀rọ Alágbèéká àti Ìbánisọ̀rọ̀)",
+        "description14": "Ẹ̀yà ICT ń ṣàbójútó ìdàgbàsókè, ìmúlò, àti ìtọju amáyédẹrùn ẹ̀rọ ìmọ̀-ẹrọ àti iṣẹ́ oní-nọ́mbà inú ìjọba àgbègbè.",
+
+        "title15": "Ẹ̀yà Òfin",
+        "description15": "Ẹ̀yà Òfin ń ṣàbójútó gbogbo ọ̀ràn òfin, ń fúnni ní ìmọ̀ràn òfin, ń rí i dájú pé a ń tẹ̀lé òfin, tí ń sì ṣàkóso ewu òfin.",
+
+        "title16": "Ẹ̀yà Ìrìnàjò Àlejò (Tourism)",
+        "description16": "Ẹ̀yà Ìrìnàjò Àlejò ń gbé ìrìnàjò àlejò ga láàárín ìjọba àgbègbè láti mú ìdàgbàsókè ọrọ̀-ajé wá, láti bójú tó àṣà, àti láti mú ìrírí àlejò dára sí i.",
+
+        "title17": "Ẹ̀yà Rírà Ohun Èlò (Procurement)",
+        "description17": "Ẹ̀yà Rírà Ohun Èlò ń ṣàbójútó gbogbo ìlànà rírà ohun èlò, iṣẹ́, àti amáyédẹrùn, tí ń rí i dájú pé ohun gbogbo ń lọ ní kedere, tí owó sì ń jẹ́ iye rẹ̀.",
+
+        "title18": "Alákóso Ìgbìmọ̀ (Council Manager)",
+        "description18": "Alákóso Ìgbìmọ̀ ń bójú tó gbogbo iṣẹ́ ìṣàkóso ojoojúmọ́ inú ìjọba àgbègbè, tí ó sì ń ṣiṣẹ́ gẹ́gẹ́ bí olórí àgbà (Chief Executive Officer).",
+
+        "btn": "Bere Bayi!"
+      }
+    }
+  },
+  "Government": {
+    "banner": {
+      "title": "Ilana Ìṣètò Àjọṣe Ijọba Ìbílẹ̀ Apapa"
+    },
+    "rowData": {
+      "executiveChairman": {
+        "role": "Alákóso Àgbà",
+        "bannerTitle": "Alákóso Àgbà ti Ìjọba Ìbílẹ̀",
+        "badgeTitle": "ALÁKÓSÓ ÀGBÀ",
+        "overview": "Alákóso Àgbà ni olórí alákóso fún ìjọba ìbílẹ̀, ẹni tí ó jẹ́ ojúṣe rẹ̀ láti ṣàbójútó ìmúlò àwọn ìlànà àti iṣakoso ojoojúmọ́. Ipo yìí ṣe pàtàkì nínú ìṣàkóso ìbílẹ̀, nítorí Alákóso ni ń darí gbogbo iṣẹ́ alákóso kí ìjọba ìbílẹ̀ lè tẹ̀lé ìlànà tí ìgbìmọ̀ aṣojú yàn.",
+        "name": "Hon. Idowu Adejumoke Senbanjo",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí lọ́pọ̀lọpọ̀ láti apá ìjọba àti aládani. Ó ní Ìwé-ẹ̀rí BA (Hons) nínú Èdè àti Ẹ̀kọ́ Èdè láti Yunifásítì Jos àti MA nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Orílẹ̀-èdè láti Yunifásítì Lagos. Nípa iṣẹ́ rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Apá Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ nínú Ìṣúná Ilé-ifowopamọ́ Alátaja, àti Olórí Ìbáṣepọ̀ Ilé-iṣẹ́ ní Metropolitan Bank. Ní iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá sí Gomina Ìpínlẹ̀ Lagos lórí Ilé àti Olùrànlọ́wọ́ Pátá lórí Ìparí Ìyàwó Òsì. Gẹ́gẹ́ bí ọmọ ẹgbẹ́ olóòtítọ́ ti All Progressives Congress (APC), Hon. Senbanjo ti kópa lọ́pọ̀lọpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀-ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá sí àwùjọ.",
+        "vision&Mission": {
+          "badgeTitle": "Ìran àti Ètò",
+          "overview": "Hon. Senbanjo ní ìfaramọ́ láti yí Apapa padà sí ìlú ibùdó ode-òní pẹ̀lú ìṣàkóso ìbílẹ̀ tó munadoko àti ìdàgbàsókè alákọ̀ọ́rẹ̀. Ìṣàkóso rẹ̀ ń fojú kọ́:",
+          "visionMissionItems": {
+            "title1": "Amáyédẹrùn àti Ìdàgbàsókè",
+            "description1": "Ìmúlò opópónà, eto ìṣàn omi, àti ilé iṣẹ́ àwùjọ láti mú ìgbé-ayé ará ilú dára.",
+            "title2": "Ìdàgbàsókè Ọ̀rọ̀ Ajé",
+            "description2": "Ìtìlẹ́yìn fún ìdàgbàsókè ìṣòwò àti iṣẹ́-aje láti dá àǹfààní sílẹ̀ fún ará ilú.",
+            "title3": "Ìdàgbàsókè Àwùjọ àti Ààbò",
+            "description3": "Ìgbékalẹ̀ àwọn ètò tó ń gbé ìlera àwùjọ ga àti tó ń dáàbò bo ààbò gbogbo ènìyàn.",
+            "title4": "Ayíká Alágbero",
+            "description4": "Ìtìlẹ́yìn fún àwọn ètò ayíká láti dá Apapa mọ́, kó sì ní ìlera."
+          }
+        },
+        "manifesto": {
+          "badgeTitle": "Àfihàn Ètò Wa",
+          "headTitle": "S.H.E.E",
+          "overview": "Àfihàn ètò wa dá lórí àgbékalẹ̀ mẹ́rin: ààbò – ìrìnàjò àti ọkọ̀, ìlera, ayíká – amáyédẹrùn, ẹ̀kọ́ – ìkó-òye iṣẹ́ àti imọ̀-ẹ̀rọ (S.H.E.E).",
+          "manifestoSections": {
+            "01": {
+              "title": "Ààbò",
+              "tagLabel": "Ìrìnàjò àti Ọkọ̀",
+              "content": "Ààbò ṣe pàtàkì fún àṣeyọrí ìṣòwò, pàápàá jùlọ nítorí ipa amúnisin Apapa nínú ọrọ̀-ajé Ìpínlẹ̀ Lagos. A ń túbọ̀ mú eto ààbò wa lágbára láti dáàbò bo àwọn oníṣòwò, àlejò, àti ará ilú.",
+              "activities": {
+                "activity1": "Ìtìlẹ́yìn àti ìfọwọ́sowọ́pọ̀ pẹ̀lú gbogbo agbára ológun àti aláàbò",
+                "activity2": "Pípèsè ọkọ̀ ìrìn-àjò àbẹ̀wò (patrol)",
+                "activity3": "Ètò Imọ́lẹ̀ Apapa",
+                "activity4": "Ìkọ́lé ibùdó ọkọ̀ akero káàkiri Apapa",
+                "activity5": "Ìfọwọ́sowọ́pọ̀ pẹ̀lú LAMATA láti tún ibùdó akero Apapa ṣe",
+                "activity6": "Ìdàgbàsókè àwọn opópónà ìpele kẹta ní Apapa"
+              }
+            },
+            "02": {
+              "title": "Ìlera",
+              "tagLabel": "Ìborí ìṣòro",
+              "content": "Ìlera dára ju owó lọ. Èrò yìí ni ó ń dari àwọn ètò ìlera àti ìtọju ará ilú wa. Ní ọdún mẹ́rin sẹ́yìn, a ti ra ọkọ̀ alágbára ìrànwọ́ pajawiri (ambulance) tí ó péye, a sì ti mú ilé ìwòsàn ìbílẹ̀ lagbara.",
+              "activities": {
+                "activity1": "Ìṣiṣẹ́ ìlera wakati 24 ní Ijora Oloye, Abúlé Nanti àti Ilé-Ìwòsàn Oluwole",
+                "activity2": "Ìfọwọ́sowọ́pọ̀ pẹ̀lú ìjọba ìpínlẹ̀ fún ètò ìlera àwùjọ",
+                "activity3": "Pípèsè agbára oṣiṣẹ́ tó péye",
+                "activity4": "Ìtànkálẹ̀ ìmọ̀ nípa àrùn bíi ìtẹ́ ẹ̀jẹ̀ gíga",
+                "activity5": "Ètò ìyọ̀-ọ́bọ̀ fún àwọn ọmọ ilé-èkó",
+                "activity6": "Ìdàgbàsókè ètò ìtìlẹ́yìn àwùjọ fún àwọn àgbàlagbà"
+              }
+            },
+            "03": {
+              "title": "Ayíká",
+              "tagLabel": "Amáyédẹrùn",
+              "content": "Ẹ̀ka Iṣẹ́ Ayíká àti Ìṣàkóso Egbin ló ń ṣàbójútó gbogbo àfiyèsí ayíká tí ó lè ní ipa lórí ìlera ènìyàn àti àwùjọ.",
+              "activities": {
+                "activity1": "Ìtọ́jú àti ìmímọ́ ikanni ìṣàn omi lọ́pọ̀lọpọ̀ láti dín ìkún omi kù",
+                "activity2": "Apapa láìsí ìkún omi",
+                "activity3": "Ìṣàkóso ìdọ̀tí omi",
+                "activity4": "Ìfọ́mọ́ ilé-èkó, ọjà àti ikanni ìṣàn omi",
+                "activity5": "Ètò ìyọ̀-ọ́bọ̀ fún àwọn ọmọ ilé-èkó",
+                "activity6": "Ìtúnṣe ẹ̀wà Apapa",
+                "activity7": "Ìfọwọ́sowọ́pọ̀ pẹ̀lú àwọn alábàáṣiṣẹ́ lori àpẹẹrẹ ìṣàkóso ESG"
+              }
+            },
+            "04": {
+              "title": "Ẹ̀kọ́",
+              "tagLabel": "Ìkó-òye iṣẹ́ àti Imọ̀-ẹ̀rọ Alágbèéká",
+              "content": "A gbagbọ́ pé ìmọ̀ jẹ́ agbára, àwọn ọgbọ́n sì jẹ́ irinṣẹ́ ìyípadà. Nítorí èyí, a ń nawo nínú ẹ̀kọ́, ìkó-òye iṣẹ́, àti imọ̀-ẹ̀rọ.",
+              "activities": {
+                "activity1": "Ìdásílẹ̀ ilé-ẹ̀kọ́ ọmọ Apapa",
+                "activity2": "Pípèsè ohun èlò eré-idárayá ní ilé-èkó",
+                "activity3": "Ohun èlò ẹ̀kọ́ orí ayélujára àti ìkàwé itanna",
+                "activity4": "Títúnṣe àti pípèsè ilé ìkó-òye iṣẹ́"
+              }
+            }
+          }
+        },
+        "pastChairmen": {
+          "badgeTitle": "Àwọn Alákóso Àtijọ́",
+          "overview": "Láàárín ọ̀pọ̀ ọdún, Ìjọba Ìbílẹ̀ Apapa ti jẹ́ adarí nipasẹ́ àwọn olórí tó ní ìran, tí iṣẹ́ wọn sì ti dá ìtàn àti ìdàgbàsókè agbègbè náà sílẹ̀.",
+          "timelineData": {
+            "1": { "role": "Alákóso Àgbà" },
+            "2": { "role": "Alákóso Adájọ́sọ" },
+            "3": { "role": "Akòwé Alákóso" },
+            "4": { "role": "Alákóso Àgbà" },
+            "5": { "role": "Alákóso Àgbà" },
+            "6": { "role": "Alákóso Adájọ́sọ" },
+            "7": { "role": "Akòwé Alákóso" },
+            "8": { "role": "Alákóso Àgbà" },
+            "9": { "role": "Akòwé Alákóso" },
+            "10": { "role": "Alákóso Àgbà" },
+            "11": { "role": "Alákóso Àgbà" },
+            "12": { "role": "Alákóso Adájọ́sọ" },
+            "13": { "role": "Alákóso Adájọ́sọ" }
+          }
+        }
+      },
+      "viceChairman": {
+        "role": "Igbákejì Alága Àṣẹ (Vice Chairman)",
+        "bannerTitle": "Igbákejì Alága Àṣẹ ti Ìjọba Àgbègbè",
+        "badgeTitle": "IGBÁKEJÌ ALÁGA ÀṢẸ",
+        "overview": "Igbákejì Alága Àṣẹ ni aṣojú/agbẹnusọ Alága Àṣẹ, ó sì ń ràn án lọ́wọ́ nínú ìmúṣẹ iṣẹ́ ìjọba àgbègbè. Ipa Igbákejì Alága Àṣẹ sábà máa ń dojú kọ́ fífi ọwọ́ ràn Alága Àṣẹ lọ́wọ́ nínú iṣẹ́ ìṣàkóso, àti fífi rọ́pò nígbà tí Alága Àṣẹ kò sí.",
+        "name": "MRS ADEBANJI S.O",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí púpọ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú iṣẹ́ ìṣúná ìtajà (Retail Banking), àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing), àti Olùrànlọ́wọ́ Àgbà Pátá nípa Ìparí Òṣì (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó jẹ́ olóòótọ́ nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìtìlẹ́yìn fún Alága Àṣẹ",
+          "description1": "Igbákejì Alága Àṣẹ ń ràn Alága Àṣẹ lọ́wọ́ nínú ìṣàkóso àti ìmúṣe ìlànà àti iṣẹ́-ìṣe, kí ìjọba àgbègbè á lè ṣiṣẹ́ lóríṣìíríṣìí ọ̀nà dáadáa.",
+          "title2": "Rírọ̀pò Ìṣàkóso",
+          "description2": "Nígbà tí Alága Àṣẹ bá wà ní àìsàn, ìrìnàjò, tàbí ìdí míì, Igbákejì Alága Àṣẹ máa ń gba ojúṣe náà, kí ìṣàkóso má bà a dà.",
+          "title3": "Ìbòjú-tó Àwọn Ẹ̀ka tàbí Àwọn Iṣẹ́-ìṣe",
+          "description3": "A lè yàn Igbákejì Alága Àṣẹ láti bójú tó àwọn ojúṣe pàtàkì kan, gẹ́gẹ́ bí ìṣàkóso díẹ̀ lára àwọn ẹ̀ka, ètò, tàbí iṣẹ́ àwùjọ nínú ìjọba àgbègbè.",
+          "title4": "Ipa Ìmọ̀ràn",
+          "description4": "Igbákejì Alága Àṣẹ sábà máa ń fún Alága Àṣẹ ní ìmọ̀ràn lórí ọ̀ràn ìṣàkóso àti ìlànà, ó sì lè ràn án lọ́wọ́ nínú ìpinnu.",
+          "title5": "Ìbáṣepọ̀ Pẹ̀lú Àwùjọ",
+          "description5": "Igbákejì Alága Àṣẹ tún lè bá àwọn aráàlú pàdé, kí ó sì ṣojú ìjọba àgbègbè nínú àpéjọ, ìpàdé, àti ìjíròrò pẹ̀lú àwùjọ.",
+          "title6": "Ìtọ́pa Ìmúṣe Ìlànà",
+          "description6": "Igbákejì Alága Àṣẹ lè kópa nínú ìtọ́pa bí a ṣe ń mú ìlànà ṣiṣẹ́, yíyẹ̀wò iṣẹ́ àwọn ètò, àti fífi ìmọ̀ràn fún ìtúnṣe.",
+          "title7": "Ìfọwọ́sowọ́pọ̀ àti Ìṣọ̀kan-iṣẹ́",
+          "description7": "Gẹ́gẹ́ bí Alága Àṣẹ, Igbákejì Alága Àṣẹ lè ṣiṣẹ́ pọ̀ pẹ̀lú àwọn alábàáṣiṣẹ́ míì, gẹ́gẹ́ bí ìpele ìjọba míì, ilé-iṣẹ́, àti ẹgbẹ́ àwùjọ.",
+          "title8": "Ìmúríyá Fún Ìtẹ̀síwájú Ipo",
+          "description8": "Igbákejì Alága Àṣẹ sábà máa ń jẹ́ ẹni tí a lè rí gẹ́gẹ́ bí arọ́pò Alága Àṣẹ, nítorí náà, ipo náà nílò ìmọ̀ jinlẹ̀ lórí bí ìjọba àgbègbè ṣe ń ṣiṣẹ́."
+        }
+      },
+
+      "councilManager": {
+        "role": "Alábòójútó Ìgbìmọ̀",
+        "bannerTitle": "Alábòójútó Ìgbìmọ̀",
+        "badgeTitle": "ALÁBÒÓJÚTÓ ÌGBÌMỌ̀",
+        "overview": "Alábòójútó Ìgbìmọ̀ fún ìjọba ìbílẹ̀ ni ẹni tí ó jẹ́ ojúṣe rẹ̀ láti ṣàkóso iṣẹ́ ìṣàkóso ojoojúmọ́ àti ìdarí gbogbo iṣẹ́ ìjọba ìbílẹ̀, tí ó sì tún ń ṣiṣẹ́ gẹ́gẹ́ bí olórí alákóso àgbà.",
+        "name": "MRS ADEBANJI S.O",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alága Alákóso Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí púpọ̀ láti ẹ̀ka ìjọba àti aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) ní Èdè àti Ìmọ̀-Èdè láti Yunifásítì Jos àti Master of Arts ní Òfin Àgbáyé àti Ìbáṣepọ̀ Orílẹ̀-Èdè láti Yunifásítì Lagos. Nínú iṣẹ́ ọjọ́gbọn rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù-Ìwọ̀-Oòrùn Nàìjíríà, Olórí Ẹgbẹ́ ní Ilé-Ifowopamọ́ Títà-Ọjà, àti Olórí Ẹ̀ka Ìbáṣepọ̀ Ilé-iṣẹ́ ní Metropolitan Bank. Ní iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pàtàkì sí Gomina Ìpínlẹ̀ Eko nípa Ilé àti Olùrànlọ́wọ́ Pàtàkì nípa Imukúrò Ìyà. Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó fara mọ́ All Progressives Congress (APC), Hon. Senbanjo ti kópa lọ́pọ̀lọpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá sí àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìdarí Alákóso",
+          "description1": "Láti darí gbogbo iṣẹ́ ìṣàkóso ìjọba ìbílẹ̀, rí i dájú pé gbogbo ìlànà tí ìgbìmọ̀ aṣojú yàn ni a ń tẹ̀síwájú, àti láti ṣàbójútó iṣẹ́ gbogbo ẹ̀ka ìjọba ìbílẹ̀.",
+          "title2": "Ìmúlò Ìlànà",
+          "description2": "Láti túmọ̀ àwọn ìpinnu àti ìlànà ìgbìmọ̀ aṣojú sí ètò iṣẹ́ tó lè ṣeé lo, kí a sì rí i dájú pé a ń mú wọn ṣẹ.",
+          "title3": "Ìṣàkóso Isuna àti Owó",
+          "description3": "Láti ṣàbójútó bí a ṣe ń pèsè àti ń lo isuna ìjọba ìbílẹ̀, kí a sì rí i dájú pé a ń lo owó lọ́nà tó bojúmu, tó sì ń tẹ̀lé ààlà isuna.",
+          "title4": "Ìṣàkóso Oṣiṣẹ́",
+          "description4": "Láti gba oṣiṣẹ́ àgbà, ṣàbójútó wọn, àti darí wọn, pẹ̀lú àwọn olórí ẹ̀ka, kí gbogbo iṣẹ́ ìjọba ìbílẹ̀ lè ṣiṣẹ́ dáadáa. Pẹ̀lú fífi ìdarí, ìtìlẹ́yìn, àti ìtẹ̀síwájú iṣẹ́ fún wọn.",
+          "title5": "Àtìlẹ́yìn Ìgbìmọ̀ àti Ìbánisọ̀rọ̀",
+          "description5": "Láti ṣiṣẹ́ gẹ́gẹ́ bí asopọ̀ pàtàkì láàárín ìgbìmọ̀ aṣojú àti ìṣàkóso ìjọba ìbílẹ̀, pẹ̀lú pèsè ìròyìn, ìmọ̀ràn, àti fífi ìtàn pàtàkì hàn fún ìgbìmọ̀.",
+          "title6": "Ètò Ìlànà Pípẹ́ àti Ìdàgbàsókè",
+          "description6": "Láti darí ètò ìlànà àkókò pípẹ́ àti ìdàgbàsókè àwùjọ, kí a lè dáhùn sí ìbéèrè àdúgbò, kí a sì tọ́ ìjọba ìbílẹ̀ sí ìdàgbàsókè alágbára.",
+          "title7": "Ìbáṣepọ̀ Pẹ̀lú Àwùjọ",
+          "description7": "Láti bá àwùjọ ṣiṣẹ́ láti lóye aini wọn, yanju ìṣòro wọn, àti rí i dájú pé iṣẹ́ ìjọba ìbílẹ̀ ń bá ìreti àwọn aráàlú mu. Pẹ̀lú ṣiṣẹ́ gẹ́gẹ́ bí agbẹnusọ fún ìjọba ìbílẹ̀.",
+          "title8": "Ìfarapamọ́ Òfin àti Ilànà",
+          "description8": "Láti rí i dájú pé ìjọba ìbílẹ̀ ń ṣiṣẹ́ ní ìbámu pẹ̀lú gbogbo òfin, àṣẹ, àti ìlànà ní ìpele ìbílẹ̀, ìpínlẹ̀, àti orílẹ̀-èdè.",
+          "title9": "Ìṣàkóso Àjálù àti Pajawiri",
+          "description9": "Láti darí ìgbésẹ̀ ìjọba ìbílẹ̀ nígbà àjálù tàbí pajawiri, pẹ̀lú ìṣọ̀kan orísun, ìtójú ìròyìn fún àwùjọ, àti rí i dájú pé ìdáhùn ń ṣiṣẹ́ dáadáa."
+        }
+      },
+      "slg": {
+        "role": "SLG",
+        "bannerTitle": "Akòwé sí Ìjọba Àgbègbè (Secretary to the Local Government)",
+        "badgeTitle": "",
+        "overview": "Akòwé sí Ìjọba Àgbègbè jẹ́ òṣìṣẹ́ ìṣàkóso àgbà tó ń ṣe pàtàkì nínú ìtìlẹ́yìn fún ìṣàkóso ìjọba àti rí i dájú pé gbogbo ìlànà ìṣàkóso ń ṣiṣẹ́ dáadáa. Ipo yìí sábà ní ìṣọ̀kan-ìṣàkóso tó ga àti ojúṣe ìṣiṣẹ́ ojoojúmọ́.",
+        "name": "",
+        "introduction": "",
+        "keyFunctions": {
+          "title1": "Ìtìlẹ́yìn Ìṣàkóso",
+          "description1": "Pípèsè ìtìlẹ́yìn ìṣàkóso fún ìgbìmọ̀, pẹ̀lú ṣètò ìpàdé, pèsè àkóónú (agenda), kọ ìṣẹ̀lẹ̀ (minutes), àti rí i dájú pé ìpàdé ń lọ dáadáa.",
+          "title2": "Ìtọju Ìwé-ẹ̀rí àti Àkọsílẹ̀",
+          "description2": "Ìtọju àti ìṣàkóso àwọn àkọsílẹ̀ ọ́fíṣialì bíi minutes, ìpinnu, lẹ́tà ọ́fíṣialì, àdéhùn, àti ìwé míì, kí ó jẹ́ tóótọ́, rọrùn láti rí, tí ó sì bá ìlànà mu.",
+          "title3": "Ìṣọ̀kan Ìlànà",
+          "description3": "Ìrànlọ́wọ́ nínú ìdàgbàsókè, ìmúṣe, àti ìtọ́pa àwọn ìlànà tí ìgbìmọ̀ gba.",
+          "title4": "Asopọ̀ Láàárín Àwọn Olórí Tí a Dìbò yàn àti Ìṣàkóso",
+          "description4": "Ṣíṣe gẹ́gẹ́ bí ẹni àkọ́kọ́ tí yóò so ìbánisọ̀rọ̀ pọ̀ láàárín àwọn ọmọ ìgbìmọ̀, ẹ̀ka àṣẹ (executive), àti àwọn òṣìṣẹ́ ìṣàkóso.",
+          "title5": "Ìfarahàn Sí Òfin àti Ìlànà",
+          "description5": "Rírí i dájú pé gbogbo iṣẹ́ àti ìpinnu ìjọba àgbègbè ń tẹ̀lé òfin, ìlànà, àti ìbéèrè ìṣe.",
+          "title6": "Ìbánisọ̀rọ̀ Pẹ̀lú Àwùjọ",
+          "description6": "Ìṣàkóso lẹ́tà ọ́fíṣialì àti ìbánisọ̀rọ̀ láàárín ìjọba àgbègbè àti aráàlú, kí ìròyìn lè dé lọ́nà tó kedere.",
+          "title7": "Ìtìlẹ́yìn Nínú Ìdìbò àti Ìyàn",
+          "description7": "Ìrànlọ́wọ́ pẹ̀lú iṣẹ́ ìdìbò, ìtọju àkọsílẹ̀ ìdìbò, àti ìwé-ẹ̀rí ọ́fíṣialì fún yíyàn àwọn òṣìṣẹ́ pàtàkì.",
+          "title8": "Ipa Ìmọ̀ràn",
+          "description8": "Fífi ìmọ̀ràn fún ìgbìmọ̀ lórí ìlànà ìpàdé, ìṣàkóso tó dára, àti rí i dájú pé ìpinnu ń tẹ̀lé òfin àti ìlànà.",
+          "title9": "Ìbòjú-tó àti Ìṣàkóso",
+          "description9": "Ìbòjú-tó àwọn òṣìṣẹ́ ìṣàkóso nínú ọ́fíisi, kí iṣẹ́ ìkọ̀wé, àkọsílẹ̀, àti ìdáhùn ìbéèrè aráàlú lè lọ dáadáa."
+        }
+      },
+
+      "legislativeArm": {
+        "role": "Ẹ̀ka Aṣòfin",
+        "bannerTitle": "Ẹ̀ka Aṣòfin ti Ìjọba Ìbílẹ̀",
+        "overview": "..."
+      },
+      "supervisors": {
+        "role": "Àwọn Alábòójútó (Supervisors)",
+        "bannerTitle": "Àwọn Alábòójútó Ìgbìmọ̀ (Council Supervisors)",
+        "badgeTitle": "",
+        "overview": "Àwọn Alábòójútó Ìgbìmọ̀ nínú ìjọba àgbègbè jẹ́ àwọn aṣojú tí a yàn tàbí tí a dìbò yàn láti bójú tó ìmúṣe àwọn ètò, iṣẹ́-ìṣe, àti iṣẹ́ ìjọba nínú ẹ̀ka pàtó. Wọ́n jẹ́ asopọ̀ láàárín ìgbìmọ̀ tí a dìbò yàn lélẹ̀ àti àwùjọ, kí ìlànà àti ìpinnu ìjọba àgbègbè lè ṣiṣẹ́ dáadáa ní ìpele ìpìlẹ̀ (grassroots).",
+        "name": "",
+        "introduction": "",
+        "keyFunctions": {
+          "title1": "Ìbòjú-tó Iṣẹ́ àti Àwọn Iṣẹ́-ìṣe Àgbègbè",
+          "description1": "Wọ́n ń bójú tó bí a ṣe ń pèsè iṣẹ́ nínú ẹ̀ka tí a yàn fún wọn, bíi ẹ̀kọ́, ìlera, amáyédẹrùn, ogbin, ilé, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ.",
+          "title2": "Ìmúṣe Ìlànà",
+          "description2": "Wọ́n ń rí i dájú pé ìlànà, ìpinnu, àti ètò ìjọba àgbègbè ń ṣiṣẹ́ ní ìpele àwùjọ. Wọ́n ń ṣiṣẹ́ pọ̀ pẹ̀lú àwọn olórí ẹ̀ka àti òṣìṣẹ́ láti mú ìpinnu ìgbìmọ̀ ṣẹ.",
+          "title3": "Ìbáṣepọ̀ Pẹ̀lú Àwùjọ àti Aṣojú",
+          "description3": "Wọ́n ń ṣojú ìfẹ́ àti àǹfààní àwọn ará agbègbè wọn nínú ìgbìmọ̀. Wọ́n ń gbọ́ ìbànújẹ, ń gba àbá, kí wọ́n sì fi ìdáhùn ránṣẹ́ sí ìgbìmọ̀.",
+          "title4": "Ìtọ́pa àti Ìròyìn",
+          "description4": "Wọ́n ń tọ́pa iṣẹ́ àwọn ètò nínú ẹ̀ka wọn, wọ́n sì ń ṣe ìròyìn ìlọsíwájú sí ìgbìmọ̀ ìjọba àgbègbè.",
+          "title5": "Pípín Ohun Èlò/Orísun",
+          "description5": "Wọ́n lè kópa nínú pípín orísun àti ìṣúná nínú ẹ̀ka wọn, kí ohun tí ó wà lè ba aini àwùjọ mu.",
+          "title6": "Ìfọwọ́sowọ́pọ̀ Pẹ̀lú Àwọn Alábàáṣiṣẹ́",
+          "description6": "Wọ́n ń ṣiṣẹ́ pọ̀ pẹ̀lú àwọn òṣìṣẹ́ ìjọba míì, alábàáṣiṣẹ́ òde, NGO, àti aládàáni láti yanju ìṣòro àgbègbè.",
+          "title7": "Ìmọ̀ràn Ìlànà àti Ìdàgbàsókè",
+          "description7": "Wọ́n ń fún ní àfikún/ìmọ̀ràn lórí ìdàgbàsókè ìlànà tàbí ètò, gẹ́gẹ́ bí ìmọ̀ wọn lórí aini àwùjọ àti bí iṣẹ́ ṣe ń ṣiṣẹ́.",
+          "title8": "Ìpinnu Àríyànjiyàn",
+          "description8": "Wọ́n ń kópa nínú dídá àríyànjiyàn dúró, ìdáríjì ìjà, àti rí i dájú pé ìgbésẹ̀ ìjọba jẹ́ fún àǹfààní aráàlú.",
+          "title9": "Ìbòjú-tó Òṣìṣẹ́ àti Ìṣẹ́",
+          "description9": "Wọ́n ń bójú tó òṣìṣẹ́ nínú ẹ̀ka wọn, kí wọ́n tẹ̀lé ìlànà iṣẹ́, ìlànà, àti òfin."
+        }
+      },
+
+      "headWorksAndInfrastructure": {
+        "role": "Olórí, Ẹ̀ka Ìṣẹ́ àti Amáyédẹrùn",
+        "bannerTitle": "Ìṣẹ́ àti Amáyédẹrùn",
+        "badgeTitle": "OLÓRÍ Ẹ̀KA ÌṢẸ́ ÀTI AMÁYÉDẸRÙN",
+        "overview": "Olórí Ẹ̀ka Ìṣẹ́ àti Amáyédẹrùn máa ń ṣàbójútó ìṣètò, ìdàgbàsókè, àti ìtọju àwọn iṣẹ́ amáyédẹrùn nínú àjọ tàbí ìjọba ìbílẹ̀.",
+        "name": "ẸǸJINÍÀ OLUWADAMILOLA SAMSON OYEGBAMI",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìṣàkóso Iṣẹ́-Àgbékalẹ̀ (Project Management)",
+          "description1": "Ṣíṣàkóso oríṣìíríṣìí iṣẹ́ ikọ́lé àti amáyédẹrùn, rí i dájú pé wọ́n parí ní àkókò, lábẹ́ ìnáwó tí a pinnu, àti gẹ́gẹ́ bí àfihàn/ìpèníjà tó yẹ.",
+          "title2": "Ìṣètò Ọ̀nà-Ìlà (Strategic Planning)",
+          "description2": "Ṣíṣe ètò pípẹ́ fún ìdàgbàsókè àti ìtọju amáyédẹrùn, ní ìbámu pẹ̀lú àfojúsùn àwùjọ tàbí àjọ.",
+          "title3": "Ìṣètò Ìnáwó àti Ìṣàkóso Ìṣúná",
+          "description3": "Ṣíṣàkóso apá owó fún àwọn iṣẹ́-ṣiṣe, pẹ̀lú ṣíṣe ìṣúná (budgets), títẹ̀lé ìnáwó (expenditures), àti wíwá/ṣíṣe àtìlẹ́yìn owó (funding).",
+          "title4": "Ìbámu Pẹ̀lú Òfin àti Ìlànà (Regulatory Compliance)",
+          "description4": "Rí i dájú pé gbogbo iṣẹ́ ń tẹ̀lé òfin àti ìlànà ìbílẹ̀, ti ìpínlẹ̀, àti ti orílẹ̀-èdè, pẹ̀lú àwọn ìlànà àyíká (environmental standards).",
+          "title5": "Adarí Ẹgbẹ́ (Team Leadership)",
+          "description5": "Ṣíṣàbójútó àti ṣíṣọ̀kan ẹgbẹ́ àwọn onímọ̀ ẹ̀rọ (engineers), àwọn ayaworan ilé (architects), àti àwọn òṣìṣẹ́ ikọ́lé, kí ìfọwọ́sowọ́pọ̀ àti èso iṣẹ́ pọ̀ si.",
+          "title6": "Ìbáṣepọ̀ Pẹ̀lú Àwọn Alábáṣiṣẹ́ (Stakeholder Engagement)",
+          "description6": "Bíbánisọ̀rọ̀ pẹ̀lú oríṣìíríṣìí alábáṣiṣẹ́, pẹ̀lú àwọn ilé-iṣẹ́ ìjọba, àwọn oníṣe-òwò (contractors), àti aráàlú, láti gba ìmọ̀ràn àti láti pèsè ìtẹ̀síwájú iṣẹ́.",
+          "title7": "Àbójútó Ìtọju (Maintenance Oversight)",
+          "description7": "Ṣíṣe àwọn ìlànà fún ìtọju amáyédẹrùn lálàáyé, kí ààbò àti ìpéye rẹ̀ le pẹ́.",
+          "title8": "Ìṣàkóso Ewu (Risk Management)",
+          "description8": "Ìdánimọ̀ àwọn ewu tó lè wáyé nínú iṣẹ́ amáyédẹrùn àti ṣíṣe ọ̀nà láti dín wọn kù."
+        }
+      },
+      "headAgricAndSocialServices": {
+        "role": "Olórí, Ẹ̀ka Ogbin àti Ìṣẹ́ Awùjọ",
+        "bannerTitle": "Ogbin àti Ìṣẹ́ Awùjọ",
+        "badgeTitle": "OLÓRÍ Ẹ̀KA OGBIN ÀTI ÌṢẸ́ AWÙJỌ",
+        "overview": "Olórí Ẹ̀ka Ogbin àti Ìṣẹ́ Awùjọ máa ń dojú kọ́ ìmúgbòòrò agbára ogbin àti ìgbéga àlàáfíà/ààbò awùjọ nínú àwùjọ tàbí àjọ.",
+        "name": "MRS OLABOWALE TAIWO AKABASORUN",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìdàgbàsókè Ogbin (Agricultural Development)",
+          "description1": "Ṣíṣàbójútó àwọn ètò tó ń ṣe àtìlẹ́yìn fún àwọn agbẹ, pẹ̀lú pípèsè ìkẹ́kọ̀ọ́, ohun èlò, àti imọ̀-ẹrọ láti mú ìkórè pọ̀ si àti ìlànà ogbin tó lè dúró pẹ́ (sustainable practices).",
+          "title2": "Ìṣẹ́ Awùjọ (Social Services)",
+          "description2": "Ṣíṣe àti mímú àwọn ètò awùjọ ṣiṣẹ́ tó ń mu didara ìgbésí-ayé aráàlú dara, bí iṣẹ́ ìlera, ètò ẹ̀kọ́, àti ọ̀nà ìdínkù òṣì (poverty alleviation strategies).",
+          "title3": "Ìdàgbàsókè Ìlànà (Policy Development)",
+          "description3": "Ṣíṣe ìlànà tó rọ̀ mọ́ ogbin àti ìṣẹ́ awùjọ tó bá ìfojúsùn ìjọba àti àwùjọ mu, kí lílo ohun amáyédẹrùn/àwọn orísun (resources) lè jẹ́ alágbára àti alágbára-láyé (sustainable).",
+          "title4": "Ìwádìí àti Ìmótuntun (Research and Innovation)",
+          "description4": "Gbigbóná sí ìwádìí ogbin láti ṣàgbékalẹ̀ ìmúlò àti imọ̀-ẹrọ tuntun tó lè mú ìṣelọpọ oúnjẹ pọ̀ si àti ìtẹ̀síwájú pẹ́.",
+          "title5": "Ìbáṣepọ̀ Pẹ̀lú Àwùjọ (Community Engagement)",
+          "description5": "Ifọwọ́sowọ́pọ̀ pẹ̀lú àwùjọ agbègbè, alábáṣiṣẹ́, àti àwọn àjọ míì láti mọ ohun tí wọ́n nílò, kí wọ́n sì lè ṣe àwọn ètò tó dá lórí ìdílé àwọn àìní náà.",
+          "title6": "Ìwá Owó àti Ìṣàkóso Ìṣúná (Funding and Budget Management)",
+          "description6": "Wíwá owó fún àwọn ètò ogbin àti awùjọ, ṣíṣàkóso ìṣúná, àti pípa àwọn orísun (resources) pín ní ọ̀nà tó munadoko.",
+          "title7": "Ìtẹ̀lé àti Ìtúpalẹ̀ (Monitoring and Evaluation)",
+          "description7": "Ṣíṣàyẹ̀wò bí àwọn ètò àti ìlànà ṣe ń ṣiṣẹ́, kíkó àlàyé (data) jọ láti wò ipa wọn, àti ṣíṣe àtúnṣe níbi tó bá yẹ.",
+          "title8": "Ìkẹ́kọ̀ọ́ àti Ìmúlò Agbára (Training and Capacity Building)",
+          "description8": "Ṣíṣe àwọn ìdánilẹ́kọ̀ọ́ (workshops) àti ìpàdé ìkẹ́kọ̀ọ́ fún àwọn agbẹ àti aráàlú láti kọ́ ọgbọn àti ìmọ̀ nípa ogbin àti ìṣẹ́ awùjọ."
+        }
+      },
+      "headEducationAndLibraryServices": {
+        "role": "Olórí, Ẹ̀ka Ẹ̀kọ́ àti Ìṣẹ́ Ilé-Ìkàwé",
+        "bannerTitle": "Ẹ̀kọ́ àti Ìṣẹ́ Ilé-Ìkàwé",
+        "badgeTitle": "OLÓRÍ Ẹ̀KA Ẹ̀KỌ́ ÀTI ÌṢẸ́ ILÉ-ÌKÀWÉ",
+        "overview": "Olórí Ẹ̀ka Ẹ̀kọ́ àti Ìṣẹ́ Ilé-Ìkàwé ló ń ṣàbójútó àwọn ètò ẹ̀kọ́ àti iṣẹ́ ilé-ìkàwé nínú àwùjọ tàbí àjọ.",
+        "name": "MR MAKINWA OLANIYI BABATUNDE",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìdàgbàsókè Ètò (Program Development)",
+          "description1": "Ṣíṣe àtẹ̀jáde àti mímú àwọn ètò ẹ̀kọ́ ṣiṣẹ́ tó bá oríṣìíríṣìí ọjọ́-ori, ìpele ẹ̀kọ́, àti àìní àwùjọ mu.",
+          "title2": "Ìṣàkóso Ilé-Ìkàwé (Library Management)",
+          "description2": "Ṣíṣàbójútó iṣẹ́ ilé-ìkàwé ti ìjọba tàbí ti ilé-ẹ̀kọ́, pẹ̀lú ìkójọpọ̀ ìwé/ohun èlò (collection development), ìṣàkóso orísun (resource management), àti iṣẹ́ ilé-ìkàwé.",
+          "title3": "Àbójútó Ètò-Ẹ̀kọ́ (Curriculum Oversight)",
+          "description3": "Ifọwọ́sowọ́pọ̀ pẹ̀lú àwọn ilé-ẹ̀kọ́ láti dágbà sí i tàbí mú ètò-ìkọ́ni (curricula) dára, kí ó lè bá ìlànà ẹ̀kọ́ àti àìní àwùjọ mu.",
+          "title4": "Adarí Ọmọ-Oṣiṣẹ́ (Staff Leadership)",
+          "description4": "Ṣíṣàkóso àwọn oṣiṣẹ́ ẹ̀kọ́ àti ilé-ìkàwé, pípèsè ìkẹ́kọ̀ọ́ àti àtìlẹ́yìn láti mú iṣẹ́ dára àti ìdàgbàsókè amọdájú.",
+          "title5": "Ìbáṣepọ̀ Pẹ̀lú Àwùjọ (Community Engagement)",
+          "description5": "Kíkó àjọṣepọ̀ pẹ̀lú ilé-ẹ̀kọ́, àwọn àjọ àwùjọ, àti alábáṣiṣẹ́ láti gbéga àǹfààní ẹ̀kọ́ àti ìlò ilé-ìkàwé.",
+          "title6": "Ìṣàkóso Ìṣúná (Budget Management)",
+          "description6": "Ṣíṣe àti ṣíṣàbójútó ìṣúná fún àwọn ètò ẹ̀kọ́ àti iṣẹ́ ilé-ìkàwé, kí pínpín orísun (resources) lè munadoko.",
+          "title7": "Ìdájọ́gbọ́n àti Ìdàgbàsókè Ìlànà (Advocacy and Policy Development)",
+          "description7": "Dídáwọ̀lé fún ètò ẹ̀kọ́ àti iṣẹ́ ilé-ìkàwé, nípa mímú ìlànà ìjọba nípa ẹ̀kọ́ lágbára, àti ríra owó ní ìpele ìbílẹ̀, ti ìpínlẹ̀, tàbí ti orílẹ̀-èdè.",
+          "title8": "Ìtẹ̀lé àti Ìdánwò (Monitoring and Assessment)",
+          "description8": "Ṣíṣàyẹ̀wò bó ṣe munadoko àwọn ètò ẹ̀kọ́ àti iṣẹ́ ilé-ìkàwé, lílo àlàyé (data) láti ṣe àtúnṣe, àti fífi abajade hàn fún alábáṣiṣẹ́."
+        }
+      },
+      "headPlanningBudgetResearchStatistics": {
+        "role": "Olórí, Ẹ̀ka Ìṣètò, Ìṣúná, Ìwádìí àti Ìṣirò",
+        "bannerTitle": "Olórí Ìṣètò, Ìṣúná, Ìwádìí àti Ìṣirò",
+        "badgeTitle": "OLÓRÍ ÌṢÈTÒ, ÌṢÚNÁ, ÌWÁDÌÍ & ÌṢIRÒ",
+        "overview": "Olórí Ìṣètò, Ìṣúná, Ìwádìí àti Ìṣirò ló ń ṣàbójútó ìṣètò, ìṣúná, ìwádìí, àti iṣẹ́ ìṣirò nínú àjọ tàbí ilé-iṣẹ́.",
+        "name": "MRS OLAJUMOKE ELIZABETH AKINLEHIN",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìṣètò Ọ̀nà-Ìlà (Strategic Planning)",
+          "description1": "Ṣíṣàkóso ìdàgbàsókè àti ìmúṣẹ ètò ìlànà pípẹ́ láti tọ́ka sí àfojúsùn, ìdí, àti bí a ṣe máa pín orísun (resource allocation) nínú àjọ.",
+          "title2": "Ìṣàkóso Ìṣúná (Budget Management)",
+          "description2": "Ṣíṣàbójútó ìmúrasílẹ̀, pínpín, àti títẹ̀lé ìṣúná àjọ, kí lílo orísun lè munadoko, kí ó sì bá ìpinnu ìlànà (strategic priorities) mu.",
+          "title3": "Àbójútó Ìwádìí (Research Oversight)",
+          "description3": "Ìṣọ̀kan àti àbójútó iṣẹ́ ìwádìí, rí i dájú pé ìwádìí jẹ́ tó ṣe pàtàkì, tó dá lórí àlàyé (data-driven), tí ó sì bá àfojúsùn àjọ mu.",
+          "title4": "Ìtúpalẹ̀ Ìṣirò (Statistical Analysis)",
+          "description4": "Kíkó, títúpalẹ̀, àti túmọ̀ àlàyé (data) láti ran ìpinnu, ìdàgbàsókè ìlànà, àti ìdánwò iṣẹ́ (performance evaluation) lọ́wọ́. Èyí lè kún fún ṣíṣe ìròyìn àti dashboard fún àwọn adarí àti alábáṣiṣẹ́.",
+          "title5": "Ìdàgbàsókè Ìlànà (Policy Development)",
+          "description5": "Ṣíṣe àti mímú ìlànà tó rọ̀ mọ́ ìṣètò, ìṣúná, àti ìwádìí ṣiṣẹ́, kí ìbámu, ìhàn gbangba (transparency), àti ìjẹ́wọ́ gbese (accountability) wà káàkiri àwọn ẹ̀ka.",
+          "title6": "Ìsọtẹ́lẹ̀ àti Ìròyìn (Forecasting and Reporting)",
+          "description6": "Pípèsè ìsọtẹ́lẹ̀ fún àìní owó àti orísun, àti ṣíṣe ìròyìn déédéé nípa iṣẹ́, ipo ìṣúná, àti abajade ìwádìí fún alábáṣiṣẹ́ inú àti tìta.",
+          "title7": "Ifọwọ́sowọ́pọ̀ Pẹ̀lú Alábáṣiṣẹ́ (Collaboration with Stakeholders)",
+          "description7": "Ifọwọ́sowọ́pọ̀ pẹ̀lú ìṣàkóso àgbà, àwọn olórí ẹ̀ka, àti àwọn alábáṣiṣẹ́ òde láti rí i dájú pé ìṣètò, ìṣúná, àti ìwádìí ń ṣiṣẹ́ dáadáa tó sì ń ṣe àtìlẹ́yìn fún àfojúsùn àjọ.",
+          "title8": "Ìmúdàgba Títílọ́ (Continuous Improvement)",
+          "description8": "Ìdánimọ̀ àwọn àǹfààní láti mu ìlànà ṣiṣẹ́ dára, àti rí i dájú pé ìṣètò, ìṣúná, ìwádìí, àti ìṣirò ń bá ìlànà tó dára jù lọ (best practices) àti àìní àjọ tó ń yí padà mu."
+        }
+      },
+      "headWomenAffairsAndPovertyAlleviation": {
+        "role": "Olórí, Ẹ̀ka WAPA",
+        "bannerTitle": "Olórí Ìṣẹ́ Ọ̀ràn Àwọn Obìnrin àti Ìdínkù Òṣì",
+        "badgeTitle": "OLÓRÍ ÌṢẸ́ Ọ̀RÀN ÀWỌN OBÌNRIN ÀTI ÌDÍNKÙ ÒṢÌ",
+        "overview": "Olórí Ìṣẹ́ Ọ̀ràn Àwọn Obìnrin àti Ìdínkù Òṣì ló ń ṣàkóso àwọn ìmúlò àti ètò tó ń gbé ìlera/àlàáfíà àwọn obìnrin ga, tó sì ń dín òṣì kù nínú àwùjọ tàbí àjọ.",
+        "name": "MRS OLAJUMOKE ELIZABETH AKINLEHIN",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìdàgbàsókè àti Ìmúṣẹ Ìlànà (Policy Development and Implementation)",
+          "description1": "Ṣíṣe àti mímú ìlànà ṣiṣẹ́ tó ń gbé àṣeyọrí/ìdọ́gba ọkùnrin-ọba (gender equality) ga, tó ń ṣe àtìlẹ́yìn fún ẹ̀tọ́ obìnrin, tí ó sì ń dín òṣì kù. Èyí lè kún fún dídáwọ̀lé fún àtúnṣe òfin àti ìbáṣepọ̀ awùjọ.",
+          "title2": "Ìṣàkóso Ètò (Program Management)",
+          "description2": "Ṣíṣàbójútó àwọn ètò tó ń fún obìnrin ní agbára, tó ń pèsè àǹfààní ọrọ̀-ajé, tí ó sì ń koju gbígbé gbòǹgbò òṣì. Èyí lè jẹ́ ìkẹ́kọ̀ọ́ iṣẹ́ ọwọ́, àtìlẹ́yìn microfinance, tàbí ètò ìlera àti ẹ̀kọ́.",
+          "title3": "Ìkójọpọ̀ Orísun/Ìwá Owó (Resource Mobilization)",
+          "description3": "Wíwá owó àti orísun láti ṣe àtìlẹ́yìn fún àwọn ètò tó ń gbé ipele ìgbé-ayé àwọn obìnrin àti àwọn tó wà nínú òṣì ga.",
+          "title4": "Ifọwọ́sowọ́pọ̀ àti Àjọṣepọ̀ (Collaboration and Partnerships)",
+          "description4": "Ifọwọ́sowọ́pọ̀ pẹ̀lú àwọn ẹ̀ka ìjọba míì, àwọn NGO, àti ẹgbẹ́ àwùjọ láti koju òṣì àti àìdọ́gba akọ-obìnrin ní ọ̀nà tó ṣọ̀kan.",
+          "title5": "Ìtẹ̀lé àti Ìtúpalẹ̀ (Monitoring and Evaluation)",
+          "description5": "Ṣíṣàyẹ̀wò bí ìlànà àti ètò ṣe munadoko, kíkó àlàyé (data) jọ nípa ipa wọn, àti rí i dájú pé iṣẹ́ ń dé ọdọ àwọn ẹni tó yẹ.",
+          "title6": "Ìmúlò Agbára (Capacity Building)",
+          "description6": "Pípèsè ìkẹ́kọ̀ọ́ àti àtìlẹ́yìn fún àwọn obìnrin, adarí àwùjọ, àti oṣiṣẹ́ láti kọ́ ọgbọn àti ìmọ̀ tó ń gbé ipo ọrọ̀-ajé wọn ga.",
+          "title7": "Kíkó Àlàyé Jọ àti Ìròyìn (Data Collection and Reporting)",
+          "description7": "Kíkó àlàyé jọ nípa ìmúlò agbára obìnrin àti ìdínkù òṣì láti ran ìpinnu àti àtúnṣe ìlànà lọ́wọ́, àti fífi abajade hàn fún alábáṣiṣẹ́."
+        }
+      },
+      "headPrimaryHealthCareService": {
+        "role": "Olórí, Ẹ̀ka Ìṣẹ́ Ìlera Àkọ́kọ́",
+        "bannerTitle": "Olórí Ìṣẹ́ Ìlera Àkọ́kọ́",
+        "badgeTitle": "OLÓRÍ ÌṢẸ́ ÌLERA ÀKỌ́KỌ́",
+        "overview": "Olórí Ìṣẹ́ Ìlera Àkọ́kọ́ ló ń ṣàbójútó pípèsè iṣẹ́ ìlera pàtàkì ní ipele àwùjọ, pẹ̀lú ìdènà àrùn, ìwádìí títẹ̀síwájú (early detection), àti ìtọju àwọn ìṣòro ìlera tó wọ́pọ̀.",
+        "name": "DR OLUDOLAPO SOTUNDE",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìṣàkóso Ètò (Program Management)",
+          "description1": "Ṣíṣe, mímú ṣiṣẹ́, àti ṣíṣàbójútó àwọn ètò ìlera àkọ́kọ́, kí wọ́n le bá àìní ìlera àwọn aráàlú mu, bí ìlera ìyá àti ọmọ, ajẹsára (immunization), ìdènà àrùn, àti ẹ̀kọ́ ìlera.",
+          "title2": "Pínpín Orísun àti Ìṣàkóso (Resource Allocation and Management)",
+          "description2": "Rí i dájú pé a pín orísun dáadáa, pẹ̀lú oṣiṣẹ́, ohun èlò, àti oògùn, láti pèsè iṣẹ́ ìlera àkọ́kọ́ tó munadoko.",
+          "title3": "Àbójútó Oṣiṣẹ́ àti Ìkẹ́kọ̀ọ́ (Staff Supervision and Training)",
+          "description3": "Adarí àti ìṣàkóso àwọn amọ̀ja ìlera àkọ́kọ́ (gẹ́gẹ́ bí dókítà, nọọsi, àti àwọn oṣiṣẹ́ ìlera àwùjọ), pípèsè ìkẹ́kọ̀ọ́, àti rí i dájú pé iṣẹ́ dára.",
+          "title4": "Ìdánilójú Didara (Quality Assurance)",
+          "description4": "Ṣíṣe àti mímú ìlànà/àwọn ìtọ́sọ́nà ṣiṣẹ́ fún pípèsè ìlera, kí iṣẹ́ lè bá ìpinnu didara àti ààbò mu.",
+          "title5": "Ìbáṣepọ̀ Pẹ̀lú Àwùjọ (Community Engagement)",
+          "description5": "Ifọwọ́sowọ́pọ̀ pẹ̀lú àwùjọ agbègbè láti gbé ìmọ̀ ìlera ga, láti rọ aráàlú sí ìhùwàsí tó dára, àti láti rí i dájú pé iṣẹ́ rọrùn láti wọlé sí, tó sì bá àṣà mu.",
+          "title6": "Ìgbéga Ìlera àti Ìdènà Àrùn (Health Promotion and Disease Prevention)",
+          "description6": "Ìṣọ̀kan ìpolówó ìlera gbangba láti dènà àrùn tó wọ́pọ̀, mú ìmótótó dara, àti gbé ìgbésí-ayé tó ní ilera ga.",
+          "title7": "Ìtẹ̀lé àti Ìtúpalẹ̀ (Monitoring and Evaluation)",
+          "description7": "Títẹ̀lé iṣẹ́ àti ipa àwọn ètò ìlera, kíkó àlàyé jọ nípa pípèsè iṣẹ́, àti ṣíṣe àtúnṣe gẹ́gẹ́ bí ìwádìí ṣe fi hàn.",
+          "title8": "Ifọwọ́sowọ́pọ̀ Pẹ̀lú Àwọn Ìpele Ìlera Míì (Collaboration with Other Health Services)",
+          "description8": "Ifọwọ́sowọ́pọ̀ pẹ̀lú ìpele ìlera míì (secondary àti tertiary care) láti rí i dájú pé ìtọju ń tẹ̀síwájú fún àwọn aláìsàn tí wọ́n nílò ìtọju amọ̀ja.",
+          "title9": "Ìṣàkóso Ìṣúná àti Ìnáwó (Budget and Financial Management)",
+          "description9": "Ṣíṣàbójútó ìṣúná ẹ̀ka, rí i dájú pé a lò orísun ní ọ̀nà tó munadoko láti ṣe àtìlẹ́yìn fún iṣẹ́ ìlera àkọ́kọ́."
+        }
+      },
+      "headEnvironmentalServices": {
+        "role": "Olórí, Ẹ̀ka Ìṣẹ́ Àyíká",
+        "bannerTitle": "Olórí Ìṣẹ́ Àyíká",
+        "badgeTitle": "DÍRẸ́KÍTÀ ÌṢẸ́ ÀYÍKÁ",
+        "overview": "Olórí Ìṣẹ́ Àyíká ló ń ṣàbójútó ìṣàkóso àti àbò ayé/àyíká nínú àjọ tàbí àwùjọ.",
+        "name": "MR OBIKOYA BABATUNDE ISAAC",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìdàgbàsókè Ìlànà Àyíká (Environmental Policy Development)",
+          "description1": "Ṣíṣe àti mímú ìlànà àti ọ̀nà-ìlà ṣiṣẹ́ láti dáàbò bo àyíká, rí i dájú pé ìdúróṣinṣin (sustainability) wà, àti kí a tẹ̀lé ìlànà/àwọn ìdíwọ̀n àyíká.",
+          "title2": "Ìṣàkóso Àyíká (Environmental Management)",
+          "description2": "Ṣíṣàkóso àwọn ètò tó rọ̀ mọ́ ìṣàkóso egbin, àtúnlò (recycling), ìdènà ìdọ̀tí (pollution control), didara omi àti afẹ́fẹ́, àti ìtọju ilẹ̀, láti dín ipa búburú kù.",
+          "title3": "Ìṣàkóso Orísun (Resource Management)",
+          "description3": "Àbójútó lílo orísun isedá ní ọ̀nà tó lè dúró pẹ́, pẹ̀lú ètò dídín lílo agbára kù (energy efficiency), ìtójú omi, àti àtúnlò orísun.",
+          "title4": "Ìbámu àti Ìròyìn (Compliance and Reporting)",
+          "description4": "Rí i dájú pé àjọ tàbí àwùjọ ń tẹ̀lé òfin àti ìlànà àyíká. Ṣíṣe ìròyìn fún àwọn adarí inú àti àwọn alákóso/agbofinro òfin.",
+          "title5": "Àbójútó Oṣiṣẹ́ àti Ìkẹ́kọ̀ọ́ (Staff Supervision and Training)",
+          "description5": "Adarí àti ìṣàkóso ẹgbẹ́ àwọn amọ̀ja àyíká, pípèsè ìkẹ́kọ̀ọ́ nípa ìlànà tó dára jù lọ, ààbò, àti òfin àyíká.",
+          "title6": "Àwọn Ètò Alágbára (Sustainability Initiatives)",
+          "description6": "Gbigbega àti mímú àwọn ètò alágbára ṣiṣẹ́, bí ìlànà ilé aláwọ̀ ewe (green building), lílo agbára isọdọtun (renewable energy), àti dídín erogba kù (carbon footprints).",
+          "title7": "Ẹ̀kọ́ Àyíká àti Ìmọ̀lára (Environmental Education and Awareness)",
+          "description7": "Ṣíṣe ìpolówó/ìtọ́kasí láti kọ́ aráàlú tàbí oṣiṣẹ́ nípa ọ̀ràn àyíká, ìlànà alágbára, àti ìhùwàsí tó bójú mu ayé.",
+          "title8": "Ìtẹ̀lé àti Ìtúpalẹ̀ (Monitoring and Evaluation)",
+          "description8": "Títẹ̀lé bí àwọn ètò àyíká ṣe ń ṣiṣẹ́, títẹ̀lé àwọn àmì ìtọ́ka àyíká, àti ṣíṣe àtúnṣe níbi tó bá yẹ.",
+          "title9": "Ìdáhùn Pajawiri àti Ìṣàkóso Ewu (Emergency Response and Risk Management)",
+          "description9": "Ṣíṣe ètò àti ìlànà fún dídáhùn sí pajawiri àyíká bí ìtú omi/kemika (spills), iṣẹlẹ̀ ìdọ̀tí, tàbí àjàkálẹ̀ ajalu isedá."
+        }
+      },
+      "clerkOfLegislativeArm": {
+        "role": "Kọ́lẹ́ẹ̀kì Ilé-Ìgbìmọ̀",
+        "bannerTitle": "Kọ́lẹ́ẹ̀kì Apá Ìgbìmọ̀ Aṣòfin",
+        "badgeTitle": "KỌ́LẸ́Ẹ̀KÌ ÌGBÌMỌ̀",
+        "overview": "Kọ́lẹ́ẹ̀kì Apá Ìgbìmọ̀ Aṣòfin jẹ́ oṣiṣẹ́ alákóso pàtàkì tó ń ṣàbójútó àwọn ìlànà aṣòfin àti rí i dájú pé iṣẹ́ apá ìgbìmọ̀ ń lọ dáadáa, bíi ilé-ìgbìmọ̀ aṣòfin tàbí ìgbìmọ̀ ìjọba.",
+        "name": "MR ADEBOMI ABAYOMI",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Àtìlẹ́yìn Aṣòfin (Legislative Support)",
+          "description1": "Ríràn lọ́wọ́ nínú pípèsè àtòjọ iṣẹ́ (agenda) aṣòfin, àwọn ìwé ìkànsí, àti àwọn ohun èlò fún ìpàdé, kí wọ́n lè wà lọ́wọ́ àwọn ọmọ ìgbìmọ̀ ní àkókò.",
+          "title2": "Ìtọju Ìkọ̀wé àti Ìtẹ̀jáde (Record Keeping and Documentation)",
+          "description2": "Pípamọ́ àkọsílẹ̀ tó péye nípa ohun tó ṣẹlẹ̀ nínú ìpàdé, pẹ̀lú àríyànjiyàn, ìdìbò, àti ìpinnu. Èyí pẹ̀lú ṣíṣe ìṣẹ̀lẹ̀ ìṣẹ̀jú (minutes), transcript, àti ìròyìn òfìsialì.",
+          "title3": "Ìtọ́sọ́nà Ìlànà (Procedural Guidance)",
+          "description3": "Pípa ìtọnisọna fún àwọn aṣòfin nípa òfin ìlànà ìpàdé (parliamentary rules), ìlànà iṣẹ́, àti àṣẹ, kí iṣẹ́ aṣòfin lè jẹ́ tó bófin mu.",
+          "title4": "Ìṣàkóso Àmọ̀ràn-Ọ́fíìsì (Administrative Management)",
+          "description4": "Ṣíṣàkóso iṣẹ́ ọ́fíìsì, pẹ̀lú ìṣọ̀kan ìbánisọ̀rọ̀ láàárín ọmọ ìgbìmọ̀, oṣiṣẹ́, àti aráàlú. Èyí lè kún fún ìtọ́jú lẹ́tà àti ṣíṣe ìpàdé kọ̀míìtì.",
+          "title5": "Títẹ̀lé Òfin/Ìwé-Ofin (Legislation and Bill Tracking)",
+          "description5": "Ríràn lọ́wọ́ nínú kọ́, ṣàtúnyẹ̀wò, àti títẹ̀lé bí bill àti resolution ṣe ń lọ lórí ìlànà aṣòfin.",
+          "title6": "Ìbáṣepọ̀ Pẹ̀lú Aráàlú àti Ìhàn Gbangba (Public Engagement and Transparency)",
+          "description6": "Rí i dájú pé iṣẹ́ aṣòfin àti ìpinnu rẹ̀ wà ní mímú sí aráàlú, nípa pípa ìhàn gbangba mọ́, àti ríràn aráàlú lọ́wọ́ láti wọlé sí àkọsílẹ̀, ìṣẹ̀lẹ̀, àti ìwé.",
+          "title7": "Yíyan Àwọn Oṣiṣẹ́ (Election of Officers)",
+          "description7": "Ní àwọn agbègbè kan, Kọ́lẹ́ẹ̀kì lè jẹ́ ẹni tó ń ṣàbójútó yíyan àwọn oṣiṣẹ́ pàtàkì nínú ìgbìmọ̀, bíi Speaker tàbí President of the Assembly.",
+          "title8": "Àtìlẹ́yìn fún Speaker/Alága (Supporting the Speaker/Chairperson)",
+          "description8": "Pípèsè àtìlẹ́yìn ọ́fíìsì fún Speaker tàbí Alága nígbà ìpàdé, pẹ̀lú ṣíṣàkóso agenda àti ìtọ́sọ́nà iṣẹ́ tí yóò tẹ̀lé.",
+          "title9": "Ìlànà ìbáwọ̀n àti Ìbámu (Protocol and Compliance)",
+          "description9": "Rí i dájú pé ìgbìmọ̀ ń tẹ̀lé àwọn àìní òfin àti ìlànà ìjọba (constitutional requirements), pẹ̀lú ìbámu pẹ̀lú ìlànà ìpàdé (rules of order) àti ojúṣe òfin."
+        }
+      },
+      "headIctUnit": {
+        "role": "Olórí, Ẹ̀ka I.C.T",
+        "bannerTitle": "Olórí Ẹ̀ka ICT (Imọ̀ Ẹ̀rọ Ìbánisọ̀rọ̀ àti Ìtànkálẹ̀ Alaye)",
+        "badgeTitle": "OLÓRÍ ICT",
+        "overview": "Olórí ICT (Imọ̀ Ẹ̀rọ Ìbánisọ̀rọ̀ àti Ìtànkálẹ̀ Alaye) ló ń ṣàbójútó ìdàgbàsókè, ìmúṣẹ, àti ìṣàkóso amáyédẹrùn àti iṣẹ́ imọ̀-ẹrọ àjọ.",
+        "name": "MR GISANRI SAHEED",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìṣètò Ọ̀nà-Ìlà ICT (ICT Strategy and Planning)",
+          "description1": "Ṣíṣe àti mímú ọ̀nà-ìlà ICT ṣiṣẹ́ tó bá àfojúsùn àjọ mu, kí imọ̀-ẹrọ lè ṣe àtìlẹ́yìn fún iṣẹ́, ìmótuntun, àti ìdàgbàsókè.",
+          "title2": "Ìṣàkóso Amáyédẹrùn (Infrastructure Management)",
+          "description2": "Ṣíṣàbójútó amáyédẹrùn IT, pẹ̀lú nẹ́tíwọ́ọ̀kì, sẹ́fà, hardware, àti software, kí wọ́n lè jẹ́ alágbára, aláàbò, tó sì lè gbooro (scalable).",
+          "title3": "Ìṣọ̀kan Eto àti Àtìlẹ́yìn (System Integration and Support)",
+          "description3": "Rí i dájú pé oríṣìíríṣìí eto IT (software, hardware, database) ń ṣiṣẹ́ pọ̀ dáadáa, àti pípèsè àtìlẹ́yìn imọ̀-ẹrọ láti yanju ìṣòro àti mú iṣẹ́ eto dara.",
+          "title4": "Ààbò Ayelujara (Cyber-security)",
+          "description4": "Ṣíṣàkóso àti mímú ìlànà ààbò-àyelujara ṣiṣẹ́ láti dáàbò bo àlàyé, nẹ́tíwọ́ọ̀kì, àti eto àjọ lórí irokeke cyber, pẹ̀lú ìbámu pẹ̀lú ìlànà ìdábòbò data.",
+          "title5": "Ìmótuntun àti Ìgbéga Imọ̀-ẹrọ (Innovation and Technology Upgrades)",
+          "description5": "Ìdánimọ̀ imọ̀-ẹrọ tuntun tó lè mú iṣẹ́ àjọ rọrùn, àti ṣíṣàkóso ìmúṣẹ eto tuntun tàbí ìgbéga (upgrade) àwọn eto tó wà.",
+          "title6": "Ìṣàkóso Data àti Ìtúpalẹ̀ (Data Management and Analytics)",
+          "description6": "Àbójútó ìṣètò ìṣàkóso data, rí i dájú pé data péye, rọrùn láti rí, tó sì bá ìlànà mu, àti lílo ìtúpalẹ̀ data láti ran ìpinnu lọ́wọ́.",
+          "title7": "Adarí Ẹgbẹ́ àti Ìdàgbàsókè (Team Leadership and Development)",
+          "description7": "Adarí àti ìṣàkóso ẹgbẹ́ ICT, pípèsè ìtọ́sọ́nà, ìkẹ́kọ̀ọ́, àti ìdàgbàsókè amọdájú kí iṣẹ́ wọn lè munadoko, kí wọ́n sì mọ àṣà tuntun imọ̀-ẹrọ.",
+          "title8": "Ìṣàkóso Ìṣúná àti Orísun (Budget and Resource Management)",
+          "description8": "Ṣíṣàkóso ìṣúná ẹ̀ka ICT, rí i dájú pé a lò orísun ní ọ̀nà tó munadoko, àti ṣíṣàyẹ̀wò bó ṣe tóye owó (cost-effectiveness) nínú ìdókòwò imọ̀-ẹrọ.",
+          "title9": "Ìkẹ́kọ̀ọ́ àti Àtìlẹ́yìn Olùlò (User Training and Support)",
+          "description9": "Pípèsè ìkẹ́kọ̀ọ́ àti àtìlẹ́yìn fún àwọn olùlò, kí wọ́n lè lo imọ̀-ẹrọ dáadáa, àti dídáhùn sí gbogbo ìbànújẹ/àìní imọ̀-ẹrọ."
+        }
+      },
+      "headLegalUnit": {
+        "role": "Olórí, Ẹ̀ka Ìṣẹ́ Òfin",
+        "bannerTitle": "Olórí Ẹ̀ka Òfin",
+        "badgeTitle": "OLÓRÍ Ẹ̀KA ÒFIN",
+        "overview": "Olórí Ẹ̀ka Òfin ló ń ṣàbójútó ọ̀ràn òfin àjọ, pípèsè ìmọ̀ràn òfin, rí i dájú pé àjọ ń tẹ̀lé òfin àti ìlànà, àti dídín ewu òfin kù.",
+        "name": "MR OGUNDARE BABATUNDE ADEBAYOMI",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìmọ̀ràn Òfin (Legal Advisory)",
+          "description1": "Pípèsè ìmọ̀ràn òfin fún ìṣàkóso àgbà, àwọn ẹ̀ka, àti alábáṣiṣẹ́ míì lórí oríṣìíríṣìí ọ̀ràn òfin, pẹ̀lú kontrákì, ìṣàkóso ilé-iṣẹ́ (corporate governance), ẹ̀tọ́ ohun-ìní ọpọlọ (intellectual property), òfin iṣẹ́ (labor law), àti ìyanjú àríyànjiyàn (dispute resolution).",
+          "title2": "Ìṣàkóso Kontrákì (Contract Management)",
+          "description2": "Ṣíṣàbójútó kọ́, ṣàtúnyẹ̀wò, àti jíròrò kontrákì àti àdéhùn, kí wọ́n lè jẹ́ tó bófin mu, kí wọ́n sì dáàbò bo àǹfààní àjọ.",
+          "title3": "Ìṣàkóso Ìbámu (Compliance Management)",
+          "description3": "Rí i dájú pé àjọ ń tẹ̀lé gbogbo òfin, ìlànà, àti ìdíwọ̀n tó yẹ. Èyí kún fún àbójútó ìbámu pẹ̀lú ìlànà, ìwà rere (ethical practices), àti ìṣàkóso ilé-iṣẹ́ (corporate governance).",
+          "title4": "Ìyanjú Àríyànjiyàn àti Ẹjọ́ (Dispute Resolution and Litigation)",
+          "description4": "Ìṣàkóso àríyànjiyàn òfin, pẹ̀lú ẹjọ́, arbitration, àti mediation. Dídúró fún àjọ tàbí ṣíṣọ̀kan pẹ̀lú agbẹjọ́rò òde nínú ìgbésẹ̀ òfin.",
+          "title5": "Ìṣàkóso Ewu (Risk Management)",
+          "description5": "Ìdánimọ̀ àti dídín ewu òfin kù, pípèsè ìmọ̀ràn lórí bí a ṣe lè dènà ewu òfin, àti ṣíṣe ọ̀nà láti dáàbò bo ipo òfin àjọ.",
+          "title6": "Ìtọju Ìwé Òfin àti Àkọsílẹ̀ (Legal Documentation and Record-Keeping)",
+          "description6": "Rí i dájú pé a ní ìkọ̀wé tó peye, pípamọ́ àkọsílẹ̀, àti ìṣàkóso fáìlì òfin àti kontrákì, kí wọ́n lè rọrùn láti rí, kí wọ́n sì bá ìlànà mu.",
+          "title7": "Ìdàgbàsókè Ìlànà (Policy Development)",
+          "description7": "Ríràn lọ́wọ́ nínú ṣíṣe àti mímú ìlànà inú (internal policies) ṣiṣẹ́, kí wọ́n lè bá àìní òfin mu, kí wọ́n sì dín ewu òfin kù.",
+          "title8": "Ìkẹ́kọ̀ọ́ àti Ẹ̀kọ́ (Training and Education)",
+          "description8": "Pípèsè ìkẹ́kọ̀ọ́ òfin àti ìtọ́sọ́nà fún oṣiṣẹ́ lórí ọ̀ràn òfin tó rọ̀ mọ́ iṣẹ́ wọn, bí ìbámu, ìwà òdodo, àti ìṣàkóso kontrákì.",
+          "title9": "Ìbáṣepọ̀ Pẹ̀lú Agbẹjọ́rò Òde (Liaison with External Counsel)",
+          "description9": "Ìṣọ̀kan pẹ̀lú ilé-iṣẹ́ agbẹjọ́rò tàbí amọ̀ja òfin òde níbi tí a bá nílò ìmọ̀ amọ̀ja, àti ìṣàkóso ìbáṣepọ̀ pẹ̀lú wọn."
+        }
+      },
+      "headTourismUnit": {
+        "role": "Olórí, Ẹ̀ka Ìrìnàjò Aṣà",
+        "bannerTitle": "Olórí Ẹ̀ka Ìrìnàjò Aṣà",
+        "badgeTitle": "OLÓRÍ Ẹ̀KA ÌRÌNÀJÒ AṢÀ",
+        "overview": "Olórí Ẹ̀ka Ìrìnàjò Aṣà fún ìjọba ìbílẹ̀ ló ń ṣàbójútó àti gbéga ìrìnàjò nínú agbègbè ìjọba, pẹ̀lú ìdí láti mú ọrọ̀ ajé agbègbè dàgbà, dáàbò bo àṣà, àti mú ìrírí àwọn arìnrìnàjò dara.",
+        "name": "MRS ABIMBOLA OMOLOLA VICTORIA",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìdàgbàsókè Ìrìnàjò àti Ọ̀nà-Ìlà (Tourism Development and Strategy)",
+          "description1": "Ṣíṣe àti mímú ọ̀nà-ìlà ṣiṣẹ́ láti gbéga ìrìnàjò nínú agbègbè, ìdánimọ̀ àǹfààní ìdàgbàsókè, àti rí i dájú pé ó bá àfojúsùn ìjọba ìbílẹ̀ àti àìní àwùjọ mu.",
+          "title2": "Ìpolówó Ibùdó Ìrìnàjò (Destination Marketing)",
+          "description2": "Ìpolówó agbègbè gẹ́gẹ́ bí ibùdó ìrìnàjò nípasẹ̀ ìpolówó, pẹpẹ digital, iṣẹlẹ̀, àti ifọwọ́sowọ́pọ̀ pẹ̀lú ilé-iṣẹ́ ìrìnàjò, àwọn tour operators, àti alábáṣiṣẹ́.",
+          "title3": "Ìṣètò àti Ìṣàkóso Ìṣẹ̀lẹ̀ (Event Planning and Management)",
+          "description3": "Ṣíṣe ìṣètò àti àtìlẹ́yìn fún àwọn iṣẹlẹ̀ agbègbè, àjọyọ̀, àti ìṣe àṣà tó ń fa arìnrìnàjò, tó ń ṣe ayẹyẹ àṣà ìbílẹ̀, tí ó sì ń jẹ́ kí agbègbè wù.",
+          "title4": "Ifọwọ́sowọ́pọ̀ Pẹ̀lú Alábáṣiṣẹ́ (Stakeholder Collaboration)",
+          "description4": "Ifọwọ́sowọ́pọ̀ pẹ̀lú àwọn oníṣòwò agbègbè, ilé ìtura, àwọn àjọ àṣà, àti adarí àwùjọ láti mú amáyédẹrùn àti iṣẹ́ ìrìnàjò dára, kí ìrìnàjò sì jẹ́ anfààní fún ọrọ̀ ajé agbègbè.",
+          "title5": "Ìdàgbàsókè Ọja Ìrìnàjò (Tourism Product Development)",
+          "description5": "Ìdánimọ̀ àti ìdàgbàsókè ohun ìrìnàjò aláyọkà agbègbè, bí ìrìn àjò ìtàn/àṣà (heritage tours), eré òde (outdoor activities), iṣẹ́ ọnà, àti ìrírí oúnjẹ, láti fa arìnrìnàjò.",
+          "title6": "Ìrìnàjò Alágbára àti Tó Ní Ìdájọ́ (Sustainability and Responsible Tourism)",
+          "description6": "Gbigbega ìrìnàjò tó dín ipa búburú lórí àyíká kù, tó sì ń jẹ́ kí ìrìnàjò lè dúró pẹ́, nígbà tó tún ń jẹ́ kí àwùjọ rí anfààní.",
+          "title7": "Ìṣẹ́ Àtìlẹ́yìn Arìnrìnàjò àti Ìrírí (Visitor Services and Experience)",
+          "description7": "Àbójútó ìdàgbàsókè àti ìtọju ohun èlò/ìpèsè tó rọ̀ mọ́ ìrìnàjò, bí ilé ìtẹ́wọ́gba (visitor centers), àfihàn (signage), ọkọ̀ ojú pópó, àti ìmọ̀ràn/ìtànkálẹ̀ alaye, kí arìnrìnàjò le ní ìrírí tó dára.",
+          "title8": "Ìwádìí àti Kíkó Àlàyé Jọ (Research and Data Collection)",
+          "description8": "Títẹ̀lé ìlànà ìrìnàjò (tourism trends), kíkó àlàyé arìnrìnàjò jọ, àti ṣíṣe ìwádìí láti ran ìpinnu ìlànà lọ́wọ́ àti láti mú ohun ìrìnàjò dara.",
+          "title9": "Òfin/Ìlànà àti Ìbámu (Regulations and Compliance)",
+          "description9": "Rí i dájú pé iṣẹ́ ìrìnàjò agbègbè ń tẹ̀lé ìlànà tó yẹ, pẹ̀lú zoning, licensing, àti ìlànà àyíká, àti ifọwọ́sowọ́pọ̀ pẹ̀lú àwọn alaṣẹ míì láti jẹ́ kí agbègbè dáa, tó sì rọrùn fún arìnrìnàjò."
+        }
+      },
+      "headProcurementUnit": {
+        "role": "Olórí, Ẹ̀ka Rírà (Procurement) ",
+        "bannerTitle": "Olórí Ẹ̀ka Rírà (Procurement)",
+        "badgeTitle": "OLÓRÍ Ẹ̀KA RÍRÀ (PROCUREMENT)",
+        "overview": "Olórí Ẹ̀ka Rírà (Procurement) fún ìjọba ìbílẹ̀ ló ń ṣàkóso àti ṣàbójútó gbogbo ìlànà rírà ohun èlò, iṣẹ́, àti iṣẹ́ ikọ́lé fún iṣẹ́ ìjọba ìbílẹ̀.",
+        "name": "MR OGUNDIMU JIMOH HASSAN",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìṣètò àti Ọ̀nà-Ìlà Rírà (Procurement Planning and Strategy)",
+          "description1": "Ṣíṣe àti mímú ọ̀nà-ìlà rírà ṣiṣẹ́ tó bá ìṣúná, ìlànà, àti àfojúsùn ìjọba ìbílẹ̀ mu, kí ìlànà rírà lè jẹ́ aláyègbọ́n, tó sì dín ináwó kù.",
+          "title2": "Ìṣàkóso Olùpèsè (Vendor Management)",
+          "description2": "Ìdánimọ̀, yíyan, àti ìṣàkóso ìbáṣepọ̀ pẹ̀lú àwọn olùpèsè àti olùṣẹ́ iṣẹ́, rí i dájú pé a jíròrò kontrákì ní ìdájọ́, kí wọ́n sì bá àìní ìjọba ìbílẹ̀ mu.",
+          "title3": "Tẹ́ndà àti Kontrákì (Tendering and Contracting)",
+          "description3": "Ṣíṣàbójútó ìlànà tẹ́ndà, pẹ̀lú pípèsè ìwé tẹ́ndà, ṣíṣàyẹ̀wò bids, àti fífi kontrákì fún ẹni tó yẹ ní ìbámu pẹ̀lú òfin/ìlànà ìjọba ìbílẹ̀.",
+          "title4": "Ìbámu Òfin àti Àbójútó Ìlànà (Compliance and Regulatory Oversight)",
+          "description4": "Rí i dájú pé gbogbo iṣẹ́ rírà ń tẹ̀lé òfin, ìlànà, àti ìpinnu ìjọba, kí ìhàn gbangba, ìjẹ́wọ́ gbese, àti ìdájọ́ tó tó wà nínú ìlànà.",
+          "title5": "Ìṣàkóso Ìṣúná àti Orísun (Budget and Resource Management)",
+          "description5": "Ṣíṣàkóso ìṣúná rírà, rí i dájú pé ináwó bá orísun owó mu, àti pé gbogbo rírà wà nínú ààlà ìṣúná.",
+          "title6": "Ìtẹ̀lé àti Ìtúpalẹ̀ (Monitoring and Evaluation)",
+          "description6": "Títẹ̀lé iṣẹ́ awọn olùpèsè/olùṣe kontrákì, kí ohun èlò, iṣẹ́, àti ikọ́lé lè wá gẹ́gẹ́ bí a ti gba, ní didara àti àkókò. Yíyanjú ìṣòro tàbí àríyànjiyàn tó bá dide.",
+          "title7": "Ìṣàkóso Ewu (Risk Management)",
+          "description7": "Ìdánimọ̀ ewu nínú ìlànà rírà àti dídín wọn kù, pẹ̀lú ṣiṣe ìdánilẹ́kọ̀ọ́/àyẹ̀wò tó yẹ lórí àwọn olùpèsè (due diligence) àti ìbámu.",
+          "title8": "Adarí Oṣiṣẹ́ àti Ìkẹ́kọ̀ọ́ (Staff Leadership and Training)",
+          "description8": "Adarí àti ìṣàkóso ẹgbẹ́ rírà, pípèsè ìtọ́sọ́nà, ìkẹ́kọ̀ọ́, àti rí i dájú pé wọ́n ń tẹ̀lé ìlànà tó dára jù lọ àti ìwà òdodo nínú rírà.",
+          "title9": "Ìròyìn àti Ìkọ̀wé (Reporting and Documentation)",
+          "description9": "Pípamọ́ àkọsílẹ̀ tó peye nípa gbogbo iṣẹ́ rírà, pẹ̀lú kontrákì, orders, àti ìsanwó, àti ṣíṣe ìròyìn fún ìṣàkóso àgbà àti àwọn alaṣẹ ìtẹ̀lé òfin."
+        }
+      },
+      "areaOfficers": {
+        "role": "Àwọn Oṣiṣẹ́ Agbègbè",
+        "bannerTitle": "Àwọn Iṣẹ́ àti Ìṣiṣẹ́ Àwọn Oṣiṣẹ́ Agbègbè",
+        "overview": "..."
+      },
+      "headAdminAndHumanResources": {
+        "role": "Olórí, Ẹ̀ka Ìṣàkóso Ọ́fíìsì àti Oríṣun Ènìyàn (HR)",
+        "bannerTitle": "Ìṣẹ́ àti Ìmúlò Ẹ̀ka Ìṣàkóso Ọ́fíìsì àti Oríṣun Ènìyàn (HR)",
+        "badgeTitle": "OLÓRÍ ORÍṢUN ÈNÌYÀN (HR)",
+        "overview": "Ẹ̀ka Ìṣàkóso Ọ́fíìsì àti Oríṣun Ènìyàn (HR) jẹ́ pàtàkì nínú ríro pé iṣẹ́ àjọ ń lọ dáadáa àti nínú ìṣàkóso agbára ènìyàn. Ẹ̀ka yìí ló ń ṣàbójútó ọ̀pọ̀ iṣẹ́, pẹ̀lú ìṣàkóso oṣiṣẹ́, ìṣàkóso ọ́fíìsì, àti ìdàgbàsókè agbari.",
+        "name": "MRS ADEDOYI E.O",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìgbanisise àti Ìdípo Oṣiṣẹ́ (Recruitment and Staffing)",
+          "description1": "Ṣíṣe àpejuwe iṣẹ́ (job descriptions), fífi iṣẹ́ síta (job openings), àti ṣiṣe ìfọ̀rọ̀wánilẹ́nuwò láti yan ẹni tó dára jù lọ. Ṣíṣàkóso ìlànà ìbẹ̀rẹ̀ iṣẹ́ (onboarding) fún oṣiṣẹ́ tuntun.",
+          "title2": "Ìbáṣepọ̀ Oṣiṣẹ́ (Employee Relations)",
+          "description2": "Jíjẹ́ ibùdó ìbánisọ̀rọ̀ fún ìbéèrè àti ìbànújẹ oṣiṣẹ́. Mímú ìlànà àti àtòfin ṣiṣẹ́ láti dá ibi iṣẹ́ rere sílẹ̀.",
+          "title3": "Ìṣàkóso Ìṣe (Performance Management)",
+          "description3": "Ṣíṣàbójútó ìdánwò iṣẹ́ oṣiṣẹ́ àti ètò ìdàgbàsókè wọn. Ríràn lọ́wọ́ nínú ìkẹ́kọ̀ọ́ àti ìdàgbàsókè amọdájú fún oṣiṣẹ́.",
+          "title4": "Owó-oṣù àti Àǹfààní (Compensation and Benefits)",
+          "description4": "Ṣíṣàkóso ìsanwó (payroll), àǹfààní oṣiṣẹ́, àti àpò ìsanwó. Rí i dájú pé àjọ ń tẹ̀lé òfin iṣẹ́ nípa ìsanwó.",
+          "title5": "Àtìlẹ́yìn Ọ́fíìsì (Administrative Support)",
+          "description5": "Ìtọju ohun èlò ọ́fíìsì àti ẹrọ, àti àbójútó ìṣàkóso ilé iṣẹ́ (facilities). Ṣíṣe ìṣètò àti ìṣọ̀kan ìpàdé, iṣẹlẹ̀, àti ìpàdé ìkẹ́kọ̀ọ́.",
+          "title6": "Ìdàgbàsókè Ìlànà (Policy Development)",
+          "description6": "Ṣíṣe, mímú, àti mímú imudojuiwọn àwọn ìlànà HR. Rí i dájú pé gbogbo oṣiṣẹ́ mọ̀ ìlànà nípa ìwà, ìṣe, àti bí a ṣe ń yanjú ẹ̀dùn ọkàn (grievance).",
+          "title7": "Ìtọju Àkọsílẹ̀ (Record-Keeping)",
+          "description7": "Pípamọ́ àkọsílẹ̀ oṣiṣẹ́ àti àkójọpọ̀ data HR ní pípé. Rí i dájú pé ìpamọ́ (confidentiality) àti ìbámu pẹ̀lú ìlànà ìdábòbò data wà."
+        }
+      },
+      "headFinanceAndAccounts": {
+        "role": "Olórí, Ẹ̀ka Ìṣúná àti Ìṣirò Owó",
+        "bannerTitle": "Ìṣẹ́ àti Ìmúlò Ẹ̀ka Ìṣúná àti Ìṣirò Owó",
+        "badgeTitle": "OLÓRÍ ÌṢÚNÁ ÀTI ÌṢIRÒ OWÓ",
+        "overview": "Ẹ̀ka Ìṣúná àti Ìṣirò Owó ló ń ṣàbójútó ìlera ìṣúná ìjọba ìbílẹ̀, rí i dájú pé ìhàn gbangba wà, àti pé ìwà òdodo/ìbáṣepọ̀ pẹ̀lú owó (financial integrity) wà. Ẹ̀ka yìí tún ń ṣàbójútó ìròyìn ìṣúná, ìmúlò ìṣirò owó, àti ìbámu pẹ̀lú òfin/ìlànà tó yẹ.",
+        "name": "MRS ADEPOJU-CONDE FOLUKE MARY",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìròyìn Ìṣúná (Financial Reporting)",
+          "description1": "Ṣíṣe ìwé ìṣúná tó péye ní àkókò, pẹ̀lú profit and loss, balance sheet, àti cash flow. Rí i dájú pé ìbámu pẹ̀lú ìlànà ìṣirò owó àti òfin ìṣúná wà.",
+          "title2": "Ìṣẹ́ Ìṣirò Owó (Accounting Operations)",
+          "description2": "Ṣíṣàkóso iṣẹ́ ìṣirò owó ojoojúmọ́, pẹ̀lú accounts payable/receivable, payroll, àti ìtọju general ledger. Mímú ìṣàkóso inú (internal controls) ṣiṣẹ́ láti dín ewu ìṣúná kù.",
+          "title3": "Ìṣàkóso Owo Wíwòlé-Jáde (Cash Flow Management)",
+          "description3": "Títẹ̀lé cash flow àti ìṣúná ìbámu kí àjọ lè ní owó tó tó láti bá ojúṣe rẹ̀ lọ. Ṣíṣe ọ̀nà láti mu ìṣàkóso owó àti ìdókòwò dara.",
+          "title4": "Ìtúpalẹ̀ Ìṣúná (Financial Analysis)",
+          "description4": "Ṣíṣe ìtúpalẹ̀ ìṣúná àti cost-benefit láti ran ìpinnu lọ́wọ́. Pípèsè ìmúlò/ìmọ̀ràn nípa iṣẹ́ ìṣúná àti ibi tí a lè mu dara.",
+          "title5": "Àyẹ̀wò Ìṣúná àti Ìbámu (Audit and Compliance)",
+          "description5": "Ìṣọ̀kan àyẹ̀wò inú àti òde (audits) àti rí i dájú pé ìbámu pẹ̀lú òfin ìṣúná wà. Mímú àbá audit ṣiṣẹ́ láti mú internal controls àti ìlànà dara.",
+          "title6": "Ìṣàkóso Owó-ori (Tax Management)",
+          "description6": "Ṣíṣe àti fífi owó-ori (tax returns) sílẹ̀ ní ìbámu pẹ̀lú òfin owó-ori. Pípèsè ìmọ̀ràn nípa ìṣètò owó-ori àti ipa rẹ̀ lórí ìpinnu ìṣúná.",
+          "title7": "Ìbánisọ̀rọ̀ Pẹ̀lú Alábáṣiṣẹ́ (Stakeholder Communication)",
+          "description7": "Bíbánisọ̀rọ̀ nípa iṣẹ́ ìṣúná àti ipo ìṣúná pẹ̀lú ìṣàkóso àgbà àti alábáṣiṣẹ́. Ṣíṣe àfihàn (presentations) àti ìròyìn fún board àti kọ̀míìtì.",
+          "title8": "Ìdàgbàsókè Oṣiṣẹ́ (Staff Development)",
+          "description8": "Ṣíṣàbójútó, ìkẹ́kọ̀ọ́, àti ìdàgbàsókè oṣiṣẹ́ finance/accounting láti mú ọgbọn àti iṣẹ́ wọn dára. Dídá ayika iṣẹ́ rere sílẹ̀ àti gbigbega ẹ̀kọ́ títílọ́."
+        }
+      },
+      "headPublicAffairsUnit": {
+        "role": "Olórí, Ẹ̀ka Ọ̀ràn Ìbáṣepọ̀ Pẹ̀lú Aráàlú",
+        "bannerTitle": "Olórí Ẹ̀ka Ọ̀ràn Ìbáṣepọ̀ Pẹ̀lú Aráàlú",
+        "badgeTitle": "OLÓRÍ Ẹ̀KA Ọ̀RÀN ÌBÁṢEPỌ̀ PẸ̀LÚ ARÁÀLÚ",
+        "overview": "Olórí Ẹ̀ka Ọ̀ràn Ìbáṣepọ̀ Pẹ̀lú Aráàlú ló ń ṣàbójútó PR, ìbánisọ̀rọ̀, àti ètò ìbáṣepọ̀ pẹ̀lú mídia láti rí i dájú pé àwòrán rere àjọ wà, àti pé ìbánisọ̀rọ̀ tó munadoko ń lọ láàárín alábáṣiṣẹ́ inú àti òde.",
+        "name": "MRS OYEBIYI OYEKEMI",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìbáṣepọ̀ Pẹ̀lú Mídíà (Media Relations)",
+          "description1": "Ṣíṣe ìbáṣepọ̀ pẹ̀lú mídia, dídáhùn sí ìbéèrè, ṣíṣe ìpàdé ìròyìn (press conferences), àti rí i dájú pé ìfiranṣẹ́ àjọ dé ọdọ aráàlú ní ọ̀nà tó munadoko.",
+          "title2": "Ọ̀nà-Ìlà Ìbánisọ̀rọ̀ Gbangba (Public Communication Strategy)",
+          "description2": "Ṣíṣe àti mímú ọ̀nà-ìlà ìbánisọ̀rọ̀ ṣiṣẹ́ tó bá àfojúsùn àjọ mu, kí ìfiranṣẹ́ tó jọra wà káàkiri gbogbo pẹpẹ (bí social media, website, press releases).",
+          "title3": "Ìbánisọ̀rọ̀ Nígbà Pajawiri (Crisis Communication)",
+          "description3": "Ìṣàkóso ìbánisọ̀rọ̀ nígbà ìpọnjú/pajawiri, rí i dájú pé ìdáhùn àjọ kedere, kí ó yara, kí ó sì bá àǹfààní aráàlú àti ìyàsọ́tọ̀ àjọ mu.",
+          "title4": "Ṣíṣe Àkóónú (Content Creation)",
+          "description4": "Àbójútó ṣíṣe àkóónú fún oríṣìíríṣìí ikanni, pẹ̀lú press releases, newsletters, ọ̀rọ̀ (speeches), ìròyìn, àti posts lori social media.",
+          "title5": "Ìṣàkóso Àmi-Ìdánimọ̀ (Brand Management)",
+          "description5": "Rí i dájú pé orúkọ rere àti àmi-ìdánimọ̀ àjọ ń dúró, tó jọra, tó sì dáa. Èyí kún fún ìṣàkóso orúkọ àjọ (reputation) àti dídáhùn sí ìpolówó búburú.",
+          "title6": "Ìbáṣepọ̀ Pẹ̀lú Alábáṣiṣẹ́ (Stakeholder Engagement)",
+          "description6": "Ifọwọ́sowọ́pọ̀ pẹ̀lú àwọn alábáṣiṣẹ́ pàtàkì bíi ilé-iṣẹ́ ìjọba, àwọn àjọ àwùjọ, àti aráàlú, láti kọ́ ìbáṣepọ̀ tó dára àti rí i dájú pé ìṣe àjọ bá ìreti wọn mu.",
+          "title7": "Ìṣàkóso Ìṣẹ̀lẹ̀ (Event Management)",
+          "description7": "Ṣíṣe ìṣètò àti àbójútó iṣẹlẹ̀ gbangba, pẹ̀lú àpéjọ, iṣẹ́ ìbáṣepọ̀ pẹ̀lú àwùjọ, àti CSR, láti gbéga àjọ àti bá aráàlú sọ̀rọ̀.",
+          "title8": "Ìbánisọ̀rọ̀ Inú Àjọ (Internal Communications)",
+          "description8": "Ìṣàkóso ìbánisọ̀rọ̀ láàárín àjọ, kí oṣiṣẹ́ mọ ìdàgbàsókè pàtàkì àti àfojúsùn ìlànà, kí ìhàn gbangba àti ìkópa pọ̀ si.",
+          "title9": "Ìtẹ̀lé àti Ìròyìn (Monitoring and Reporting)",
+          "description9": "Títẹ̀lé ohun tí mídia ń sọ, ìròyìn ìmọ̀lára aráàlú (public opinion), àti bó ṣe munadoko ìpolówó ìbánisọ̀rọ̀, àti ṣíṣe ìròyìn láti ṣe ìdánwò aṣeyọrí àti ipa PR."
+        }
+      },
+      "headAuditUnit": {
+        "role": "Olórí, Ẹ̀ka Àyẹ̀wò Ìṣúná (Audit)",
+        "bannerTitle": "Olórí Ẹ̀ka Àyẹ̀wò Ìṣúná (Audit)",
+        "badgeTitle": "OLÓRÍ Ẹ̀KA ÀYẸ̀WÒ ÌṢÚNÁ",
+        "overview": "Olórí Ẹ̀ka Àyẹ̀wò Ìṣúná (Audit) ló ń ṣàbójútó ìlànà audit nínú àjọ, kí ìwà òdodo ìṣúná wà, kí ìbámu pẹ̀lú òfin/ìlànà wà, àti kí lílo orísun jẹ́ munadoko.",
+        "name": "MR ALADESUYI ADEKUNLE OLUWADARE",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìṣètò Audit àti Ọ̀nà-Ìlà (Audit Planning and Strategy)",
+          "description1": "Ṣíṣe àti mímú ètò audit ọdún ṣiṣẹ́ tó ń kó àwọn apá ewu ìṣúná, iṣẹ́, àti ìbámu jọ káàkiri àjọ.",
+          "title2": "Audit Inú (Internal Audits)",
+          "description2": "Ṣíṣàkóso audit inú láti ṣàyẹ̀wò bó ṣe munadoko internal controls, eto ìṣúná, àti ìṣàkóso ewu. Ìdánimọ̀ ibi tí a lè mu dara, àti fífi àbá ìtúnṣe hàn.",
+          "title3": "Ìṣàkóso Ewu (Risk Management)",
+          "description3": "Ìdánimọ̀, ìtúpalẹ̀, àti fífi ewu ìṣúná tàbí iṣẹ́ hàn, kí ètò ìṣàkóso ewu tó yẹ wà.",
+          "title4": "Ìtẹ̀lé Ìbámu (Compliance Monitoring)",
+          "description4": "Rí i dájú pé àjọ ń tẹ̀lé òfin, ìlànà, àti ìpinnu, àti ṣíṣàyẹ̀wò bí a ṣe ń múná àwọn àìní òfin/ìlànà ṣiṣẹ́.",
+          "title5": "Àyẹ̀wò Ìṣúná (Financial Reviews)",
+          "description5": "Ṣíṣe àyẹ̀wò jinlẹ̀ lórí ìwé ìṣúná àti àkọsílẹ̀ láti jẹ́rìí ìtẹ́lọ́run, ìpéye, àti ìbámu pẹ̀lú ìlànà ìṣirò owó àti ìpinnu àjọ.",
+          "title6": "Ìròyìn (Reporting)",
+          "description6": "Ṣíṣe ìròyìn audit tó kún fún àlàyé fún ìṣàkóso àgbà, board, àti alábáṣiṣẹ́ òde, pẹ̀lú àwọn ohun tí a rí, àbá, àti ibi tí ìṣòro wà.",
+          "title7": "Ipa Ìmọ̀ràn (Advisory Role)",
+          "description7": "Pípèsè ìmọ̀ràn fún ìṣàkóso lórí bí wọ́n ṣe lè mú internal controls dara, dín ìnáwó asán kù, àti dín ewu kù gẹ́gẹ́ bí abajade audit.",
+          "title8": "Adarí Ẹgbẹ́ àti Ìkẹ́kọ̀ọ́ (Team Leadership and Training)",
+          "description8": "Adarí àti ìṣàkóso ẹgbẹ́ audit, pípèsè ìtọ́sọ́nà, ìkẹ́kọ̀ọ́, àti ìdàgbàsókè kí audit lè jẹ́ gẹ́gẹ́ bí ìlànà amọdájú.",
+          "title9": "Títẹ̀lé Àbá Audit (Follow-up on Audit Recommendations)",
+          "description9": "Títẹ̀lé bí a ṣe ń múná àwọn àbá audit ṣiṣẹ́, rí i dájú pé a gbé ìgbésẹ̀ ìtúnṣe, àti ṣíṣàyẹ̀wò bó ṣe munadoko."
+        }
+      }
+    },
+    "projects": {
+      "bannerTitle": "Àwọn Iṣẹ́-Àgbékalẹ̀",
+      "projectsLoading": "A ń gbé àwọn iṣẹ́-àgbékalẹ̀ wọlé...",
+      "projectsStats": {
+        "badgeTitle": "Àfihàn Ìṣe Iṣẹ́",
+        "label1": "Kíkọ kángun omi (Borehole)",
+        "label2": "Atúnṣe ọ̀nà",
+        "label3": "Ìtúnṣe ọ̀nà tí ó bajẹ́",
+        "label4": "Atúnṣe ikànnì omi",
+        "label5": "Àtìlẹ́yìn Padà Sí Ilé-Ẹ̀kọ́: bàtà, ṣọ́ọ̀kì, àpò, aṣọ ilé-ẹẹ̀kọ́, irinṣẹ́ ìṣírò / àpò kálámù",
+        "label6": "Ìtúnṣe ikànnì omi",
+        "label7": "Ìtúnṣe ilé",
+        "label8": "Àtìlẹ́yìn Padà Sí Ilé-Ẹ̀kọ́",
+        "label9": "Ìwé-kíkọ́ (Exercise Books)",
+        "label10": "Ọkọ̀ ayọ́kẹ́lẹ́, bọ́ọ̀sì àti ọkọ̀ ńlá tó tóònù mẹ́tàlélọ́gbọ̀n (30 Ton)",
+        "label11": "Àga àti tábìlì fún olùkọ́",
+        "label12": "Àga àti tábìlì tuntun fún akẹ́kọ̀ọ́",
+        "label13": "Kíkọ́ ilé tuntun"
+      }
+    }
+  },
+  "Community": {
+    "feedback": {
+      "bannerTitle": "Ohùn Rẹ̀ Ni A Ka Sí Pataki: Pín Èrò Rẹ, Tẹ̀lé Ìdáhùn Rẹ",
+      "activeTab": "Pín Èrò",
+      "activeTab2": "Tẹ̀lé Èrò",
+      "fullname": "Orúkọ Kíkún",
+      "phoneNumber": "Nọ́mbà Fóònù",
+      "emailAddress": "Àdírẹ́sì Ímẹ́ẹ̀lì",
+      "feedbackCategory": "Ẹ̀ka Èrò",
+      "options": {
+        "opt1": "Ìbéèrè Gbogbogbò",
+        "opt2": "Ẹ̀sùn Lórí Iṣẹ́",
+        "opt3": "Àbá",
+        "opt4": "Míìrán"
+      },
+      "feedbackMessage": "Èrò",
+      "btn1": "Pín Èrò",
+      "btn2": "Tẹ̀lé Èrò",
+      "successMessage": {
+        "headText": "A dúpẹ́ fún Èrò Rẹ!",
+        "subText": "Tí o bá ní ìbéèrè kankan, jọ̀wọ́ kan sí wa ní feedback@apapalga.ng tàbí pe laini ìrànlọ́wọ́ wa ní +234 800 123 4567. A ṣe ìyàsọ́tọ̀ sí èrò rẹ, a ó sì fèsì sí i lọ́ọ́rẹ́-ọfẹ́.",
+        "btn": "Ó DÁA"
+      }
+    },
+    "initiatives": {
+      "bannerTitle": "Àwọn Ìgbésẹ̀",
+      "badgeTitle": "Mú Ìyípadà Wá, Ìgbésẹ̀ Kọọkan Ní Àkókò Rẹ̀",
+      "description": "Láti ẹ̀kọ́ àti ìlera dé amáyédẹrùn àti ìmótuntun, àwọn ìgbésẹ̀ wa dá lórí ìgbéga gbogbo ará Apapa. Ṣàwárí àwọn iṣẹ́ akanṣe tó ń dá àgbègbè lagbara, tó ń mú ààbò pọ̀ sí i, tí ó sì ń jẹ́ kó dára jù lọ láti gbé.",
+      "loadingInitiatives": "Ìgbésẹ̀ ń kópa..."
+    },
+    "faqs": {
+      "bannerTitle": "Àwọn Ìbéèrè Tí A Máa ń Béèrè Púpọ̀: Ìtọ́́sọ́nà Rẹ Sí Ìfarahàn Àwùjọ àti Àwọn Iṣẹ́",
+      "loadingFaqs": "Ń gba àwọn ìbéèrè...",
+      "tabs": {
+        "general": "Gbogbogbò",
+        "government": "Ìjọba",
+        "services": "Àwọn Iṣẹ́",
+        "community": "Àwùjọ"
+      }
+    },
+    "volunteerOpportunities": {
+      "bannerTitle": "Àwọn Àǹfààní Iṣẹ́ Olùyọ̀ọ́da ní Apapa: Darapọ̀, Ṣe Ìyípadà",
+      "badgeTitle": "Àwọn Ètò Iṣẹ́ Ìránlọ́wọ́ Àwùjọ",
+      "description": "Ṣàwárí oríṣìíríṣìí àwọn ìgbésẹ̀ olùyọ̀ọ́da tó ń lọ lọwọ́ ní Apapa. Láti ìmótótó ayíká dé ìtìlẹ́yìn ẹ̀kọ́, iṣẹ́ wà fún gbogbo ẹni tí ó fẹ́ ṣe ìyípadà.",
+      "btnLink": "Di Olùyọ̀ọ́da",
+      "loadingVolunteers": "Ń gba àwọn àǹfààní olùyọ̀ọ́da...",
+      "form": {
+        "headText": "Di Olùyọ̀ọ́da",
+        "fullname": "Orúkọ Kíkún",
+        "phoneNumber": "Nọ́mbà Fóònù",
+        "emailAddress": "Àdírẹ́sì Ímẹ́ẹ̀lì",
+        "volunteerRole": "Ipa Olùyọ̀ọ́da",
+        "whyVolunteer": "Kí ló dé tí o fẹ́ jẹ́ olùyọ̀ọ́da?",
+        "btnSubmit": "Olùfẹ́rẹ́-iṣẹ́"
+      },
+      "successMessage": {
+        "headText": "Ìbéèrè Iṣẹ́ Olùyọ̀ọ́da",
+        "subText": "A ti gba ìbéèrè iṣẹ́ olùyọ̀ọ́da rẹ, a sì dúpẹ́ gidigidi pé o fẹ́ kópa nínú ìdàgbàsókè àwùjọ. Ẹgbẹ́ wa ń ṣe àyẹ̀wò ìfọwọ́sí rẹ lọ́wọ́lọ́wọ́, a ó sì kan sí ọ laipẹ̀ pẹ̀lú àwọn ìgbésẹ̀ tó kàn. A ń retí láti ṣiṣẹ́ pọ̀ mọ́ ọ láti mú ìyípadà rere wá!"
+      }
+    },
+    "pollsAndSurveys": {
+      "bannerTitle": "Àwọn Ìdìbò àti Ìwádìí",
+      "badgeTitle": "Àwọn Ìdìbò Tó ń Lọ",
+      "description": "Kópa nínú àwọn ìwádìí àwùjọ tó ń lọ lọ́wọ́lọ́wọ́, kí o sì dibò lórí àwọn ọ̀ràn àwùjọ pàtàkì tó ṣe pàtàkì sí ọ. Máa kópa, kí o sì jẹ́ kí ohùn rẹ kópa nínú ìṣàkóso ọjọ́ iwájú Apapa.",
+      "loadingPolls": "Ń gba àwọn ìdìbò àti ìwádìí..."
+    },
+    "events": {
+      "bannerTitle": "Àwọn Ìṣẹ̀lẹ̀ Apapa: Kópa, Ṣe Ayẹyẹ, Kó Sopọ̀",
+      "loadingEvents": "Ń gba àwọn ìṣẹ̀lẹ̀..."
+    }
+  }
+}

@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: FuturaLT;
-  src: url("../../public/fonts/FuturaLT.ttf");
+  src: url("/fonts/FuturaLT.ttf");
 }
 
 @font-face {
   font-family: FuturaLTBold;
-  src: url("../../public/fonts/FuturaLT-Bold.ttf");
+  src: url("/fonts/FuturaLT-Bold.ttf");
 }
 
 input,

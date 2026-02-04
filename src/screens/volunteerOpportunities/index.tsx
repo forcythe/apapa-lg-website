@@ -20,6 +20,8 @@ import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder"
 import { p } from "framer-motion/m";
 import { div } from "framer-motion/client";
 
+import { useTranslations } from "next-intl";
+
 const SuccessModal = dynamic(() => import("@/modal_views/SuccessModal"), {
   loading: () => null,
 });
@@ -38,6 +40,9 @@ const itemVariants = {
 };
 
 const VolunteerOpportunitiesPage = () => {
+
+  const t = useTranslations("Community.volunteerOpportunities");
+
   //fetch Volunteers
   const [volunteers, setVolunteers] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
@@ -115,7 +120,7 @@ const VolunteerOpportunitiesPage = () => {
         <div className="sticky top-0 z-[10]">
           <Header />
         </div>
-        <Banner type="Volunteer Opportunities in Apapa: Join Hands, Make a Difference" />
+        <Banner type={t("bannerTitle")} />
         <div className="w-full max-w-[2000px] mx-auto relative py-[80px] md:py-[120px] overflow-hidden">
           <div className="section-padding">
             <div className="w-full max-w-[1488px] mx-auto">
@@ -131,17 +136,14 @@ const VolunteerOpportunitiesPage = () => {
                   className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-6"
                 >
                   <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-                    Community Service Programs
+                    {t("badgeTitle")}
                   </p>
                 </motion.div>
                 <motion.p
                   variants={itemVariants}
                   className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center mb-6"
                 >
-                  Explore a variety of active volunteer initiatives aimed at
-                  improving Apapa&apos;s community. From environmental cleanup
-                  drives to educational support programs, there’s a project for
-                  everyone who wants to make a difference.
+                  {t("description")}
                 </motion.p>
                 <motion.div variants={itemVariants}>
                   <Button
@@ -152,14 +154,14 @@ const VolunteerOpportunitiesPage = () => {
                       });
                     }}
                   >
-                    Become a Volunteer
+                    {t("btnLink")}
                   </Button>
                 </motion.div>
               </motion.div>
 
               {loading && (
                 <div>
-                  <p className="text-center m-auto">Loading...</p>
+                  <p className="text-center m-auto">{t("loadingVolunteers")}</p>
                 </div>
               )}
 
@@ -286,7 +288,7 @@ const VolunteerOpportunitiesPage = () => {
                 ref={formRef}
               >
                 <h6 className="text-center font-[FuturaLTBold] text-[24px] leading-[30px] md:text-[36px] md:leading-[52px] text-[#101828] mb-[52px]">
-                  Become a Volunteer
+                  {t("form.headText")}
                 </h6>
 
                 <form
@@ -296,7 +298,7 @@ const VolunteerOpportunitiesPage = () => {
                   <InputField
                     type="text"
                     name="fullName"
-                    placeholder="Full Name"
+                    placeholder={t("form.fullname")}
                     value={formik.values.fullName}
                     onChange={formik.handleChange}
                     error={
@@ -309,7 +311,7 @@ const VolunteerOpportunitiesPage = () => {
                   />
                   <InputField
                     type="text"
-                    placeholder="Phone number"
+                    placeholder={t("form.phoneNumber")}
                     name="phone"
                     value={formik.values.phone}
                     onChange={formik.handleChange}
@@ -323,7 +325,7 @@ const VolunteerOpportunitiesPage = () => {
                   />
                   <InputField
                     type="text"
-                    placeholder="Email address"
+                    placeholder={t("form.emailAddress")}
                     name="email"
                     value={formik.values.email}
                     onChange={formik.handleChange}
@@ -336,7 +338,7 @@ const VolunteerOpportunitiesPage = () => {
                   />
                   <SelectOption
                     name="feedbackCategory"
-                    label="Volunteer role"
+                    label={t("form.volunteerRole")}
                     value={formik.values.feedbackCategory}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -350,7 +352,7 @@ const VolunteerOpportunitiesPage = () => {
                   />
                   <InputField
                     type="text"
-                    placeholder="Why do you want to volunteer?"
+                    placeholder={t("form.whyVolunteer")}
                     name="feedback"
                     value={formik.values.feedback}
                     onChange={formik.handleChange}
@@ -367,7 +369,7 @@ const VolunteerOpportunitiesPage = () => {
                       isLoading={isLoading}
                       disabled={isLoading}
                     >
-                      Volunteer
+                      {t("form.btnSubmit")}
                     </Button>
                   </div>
                 </form>
@@ -392,12 +394,8 @@ const VolunteerOpportunitiesPage = () => {
 
       {isShowSuccessModal && (
         <SuccessModal
-          headText="Volunteer Application"
-          subText="We have received your volunteer application and truly appreciate your
-          willingness to contribute to the community. Our team is currently
-          reviewing your submission, and we will reach out to you soon with the
-          next steps. We look forward to working with you to make a positive
-          impact!"
+          headText={t("successMessage.headText")}
+          subText={t("successMessage.subText")}
           isShowSuccessModal={isShowSuccessModal}
           onClickAwaySuccessModal={() => {
             setIsShowSuccessModal(false);
