@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
+import { useLocale, useTranslations } from "next-intl";
+
 import { BlogItem, tabId } from "./blogNewsArticles.types";
 import { blogsNavigation } from "./blogNewsArticles.data";
 
@@ -21,6 +23,9 @@ const itemVariants = {
 };
 
 const BlogNewsArticles = () => {
+  const t = useTranslations("Home.discover");
+  const locale = useLocale();
+
   // const [activeTab, setActiveTab] = React.useState(
   //   blogsNavigation.tabs[0].id as tabId
   // );
@@ -77,7 +82,7 @@ const BlogNewsArticles = () => {
         className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-3"
       >
         <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-          Blogs, News and Articles
+          {t("blogsPill")}
         </p>
       </motion.div>
       <motion.h6
@@ -87,18 +92,18 @@ const BlogNewsArticles = () => {
         viewport={{ once: true, amount: 0.1 }}
         className="text-xl leading-[32px] md:text-[36px] md:leading-[52px] text-[#000000] text-center font-[FuturaLTBold] max-w-[564px] mx-auto mb-[20px]"
       >
-        Stay Informed With the Latest Updates
+        {t("blogsTitle")}
       </motion.h6>
 
       <div className="w-full max-w-[564px] mx-auto flex flex-col xxs:flex-row gap-2 mb-[40px] min-h-[56px]">
         <input
           type="text"
           className="min-h-[56px] w-full max-w-[400px] mx-auto border border-[#D0D0D0] bg-[#FFFFFF] rounded-[100px] placeholder:text-[#B0B0B0] text-base md:text-[20px] md:leading-[32px] pl-6 outline-none"
-          placeholder="Enter your email"
+          placeholder={t("emailPlaceholder")}
         />
         <div className="xxs:min-w-[156px] min-h-[56px]">
           <button className="text-base md:text-[20px] md:leading-[32px] bg-accent rounded-[44px] text-white p-4 w-full">
-            Subscribe
+            {t("subscribe")}
           </button>
         </div>
       </div>
@@ -133,7 +138,7 @@ const BlogNewsArticles = () => {
       {loading ? (
         <div className="w-full min-h-[524px] flex items-center justify-center">
           <p className="text-base md:text-[18px] text-[#667085]">
-            Loading content…
+            {t("loadingContent")}
           </p>
         </div>
       ) : (
@@ -170,7 +175,7 @@ const BlogNewsArticles = () => {
               </p>
               <div className="flex items-center gap-2">
                 <p className="text-base md:text-[20px] md:leading-[32px] text-accent">
-                  Read more
+                  {t("readMore")}
                 </p>
                 <FooterArrow fill="#aa8b00" />
               </div>

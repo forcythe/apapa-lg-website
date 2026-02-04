@@ -11,6 +11,8 @@ import PastChairMen from "./PastChairMen";
 import Manifesto from "./Manifesto";
 import VisionMission from "./VissionMission";
 
+import { useTranslations } from "next-intl";
+
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -26,6 +28,9 @@ const containerVariants = {
 };
 
 const StaffDetails = ({ activeRole }: { activeRole: any }) => {
+
+  const t = useTranslations("Government.rowData");
+
   return (
     <div>
       {/* Overview Section */}
@@ -49,7 +54,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
             viewport={{ once: true, amount: 0.3 }}
             className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center max-w-[700px] mx-auto mb-[40px] md:mb-[120px]"
           >
-            {activeRole?.overview}
+            {t(activeRole?.overview)}
           </motion.h6>
         </div>
       </div>
@@ -70,7 +75,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                 className="w-fit bg-accent3 rounded-[8px] p-3 mb-3 mx-0 sm:mx-auto lg:mx-0"
               >
                 <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-                  {activeRole.badgeTitle}
+                  {t(activeRole.badgeTitle)}
                 </p>
               </motion.div>
             )}
@@ -79,7 +84,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                 variants={itemVariants}
                 className="font-[FuturaLTBold] text-left sm:text-center lg:text-left text-xl leading-[32px] md:text-[36px] md:leading-[52px] mb-3 text-[#000000]"
               >
-                {activeRole.name}
+                {t(activeRole.name)}
               </motion.h6>
             )}
             {activeRole?.introduction && (
@@ -87,7 +92,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                 variants={itemVariants}
                 className="text-base text-left sm:text-center lg:text-left md:tex-[20px] md:leading-[32px] text-[#000000]"
               >
-                {activeRole.introduction}
+                {t(activeRole.introduction)}
               </motion.p>
             )}
           </motion.div>
@@ -135,10 +140,10 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                   className="overflow-hidden relative w-full rounded-[16px] md:rounded-[32px] max-w-[360px] border border-[#D0D0D0] min-h-[368px] bg-[#F7F7F7] p-4 md:p-6"
                 >
                   <h6 className="text-base md:text-[20px] md:leading-[28px] text-[#101828] font-[FuturaLTBold] mb-2">
-                    {card.title}
+                    {t(card.title)}
                   </h6>
                   <p className="text-base md:text-[20px] md:leading-[32px] text-[#667085]">
-                    {card.desc}
+                    {t(card.desc)}
                   </p>
                   <Image
                     src="/svgs/boat-bg-design.svg"

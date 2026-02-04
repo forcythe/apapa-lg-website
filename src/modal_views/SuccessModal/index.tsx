@@ -8,6 +8,8 @@ import ModalCloseIcon from "../../../public/svg-component/ModalCloseIcon";
 import CopyIcon from "../../../public/svg-component/CopyIcon";
 import { useCopyToClipboard } from "@/utils/helpers/useCopyToClipboard";
 
+import { useTranslations } from "next-intl";
+
 const SuccessModal = ({
   headText,
   subText,
@@ -19,6 +21,8 @@ const SuccessModal = ({
   onClickAwaySuccessModal,
   onCloseSuccessModal,
 }: ISuccessModal) => {
+  const t = useTranslations("Community.feedback");
+
   const { copy } = useCopyToClipboard({
     successMessage: "Tracking ID copied!",
   });
@@ -77,7 +81,7 @@ const SuccessModal = ({
             onClick={onCloseSuccessModal}
             // className="bg-transparent mt-5 outline-none border-[1.5px] border-[#AA8B00] text-[#AA8B00] transition-colors duration-200 ease-in-out"
           >
-            Okay
+            {t("successMessage.btn")}
           </Button>
         )}
       </div>

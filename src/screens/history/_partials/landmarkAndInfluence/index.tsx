@@ -7,6 +7,8 @@ import { coreValues } from "./landmarkAndInfluence.data";
 
 import IdeaIcon from "../../../../../public/svg-component/IdeaIcon";
 
+import { useTranslations } from "next-intl";
+
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -26,6 +28,9 @@ const containerVariants = {
 };
 
 const LandmarkAndInfluence = () => {
+
+  const t = useTranslations("About.history");
+
   return (
     <div className="pb-[80px] md:pb-[120px] section-padding">
       <div className={`w-full max-w-[1488px] mx-auto`}>
@@ -44,7 +49,7 @@ const LandmarkAndInfluence = () => {
             className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-3"
           >
             <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-              Modern-Day Apapa
+              {t("landmarkAndInfluence.badge")}
             </p>
           </motion.div>
 
@@ -52,16 +57,14 @@ const LandmarkAndInfluence = () => {
             className="text-xl leading-[32px] md:text-[36px] text-center font-[FuturaLTBold] text-[#000000] mb-3"
             variants={itemVariants}
           >
-            Landmarks and Influence
+            {t("landmarkAndInfluence.headTitle")}
           </motion.h6>
 
           <motion.p
             className="text-base md:text-[20px] leading-[30px] text-center text-[#000000]"
             variants={itemVariants}
           >
-            Apapa today is a bustling blend of residential, commercial, and
-            industrial activities. It houses key national and regional landmarks
-            including:
+            {t("landmarkAndInfluence.subTitle")}
           </motion.p>
         </motion.div>
 
@@ -82,10 +85,10 @@ const LandmarkAndInfluence = () => {
                 <IdeaIcon />
               </div>
               <h6 className="text-base md:text-[20px] md:leading-[28px] text-[#000000] font-[FuturaLTBold] mb-2">
-                {_.title}
+                {t(_.title)}
               </h6>
               <p className="text-base md:text-[20px] md:leading-[32px] text-[#667085]">
-                {_.description}
+                {t(_.description)}
               </p>
             </motion.div>
           ))}

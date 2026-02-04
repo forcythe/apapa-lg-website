@@ -5,6 +5,8 @@ import useIsMobile from "@/utils/helpers/useMobile";
 
 import { timelineData } from "./staffDetails.data";
 
+import { useTranslations } from "next-intl";
+
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -23,6 +25,9 @@ const slideVariants = {
 };
 
 const PastChairMen = () => {
+
+  const t = useTranslations("Government.rowData.executiveChairman.pastChairmen");
+
   const isMobile = useIsMobile(1280);
   const oddIndexes = timelineData
     .map((item, i) => (!item.isEven ? i : null))
@@ -43,7 +48,7 @@ const PastChairMen = () => {
             className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-6"
           >
             <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-              Past Chairmen
+              {t("badgeTitle")}
             </p>
           </motion.div>
           <motion.h6
@@ -53,15 +58,7 @@ const PastChairMen = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center w-full max-w-[649px] mx-auto mb-[40px] md:mb-[60px]"
           >
-            Over the years, Apapa Local Government has been guided by visionary
-            leaders whose contributions have shaped its development and legacy.
-            Each administration brought unique initiatives and policies that
-            have impacted the lives of residents, strengthened governance, and
-            advanced the area’s economic and infrastructural growth. From
-            pioneering community projects to steering the LGA through critical
-            challenges, these past chairmen have laid a solid foundation upon
-            which today’s progress is built. This section honors their service,
-            dedication, and leadership in moving Apapa forward.
+            {t("overview")}
           </motion.h6>
         </div>
 
@@ -140,7 +137,7 @@ const PastChairMen = () => {
                             {item.name}
                           </h6>
                           <div className="mx-auto max-w-[192px] bg-[#FFF6CC] py-2 xl:h-[48px] px-3 text-center text-base xl:text-[20px] xl:leading-[32px] text-[#AA8B00] rounded-[12px]">
-                            {item.role}
+                            {t(item.role)}
                           </div>
                         </div>
                       </div>
@@ -180,7 +177,7 @@ const PastChairMen = () => {
                             {item.name}
                           </h6>
                           <div className="mx-auto max-w-[192px] bg-[#FFF6CC] py-2 xl:h-[48px] px-3 text-center text-base xl:text-[20px] xl:leading-[32px] text-[#AA8B00] rounded-[12px]">
-                            {item.role}
+                            {t(item.role)}
                           </div>
                         </div>
                       </div>

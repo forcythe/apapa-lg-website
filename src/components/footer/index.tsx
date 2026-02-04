@@ -1,9 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useMemo } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-import { footerLinks, socialLinks } from "./footer.data";
+import { getFooterLinks, socialLinks } from "@/i18n/footer.data.i18n";
+import type { FooterLinksMap } from "@/i18n/footer.data.i18n";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 import FooterArrow from "../../../public/svg-component/FooterArrow";
@@ -18,6 +20,7 @@ export const RenderSocialLinks = ({
   <a
     href={link}
     target="_blank"
+    rel="noopener noreferrer"
     className="w-[44px] h-[44px] cursor-pointer rounded-[100px] border border-white flex justify-center items-center"
   >
     <Image
@@ -32,6 +35,9 @@ export const RenderSocialLinks = ({
   </a>
 );
 const Footer = () => {
+  const t = useTranslations();
+  const footerLinks = useMemo<FooterLinksMap>(() => getFooterLinks(t), [t]);
+
   return (
     <div className="relative section-padding pt-[60px] pb-[40px] bg-accent text-white z-[1]">
       <div
@@ -49,8 +55,14 @@ const Footer = () => {
               {sectionTitle}
             </h3>
             <ul className="flex flex-col gap-5">
-              {links.map(({ id, path, title }) => (
-                <a href={path} key={id} className="w-fit">
+              {links.map(({ id, path, title, target }) => (
+                <a
+                  href={path}
+                  key={id}
+                  className="w-fit"
+                  target={target}
+                  rel={target === "_blank" ? "noopener noreferrer" : undefined}
+                >
                   <li className="text-[14px] leading-[24px] md:text-base font-medium flex items-center gap-2 transition-all duration-200 ease-in-out hover:translate-x-1">
                     <FooterArrow />
                     <span>{title}</span>
@@ -71,7 +83,7 @@ const Footer = () => {
       </div>
       <div className="copyright w-full">
         <p className="text-[14px] leading-[24px] text-left">
-          © 2025 Apapa Local Government. All rights reserved.
+          {t("Footer.copyright")}
         </p>
       </div>
     </div>

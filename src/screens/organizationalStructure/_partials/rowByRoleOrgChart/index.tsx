@@ -7,6 +7,8 @@ import clsx from "clsx";
 import { rowData, Row, Role } from "./rowByRoleOrgChart.data";
 import NodeBox from "./NodeBox";
 
+import { useTranslations } from "next-intl";
+
 const getRowMarginClass = (rowId: number): string => {
   switch (rowId) {
     case 4:
@@ -107,6 +109,9 @@ const getVerticalLineElement = (rowId: number): JSX.Element | null => {
 };
 
 const RowByRoleOrgChart: React.FC = () => {
+
+  const t = useTranslations("Government.rowData");
+
   const roleRefs: Record<string, HTMLDivElement | null> = {};
 
   return (
@@ -135,7 +140,7 @@ const RowByRoleOrgChart: React.FC = () => {
                   style={getCustomStyleForRole(row.rowId, role.id)}
                 >
                   <NodeBox
-                    role={role.role}
+                    role={t(role.role)}
                     rowId={row.rowId}
                     roleId={role.id}
                     image={role.img}

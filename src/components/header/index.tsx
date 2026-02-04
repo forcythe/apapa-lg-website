@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import ClickAwayListener from "react-click-away-listener";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { AnimatePresence, motion } from "framer-motion";
 
-import { headerRoutes } from "./header.data";
+//import { headerRoutes } from "./header.data";
 import AppLink from "../appLink";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
@@ -16,6 +16,12 @@ import WorldIcon from "../../../public/svg-component/WorldIcon";
 import ArrowHeadIcon from "../../../public/svg-component/ArrowHeadIcon";
 import RadioIcon from "../../../public/svg-component/RadioIcon";
 import RadioIconChecked from "../../../public/svg-component/RadioIconChecked";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname, useRouter } from "next/navigation";
+
+import { getHeaderRoutes } from "@/i18n/header.data.i18n";
+import { routing } from "@/i18n/routing";
+
 
 const SearchModal = dynamic(() => import("@/modal_views/SearchModal"), {
   loading: () => null,
@@ -28,26 +34,64 @@ const sidebarVariants = {
 };
 
 const Header = () => {
+  const t = useTranslations();
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+
   const [isSideBarLink, setIsSideBarLinks] = useState(false);
   const [isLocationOpen, setIsLocationOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
+  //const [selectedLanguage, setSelectedLanguage] = useState("en");
   const [isShowSearchModal, setIsShowSearchModal] = useState(false);
 
-  const languages = [
-    { code: "en", label: "English" },
-    { code: "pid", label: "Pidgin" },
-    { code: "yo", label: "Yoruba" },
-  ];
+  const languages = useMemo(
+    () => [
+      { code: "en", label: t("Header.languages.en") },
+      { code: "pcm", label: t("Header.languages.pcm") },
+      { code: "yo", label: t("Header.languages.yo") },
+    ],
+    [t]
+  );
 
-  const handleLanguageChange = (code: string) => {
-    setSelectedLanguage(code);
+  const selectedLanguage = locale;
+
+  // If you're translating header routes:
+  const headerRoutes = useMemo(() => getHeaderRoutes(t), [t]);
+
+  // If you're NOT translating header routes yet, comment out the line above
+  // and use your current import:
+  // const headerRoutes = headerRoutesFromFile;
+
+  const handleLanguageChange = (nextLocale: string) => {
+    //setSelectedLanguage(code);
+    if (!pathname) return;
+
+    // Expecting locale-prefixed routes: /en, /en/about, /yo/..., etc.
+    const segments = pathname.split("/");
+    const maybeLocale = segments[1];
+    const hasLocalePrefix =
+      !!maybeLocale && routing.locales.includes(maybeLocale as never);
+
+    if (!hasLocalePrefix) {
+      // If for some reason you're not locale-prefixed, just push to /{locale}
+      const nextPath = pathname === "/" ? "" : pathname;
+      router.push(`/${nextLocale}${nextPath}`);
+      setIsLocationOpen(false);
+      return;
+    }
+
+    segments[1] = nextLocale;
+    const nextPath = segments.join("/") || `/${nextLocale}`;
+
+    router.push(nextPath);
+    setIsLocationOpen(false);
   };
   return (
     <>
       <div>
         <div className="bg-accent2 p-4">
           <p className="text-center text-primary text-base">
-            This is the official website of Apapa Local Government
+            {t("Header.topBanner")}
           </p>
         </div>
         <div className="section-padding bg-white/30 backdrop-blur-md navbar z-30 py-3">
@@ -194,7 +238,7 @@ const Header = () => {
             >
               <ClickAwayListener onClickAway={() => setIsSideBarLinks(false)}>
                 <motion.div
-                  className="shadow-custom fixed py-[68px] px-4 h-dvh bg-white w-full max-w-[344px] lg:hidden left-0 top-0 decoration-clone border-0 transition duration-500 flex flex-col flex-nowrap overflow-visible bg-cover bg-center"
+                  className="shadow-custom fixed py-[68px] px-4 h-dvh bg-white w-full max-w-[344px] lg:hidden left-0 top-0 decoration-clone border-0 transition duration-500 flex flex-col flex-nowrap overflow-y-auto bg-cover bg-center"
                   initial="hidden"
                   animate="visible"
                   exit="exit"

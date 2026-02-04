@@ -1,18 +1,20 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
 import ClickAwayListener from "react-click-away-listener";
 import Link from "next/link";
 
 import ArrowHeadIcon from "../../../public/svg-component/ArrowHeadIcon";
 import useIsMobile from "@/utils/helpers/useMobile";
+import { routing } from "@/i18n/routing";
 
 interface SubTab {
   id: string;
   path: string;
   title: string;
+  target?: string;
 }
 
 const AppLink = ({
@@ -28,7 +30,7 @@ const AppLink = ({
 }: {
   path: string;
   title: string;
-  subTabs?: { id: number; path: string; title: string }[];
+  subTabs?: { id: number; path: string; title: string; target?: string }[];
   className?: string;
   iconCustomClass?: string;
   listCustomClass?: string;
@@ -41,12 +43,23 @@ const AppLink = ({
   const pathname = usePathname();
   const [isSideBarSubLink, setIsSideBarSubLinks] = useState(false);
 
+  const normalizedPathname = useMemo(() => {
+    if (!pathname) return "/";
+    const segments = pathname.split("/");
+    const maybeLocale = segments[1];
+    if (maybeLocale && routing.locales.includes(maybeLocale as never)) {
+      const rest = segments.slice(2).join("/");
+      return rest ? `/${rest}` : "/";
+    }
+    return pathname;
+  }, [pathname]);
+
   const isActive =
     path === "/"
-      ? pathname === "/"
+      ? normalizedPathname === "/"
         ? "text-accent font-[FuturaLTBold]"
         : "text-primary"
-      : pathname.startsWith(path)
+      : normalizedPathname.startsWith(path)
       ? "text-accent font-[FuturaLTBold]"
       : "text-primary";
 
@@ -90,8 +103,14 @@ const AppLink = ({
             >
               {columns.map((chunk, idx) => (
                 <ul key={idx} className={`flex flex-col gap-2`}>
-                  {chunk.map(({ id, path, title }) => (
-                    <Link key={id} className={className} href={path}>
+                  {chunk.map(({ id, path, title, target }) => (
+                    <Link
+                      key={id}
+                      className={className}
+                      href={path}
+                      target={target}
+                      rel={target === "_blank" ? "noopener noreferrer" : undefined}
+                    >
                       <li className="flex items-center mb-3 cursor-pointer text-primary text-[18px] whitespace-nowrap leading-[28px]">
                         <span>{title}</span>
                       </li>

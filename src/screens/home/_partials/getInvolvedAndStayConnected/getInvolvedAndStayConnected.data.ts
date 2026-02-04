@@ -14,38 +14,34 @@ import VOIcon from "../../../../../public/svg-component/VOIcon";
 export const quickLinks = [
   {
     id: 1,
-    title: "Housing Services",
-    description:
-      "Apply for public housing and renovation grants with ease. Get information on eligibility and application steps.",
+    title: "housing.title",
+    description: "housing.description",
     icon: HousingServiceIcon,
-    btnTitle: "Apply Now!",
+    btnTitle: "housing.btn",
     href: "https://lagosstate.gov.ng/services/housingandlands",
   },
   {
     id: 2,
-    title: "Healthcare Services",
-    description:
-      "Locate health centers and access emergency medical services. Stay updated on public health initiatives.",
+    title: "healthcare.title",
+    description: "healthcare.description",
     icon: HCSIcon,
-    btnTitle: "Learn More!",
+    btnTitle: "healthcare.btn",
     href: "https://lagosstate.gov.ng/services/healthservices",
   },
   {
     id: 3,
-    title: "Port Services",
-    description:
-      "Access key information on cargo handling, port regulations, shipping operations and logistics.",
+    title: "port.title",
+    description: "port.description",
     icon: PSIcon,
-    btnTitle: "Learn More!",
+    btnTitle: "port.btn",
     href: "/",
   },
   {
     id: 4,
-    title: "Apapa Events",
-    description:
-      "Explore the latest events, meetings, and activities happening in Apapa and participate in local government initiatives.",
+    title: "events.title",
+    description: "events.description",
     icon: AEIcon,
-    btnTitle: "Learn More!",
+    btnTitle: "events.btn",
     href: "/community/events",
   },
   // {
@@ -59,65 +55,58 @@ export const quickLinks = [
   // },
   {
     id: 6,
-    title: "Give Feedback",
-    description:
-      "Help us improve the community by reporting infrastructural problems, safety concerns, or other issues.",
+    title: "feedback.title",
+    description: "feedback.description",
     icon: GFIcon,
-    btnTitle: "Give Feedback",
+    btnTitle: "feedback.btn",
     href: "/community/feedback-portal",
   },
   {
     id: 7,
-    title: "Levy Payments",
-    description:
-      "Pay your taxes, levies, and business permits securely online. Avoid delays with easy payment tracking.",
+    title: "levyPayment.title",
+    description: "levyPayment.description",
     icon: LPIcon,
-    btnTitle: "Pay Levy",
+    btnTitle: "levyPayment.btn",
     href: "https://lagosstate.gov.ng/services/tax",
   },
   {
     id: 8,
-    title: "Business Permits & Licenses",
-    description:
-      "Apply for or renew business licenses quickly. View processing timelines and required documents.",
+    title: "business.title",
+    description: "business.description",
     icon: BPLIcon,
-    btnTitle: "Apply Now!",
+    btnTitle: "business.btn",
     href: "https://lagosstate.gov.ng/services/business_trade_commerce",
   },
   {
     id: 9,
-    title: "Blogs, News & Articles",
-    description:
-      "Get the latest updates and official government notices. Stay informed about policies and community news.",
+    title: "blogs.title",
+    description: "blogs.description",
     icon: BlogIcon,
-    btnTitle: "Read Blogs",
+    btnTitle: "blogs.btn",
     href: "/",
   },
   {
     id: 10,
-    title: "Safety & Emergency",
-    description:
-      "Access emergency hotlines for police, fire, and medical services. Report safety concerns or suspicious activities.",
+    title: "emergency.title",
+    description: "emergency.description",
     icon: SEIcon,
-    btnTitle: "Access Hotlines",
+    btnTitle: "emergency.btn",
     href: "https://lagosstate.gov.ng/services/disasters_emergencies",
   },
   {
     id: 11,
-    title: "Volunteer Opportunities",
-    description:
-      "Apply for government community volunteer programs. Contribute to Apapa’s growth and development.",
+    title: "volunteer.title",
+    description: "volunteer.description",
     icon: VOIcon,
-    btnTitle: "Apply Now!",
+    btnTitle: "volunteer.btn",
     href: "/community/volunteer-opportunities",
   },
   {
     id: 12,
-    title: "Frequently Asked Questions",
-    description:
-      "Find answers to common questions about services, policies, community initiatives and government processes.",
+    title: "faq.title",
+    description: "faq.description",
     icon: FAQIcon,
-    btnTitle: "View FAQs",
+    btnTitle: "faq.btn",
     href: "/community/faqs",
   },
 ];

@@ -8,6 +8,8 @@ import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder"
 import FooterArrow from "../../../../../public/svg-component/FooterArrow";
 import { quickLinks } from "./getInvolvedAndStayConnected.data";
 
+import { useTranslations } from "next-intl";
+
 const GetInvolvedAndStayConnected = () => {
   const containerVariants = {
     hidden: {},
@@ -23,6 +25,8 @@ const GetInvolvedAndStayConnected = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
+  const t = useTranslations("Home.quickLinks");
+
   return (
     <div className="relative section-padding py-[100px] md:py-[120px] bg-white text-primary z-[1] overflow-hidden">
       <div className="w-full max-w-[1488px] mx-auto relative">
@@ -34,7 +38,7 @@ const GetInvolvedAndStayConnected = () => {
           className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-3"
         >
           <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-            Quick Links
+            {t("pill")}
           </p>
         </motion.div>
         <motion.h6
@@ -44,7 +48,7 @@ const GetInvolvedAndStayConnected = () => {
           viewport={{ once: true }}
           className="text-xl leading-[32px] md:text-[36px] md:leading-[52px] text-[#000000] text-center font-[FuturaLTBold] max-w-[564px] mx-auto mb-[40px]"
         >
-          Get Involved and Stay Connected
+          {t("title")}
         </motion.h6>
 
         <motion.div
@@ -74,11 +78,11 @@ const GetInvolvedAndStayConnected = () => {
                 </div>
 
                 <h6 className="font-[FuturaLTBold] text-[18px] leading-[28px] md:text-[20px]">
-                  {link.title}
+                  {t(link.title)}
                 </h6>
               </div>
               <p className="text-base md:text-[20px] md:leading-[32px] text-[#667085] mb-5">
-                {link.description}
+                {t(link.description)}
               </p>
               <div className="flex items-center gap-2">
                 <a
@@ -86,7 +90,7 @@ const GetInvolvedAndStayConnected = () => {
                   href={link.href}
                   target="_blank"
                 >
-                  {link.btnTitle}
+                  {t(link.btnTitle)}
                 </a>
                 <FooterArrow fill="#aa8b00" />
               </div>

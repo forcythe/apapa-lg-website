@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -16,6 +16,8 @@ import TruckIcon from "../../../../../public/svg-component/TruckIcon";
 import WorldIconNew from "../../../../../public/svg-component/WorldIconNew";
 import CloudDesign from "../../../../../public/svg-component/CloudDesign";
 
+import { useTranslations } from "next-intl";
+
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -30,11 +32,124 @@ const containerVariants = {
   },
 };
 
+// Apapa (Lagos) coordinates (approx.)
+const APAPA_LAT = 6.4488;
+const APAPA_LON = 3.35901;
+
+type OpenMeteoResponse = {
+  current?: {
+    time: string; // ISO
+    temperature_2m?: number;
+  };
+  hourly?: {
+    time: string[];
+    precipitation_probability?: Array<number | null>;
+  };
+};
+
+function pickPrecipProbabilityForNow(data: OpenMeteoResponse): number | null {
+  const nowIso = data.current?.time;
+  const times = data.hourly?.time;
+  const probs = data.hourly?.precipitation_probability;
+
+  if (!nowIso || !times?.length || !probs?.length) return null;
+
+  // Find the hourly entry that matches "now" time exactly (Open-Meteo returns hourly time stamps)
+  const idx = times.indexOf(nowIso);
+
+  // If exact match fails, fallback to nearest hour by timestamp distance
+  if (idx !== -1) {
+    const v = probs[idx];
+    return typeof v === "number" ? v : null;
+  }
+
+  const nowMs = Date.parse(nowIso);
+  if (Number.isNaN(nowMs)) return null;
+
+  let bestIdx = -1;
+  let bestDiff = Number.POSITIVE_INFINITY;
+
+  for (let i = 0; i < times.length; i++) {
+    const tMs = Date.parse(times[i]);
+    if (Number.isNaN(tMs)) continue;
+    const diff = Math.abs(tMs - nowMs);
+    if (diff < bestDiff) {
+      bestDiff = diff;
+      bestIdx = i;
+    }
+  }
+
+  if (bestIdx === -1) return null;
+  const v = probs[bestIdx];
+  return typeof v === "number" ? v : null;
+}
+
 const RealTimeInsight = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
   });
+
+  const t = useTranslations("Home.insight");
+
+  // Weather state
+  const [tempC, setTempC] = useState<number | null>(null);
+  const [rainChance, setRainChance] = useState<number | null>(null);
+
+  const weatherUrl = useMemo(() => {
+    const params = new URLSearchParams({
+      latitude: String(APAPA_LAT),
+      longitude: String(APAPA_LON),
+      // current temperature
+      current: "temperature_2m",
+      // hourly precip probability
+      hourly: "precipitation_probability",
+      // ensure timestamps align to your locale
+      timezone: "Africa/Lagos",
+    });
+
+    return `https://api.open-meteo.com/v1/forecast?${params.toString()}`;
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const fetchWeather = async () => {
+      try {
+        const res = await fetch(weatherUrl, { cache: "no-store" });
+        if (!res.ok) throw new Error(`Weather fetch failed: ${res.status}`);
+        const data = (await res.json()) as OpenMeteoResponse;
+
+        if (cancelled) return;
+
+        const nextTemp = data.current?.temperature_2m;
+        setTempC(typeof nextTemp === "number" ? nextTemp : null);
+
+        const prob = pickPrecipProbabilityForNow(data);
+        setRainChance(typeof prob === "number" ? prob : null);
+      } catch {
+        if (cancelled) return;
+        // If API fails, keep placeholders (null)
+        setTempC(null);
+        setRainChance(null);
+      }
+    };
+
+    fetchWeather();
+
+    // Optional: refresh every 15 minutes
+    const id = window.setInterval(fetchWeather, 15 * 60 * 1000);
+
+    return () => {
+      cancelled = true;
+      window.clearInterval(id);
+    };
+  }, [weatherUrl]);
+
+  // Display-friendly values
+  const rainChanceDisplay = rainChance == null ? 0 : Math.round(rainChance);
+  const tempDisplay = tempC == null ? 31 : Math.round(tempC);
+  
   return (
     <div className="relative section-padding py-[100px] md:py-[120px] bg-white text-primary z-[1] overflow-hidden">
       <div className="w-full max-w-[1800px] mx-auto relative">
@@ -48,7 +163,7 @@ const RealTimeInsight = () => {
               className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-3"
             >
               <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-                Apapa at a Glance
+                {t("pill")}
               </p>
             </motion.div>
             <motion.h6
@@ -58,7 +173,7 @@ const RealTimeInsight = () => {
               viewport={{ once: true, amount: 0.3 }}
               className="text-xl leading-[32px] md:text-[36px] md:leading-[52px] text-[#000000] text-center font-[FuturaLTBold] max-w-[564px] mx-auto mb-[40px]"
             >
-              Real-Time Insights and Key Highlights
+              {t("title")}
             </motion.h6>
 
             <div
@@ -93,7 +208,7 @@ const RealTimeInsight = () => {
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
                     <p className="text-base whitespace-nowrap">
-                      Current Population
+                      {t("population")}
                     </p>
                   </div>
                 </motion.div>
@@ -113,9 +228,7 @@ const RealTimeInsight = () => {
                     M+
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
-                    <p className="text-base whitespace-nowrap">
-                      Tonnes of cargo
-                    </p>
+                    <p className="text-base whitespace-nowrap">{t("cargo")}</p>
                   </div>
                 </motion.div>
 
@@ -135,7 +248,7 @@ const RealTimeInsight = () => {
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
                     <p className="text-base whitespace-nowrap">
-                      Container Throughput
+                      {t("throughput")}
                     </p>
                   </div>
                 </motion.div>
@@ -157,7 +270,7 @@ const RealTimeInsight = () => {
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
                     <p className="text-base whitespace-nowrap">
-                      Revenue Generation
+                      {t("revenue")}
                     </p>
                   </div>
                 </motion.div>
@@ -179,7 +292,9 @@ const RealTimeInsight = () => {
                     +
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
-                    <p className="text-base whitespace-nowrap">Ships Docked</p>
+                    <p className="text-base whitespace-nowrap">
+                      {t("shipsDocked")}
+                    </p>
                   </div>
                 </motion.div>
 
@@ -197,7 +312,9 @@ const RealTimeInsight = () => {
                     ₦{inView ? <CountUp start={0} end={50} duration={2} /> : 0}+
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
-                    <p className="text-base whitespace-nowrap">Investment</p>
+                    <p className="text-base whitespace-nowrap">
+                      {t("investment")}
+                    </p>
                   </div>
                 </motion.div>
 
@@ -219,7 +336,9 @@ const RealTimeInsight = () => {
                     )}
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
-                    <p className="text-base whitespace-nowrap">Truck Traffic</p>
+                    <p className="text-base whitespace-nowrap">
+                      {t("truckTraffic")}
+                    </p>
                   </div>
                 </motion.div>
 
@@ -238,7 +357,7 @@ const RealTimeInsight = () => {
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
                     <p className="text-base whitespace-nowrap">
-                      Economic Contribution
+                      {t("economicContribution")}
                     </p>
                   </div>
                 </motion.div>
@@ -272,7 +391,7 @@ const RealTimeInsight = () => {
                       viewport={{ once: true, amount: 0.3 }}
                       className="text-base md:text-[20px] md:leading-[32px]"
                     >
-                      Chance of rain
+                      {t("chanceOfRain")}
                     </motion.p>
                     <motion.span
                       variants={textVariants}
@@ -281,7 +400,7 @@ const RealTimeInsight = () => {
                       viewport={{ once: true, amount: 0.3 }}
                       className="text-accent text-base md:text-[20px] md:leading-[32px] py-1 px-2 rounded-[8px] bg-white"
                     >
-                      0%
+                      {rainChanceDisplay}%
                     </motion.span>
                   </div>
                 </div>
@@ -292,7 +411,7 @@ const RealTimeInsight = () => {
                   viewport={{ once: true, amount: 0.3 }}
                   className="font-[FuturaLTBold] text-[28px] leading-[44px] md:text-[40px] md:leading-[60px] text-accent"
                 >
-                  {inView ? <CountUp start={0} end={31} duration={2} /> : 0}°
+                  {inView ? <CountUp start={0} end={tempDisplay} duration={2} /> : 0}°
                 </motion.h6>
               </div>
               <div className="absolute right-[20px] xs:right-[68px] top-[62px]">
@@ -312,7 +431,7 @@ const RealTimeInsight = () => {
                 variants={textVariants}
                 className="font-[FuturaLTBold] text-[20px] leading-[32px] md:text-[36px] md:leading-[52px] text-[#000000] text-left mb-5 md-[40px]"
               >
-                Welcome to the official website of Apapa Local Government.{" "}
+                {t("welcomeTitle")}{" "}
               </motion.h6>
               <motion.div
                 variants={textVariants}
@@ -332,14 +451,7 @@ const RealTimeInsight = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 className="text-base md:text-[20px] md:leading-[32px] text-[#000000] mb-6"
               >
-                As the Excecutive Chairman of Apapa Local Government(The Port
-                City Council), I am delighted to introduce you to our vibrant
-                community. At Apapa Local Government, we are committed to
-                transforming our community into a mega world-standard local
-                government that provides excellent services and infrastructure
-                to our residents. Our mission is to create a thriving and
-                sustainable environment that supports the well-being and
-                prosperity of all our citizens.
+                {t("welcomeDesc")}
               </motion.p>
               <motion.p
                 variants={textVariants}
@@ -348,12 +460,7 @@ const RealTimeInsight = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 className="text-base md:text-[20px] md:leading-[32px] text-[#000000] mb-6"
               >
-                On this website, you will find information about our ongoing
-                projects, community events, and services. We invite you to
-                explore our site, learn more about our initiatives, and get
-                involved in our community development efforts. Thank you for
-                visiting us, and we look forward to working together to build a
-                brighter future for Apapa.
+                {t("welcomeDesc2")}
               </motion.p>
               <motion.p
                 variants={textVariants}
@@ -362,7 +469,7 @@ const RealTimeInsight = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 className="text-base md:text-[20px] md:leading-[32px] text-[#000000] mb-6"
               >
-                Idowu Adejumoke Senbanjo{" "}
+                {t("chairmanName")}{" "}
               </motion.p>
               <motion.p
                 variants={textVariants}
@@ -371,7 +478,7 @@ const RealTimeInsight = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 className="text-base md:text-[20px] md:leading-[32px] text-[#000000]"
               >
-                Executive Chairman of Apapa Local Government
+                {t("chairmanTitle")}
               </motion.p>
             </motion.div>
           </div>

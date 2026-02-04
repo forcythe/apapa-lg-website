@@ -4,12 +4,17 @@ import { motion } from "framer-motion";
 import CheckMarkIcon from "../../../../../public/svg-component/CheckMarkIcon";
 import { manifestoSections } from "./staffDetails.data";
 
+import { useTranslations } from "next-intl"; 
+
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
 const Manifesto = () => {
+
+  const t = useTranslations("Government.rowData.executiveChairman.manifesto");
+
   return (
     <div>
       <div className="section-padding">
@@ -22,7 +27,7 @@ const Manifesto = () => {
             className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-3"
           >
             <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-              Our Manifesto
+              {t("badgeTitle")}
             </p>
           </motion.div>
           <motion.h6
@@ -32,7 +37,7 @@ const Manifesto = () => {
             viewport={{ once: true }}
             className="text-[20px] leading-[30px] md:text-[36px] md:leading-[52px] text-[#000000] text-center mb-6 font-[FuturaLTBold]"
           >
-            S.H.E.E
+            {t("headTitle")}
           </motion.h6>
           <motion.h6
             variants={itemVariants}
@@ -41,10 +46,7 @@ const Manifesto = () => {
             viewport={{ once: true }}
             className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center max-w-[700px] mx-auto mb-[40px] md:mb-[60px]"
           >
-            Our manifesto was anchored on four focus areas which includes
-            security - traffic and transport, health, environment -
-            infrastructure, education - skill acquisition and information
-            technology (S.H.E.E)
+            {t("overview")}
           </motion.h6>
         </div>
       </div>
@@ -69,18 +71,18 @@ const Manifesto = () => {
               <div className="w-full max-w-[844px] py-[40px] px-[20px] md:py-[80px] md:px-[100px] min-h-[976px] bg-[#F7F7F7]">
                 <div className="mb-[40px]">
                   <h6 className="text-xl leading-[32px] md:text-[36px] md:leading-[52px] text-[#000000] text-left font-[FuturaLTBold] mb-2">
-                    {section.title}
+                    {t(section.title)}
                   </h6>
                   {section.tagLabel && (
                     <div className="bg-[#FFF6CC] py-1 px-4 rounded-[4px] w-fit">
                       <p className="text-[#AA8B00] text-base md:text-[20px] md:leading-[32px]">
-                        {section.tagLabel}
+                        {t(section.tagLabel)}
                       </p>
                     </div>
                   )}
                 </div>
                 <p className="w-full max-w-[600px] text-[#000000] text-base md:text-[20px] md:leading-[32px] mb-[40px]">
-                  {section.content}
+                  {t(section.content)}
                 </p>
                 <motion.div
                   variants={itemVariants}
@@ -100,7 +102,7 @@ const Manifesto = () => {
                         <CheckMarkIcon />
                       </span>
                       <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000]">
-                        {activity}
+                        {t(activity)}
                       </p>
                     </div>
                   ))}

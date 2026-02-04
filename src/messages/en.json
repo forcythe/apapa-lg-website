@@ -1,0 +1,1081 @@
+{
+  "Header": {
+    "topBanner": "This is the official website of Apapa Local Government",
+    "languages": {
+      "en": "English",
+      "pcm": "Pidgin",
+      "yo": "Yorùbá"
+    }
+  },
+  "Nav": {
+    "home": "Home",
+    "government": "Government",
+    "about": "About",
+    "services": "Services",
+    "community": "Community",
+    "organizationalStructure": "Organizational Structure",
+    "councilManagerProfile": "Council Manager’s Profile",
+    "projects": "Projects",
+    "performanceDashboard": "Performance Dashboard",
+    "aboutUs": "About Us",
+    "historyOfApapa": "History of Apapa",
+    "chairmanProfile": "Chairman’s Profile",
+    "departmentsAndUnits": "Departments and Units",
+    "housingServices": "Housing Services",
+    "healthServices": "Health Services",
+    "businessPermits": "Business Permits and Licenses",
+    "taxPayments": "Tax Payments",
+    "educationScholarships": "Education and Scholarships",
+    "securityEmergency": "Security and Emergency",
+    "eGovServices": "E-Government Services",
+    "events": "Events",
+    "feedbackPortal": "Feedback Portal",
+    "pollsSurveys": "Polls and Surveys",
+    "volunteerOpportunities": "Volunteer Opportunities",
+    "faqs": "FAQs",
+    "initiatives": "Initiatives"
+  },
+  "Footer": {
+    "sections": {
+      "apapaLg": "Apapa Local Government",
+      "aboutUs": "About Us",
+      "services": "Services",
+      "community": "Community"
+    },
+    "copyright": "© 2025 Apapa Local Government. All rights reserved."
+  },
+  "Home": {
+    "hero": {
+      "pill": "Welcome to Apapa",
+      "title": "Nigeria’s Gateway to Global Trade",
+      "desc": "Home to the nation’s busiest ports, Apapa powers commerce, connects businesses, and drives economic growth. Explore opportunities in shipping, logistics, and trade at the heart of Nigeria’s maritime hub."
+    },
+    "insight": {
+      "pill": "Apapa at a Glance",
+      "title": "Real-Time Insights and Key Highlights",
+      "population": "Current Population",
+      "cargo": "Tonnes of cargo",
+      "throughput": "Container Throughput",
+      "revenue": "Revenue Generation",
+      "shipsDocked": "Ships Docked",
+      "investment": "Investment",
+      "truckTraffic": "Truck Traffic",
+      "economicContribution": "Economic Contribution",
+      "chanceOfRain": "Chance of rain",
+      "welcomeTitle": "Welcome to the official website of Apapa Local Government.",
+      "welcomeDesc": "As the Excecutive Chairman of Apapa Local Government(The Port City Council), I am delighted to introduce you to our vibrant community. At Apapa Local Government, we are committed to transforming our community into a mega world-standard local government that provides excellent services and infrastructure to our residents. Our mission is to create a thriving and sustainable environment that supports the well-being and prosperity of all our citizens.",
+      "welcomeDesc2": "On this website, you will find information about our ongoing projects, community events, and services. We invite you to explore our site, learn more about our initiatives, and get involved in our community development efforts. Thank you for visiting us, and we look forward to working together to build a brighter future for Apapa.",
+      "chairmanName": "Idowu Adejumoke Senbanjo",
+      "chairmanTitle": "Executive Chairman of Apapa Local Government"
+    },
+    "quickLinks": {
+      "pill": "Quick Links",
+      "title": "Get Involved and Stay Connected",
+      "housing": {
+        "title": "Housing Services",
+        "description": "Apply for public housing and renovation grants with ease. Get information on eligibility and application steps.",
+        "btn": "Apply Now!"
+      },
+      "healthcare": {
+        "title": "Healthcare Services",
+        "description": "Locate health centers and access emergency medical services. Stay updated on public health initiatives.",
+        "btn": "Learn More!"
+      },
+      "port": {
+        "title": "Port Services",
+        "description": "Access key information on cargo handling, port regulations, shipping operations and logistics.",
+        "btn": "Learn More!"
+      },
+      "events": {
+        "title": "Apapa Events",
+        "description": "Explore the latest events, meetings, and activities happening in Apapa and participate in local government initiatives.",
+        "btn": "Learn More!"
+      },
+      "feedback": {
+        "title": "Give Feedback",
+        "description": "Help us improve the community by reporting infrastructural problems, safety concerns, or other issues.",
+        "btn": "Give Feedback"
+      },
+      "levyPayment": {
+        "title": "Levy Payments",
+        "description": "Pay your taxes, levies, and business permits securely online. Avoid delays with easy payment tracking.",
+        "btn": "Pay Now!"
+      },
+      "business": {
+        "title": "Business Permits & Licenses",
+        "description": "Apply for or renew business licenses quickly. View processing timelines and required documents.",
+        "btn": "Apply Now!"
+      },
+      "blogs": {
+        "title": "Blogs, News & Articles",
+        "description": "Get the latest updates and official government notices. Stay informed about policies and community news.",
+        "btn": "Read Blogs"
+      },
+      "emergency": {
+        "title": "Emergency Services",
+        "description": "Access emergency hotlines for police, fire, and medical services. Report safety concerns or suspicious activities.",
+        "btn": "Access Hotlines"
+      },
+      "volunteer": {
+        "title": "Volunteer Opportunities",
+        "description": "Apply for government community volunteer programs. Contribute to Apapa’s growth and development.",
+        "btn": "Apply Now!"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "description": "Find answers to common questions about services, policies, community initiatives and government processes.",
+        "btn": "View FAQs"
+      }
+    },
+    "discover": {
+      "blogsPill": "Blogs, News and Articles",
+      "blogsTitle": "Stay Informed With the Latest Updates",
+      "emailPlaceholder": "Enter your email",
+      "subscribe": "Subscribe",
+      "loadingContent": "Loading content…",
+      "readMore": "Read more"
+    },
+    "events": {
+      "pill": "Events in Apapa",
+      "title": "Discover What is Happening in Apapa",
+      "loading": "Loading upcoming events…"
+    },
+    "tabs": {
+      "blogs": "Blogs",
+      "news": "News",
+      "articles": "Articles"
+    }
+  },
+  "About": {
+    "banner": {
+      "title": "About Us"
+    },
+    "mission": {
+      "badge": "Our Mission",
+      "headTitle": "Sailing Ahead With Impactful Governance & Development",
+      "subTitle": "To foster sustainable development, promote efficient governance, and enhance the quality of life for all residents through innovative public service delivery, infrastructural renewal, and inclusive economic growth — leveraging Apapa's status as Nigeria’s foremost port city."
+    },
+    "vision": {
+      "badge": "Our Vision",
+      "subTitle": "To be a model maritime and urban local government — clean, connected, prosperous, and resilient — where people thrive and commerce flows seamlessly."
+    },
+    "coreValues": {
+      "badge": "Core Values",
+      "title1": "Accountability",
+      "desc1": "We uphold transparency and are answerable to the people we serve.",
+      "title2": "Excellence",
+      "desc2": "We strive for high standards in governance, service, and infrastructure.",
+      "title3": "Integrity",
+      "desc3": "We strive for high standards in all our services and operations.",
+      "title4": "Inclusiveness",
+      "desc4": "We embrace diversity and ensure no one is left behind.",
+      "title5": "Innovation",
+      "desc5": "We apply smart solutions to solve local challenges efficiently.",
+      "title6": "Resilience",
+      "desc6": "We are committed to overcoming obstacles and adapting to changing circumstances for sustained progress."
+    },
+    "purpose": {
+      "badge": "Our Purpose",
+      "subTitle": "To govern effectively and equitably — harnessing Apapa’s port economy, rich heritage, and human capital to deliver meaningful development, preserve cultural identity, and create opportunities for present and future generations."
+    },
+    "commitment": {
+      "badge": "Our Commitment",
+      "subTitle": "Apapa Local Government is committed to improving infrastructure such as roads, drainage systems, and public spaces to support both residents and port operations; promoting economic empowerment through business-friendly policies and support for local enterprises; enhancing social welfare by expanding access to healthcare, education, housing, and essential services; ensuring environmental sustainability by tackling flooding, waste, and pollution through proactive, community-driven solutions; and fostering civic engagement by listening to citizens, encouraging participatory governance, and maintaining transparent communication."
+    },
+    "history": {
+      "banner": {
+        "title": "History of Apapa"
+      },
+      "history1": {
+        "badge": "The Rich Heritage and Legacy of Apapa",
+        "headTitle": "A Historic Maritime Gateway of Nigeria",
+        "subTitle": "Apapa Local Government Area (LGA) stands as one of the most historically and economically significant regions in Lagos State, Nigeria. From its modest beginnings as a fishing village to becoming Nigeria’s foremost maritime and commercial hub, Apapa has played a central role in the evolution of Lagos as a global city."
+      },
+      "history2": {
+        "badge": "Early Beginnings",
+        "headTitle": "A Waterfront Settlement",
+        "subTitle": "Long before urban development, Apapa was a quiet settlement inhabited by fishermen and traders who relied on its strategic waterfront location for sustenance and commerce. Its proximity to the Atlantic Ocean and Lagos Lagoon naturally made it a center for local trade, drawing merchants and settlers even in pre-colonial times."
+      },
+      "evolutionOfApapa": {
+        "badge": "Colonial Transformation and Growth",
+        "headTitle": "Evolution Of Apapa",
+        "subTitle": "During the British colonial era, Apapa’s potential was quickly realized. The colonial administration established ports, warehouses, and railway infrastructure to support the growing shipping and trade industries. Apapa evolved rapidly into a crucial international shipping hub and soon became the commercial heartbeat of Lagos."
+      },
+      "history3": {
+        "badge": "The Economic Engine of Apapa",
+        "headTitle": "Birth of a Port Powerhouse",
+        "subTitle": "The early 20th century marked a significant milestone with the construction of the Apapa Port, laying the foundation for what would become Nigeria’s most vital maritime zone. This development was further expanded with the addition of Tin Can Island Port, positioning Apapa as home to two of Nigeria’s busiest seaports, handling an estimated 75% of the nation’s total import and export volume. Today, these ports serve as lifelines for the Nigerian economy, processing billions of naira worth of goods annually. In just the first quarter of 2023, the Apapa Customs Command generated over ₦212 billion in revenue, underscoring the area's financial significance."
+      },
+      "history4": {
+        "badge": "A Legacy of Governance",
+        "headTitle": "Formation of Apapa LGA",
+        "subTitle": "In 1977, Apapa was officially established as a Local Government Area by the Lagos State Government to decentralize administration and bring governance closer to its residents. As part of its evolution, areas like Apapa Iganmu were later carved out to create additional local development councils."
+      },
+      "history5": {
+        "badge": "Driving National Prosperity",
+        "headTitle": "Lagos’s Economic Jewel",
+        "subTitle": "Situated in Lagos State, one of Africa’s largest economies with a GDP of approximately $259.75 billion (PPP) in 2023, Apapa is at the core of this economic power. Its contributions to trade, logistics, and revenue generation are unmatched, and its historical journey continues to inspire progress, innovation, and community development."
+      },
+      "landmarkAndInfluence": {
+        "badge": "Modern-Day Apapa",
+        "headTitle": "Landmarks and Influence",
+        "subTitle": "Apapa today is a bustling blend of residential, commercial, and industrial activities. It houses key national and regional landmarks including:",
+        "coreValues": {
+          "title1": "Nigerian Ports Authority (NPA) Headquarters",
+          "description1": "The NPA Headquarters in Apapa serves as the administrative hub for Nigeria’s port operations, overseeing activities across the country’s major seaports and ensuring efficient maritime trade management.",
+          "title2": "Tin Can Island Port",
+          "description2": "One of Nigeria’s busiest and most strategic seaports, Tin Can Island Port handles a large volume of containerized cargo and plays a vital role in supporting the country’s import and export economy.",
+          "title3": "Eleganza Plaza",
+          "description3": "Eleganza Plaza is a popular commercial complex known for its mix of retail shops, offices, and wholesale outlets, making it a bustling center for trade and business in the heart of Apapa.",
+          "title4": "Apapa Amusement Park",
+          "description4": "A family-friendly recreational spot, Apapa Amusement Park offers fun rides, games, and open spaces, serving as a refreshing getaway for residents and visitors looking for leisure and relaxation."
+        }
+      },
+      "history6": {
+        "badge": "A Thriving Cultural Mosaic at the Heart of Nigeria’s Port City",
+        "headTitle": "Cultural and Community Strength",
+        "subTitle": "Apapa is not just a port city; it’s a diverse community filled with resilience and cultural richness. Residents from various ethnic backgrounds live and work together, making Apapa a true microcosm of Nigeria’s unity in diversity."
+      },
+      "history7": {
+        "badge": "Overcoming Challenges to Restore Apapa’s Economic Vitality",
+        "headTitle": "Challenges and Ongoing Renewal",
+        "subTitle": "Despite its prominence, Apapa faces modern challenges such as infrastructure decay, flooding, and traffic gridlock—particularly from port-bound trucks. These issues are not just local inconveniences but national economic threats, with gridlock alone estimated to cost Nigeria up to ₦18 trillion annually. However, efforts from both the government and private sector are underway to revitalize the area, improve infrastructure, and restore Apapa’s glory as Nigeria’s economic engine."
+      }
+    },
+    "deptAndUnits": {
+      "banner": {
+        "title": "Departments & Units"
+      },
+      "cards": {
+        "title1": "Admin & Human Resources Department",
+        "description1": "The Admin & Human Resources Department is critical in ensuring the smooth operation of the organization and managing its human capital. This department is responsible for a wide range of functions, including personnel management, office administration, and organizational development.",
+
+        "title2": "Finance & Accounts Department",
+        "description2": "The Finance & Accounts Department is responsible for managing the local government’s financial health, ensuring transparency, and maintaining financial integrity. This department oversees financial reporting, accounting practices, and compliance with applicable regulations.",
+
+        "title3": "Works and Infrastructure Department",
+        "description3": "The Works and Infrastructure Department oversees the planning, development, and maintenance of infrastructure projects within the local government.",
+
+        "title4": "Agriculture and Social Services Department",
+        "description4": "The Agriculture and Social Services Department focuses on enhancing agricultural productivity and promoting social welfare within the community.",
+
+        "title5": "Education and Library Services Department",
+        "description5": "The Education and Library Services Department is responsible for overseeing educational programs and library services within the local government.",
+
+        "title6": "Human Resources Department",
+        "description6": "The Human Resources Department ensures effective personnel management, office administration, and organizational development within the local government.",
+
+        "title7": "Planning, Budget, Research & Statistics",
+        "description7": "The Planning, Budget, Research & Statistics Department oversees planning, budgeting, research, and statistical functions to support informed decision-making.",
+
+        "title8": "Women Affairs and Poverty Alleviation",
+        "description8": "The Women Affairs and Poverty Alleviation Department leads initiatives aimed at improving the welfare of women and reducing poverty within the community.",
+
+        "title9": "Primary Health Care Service",
+        "description9": "The Primary Health Care Service oversees the delivery of essential healthcare services at the community level, focusing on prevention, early detection, and treatment of common health issues.",
+
+        "title10": "Environmental Services",
+        "description10": "The Environmental Services Department is responsible for managing and protecting the environment, including sanitation and environmental sustainability efforts.",
+
+        "title11": "Clerk of the Legislative Arm",
+        "description11": "The Clerk of the Legislative Arm oversees legislative processes and ensures the smooth operation of the legislative body.",
+
+        "title12": "Public Affairs Unit",
+        "description12": "The Public Affairs Unit manages public relations, communications, and media engagement to ensure effective information dissemination.",
+
+        "title13": "Audit Unit",
+        "description13": "The Audit Unit oversees auditing processes to ensure financial integrity, regulatory compliance, and effective resource utilization.",
+
+        "title14": "ICT (Information and Communication Technology) Unit",
+        "description14": "The ICT Unit manages the development, implementation, and maintenance of the local government’s technology infrastructure and digital services.",
+
+        "title15": "Legal Unit",
+        "description15": "The Legal Unit handles legal affairs, provides legal advice, ensures compliance with laws, and manages legal risks.",
+
+        "title16": "Tourism Unit",
+        "description16": "The Tourism Unit promotes tourism within the local government area to boost economic growth, preserve cultural heritage, and enhance visitor experiences.",
+
+        "title17": "Procurement Unit",
+        "description17": "The Procurement Unit manages procurement processes for goods, services, and works, ensuring transparency and value for money.",
+
+        "title18": "Council Manager",
+        "description18": "The Council Manager oversees the day-to-day administrative operations of the local government and serves as the chief executive officer.",
+
+        "btn": "Apply Now!"
+      }
+    }
+  },
+  "Government": {
+    "banner": {
+      "title": "Apapa Local Government Organizational Structure"
+    },
+    "rowData": {
+      "executiveChairman": {
+        "role": "Executive Chairman",
+        "bannerTitle": "Executive Chairman of the Local Government",
+        "badgeTitle": "EXECUTIVE CHAIRMAN",
+        "overview": "The Executive Chairman of the local government is the chief executive officer and is responsible for overseeing the implementation of policies and day-to-day administrative operations. This role is central to local governance, as the chairman manages the executive functions and ensures the local government’s activities align with the policies set by the elected council.",
+        "name": "Hon. Idowu Adejumoke Senbanjo",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "vision&Mission": {
+          "badgeTitle": "Vision & Mission",
+          "overview": "Hon. Senbanjo is dedicated to transforming Apapa into a modern port city that provides effective grassroots governance and development. Her administration focuses on:",
+          "visionMissionItems": {
+            "title1": "Infrastructure & Development",
+            "description1": "Enhancing roads, drainage systems, and public facilities to improve the living standards of residents.",
+            "title2": "Economic Development",
+            "description2": "Enhancing roads, drainage systems, and public facilities to improve the living standards of residents.",
+            "title3": "Social Development & Security",
+            "description3": "Implementing programs that promote social welfare and ensure the safety of the community.",
+            "title4": "Sustainable Environment",
+            "description4": "Promoting environmental initiatives to create a cleaner and healthier Apapa."
+          }
+        },
+        "manifesto": {
+          "badgeTitle": "Our Manifesto",
+          "headTitle": "S.H.E.E",
+          "overview": "Our manifesto was anchored on four focus areas which includes security - traffic and transport, health, environment - infrastructure, education - skill acquisition and technology (S.H.E.E)",
+          "manifestoSections": {
+            "01": {
+              "title": "Security",
+              "tagLabel": "Traffic and Transport",
+              "content": "Security is essential for business success, particularly in Apapa's strategic role in Lagos State's economy. We are enhancing our security framework to ensure safety for businesses, visitors, and residents. Continuous improvement and adaptation are key, supported by technical assistance and community partnerships. Our initiatives include regular engagements with security agencies, community interactions, and security audits to foster trust and cooperation. These efforts aim to create a thriving environment for businesses and peaceful living for residents.",
+              "activities": {
+                "activity1": "Support and collaborate with all military and paramilitary agencies",
+                "activity2": "Support with patrol vehicles",
+                "activity3": "Light up Apapa project",
+                "activity4": "Construction of bus stops all around Apapa",
+                "activity5": "Work with LAMATA for the revitalization of Apapa bus stop stations.",
+                "activity6": "Development of Apapa tertiary streets"
+              }
+            },
+            "02": {
+              "title": "Health",
+              "tagLabel": "overcoming challenges",
+              "content": "Good health is priceless. It is this belief that has been shaping our people-centered health and wellness programmes. Over the past four years, we’ve acquired a fully equipped ambulance for emergency interventions. Our primary health care facilities provide vital curative and preventative services, while our advocacy efforts positively impact the community. A key initiative focuses on raising awareness about drug and substance abuse among youth through regular community walks. We believe that with intentional engagement, we can combat this issue effectively.",
+              "activities": {
+                "activity1": "To run 24 hours healthcare at Ijora Oloye, Nanti village and Oluwole primary health centres",
+                "activity2": "Aligning with the state government to fast track and sustain community health insurance scheme",
+                "activity3": "Adequate manpower",
+                "activity4": "Add more awareness for killer diseases like high blood pressure, hypertension etc",
+                "activity5": "Deworming exercises for school children",
+                "activity6": "Develop adequate social and welfare system for senior citizens"
+              }
+            },
+            "03": {
+              "title": "Environment",
+              "tagLabel": "Infrastructure",
+              "content": "The Environment Services and Waste Management Department is responsible for monitoring all environmental factors that may negatively affect the health of individuals and communities. Additionally, the department is tasked with preventing and controlling those factors that could have harmful effects on people and their immediate surroundings. During the reporting period, the department undertook various activities aimed at preventing the outbreak of sanitation-related diseases and promoting a healthy environment, thereby enhancing the well-being of both residents and visitors in the local government area.",
+              "activities": {
+                "activity1": "Regular maintenance and desilting of primary and secondary drainage channels to reduce flooding and water-borne diseases",
+                "activity2": "A flood-free Apapa",
+                "activity3": "Sewage control",
+                "activity4": "Fumigation of common areas in Apapa such as schools, markets and drainage",
+                "activity5": "Deworming exercises for school children",
+                "activity6": "Beautification of Apapa for a cleaner environment",
+                "activity7": "Work with stakeholders on the adoption of ESG governance model"
+              }
+            },
+            "04": {
+              "title": "Education",
+              "tagLabel": "Skill acquisition and information technology",
+              "content": "We believe that knowledge is empowerment, and the right skills are tools for transformation. Guided by this conviction, we have consistently invested in education, skill acquisition, and information technology to build a future-ready generation. Over the past four years, we’ve equipped learning centers with modern tools to support digital literacy and vocational training. Our youth empowerment programmes have opened doors to practical skills in areas like coding, graphic design, and craftsmanship, fostering entrepreneurship and employability. Our commitment extends beyond infrastructure. We champion community-based learning through mobile tech hubs, mentorship networks, and partnerships with educators and tech innovators. These initiatives ensure that even the most underserved can access opportunities to learn and grow.",
+              "activities": {
+                "activity1": "Creation of Apapa children educational centre",
+                "activity2": "Sports facilities around the schools in Apapa",
+                "activity3": "E-learning and e-library facility",
+                "activity4": "Rebuild and equip the skills acquisition centre"
+              }
+            }
+          }
+        },
+        "pastChairmen": {
+          "badgeTitle": "Past Chairmen",
+          "overview": "Over the years, Apapa Local Government has been guided by visionary leaders whose contributions have shaped its development and legacy. Each administration brought unique initiatives and policies that have impacted the lives of residents, strengthened governance, and advanced the area’s economic and infrastructural growth. From pioneering community projects to steering the LGA through critical challenges, these past chairmen have laid a solid foundation upon which today’s progress is built. This section honors their service, dedication, and leadership in moving Apapa forward.",
+          "timelineData": {
+            "1": {
+              "role": "Executive Chairman"
+            },
+            "2": {
+              "role": "Sole Administrator"
+            },
+            "3": {
+              "role": "Executive Secretary"
+            },
+            "4": {
+              "role": "Executive Chairman"
+            },
+            "5": {
+              "role": "Executive Chairman "
+            },
+            "6": {
+              "role": "Sole Administrator"
+            },
+            "7": {
+              "role": "Executive Secretary"
+            },
+            "8": {
+              "role": "Executive Chairman "
+            },
+            "9": {
+              "role": "Executive Secretary"
+            },
+            "10": {
+              "role": "Executive Chairman "
+            },
+            "11": {
+              "role": "Executive Chairman "
+            },
+            "12": {
+              "role": "Sole Administrator"
+            },
+            "13": {
+              "role": "Sole Administrator"
+            }
+          }
+        }
+      },
+      "viceChairman": {
+        "role": "Vice Chairman",
+        "bannerTitle": "Vice Chairman of the Local Government",
+        "badgeTitle": "VICE CHAIRMAN",
+        "overview": "The Vice Chairman of the local government serves as the deputy to the Executive Chairman and assists in the execution of the local government’s functions. The Vice Chairman’s role is typically focused on supporting the Chairman in administrative duties and stepping in when the Chairman is unavailable.",
+        "name": "MRS ADEBANJI S.O",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Support to the Executive Chairman",
+          "description1": "The Vice Chairman assists the Executive Chairman in the administration and implementation of policies and projects, helping to ensure that the local government operates efficiently.",
+          "title2": "Substitute Leadership",
+          "description2": "In the event that the Executive Chairman is absent due to illness, travel, or other reasons, the Vice Chairman assumes the Chairman’s duties and ensures continuity in leadership and governance.",
+          "title3": "Overseeing Specific Departments or Projects",
+          "description3": "The Vice Chairman may be assigned specific responsibilities or areas of focus, such as overseeing certain departments, programs, or community projects within the local government.",
+          "title4": "Advisory Role",
+          "description4": "The Vice Chairman often provides advice to the Executive Chairman, offering insights on various administrative and policy matters, and may help in decision-making processes.",
+          "title5": "Public Engagement",
+          "description5": "The Vice Chairman may also engage with the public, representing the local government in community events, meetings, and public consultations, ensuring strong relationships with residents.",
+          "title6": "Policy Monitoring",
+          "description6": "The Vice Chairman can be involved in monitoring the implementation of policies, reviewing the performance of programs, and making recommendations for improvements or adjustments.",
+          "title7": "Collaboration and Coordination",
+          "description7": "Like the Executive Chairman, the Vice Chairman may also work with other stakeholders, such as other levels of government, local businesses, and community organizations.",
+          "title8": "Succession Planning",
+          "description8": "The Vice Chairman often serves as a potential successor to the Executive Chairman, and as such, the position requires a deep understanding of local government operations and responsibilities."
+        }
+      },
+      "councilManager": {
+        "role": "Council Manager",
+        "bannerTitle": "Council Manager",
+        "badgeTitle": "COUNCIL MANAGER",
+        "overview": "The Council Manager for a local government is responsible for the day-to-day administrative operations and management of the local government’s activities, serving as the chief executive officer.",
+        "name": "MRS ADEBANJI S.O",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Executive Leadership",
+          "description1": "Leading the overall administration of the local government, ensuring the implementation of policies set by the elected council and overseeing the operations of all municipal departments.",
+          "title2": "Policy Implementation",
+          "description2": "Translating the decisions and policies of the elected council into actionable plans and ensuring their effective execution across the local government.",
+          "title3": "Budget and Financial Management",
+          "description3": "Overseeing the preparation and implementation of the local government’s budget, ensuring that financial resources are allocated effectively and responsibly, and monitoring spending to stay within budget constraints.",
+          "title4": "Staff Management",
+          "description4": "Hiring, supervising, and managing senior staff, including department heads, ensuring that all municipal services are delivered efficiently and effectively. Providing leadership, support, and performance evaluations for staff.",
+          "title5": "Council Support and Communication",
+          "description5": "Acting as the primary liaison between the elected council and the local government administration. Preparing reports, providing advice, and ensuring the council is informed of key issues, challenges, and opportunities.",
+          "title6": "Strategic Planning and Development",
+          "description6": "Leading long-term strategic planning and community development efforts, addressing local needs, and guiding the local government towards sustainable growth and development.",
+          "title7": "Community Relations",
+          "description7": "Engaging with the community to understand their needs, address concerns, and ensure that local government services meet public expectations. Acting as a spokesperson for the local government in public matters.",
+          "title8": "Regulatory Compliance",
+          "description8": "Ensuring that the local government operates in compliance with laws, regulations, and policies at the local, state, and federal levels.",
+          "title9": "Crisis and Emergency Management",
+          "description9": "Leading the local government’s response to emergencies or crises, including coordinating resources, managing public information, and ensuring an effective response."
+        }
+      },
+      "slg": {
+        "role": "SLG",
+        "bannerTitle": "Secretary to the Local Government",
+        "badgeTitle": "",
+        "overview": "The Secretary to the Local Government is a senior administrative officer who plays a key role in supporting the local government’s governance and ensuring that its administrative processes run smoothly. The position typically involves both high-level coordination and operational responsibilities.ß",
+        "name": "",
+        "introduction": "",
+        "keyFunctions": {
+          "title1": "Administrative Support",
+          "description1": "Providing crucial administrative support to the local government council, including scheduling meetings, preparing agendas, taking minutes, and ensuring the smooth functioning of council sessions and decision-making.",
+          "title2": "Record Keeping and Documentation",
+          "description2": "Maintaining and managing official records such as council meeting minutes, resolutions, official correspondence, contracts, and other critical documents, ensuring accuracy, accessibility, and compliance with regulations.",
+          "title3": "Policy Coordination",
+          "description3": "Assisting in the development, implementation, and monitoring of policies adopted by the local government council. This includes ensuring that policies are executed effectively and in alignment with local governance objectives.",
+          "title4": "Liaison Between Elected Officials and Administration",
+          "description4": "Serving as the main point of contact between the elected council members, the executive arm (such as the local government chairman or mayor), and administrative staff, ensuring communication is clear and timely.",
+          "title5": "Legal and Regulatory Compliance",
+          "description5": "Ensuring that the local government’s activities and decisions comply with all relevant laws, regulations, and procedural requirements. This includes overseeing the preparation and review of legal documents.",
+          "title6": "Public Relations and Communication",
+          "description6": "Managing official correspondence and communication between the local government and the public, ensuring that information is disseminated clearly and promptly to stakeholders.",
+          "title7": "Support in Election and Appointment Processes",
+          "description7": "Assisting with the electoral process for local government positions, including managing election records, and handling official documentation for the appointment of key staff members.",
+          "title8": "Advisory Role",
+          "description8": "Offering advice to the council on procedural matters, governance best practices, and ensuring that meetings and decision-making processes are in accordance with established rules and regulations.",
+          "title9": "Supervision and Oversight",
+          "description9": "Supervising administrative staff within the local government office, ensuring efficient handling of clerical tasks, documentation, and public inquiries."
+        }
+      },
+      "legislativeArm": {
+        "role": "Legislative Arm",
+        "bannerTitle": "Legislative Arm of the Local Government",
+        "overview": "..."
+      },
+      "supervisors": {
+        "role": "Supervisors",
+        "bannerTitle": "Council Supervisors",
+        "badgeTitle": "",
+        "overview": "Council Supervisors in a local government are elected or appointed officials responsible for overseeing the implementation of various programs, projects, and services within specific sectors or departments. They serve as a link between the elected council and the local community, ensuring that the local government's policies and decisions are effectively executed at the grassroots level.",
+        "name": "",
+        "introduction": "",
+        "keyFunctions": {
+          "title1": "Oversight of Local Services and Projects",
+          "description1": "Supervisors are tasked with overseeing the delivery of services within their assigned sectors, which may include education, health, infrastructure, agriculture, housing, and others.",
+          "title2": "Policy Implementation",
+          "description2": "Council supervisors ensure that local government policies, decisions, and plans are implemented at the community level. They work with department heads and staff to ensure that all council resolutions and directives are carried out effectively.",
+          "title3": "Community Engagement and Representation",
+          "description3": "Supervisors represent the interests of their constituencies within the local government council. They engage with the community, listen to their concerns, and provide feedback to the council to help shape decisions.",
+          "title4": "Monitoring and Reporting",
+          "description4": "They monitor the performance of various programs and services within their areas of responsibility and report on progress to the local government council.",
+          "title5": "Resource Allocation",
+          "description5": "Supervisors may have a role in allocating resources within their departments or areas of responsibility, ensuring that the available budget is used effectively to meet community needs.",
+          "title6": "Collaboration with Other Stakeholders",
+          "description6": "They work closely with other local government officials, external partners, NGOs, and the private sector to address local issues and implement development initiatives.",
+          "title7": "Policy Advice and Development",
+          "description7": "Supervisors provide input on the development of policies or programs, offering insights based on their knowledge of the needs of the community and the effectiveness of existing services.",
+          "title8": "Conflict Resolution",
+          "description8": "They play a role in resolving conflicts within the community, mediating disputes, and ensuring that local government actions are in the best interests of residents.",
+          "title9": "Supervision of Staff and Activities",
+          "description9": "Council supervisors are responsible for supervising staff within their sector or department, ensuring that employees adhere to work standards, policies, and regulations."
+        }
+      },
+      "headWorksAndInfrastructure": {
+        "role": "Head, Works & Infrastructure Department",
+        "bannerTitle": "Works & Infrastructure",
+        "badgeTitle": "HEAD OF WORKS AND INFRASTRUCTURE",
+        "overview": "The Head of Works and Infrastructure Department typically oversees the planning, development, and maintenance of infrastructure projects within an organization or municipality.",
+        "name": "ENGR. OLUWADAMILOLA SAMSON OYEGBAMI",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Project Management",
+          "description1": "Leading various construction and infrastructure projects, ensuring they are completed on time, within budget, and to required specifications.",
+          "title2": "Strategic Planning",
+          "description2": "Developing long-term plans for infrastructure development and maintenance, aligning projects with community or organizational goals.",
+          "title3": "Budgeting and Financial Management",
+          "description3": "Managing the financial aspects of projects, including preparing budgets, monitoring expenditures, and securing funding.",
+          "title4": "Regulatory Compliance",
+          "description4": "Ensuring all projects comply with local, state, and federal regulations and policies, including environmental standards.",
+          "title5": "Team Leadership",
+          "description5": "Supervising and coordinating a team of engineers, architects, and construction workers, fostering collaboration and productivity.",
+          "title6": "Stakeholder Engagement",
+          "description6": "Communicating with various stakeholders, including government agencies, contractors, and the public, to gather input and provide updates on projects.",
+          "title7": "Maintenance Oversight",
+          "description7": "Establishing protocols for the ongoing maintenance of infrastructure to ensure safety and longevity.",
+          "title8": "Risk Management",
+          "description8": "Identifying potential risks associated with infrastructure projects and developing strategies to mitigate them."
+        }
+      },
+      "headAgricAndSocialServices": {
+        "role": "Head, Agric & Social Services Department",
+        "bannerTitle": "Agric & Social Services",
+        "badgeTitle": "HEAD OF AGRIC AND SOCIAL SERVICES",
+        "overview": "The Head of Agriculture and Social Services Department typically focuses on enhancing agricultural productivity and promoting social welfare within a community or organization.",
+        "name": "MRS OLABOWALE TAIWO AKABASORUN",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Agricultural Development",
+          "description1": "Overseeing programs that support farmers, including offering training, resources, and technology to improve crop yield and sustainable practices.",
+          "title2": "Social Services",
+          "description2": "Developing and implementing social programs aimed at improving the quality of life for community members, such as health services, education initiatives, and poverty alleviation strategies.",
+          "title3": "Policy Development",
+          "description3": "Formulating policies related to agriculture and social services that align with governmental and community objectives, ensuring the sustainable use of resources.",
+          "title4": "Research and Innovation",
+          "description4": "Encouraging agricultural research to introduce innovative practices and technologies that can enhance food production and sustainability.",
+          "title5": "Community Engagement",
+          "description5": "Collaborating with local communities, stakeholders, and organizations to identify needs and implement programs that address those needs.",
+          "title6": "Funding and Budget Management",
+          "description6": "Securing funding for agricultural and social programs, managing budgets, and ensuring the efficient allocation of resources.",
+          "title7": "Monitoring and Evaluation",
+          "description7": "Evaluating the effectiveness of programs and initiatives, gathering data to assess impact, and making improvements as necessary.",
+          "title8": "Training and Capacity Building",
+          "description8": "Conducting workshops and training sessions for farmers and community members to build skills and knowledge in agriculture and social services."
+        }
+      },
+      "headEducationAndLibraryServices": {
+        "role": "Head, Education & Library Services Department",
+        "bannerTitle": "Education & Library Services",
+        "badgeTitle": "HEAD OF EDUCATION AND LIBRARY SERVICES",
+        "overview": "The Head of Education and Library Services Department is responsible for overseeing educational programs and library services within a community or organization.",
+        "name": "MR MAKINWA OLANIYI BABATUNDE",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Program Development",
+          "description1": "Designing and implementing educational programs and initiatives that cater to various age groups, academic levels, and community needs.",
+          "title2": "Library Management",
+          "description2": "Overseeing the operations of public or institutional libraries, including collection development, resource management, and library services.",
+          "title3": "Curriculum Oversight",
+          "description3": "Collaborating with educational institutions to develop and enhance curricula, ensuring alignment with educational standards and community needs.",
+          "title4": "Staff Leadership",
+          "description4": "Managing educational and library personnel, providing training and support to enhance service delivery and professional development.",
+          "title5": "Community Engagement",
+          "description5": "Building partnerships with schools, community organizations, and stakeholders to promote educational opportunities and library usage.",
+          "title6": "Budget Management",
+          "description6": "Preparing and overseeing budgets for educational programs and library services, ensuring effective allocation of resources.",
+          "title7": "Advocacy and Policy Development",
+          "description7": "Advocating for educational initiatives and library services, influencing public policy, and securing funding at local, state, or federal levels.",
+          "title8": "Monitoring and Assessment",
+          "description8": "Evaluating the effectiveness of educational programs and library services, using data to inform improvements and report outcomes to stakeholders."
+        }
+      },
+      "headPlanningBudgetResearchStatistics": {
+        "role": "Head, Planning budget, Research & Statistics Department",
+        "bannerTitle": "Head of Planning, Budget, Research & Statistics",
+        "badgeTitle": "HEAD OF PLANNING, BUDGET, RESEARCH & STATISTICS",
+        "overview": "The Head of Planning, Budget, Research & Statistics is responsible for overseeing the planning, budgeting, research, and statistical functions within an organization or institution.",
+        "name": "MRS OLAJUMOKE ELIZABETH AKINLEHIN",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Strategic Planning",
+          "description1": "Leading the development and implementation of long-term strategic plans to guide the organization's goals, objectives, and resource allocation.",
+          "title2": "Budget Management",
+          "description2": "Overseeing the preparation, allocation, and monitoring of the organization's budget, ensuring efficient use of resources and alignment with strategic priorities.",
+          "title3": "Research Oversight",
+          "description3": "Coordinating and overseeing research activities, ensuring that research is relevant, data-driven, and aligned with organizational goals.",
+          "title4": "Statistical Analysis",
+          "description4": "Collecting, analyzing, and interpreting data to inform decision-making, policy development, and performance evaluation. This may include preparing reports and dashboards for leadership and stakeholders.",
+          "title5": "Policy Development",
+          "description5": "Developing and implementing policies related to planning, budgeting, and research to ensure consistency, transparency, and accountability across departments.",
+          "title6": "Forecasting and Reporting",
+          "description6": "Providing forecasts for financial and resource needs and preparing regular reports on performance, budget status, and research findings for internal and external stakeholders.",
+          "title7": "Collaboration with Stakeholders",
+          "description7": "Working closely with senior management, department heads, and external partners to ensure effective planning, budgeting, and research processes that support the organization's objectives.",
+          "title8": "Continuous Improvement",
+          "description8": "Identifying opportunities for process improvements and ensuring that planning, budget, research, and statistical practices align with best practices and evolving organizational needs."
+        }
+      },
+      "headWomenAffairsAndPovertyAlleviation": {
+        "role": "Head, WAPA Department",
+        "bannerTitle": "Head of Women Affairs and Poverty Alleviation",
+        "badgeTitle": "HEAD OF WOMEN AFFAIRS AND POVERTY ALLEVIATION",
+        "overview": "The Head of Women Affairs and Poverty Alleviation is responsible for leading initiatives and programs aimed at improving the welfare of women and alleviating poverty within a community or organization.",
+        "name": "MRS OLAJUMOKE ELIZABETH AKINLEHIN",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Policy Development and Implementation",
+          "description1": "Designing and implementing policies that promote gender equality, support women's rights, and reduce poverty. This may involve advocating for legal and social reforms.",
+          "title2": "Program Management",
+          "description2": "Overseeing programs that focus on empowering women, providing economic opportunities, and addressing the root causes of poverty. These may include vocational training, microfinance support, or health and education initiatives.",
+          "title3": "Resource Mobilization",
+          "description3": "Securing funding and resources to support programs and initiatives aimed at improving the living standards of women and those affected by poverty.",
+          "title4": "Collaboration and Partnerships",
+          "description4": "Working with other government departments, non-governmental organizations (NGOs), and community groups to address poverty and gender inequality in a coordinated manner.",
+          "title5": "Monitoring and Evaluation",
+          "description5": "Assessing the effectiveness of policies and programs, collecting data on their impact, and ensuring that services are reaching the intended populations.",
+          "title6": "Capacity Building",
+          "description6": "Providing training and support to women, community leaders, and staff to help them develop skills and knowledge that improve their socio-economic status.",
+          "title7": "Data Collection and Reporting",
+          "description7": "Gathering data on women's empowerment and poverty alleviation efforts to inform decision-making and policy adjustments, and reporting outcomes to stakeholders."
+        }
+      },
+      "headPrimaryHealthCareService": {
+        "role": "Head, Primary Health Care Services Department",
+        "bannerTitle": "Head of Primary Health Care Service",
+        "badgeTitle": "HEAD OF PRIMARY HEALTH CARE SERVICE",
+        "overview": "The Head of Primary Health Care Service is responsible for overseeing the delivery of essential healthcare services at the community level, focusing on prevention, early detection, and treatment of common health issues.",
+        "name": "DR OLUDOLAPO SOTUNDE",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Program Management",
+          "description1": "Designing, implementing, and overseeing primary health care programs, ensuring they address the health needs of the population, such as maternal and child health, immunization, disease prevention, and health education.",
+          "title2": "Resource Allocation and Management",
+          "description2": "Ensuring the proper allocation of resources, including staff, equipment, and medications, to deliver effective primary health care services.",
+          "title3": "Staff Supervision and Training",
+          "description3": "Leading and managing primary healthcare professionals (e.g., doctors, nurses, community health workers), providing training, and ensuring quality service delivery.",
+          "title4": "Quality Assurance",
+          "description4": "Developing and enforcing standards and protocols for healthcare delivery, ensuring services meet established quality and safety standards.",
+          "title5": "Community Engagement",
+          "description5": "Engaging with local communities to raise awareness about health issues, encourage healthy behaviors, and ensure services are accessible and culturally appropriate.",
+          "title6": "Health Promotion and Disease Prevention",
+          "description6": "Coordinating public health campaigns to prevent common diseases, improve hygiene, and promote healthy lifestyles.",
+          "title7": "Monitoring and Evaluation",
+          "description7": "Tracking the performance and impact of health programs, collecting data on service delivery, and making improvements based on findings.",
+          "title8": "Collaboration with Other Health Services",
+          "description8": "Coordinating with other healthcare levels, such as secondary and tertiary care, to ensure continuity of care for patients who need specialized treatment.",
+          "title9": "Budget and Financial Management",
+          "description9": "Overseeing the department's budget, ensuring that resources are used efficiently and effectively to support primary health care services."
+        }
+      },
+      "headEnvironmentalServices": {
+        "role": "Head, Environmental  Services Department",
+        "bannerTitle": "Head of Environmental Services",
+        "badgeTitle": "DIRECTOR ENVIRONMENTAL SERVICES",
+        "overview": "The Head of Environmental Services is responsible for overseeing the management and protection of the environment within an organization or community.",
+        "name": "MR OBIKOYA BABATUNDE ISAAC",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Environmental Policy Development",
+          "description1": "Developing and implementing policies and strategies aimed at protecting the environment, ensuring sustainability, and complying with environmental regulations and standards.",
+          "title2": "Environmental Management",
+          "description2": "Managing programs related to waste management, recycling, pollution control, water and air quality, and land conservation to minimize environmental impact.",
+          "title3": "Resource Management",
+          "description3": "Overseeing the sustainable use of natural resources, including energy efficiency initiatives, water conservation, and resource recycling programs.",
+          "title4": "Compliance and Reporting",
+          "description4": "Ensuring that the organization or community complies with environmental laws, regulations, and standards. Preparing reports for internal stakeholders and regulatory agencies.",
+          "title5": "Staff Supervision and Training",
+          "description5": "Leading and managing a team of environmental professionals, providing training on best practices, safety standards, and environmental regulations.",
+          "title6": "Sustainability Initiatives",
+          "description6": "Promoting and implementing sustainability initiatives, such as green building practices, renewable energy use, and reducing carbon footprints.",
+          "title7": "Environmental Education and Awareness",
+          "description7": "Conducting outreach and awareness programs to educate the community or employees about environmental issues, sustainability practices, and eco-friendly behaviors.",
+          "title8": "Monitoring and Evaluation",
+          "description8": "Monitoring the effectiveness of environmental programs, tracking key environmental indicators, and making improvements as necessary.",
+          "title9": "Emergency Response and Risk Management",
+          "description9": "Developing plans and protocols for responding to environmental emergencies such as spills, pollution events, or natural disasters."
+        }
+      },
+      "clerkOfLegislativeArm": {
+        "role": "Clerk of the House",
+        "bannerTitle": "Clerk of the Legislative Arm",
+        "badgeTitle": "COUNCIL CLERK",
+        "overview": "The Clerk of the Legislative Arm is a key administrative official responsible for overseeing the legislative processes and ensuring the smooth operation of the legislative body, such as a parliament or council.",
+        "name": "MR ADEBOMI ABAYOMI",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Legislative Support",
+          "description1": "Assisting in the preparation of legislative agendas, documents, and agendas for parliamentary or council sessions, ensuring that all materials are available to members in a timely manner.",
+          "title2": "Record Keeping and Documentation",
+          "description2": "Maintaining accurate records of legislative proceedings, including debates, votes, and decisions. This includes the preparation of official minutes, transcripts, and reports.",
+          "title3": "Procedural Guidance",
+          "description3": "Providing guidance to legislators on parliamentary rules, procedures, and regulations to ensure that legislative activities are conducted properly and in compliance with established rules.",
+          "title4": "Administrative Management",
+          "description4": "Managing administrative functions, including coordinating communication between members of the legislative body, staff, and the public. This may involve handling correspondence and organizing committee meetings.",
+          "title5": "Legislation and Bill Tracking",
+          "description5": "Assisting in the drafting, review, and tracking of bills and resolutions as they progress through the legislative process.",
+          "title6": "Public Engagement and Transparency",
+          "description6": "Ensuring that legislative proceedings and decisions are accessible to the public by maintaining transparency and facilitating public access to records, proceedings, and documents.",
+          "title7": "Election of Officers",
+          "description7": "In some jurisdictions, the Clerk may be responsible for overseeing the election of key officers within the legislative body, such as the Speaker or President of the Assembly.",
+          "title8": "Supporting the Speaker/Chairperson",
+          "description8": "Providing administrative support to the Speaker or Chairperson of the legislative body during sessions, including managing the agenda and coordinating the order of business.",
+          "title9": "Protocol and Compliance",
+          "description9": "Ensuring that the legislative body adheres to legal and constitutional requirements, including compliance with rules of order and statutory obligations."
+        }
+      },
+      "headIctUnit": {
+        "role": "Head, I.C.T Unit",
+        "bannerTitle": "Head of ICT (Information and Communication Technology) Unit",
+        "badgeTitle": "HEAD OF ICT ",
+        "overview": "The Head of ICT (Information and Communication Technology) Unit is responsible for overseeing the development, implementation, and management of the organization's technology infrastructure and services.",
+        "name": "MR GISANRI SAHEED",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "ICT Strategy and Planning",
+          "description1": "Developing and implementing the ICT strategy that aligns with the organization’s goals, ensuring that technology supports operations, innovation, and overall growth.",
+          "title2": "Infrastructure Management",
+          "description2": "Overseeing the management of the organization's IT infrastructure, including networks, servers, hardware, and software systems, to ensure reliability, security, and scalability.",
+          "title3": "System Integration and Support",
+          "description3": "Ensuring that various IT systems (software, hardware, databases) are integrated effectively, and providing technical support to resolve issues and optimize system performance.",
+          "title4": "Cyber-security",
+          "description4": "Managing and implementing cyber-security measures to protect the organization’s data, networks, and systems from cyber threats, ensuring compliance with data protection regulations.",
+          "title5": "Innovation and Technology Upgrades",
+          "description5": "Identifying emerging technologies that could improve organizational efficiency, and managing the implementation of new systems or upgrades to existing technologies.",
+          "title6": "Data Management and Analytics",
+          "description6": "Overseeing data management processes, ensuring data integrity, accessibility, and compliance with regulations, and leveraging data analytics to support decision-making.",
+          "title7": "Team Leadership and Development",
+          "description7": "Leading and managing the ICT team, providing guidance, training, and professional development opportunities to ensure effective performance and up-to-date knowledge of technology trends.",
+          "title8": "Budget and Resource Management",
+          "description8": "Managing the ICT department’s budget, ensuring the efficient use of resources, and evaluating the cost-effectiveness of technology investments.",
+          "title9": "User Training and Support",
+          "description9": "Providing training and support to end-users, ensuring they are equipped to use technology efficiently, and addressing any technical concerns or needs."
+        }
+      },
+      "headLegalUnit": {
+        "role": "Head, Legal Services Unit",
+        "bannerTitle": "Head of Legal Unit",
+        "badgeTitle": "HEAD OF LEGAL UNIT",
+        "overview": "The Head of Legal Unit is responsible for overseeing the legal affairs of an organization, providing legal advice, ensuring compliance with laws and regulations, and managing legal risks.",
+        "name": "MR OGUNDARE BABATUNDE  ADEBAYOMI",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Legal Advisory",
+          "description1": "Providing legal counsel to senior management, departments, and other stakeholders on various legal matters, including contracts, corporate governance, intellectual property, labor law, and dispute resolution.",
+          "title2": "Contract Management",
+          "description2": "Overseeing the drafting, review, and negotiation of contracts and agreements to ensure they are legally sound and protect the organization's interests.",
+          "title3": "Compliance Management",
+          "description3": "Ensuring that the organization complies with all applicable laws, regulations, and industry standards. This includes overseeing regulatory compliance, ethical practices, and corporate governance.",
+          "title4": "Dispute Resolution and Litigation",
+          "description4": "Managing legal disputes, including litigation, arbitration, and mediation. Representing the organization or coordinating with external counsel on legal proceedings.",
+          "title5": "Risk Management",
+          "description5": "Identifying and mitigating potential legal risks, advising on legal risk prevention, and developing strategies to protect the organization’s legal standing.",
+          "title6": "Legal Documentation and Record-Keeping",
+          "description6": "Ensuring proper documentation, record-keeping, and management of legal files and contracts, ensuring accessibility and compliance with regulatory requirements.",
+          "title7": "Policy Development",
+          "description7": "Assisting in the development and implementation of internal policies and procedures, ensuring they align with legal requirements and mitigate potential legal risks.",
+          "title8": "Training and Education",
+          "description8": "Providing legal training and guidance to staff on legal matters relevant to their roles, such as compliance, ethics, and contract management.",
+          "title9": "Liaison with External Counsel",
+          "description9": "Coordinating with external law firms or legal experts when specialized legal expertise is required, and managing relationships with these external parties."
+        }
+      },
+      "headTourismUnit": {
+        "role": "Head, Tourism Unit",
+        "bannerTitle": "Head of Tourism Unit",
+        "badgeTitle": "HEAD OF TOURISM UNIT",
+        "overview": "The Head of Tourism Unit for a local government is responsible for overseeing and promoting tourism within the local jurisdiction, aiming to boost the local economy, preserve cultural heritage, and improve the overall visitor experience.",
+        "name": "MRS ABIMBOLA OMOLOLA VICTORIA",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Tourism Development and Strategy",
+          "description1": "Developing and implementing strategies to promote tourism in the local area, identifying opportunities for growth, and ensuring alignment with the local government’s goals and community needs.",
+          "title2": "Destination Marketing",
+          "description2": "Promoting the local area as a tourist destination through marketing campaigns, digital platforms, events, and collaboration with travel agencies, tour operators, and other stakeholders.",
+          "title3": "Event Planning and Management",
+          "description3": "Organizing and supporting local events, festivals, and cultural activities that attract visitors, celebrate local traditions, and enhance the area's appeal.",
+          "title4": "Stakeholder Collaboration",
+          "description4": "Working closely with local businesses, hospitality providers, cultural organizations, and community leaders to enhance tourism infrastructure and services, ensuring that tourism benefits the local economy.",
+          "title5": "Tourism Product Development",
+          "description5": "Identifying and developing unique local tourism products and experiences, such as heritage tours, outdoor activities, local crafts, and food experiences, to attract visitors.",
+          "title6": "Sustainability and Responsible Tourism",
+          "description6": "Promoting sustainable tourism practices that minimize environmental impact and ensure the long-term viability of tourism in the area, while also benefiting the local community.",
+          "title7": "Visitor Services and Experience",
+          "description7": "Overseeing the development and maintenance of tourism-related facilities and services, such as visitor centers, signage, transportation, and information resources, to ensure a positive experience for tourists.",
+          "title8": "Research and Data Collection",
+          "description8": "Monitoring tourism trends, collecting visitor data, and conducting research to inform policy decisions and improve tourism offerings in the local area.",
+          "title9": "Regulations and Compliance",
+          "description9": "Ensuring that local tourism operations comply with relevant regulations, including zoning, licensing, and environmental standards, and working with other authorities to maintain a safe and welcoming environment for visitors."
+        }
+      },
+      "headProcurementUnit": {
+        "role": "Head, Procurement Unit",
+        "bannerTitle": "Head of Procurement Unit",
+        "badgeTitle": "HEAD OF PROCUREMENT UNIT",
+        "overview": "The Head of Procurement Unit for a local government is responsible for managing and overseeing the procurement processes for goods, services, and works within the local government’s operations.",
+        "name": "MR OGUNDIMU JIMOH HASSAN",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Procurement Planning and Strategy",
+          "description1": "Developing and implementing procurement strategies and plans that align with the local government’s budget, policies, and objectives to ensure efficient and cost-effective procurement processes.",
+          "title2": "Vendor Management",
+          "description2": "Identifying, selecting, and managing relationships with suppliers and service providers, ensuring that contracts are negotiated fairly and meet the needs of the local government.",
+          "title3": "Tendering and Contracting",
+          "description3": "Overseeing the tendering process, including preparing tender documents, evaluating bids, and awarding contracts in compliance with local government regulations, policies, and procedures.",
+          "title4": "Compliance and Regulatory Oversight",
+          "description4": "Ensuring that all procurement activities comply with relevant laws, regulations, and government policies, promoting transparency, accountability, and fairness in the procurement process.",
+          "title5": "Budget and Resource Management",
+          "description5": "Managing the procurement budget, ensuring that expenditures align with financial resources and that all procurement activities are within budget constraints.",
+          "title6": "Monitoring and Evaluation",
+          "description6": "Monitoring the performance of vendors and contractors to ensure that goods, services, and works are delivered as per contractual terms, quality standards, and timelines. Addressing any issues or disputes that arise.",
+          "title7": "Risk Management",
+          "description7": "Identifying potential risks in the procurement process and taking steps to mitigate them, including ensuring proper due diligence and compliance checks are conducted on suppliers.",
+          "title8": "Staff Leadership and Training",
+          "description8": "Leading and managing the procurement team, providing guidance, training, and ensuring they adhere to best practices in procurement processes and ethical standards.",
+          "title9": "Reporting and Documentation",
+          "description9": "Maintaining accurate records of all procurement activities, including contracts, orders, and payments, and preparing reports for senior management and regulatory bodies."
+        }
+      },
+      "areaOfficers": {
+        "role": "Area Officers",
+        "bannerTitle": "Area Officers Functions & Operations",
+        "overview": "..."
+      },
+      "headAdminAndHumanResources": {
+        "role": "Head, Admin & Human Resources Department",
+        "bannerTitle": "Admin & Human Resources Department Functions & Operations",
+        "badgeTitle": "HEAD OF HUMAN RESOURCE",
+        "overview": "The Admin & Human Resources Department is critical in ensuring the smooth operation of the organization and managing its human capital. This department is responsible for a wide range of functions, including personnel management, office administration, and organizational development.",
+        "name": "MRS ADEDOYI E.O",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Recruitment and Staffing",
+          "description1": "Develop job descriptions, post job openings, and conduct interviews to select the best candidates. Manage the onboarding process for new hires.",
+          "title2": "Employee Relations",
+          "description2": "Serve as a point of contact for employee inquiries and concerns. Implement policies and procedures to promote a positive work environment.",
+          "title3": "Performance Management",
+          "description3": "Oversee employee performance evaluations and development plans. Facilitate training and development opportunities for staff.",
+          "title4": "Compensation and Benefits",
+          "description4": "Manage payroll, employee benefits, and compensation packages. Ensure compliance with labor laws and regulations regarding employee compensation.",
+          "title5": "Administrative Support",
+          "description5": "Maintain office supplies and equipment, and oversee facilities management. Organize and coordinate meetings, events, and training sessions.",
+          "title6": "Policy Development",
+          "description6": "Develop, implement, and update HR policies and procedures. Ensure all staff are informed about policies related to conduct, performance, and grievance handling.",
+          "title7": "Record-Keeping",
+          "description7": "Maintain accurate employee records and HR databases. Ensure confidentiality and compliance with data protection regulations."
+        }
+      },
+      "headFinanceAndAccounts": {
+        "role": "Head, Finance & Accounts Department",
+        "bannerTitle": "Finance & Accounts Department Functions & Operations",
+        "badgeTitle": "HEAD OF FINANCE AND ACCOUNTING",
+        "overview": "The Finance & Accounts Department is responsible for managing the local government’s financial health, ensuring transparency, and maintaining financial integrity. This department oversees financial reporting, accounting practices, and compliance with applicable regulations.",
+        "name": "MRS ADEPOJU-CONDE FOLUKE MARY",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Financial Reporting",
+          "description1": "Prepare timely and accurate financial statements, including profit and loss statements, balance sheets, and cash flow statements. Ensure compliance with relevant accounting standards and financial regulations.",
+          "title2": "Accounting Operations",
+          "description2": "Manage day-to-day accounting functions, including accounts payable and receivable, payroll, and general ledger maintenance. Implement and oversee internal controls to mitigate financial risks.",
+          "title3": "Cash Flow Management",
+          "description3": "Monitor cash flow and financial transactions to ensure the organization has sufficient liquidity to meet its obligations. Develop strategies for optimizing cash management and investments.",
+          "title4": "Financial Analysis",
+          "description4": "Conduct financial analysis and cost-benefit assessments to support decision-making. Provide insights into financial performance and identify areas for improvement.",
+          "title5": "Audit and Compliance",
+          "description5": "Coordinate internal and external audits and ensure compliance with financial regulations. Implement recommendations from audits to enhance financial controls and processes.",
+          "title6": "Tax Management",
+          "description6": "Prepare and file tax returns, ensuring compliance with tax laws. Provide guidance on tax planning and implications of financial decisions.",
+          "title7": "Stakeholder Communication",
+          "description7": "Communicate financial performance and budget status to senior management and other stakeholders. Prepare presentations and reports for the board and various committees.",
+          "title8": "Staff Development",
+          "description8": "Supervise, train, and develop finance and accounting staff to enhance their skills and efficiency. Foster a constructive work environment and promote continuous learning in financial practices."
+        }
+      },
+      "headPublicAffairsUnit": {
+        "role": "Head, Public Affairs Unit",
+        "bannerTitle": "Head of Public Affairs Unit",
+        "badgeTitle": "HEAD OF PUBLIC AFFAIRS UNIT",
+        "overview": "The Head of Public Affairs Unit is responsible for managing the organization's public relations, communications, and media strategies to ensure a positive image and effective communication with both internal and external stakeholders.",
+        "name": "MRS OYEBIYI OYEKEMI",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Media Relations",
+          "description1": "Developing and maintaining relationships with the media, responding to inquiries, organizing press conferences, and ensuring that the organization’s messages are communicated effectively to the public.",
+          "title2": "Public Communication Strategy",
+          "description2": "Designing and implementing communication strategies that align with the organization's goals and ensure consistent messaging across all platforms (e.g., social media, websites, press releases).",
+          "title3": "Crisis Communication",
+          "description3": "Managing communication during crises or emergencies, ensuring that the organization’s response is clear, timely, and aligned with public interest and organizational values.",
+          "title4": "Content Creation",
+          "description4": "Overseeing the creation of content for various communication channels, including press releases, newsletters, speeches, reports, and social media posts.",
+          "title5": "Brand Management",
+          "description5": "Ensuring that the organization’s public image and brand are well-maintained, consistent, and positive. This includes managing the organization's reputation and responding to any negative publicity.",
+          "title6": "Stakeholder Engagement",
+          "description6": "Engaging with key stakeholders, such as government agencies, community organizations, and the public, to foster relationships and ensure that the organization’s actions are aligned with the needs and expectations of these groups.",
+          "title7": "Event Management",
+          "description7": "Organizing and overseeing public events, including conferences, community outreach programs, and corporate social responsibility initiatives, to promote the organization and engage with the public.",
+          "title8": "Internal Communications",
+          "description8": "Managing internal communication within the organization, ensuring that employees are informed about key developments and strategic goals, fostering a transparent and inclusive environment.",
+          "title9": "Monitoring and Reporting",
+          "description9": "Monitoring media coverage, public opinion, and the effectiveness of communication campaigns, and preparing reports to evaluate the success and impact of public relations efforts."
+        }
+      },
+      "headAuditUnit": {
+        "role": "Head, Audit Unit",
+        "bannerTitle": "Head of Audit Unit",
+        "badgeTitle": "HEAD OF AUDIT UNIT",
+        "overview": "The Head of Audit Unit is responsible for overseeing the auditing processes within an organization to ensure financial integrity, compliance with laws and regulations, and the effective use of resources",
+        "name": "MR ALADESUYI  ADEKUNLE OLUWADARE",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Audit Planning and Strategy",
+          "description1": "Developing and implementing an annual audit plan that covers key areas of financial, operational, and compliance risk across the organization.",
+          "title2": "Internal Audits",
+          "description2": "Leading internal audits to assess the effectiveness of internal controls, financial systems, and risk management processes. Identifying areas of improvement and recommending corrective actions.",
+          "title3": "Risk Management",
+          "description3": "Identifying, evaluating, and reporting on potential financial or operational risks, ensuring that appropriate risk management strategies are in place.",
+          "title4": "Compliance Monitoring",
+          "description4": "Ensuring that the organization adheres to relevant laws, regulations, and policies, and reviewing the implementation of legal and regulatory requirements.",
+          "title5": "Financial Reviews",
+          "description5": "Conducting thorough reviews of financial statements and records to verify accuracy, completeness, and compliance with accounting standards and organizational policies..",
+          "title6": "Reporting",
+          "description6": "Preparing detailed audit reports for senior management, the board of directors, and external stakeholders, highlighting findings, recommendations, and any areas of concern.",
+          "title7": "Advisory Role",
+          "description7": "Providing advice to management on improving financial controls, operational efficiency, and risk mitigation measures based on audit findings.",
+          "title8": "Team Leadership and Training",
+          "description8": "Leading and managing the audit team, providing guidance, training, and development to ensure audits are performed effectively and in accordance with professional standards.",
+          "title9": "Follow-up on Audit Recommendations",
+          "description9": "Monitoring the implementation of audit recommendations, ensuring corrective actions are taken, and assessing their effectiveness."
+        }
+      }
+    },
+    "projects": {
+      "bannerTitle": "Projects",
+      "projectsLoading": "Loading projects...",
+      "projectsStats": {
+        "badgeTitle": "Performance Dashboard",
+        "label1": "Borehole sunk",
+        "label2": "Reconstruction of roads",
+        "label3": "Roads Rehabilitation",
+        "label4": "Reconstruction of drains",
+        "label5": "Back to School Sandals, Socks, Bags, Uniforms, Mathematical Sets/ Pencil Cases",
+        "label6": "Rehabilitation of drains",
+        "label7": "Building Renovation",
+        "label8": "Back to School Support",
+        "label9": "Exercise Books",
+        "label10": "Cars, Buses + 30 Ton Truck",
+        "label11": "Teacher’s Chairs and Tables",
+        "label12": "New Desks and Chairs for Students",
+        "label13": "Building Construction"
+      }
+    }
+  },
+  "Community": {
+    "feedback": {
+      "bannerTitle": "Your Voice, Our Priority: Share and Track Feedback",
+      "activeTab": "Share Feedback",
+      "activeTab2": "Track Feedback",
+      "fullname": "Full Name",
+      "phoneNumber": "Phone Number",
+      "emailAddress": "Email Address",
+      "feedbackCategory": "Feedback Category",
+      "options": {
+        "opt1": "General Inquiry",
+        "opt2": "Service Complaint",
+        "opt3": "Suggestion",
+        "opt4": "Other"
+      },
+      "feedbackMessage": "Feedback",
+      "btn1": "Share Feedback",
+      "btn2": "Track Feedback",
+      "successMessage": {
+        "headText": "Thank you for your Feedback!",
+        "subText": "If you have any questions, please contact us at feedback@apapalga.ng or call our support line at +234 800 123 4567. We value your input and are committed to addressing your concerns promptly.",
+        "btn": "Okay"
+      }
+    },
+    "initiatives": {
+      "bannerTitle": "Initiatives",
+      "badgeTitle": "Driving Change, One Initiative at a Time",
+      "description": "From education and health to infrastructure and innovation, our initiatives are designed to uplift every resident of Apapa. Explore the impactful projects shaping a stronger, safer, and more prosperous community.",
+      "loadingInitiatives": "Loading initiatives..."
+    },
+    "faqs": {
+      "bannerTitle": "Frequently Asked Questions: Your Guide to Community Engagement and Services",
+      "loadingFaqs": "Loading FAQs...",
+      "tabs": {
+        "general": "General",
+        "government": "Government",
+        "services": "Services",
+        "community": "Community"
+      }
+    },
+    "volunteerOpportunities": {
+      "bannerTitle": "Volunteer Opportunities in Apapa: Join Hands, Make a Difference",
+      "badgeTitle": "Community Service Programs",
+      "description": "Explore a variety of active volunteer initiatives aimed at improving Apapa's community. From environmental cleanup drives to educational support programs, there’s a project for everyone who wants to make a difference.",
+      "btnLink": "Become a Volunteer",
+      "loadingVolunteers": "Loading volunteer opportunities...",
+      "form": {
+        "headText": "Become a Volunteer",
+        "fullname": "Full Name",
+        "phoneNumber": "Phone Number",
+        "emailAddress": "Email Address",
+        "volunteerRole": "Volunteer Role",
+        "whyVolunteer": "Why do you want to volunteer?",
+        "btnSubmit": "Volunteer"
+      },
+      "successMessage": {
+        "headText": "Volunteer Application",
+        "subText": "We have received your volunteer application and truly appreciate your willingness to contribute to the community. Our team is currently reviewing your submission, and we will reach out to you soon with the next steps. We look forward to working with you to make a positive impact!"
+      }
+    },
+    "pollsAndSurveys": {
+      "bannerTitle": "Polls and Surveys",
+      "badgeTitle": "Active Polls",
+      "description": "Participate in ongoing community surveys and cast your vote on key public issues that matter to you. Stay involved and make your voice heard in shaping Apapa's future.",
+      "loadingPolls": "Loading polls and surveys..."
+    },
+    "events": {
+      "bannerTitle": "Apapa Events: Engage, Celebrate, and Connect",
+      "loadingEvents": "Loading events..."
+    }
+  }
+}
