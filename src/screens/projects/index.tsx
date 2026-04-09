@@ -11,7 +11,7 @@ import { mapInitiativesAndProjects } from "@/libs/initiative.mapper";
 import { Project } from "./_partials/projectDetails/projectDetails.types";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const ProjectDashboard = dynamic(() => import("./_partials/projectDashboard"), {
   loading: () => null,
@@ -21,29 +21,51 @@ const ProjectDetails = dynamic(() => import("./_partials/projectDetails"), {
 });
 
 const ProjectsPage = () => {
-
   const t = useTranslations("Government.projects");
+  const locale = useLocale();
+  const cmsLocale = locale === "pcm" ? "en" : locale;
 
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchProjects = async () => {
       try {
+        const params = new URLSearchParams({
+          populate: "*",
+          locale: cmsLocale,
+        });
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/projects?populate=*`
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/projects?${params.toString()}`,
         );
+
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+
         const json = await res.json();
+
+        // Check if json.data exists and is an array
+        if (
+          !json?.data ||
+          !Array.isArray(json.data) ||
+          json.data.length === 0
+        ) {
+          throw new Error("No projects found.");
+        }
+
         setProjects(mapInitiativesAndProjects(json));
-      } catch (error) {
+      } catch (error: any) {
         console.error("Failed to fetch initiatives", error);
+        setError(error.message || "Failed to load projects. Please try again.");
       } finally {
         setLoading(false);
       }
     };
 
     fetchProjects();
-  }, []);
+  }, [cmsLocale]);
 
   return (
     <AppWrapper>
@@ -56,16 +78,21 @@ const ProjectsPage = () => {
           <div className="w-full mx-auto max-w-[1488px]">
             <ProjectDashboard />
             <div className="w-full flex flex-col gap-[80px] md:gap-[120px]">
-              {loading && (
+              {loading ? (
                 <div className="w-full text-center py-20">
                   <p className="text-base text-[#667085]">
                     {t("projectsLoading")}...
                   </p>
                 </div>
+              ) : error ? (
+                <div className="flex items-center justify-center w-full h-full">
+                  <p className="text-base md:text-[18px] text-red-500 text-center">
+                    {error}
+                  </p>
+                </div>
+              ) : (
+                projects.map((p) => <ProjectDetails key={p.id} p={p} />)
               )}
-
-              {!loading &&
-                projects.map((p) => <ProjectDetails key={p.id} p={p} />)}
             </div>
           </div>
         </div>

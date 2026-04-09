@@ -52,39 +52,78 @@ const formatDateWithOrdinal = (isoDate: string) => {
   return `${day}${getOrdinal(day)} ${month} ${year}`;
 };
 
-const PollsAndSurveyPage = () => {
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_STRAPI_URL ||
+  "https://apapa-lg-cms-production.up.railway.app";
 
+interface ApiPollOption {
+  id: number;
+  label: string;
+  percentage: number;
+}
+
+interface ApiPoll {
+  id: number;
+  question: string;
+  options: ApiPollOption[];
+  endsAt: string;
+  totalVotes: number;
+}
+
+const mapPoll = (poll: ApiPoll): Poll => ({
+  id: poll.id,
+  question: poll.question,
+  options: Array.isArray(poll.options) ? poll.options : [],
+  ends: poll.endsAt ? formatDateWithOrdinal(poll.endsAt) : "N/A",
+  endsAt: poll.endsAt,
+  totalVotes: poll.totalVotes ?? 0,
+});
+
+const PollsAndSurveyPage = () => {
   const t = useTranslations("Community.pollsAndSurveys");
 
   const [polls, setPolls] = useState<Poll[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  const fetchPolls = async () => {
+    try {
+      setLoading(true);
+      const res = await fetch(`${API_BASE_URL}/api/polls?populate=options`);
+
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+
+      const json = await res.json();
+
+      // Check if json.data exists and is an array
+      if (!json?.data || !Array.isArray(json.data) || json.data.length === 0) {
+        throw new Error("No polls found.");
+      }
+
+      const mappedPolls: Poll[] = json.data.map((poll: ApiPoll) =>
+        mapPoll(poll),
+      );
+
+      setPolls(mappedPolls);
+    } catch (error: any) {
+      console.error("Failed to fetch polls:", error);
+      setError(error.message || "Failed to load polls. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const fetchPolls = async () => {
-      try {
-        const res = await fetch(
-          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/polls-and-surveys?populate=*`
-        );
-        const json = await res.json();
-
-        const mappedPolls: Poll[] = json.data.map((poll: any) => ({
-          id: poll.documentId,
-          question: poll.question,
-          options: poll.options,
-          ends: formatDateWithOrdinal(poll.endsAt),
-          totalVotes: poll.totalVotes,
-        }));
-
-        setPolls(mappedPolls);
-      } catch (error) {
-        console.error("Failed to fetch polls:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
     fetchPolls();
   }, []);
+
+  const handlePollUpdated = (updatedPoll: Poll) => {
+    setPolls((prevPolls) =>
+      prevPolls.map((poll) => (poll.id === updatedPoll.id ? updatedPoll : poll)),
+    );
+  };
 
   return (
     <>
@@ -120,15 +159,28 @@ const PollsAndSurveyPage = () => {
               </motion.div>
 
               <div className="flex flex-col gap-4">
-                {loading && (
+                {loading ? (
                   <div className="w-full text-center py-20">
                     <p className="text-base text-[#667085]">
                       {t("loadingPolls")}
                     </p>
                   </div>
+                ) : error ? (
+                  <div className="flex items-center justify-center w-full h-full">
+                    <p className="text-base md:text-[18px] text-red-500 text-center">
+                      {error}
+                    </p>
+                  </div>
+                ) : (
+                  polls?.map((poll) => (
+                    <Polls
+                      key={poll?.id}
+                      poll={poll}
+                      refetch={fetchPolls}
+                      onPollUpdated={handlePollUpdated}
+                    />
+                  ))
                 )}
-                {!loading &&
-                  polls?.map((poll) => <Polls key={poll?.id} poll={poll} />)}
               </div>
             </div>
           </div>

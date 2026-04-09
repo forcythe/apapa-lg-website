@@ -1,16 +1,62 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import { useFormik } from "formik";
+import { toast } from "react-toastify";
 
 import { Button, Modal } from "@/components";
 import { IVotingModal } from "./votingModal.types";
 import { validationSchema } from "./votingModal.validation";
+import { Poll } from "@/screens/pollsAndSurvey/pollsAndSurvey.types";
 
 import ModalCloseIcon from "../../../public/svg-component/ModalCloseIcon";
 import CheckedIcon from "../../../public/svg-component/CheckedIcon";
 
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_STRAPI_URL ||
+  "https://apapa-lg-cms-production.up.railway.app";
+
+const formatDateWithOrdinal = (isoDate: string) => {
+  const date = new Date(isoDate);
+
+  const day = date.getDate();
+  const month = date.toLocaleString("en-GB", { month: "long" });
+  const year = date.getFullYear();
+
+  const getOrdinal = (n: number) => {
+    if (n > 3 && n < 21) return "th";
+    switch (n % 10) {
+      case 1:
+        return "st";
+      case 2:
+        return "nd";
+      case 3:
+        return "rd";
+      default:
+        return "th";
+    }
+  };
+
+  return `${day}${getOrdinal(day)} ${month} ${year}`;
+};
+
+interface VoteResponse {
+  data?: {
+    id: number;
+    question: string;
+    options: Poll["options"];
+    endsAt?: string;
+    totalVotes: number;
+  };
+  message?: string;
+  error?: {
+    message?: string;
+  };
+}
+
 const VotingModal = ({
   poll,
+  nin,
+  refetch,
+  onPollUpdated,
   isShowVotingModal,
   onActionClick,
   onClickAwayVotingModal,
@@ -19,10 +65,72 @@ const VotingModal = ({
   const formik = useFormik<{ selectedOption: number | null }>({
     initialValues: { selectedOption: null },
     validationSchema: validationSchema,
-    onSubmit: () => {
-      onActionClick?.();
+    onSubmit: async (values, { setSubmitting }) => {
+      if (!poll?.id || !values.selectedOption) return;
+      if (!nin.trim()) {
+        toast.error("NIN is required.");
+        return;
+      }
+
+      try {
+        setSubmitting(true);
+        const response = await fetch(
+          `${API_BASE_URL}/api/polls/${poll.id}/vote`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              nin: nin.trim(),
+              optionId: values.selectedOption,
+            }),
+          },
+        );
+
+        const data: VoteResponse = await response.json();
+
+        if (response.ok) {
+          if (data?.data) {
+            onPollUpdated({
+              id: data.data.id,
+              question: data.data.question,
+              options: Array.isArray(data.data.options) ? data.data.options : [],
+              endsAt: data.data.endsAt ?? poll.endsAt,
+              ends:
+                data.data.endsAt && data.data.endsAt !== poll.endsAt
+                  ? formatDateWithOrdinal(data.data.endsAt)
+                  : poll.ends,
+              totalVotes: data.data.totalVotes ?? poll.totalVotes,
+            });
+          } else {
+            refetch?.();
+          }
+
+          toast.success("Vote recorded successfully.");
+          onActionClick?.();
+        } else {
+          // Handle specific error messages
+          const errorMessage =
+            data.error?.message || data.message ||
+            "An error occurred while voting.";
+          if (errorMessage.toLowerCase().includes("already voted")) {
+            toast.error("You have already voted in this poll.");
+          } else if (errorMessage.toLowerCase().includes("invalid option")) {
+            toast.error("Invalid option selected.");
+          } else {
+            toast.error(errorMessage);
+          }
+        }
+      } catch (error) {
+        console.error("Voting error:", error);
+        toast.error("Failed to submit vote. Please try again.");
+      } finally {
+        setSubmitting(false);
+      }
     },
   });
+
   return (
     <Modal
       isShow={isShowVotingModal as boolean}
@@ -48,9 +156,9 @@ const VotingModal = ({
         </h6>
         <form action="" onSubmit={formik.handleSubmit} className="mb-[60px]">
           <div className="mb-[60px] flex flex-col gap-6">
-            {poll?.options?.map((opt: any) => {
-              const selected = formik.values.selectedOption === opt.id;
-              return (
+            {poll?.options?.map((opt) => {
+            const selected = formik.values.selectedOption === opt.id;
+            return (
                 <div
                   key={opt.id}
                   onClick={() => formik.setFieldValue("selectedOption", opt.id)}
@@ -58,6 +166,7 @@ const VotingModal = ({
                         flex items-center justify-between
                         rounded-[12px] py-6 px-4
                         cursor-pointer border border-[#009A44]
+                        ${selected ? "bg-[#E6F5EC]" : "bg-white"}
                       `}
                 >
                   <div className="flex items-center gap-3">
@@ -83,7 +192,14 @@ const VotingModal = ({
               );
             })}
           </div>
-          <Button type="submit">Submit Vote</Button>
+          {formik.submitCount > 0 && formik.errors.selectedOption && (
+            <p className="text-red-500 text-sm mb-4 text-left">
+              {formik.errors.selectedOption as string}
+            </p>
+          )}
+          <Button type="submit" isLoading={formik.isSubmitting}>
+            Submit Vote
+          </Button>
         </form>
         <div className="flex items-center justify-between gap-4 flex-wrap">
           <p className="text-sm md:text-base md:leading-[24px] text-[#121212]">

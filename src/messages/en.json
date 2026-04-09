@@ -989,6 +989,10 @@
     "projects": {
       "bannerTitle": "Projects",
       "projectsLoading": "Loading projects...",
+      "projectProgress": "Project Progress",
+      "projectCompletion": "Expected Completion in",
+      "objective": "Objective",
+      "results": "Expected Result",
       "projectsStats": {
         "badgeTitle": "Performance Dashboard",
         "label1": "Borehole sunk",

@@ -438,9 +438,10 @@ const RealTimeInsight = () => {
                 className="p-3 w-full rounded-[32px] bg-white shadow-md mb-5 md:mb-[40px]"
               >
                 <div
-                  className="w-full h-full rounded-[24px] min-h-[348px] md:min-h-[600px] bg-slate-400 bg-cover bg-center"
+                  className="w-full h-full rounded-[24px] min-h-[348px] md:min-h-[600px] bg-slate-400 bg-cover"
                   style={{
-                    backgroundImage: "url('/svgs/bg-img.svg')",
+                    backgroundImage: "url('/image/photo_2026-04-08_13-36-14.jpg')",
+                    backgroundPosition: "center 15%",
                   }}
                 ></div>
               </motion.div>
