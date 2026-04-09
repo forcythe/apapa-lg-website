@@ -140,7 +140,7 @@ export const initiatives: Project[] = [
     results: [
       "Strengthened relationships between the community and the Royal Father.",
       "Increased understanding and unity among community members.",
-      "A memorable evening of cultural exchange, entertainment, and merriment.",
+      "A memorable evecwvnrwnvlwnning of cultural exchange, entertainment, and merriment.",
     ],
     imageSrc: "/image/initiative-100.png",
   },
