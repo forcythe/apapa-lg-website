@@ -10,6 +10,7 @@ import { Project } from "./projectDetails.types";
 import HourGlassIcon from "../../../../../public/svg-component/HourGlassIcon";
 import ResultIcon from "../../../../../public/svg-component/ResultIcon";
 import CheckMarkIcon from "../../../../../public/svg-component/CheckMarkIcon";
+import { useTranslations } from "next-intl";
 
 const containerVariants: Variants = {
   hidden: {},
@@ -26,6 +27,7 @@ const itemVariants: Variants = {
 };
 
 const ProjectDetails = ({ p }: { p: Project }) => {
+  const t = useTranslations("Government");
   return (
     <motion.div
       key={p.id}
@@ -48,7 +50,7 @@ const ProjectDetails = ({ p }: { p: Project }) => {
           variants={itemVariants}
         >
           <p className="text-base text-primary md:text-[20px] md:leading-[32px] mb-2">
-            Project Progress
+            {t("projects.projectProgress")}
           </p>
           <h5 className="text-[20px] leading-[30px] font-[FuturaLTBold] text-primary md:text-[24px] md:leading-[32px] mb-6">
             {p.progress}% Completed
@@ -76,7 +78,7 @@ const ProjectDetails = ({ p }: { p: Project }) => {
               <HourGlassIcon />
             </motion.div>
             <p className="text-[#616161] text-sm md:text-base">
-              {`Expected Completion ${p.expectedCompletion}`}
+              {` ${t("projects.projectCompletion")} ${p.expectedCompletion}`}
             </p>
           </div>
         </motion.div>
@@ -84,7 +86,7 @@ const ProjectDetails = ({ p }: { p: Project }) => {
         <motion.div variants={itemVariants}>
           <div className="w-fit bg-accent3 rounded-[8px] p-3 mb-5">
             <p className="text-base md:text-[20px] md:leading-[32px] text-[#000] text-center">
-              Objectives
+              {t("projects.objective")}
             </p>
           </div>
           <div className="flex flex-col gap-2 md:gap-4">
@@ -115,7 +117,7 @@ const ProjectDetails = ({ p }: { p: Project }) => {
         <motion.div variants={itemVariants}>
           <div className="w-fit bg-accent3 rounded-[8px] p-3 mb-5">
             <p className="text-base md:text-[20px] md:leading-[32px] text-[#000] text-center">
-              Expected Result
+              {t("projects.results")}
             </p>
           </div>
           <div className="flex flex-col gap-2 md:gap-4">

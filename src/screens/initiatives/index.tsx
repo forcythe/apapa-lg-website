@@ -12,11 +12,11 @@ import { Project } from "../projects/_partials/projectDetails/projectDetails.typ
 import { mapInitiativesAndProjects } from "@/libs/initiative.mapper";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const ProjectDetails = dynamic(
   () => import("../projects/_partials/projectDetails"),
-  { loading: () => null }
+  { loading: () => null },
 );
 
 const itemVariants = {
@@ -34,29 +34,52 @@ const containerVariants = {
 };
 
 const InitiativesPage = () => {
-
   const t = useTranslations("Community.initiatives");
+  const locale = useLocale();
+  const cmsLocale = locale === "pcm" ? "en" : locale;
 
   const [initiatives, setInitiatives] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchInitiatives = async () => {
       try {
+        const params = new URLSearchParams({
+          populate: "*",
+          locale: cmsLocale,
+        });
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/initiatives?populate=*`
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/initiatives?${params.toString()}`,
         );
+
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.ok}`);
+        }
+
         const json = await res.json();
+
+        if (
+          !json?.data ||
+          !Array.isArray(json.data) ||
+          json.data.length === 0
+        ) {
+          throw new Error("No Initiatives found");
+        }
+
         setInitiatives(mapInitiativesAndProjects(json));
-      } catch (error) {
+      } catch (error: any) {
         console.error("Failed to fetch initiatives", error);
+        setError(
+          error.message || "Failed to load initiatives. Please try again.",
+        );
       } finally {
         setLoading(false);
       }
     };
 
     fetchInitiatives();
-  }, []);
+  }, [cmsLocale]);
 
   return (
     <AppWrapper>
@@ -98,6 +121,12 @@ const InitiativesPage = () => {
             <div className="w-full flex flex-col gap-[80px] md:gap-[120px]">
               {loading ? (
                 <p className="text-center">{t("loadingInitiatives")}</p>
+              ) : error ? (
+                <div className="flex items-center justify-center w-full h-full">
+                  <p className="text-base md:text-[18px] text-red-500 text-center">
+                    {error}
+                  </p>
+                </div>
               ) : (
                 initiatives.map((initiative) => (
                   <ProjectDetails key={initiative.id} p={initiative} />

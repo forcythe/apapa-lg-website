@@ -1,11 +1,13 @@
 export interface PollOption {
+  id: number;
   label: string;
   percentage: number;
 }
 export interface Poll {
-  id: string;
+  id: number;
   question: string;
   options: PollOption[];
   ends: string;
+  endsAt?: string;
   totalVotes: number;
 }

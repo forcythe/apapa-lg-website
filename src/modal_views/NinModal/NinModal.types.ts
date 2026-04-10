@@ -1,6 +1,6 @@
 export interface INinModal {
   isShowNinModal: boolean;
-  onActionClick?: () => void;
+  onActionClick?: (nin: string) => void;
   onClickAwayNinModal: () => void;
   onCloseNinModal: () => void;
 }

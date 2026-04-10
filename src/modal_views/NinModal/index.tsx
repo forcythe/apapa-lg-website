@@ -20,7 +20,7 @@ const NinModal = ({
     },
     onSubmit: async (values) => {
       console.log(values);
-      onActionClick?.();
+      onActionClick?.(values.nin);
     },
   });
   return (

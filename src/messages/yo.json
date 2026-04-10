@@ -966,6 +966,10 @@
     "projects": {
       "bannerTitle": "Àwọn Iṣẹ́-Àgbékalẹ̀",
       "projectsLoading": "A ń gbé àwọn iṣẹ́-àgbékalẹ̀ wọlé...",
+      "projectProgress": "Ìtẹ̀síwájú Iṣẹ́-Àgbékalẹ̀",
+      "projectCompletion": "Ìparí Tí A Ní Látẹ̀síwájú ní",
+      "objective": "Èté",
+      "results": "Ẹ̀rí Tí A Ní Látẹ̀síwájú",
       "projectsStats": {
         "badgeTitle": "Àfihàn Ìṣe Iṣẹ́",
         "label1": "Kíkọ kángun omi (Borehole)",

@@ -25,12 +25,14 @@ const itemVariants = {
 const BlogNewsArticles = () => {
   const t = useTranslations("Home.discover");
   const locale = useLocale();
+  const cmsLocale = locale === "pcm" ? "en" : locale;
 
   // const [activeTab, setActiveTab] = React.useState(
   //   blogsNavigation.tabs[0].id as tabId
   // );
   const [activeTab, setActiveTab] = React.useState<tabId>("blogs");
   const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState<string | null>(null);
   const [items, setItems] = React.useState<{
     blogs: BlogItem[];
     news: BlogItem[];
@@ -43,11 +45,31 @@ const BlogNewsArticles = () => {
 
   useEffect(() => {
     const fetchBlogs = async () => {
+      setLoading(true);
+      setError(null);
       try {
+        const params = new URLSearchParams({
+          populate: "*",
+          locale: cmsLocale,
+        });
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/blogs?populate=*`
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/blogs?${params.toString()}`,
         );
+
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+
         const json = await res.json();
+
+        // Check if json.data exists and is an array
+        if (
+          !json?.data ||
+          !Array.isArray(json.data) ||
+          json.data.length === 0
+        ) {
+          throw new Error("No blogs found.");
+        }
 
         const blogs: BlogItem[] = [];
         const news: BlogItem[] = [];
@@ -60,15 +82,16 @@ const BlogNewsArticles = () => {
         });
 
         setItems({ blogs, news, articles });
-      } catch (err) {
+      } catch (err: any) {
         console.error("Failed to load blogs", err);
+        setError(err.message || "Failed to load blogs. please try again.");
       } finally {
         setLoading(false);
       }
     };
 
     fetchBlogs();
-  }, []);
+  }, [cmsLocale]);
 
   const backendUrl = process.env.NEXT_PUBLIC_STRAPI_URL;
 
@@ -139,6 +162,12 @@ const BlogNewsArticles = () => {
         <div className="w-full min-h-[524px] flex items-center justify-center">
           <p className="text-base md:text-[18px] text-[#667085]">
             {t("loadingContent")}
+          </p>
+        </div>
+      ) : error ? (
+        <div className="flex items-center justify-center w-full h-full">
+          <p className="text-base md:text-[18px] text-red-500 text-center">
+            {error}
           </p>
         </div>
       ) : (

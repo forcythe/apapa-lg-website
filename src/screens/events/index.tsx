@@ -11,7 +11,7 @@ import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder"
 import CalenderIcon from "../../../public/svg-component/CalenderIcon";
 import LocationIcon from "../../../public/svg-component/LocationIcon";
 import TimeIcon from "../../../public/svg-component/TimeIcon";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -28,29 +28,51 @@ const containerVariants = {
 };
 
 const Events = () => {
-
   const t = useTranslations("Community.events");
-  
+  const locale = useLocale();
+  const cmsLocale = locale === "pcm" ? "en" : locale;
+
   const [events, setEvents] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchEvents = async () => {
       try {
+        const params = new URLSearchParams({
+          populate: "*",
+          locale: cmsLocale,
+        });
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?populate=*`
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?${params.toString()}`,
         );
+
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+
         const json = await res.json();
+
+        // Check if json.data exists and is an array
+        if (
+          !json?.data ||
+          !Array.isArray(json.data) ||
+          json.data.length === 0
+        ) {
+          throw new Error("No events found.");
+        }
+
         setEvents(json.data || []);
-      } catch (error) {
+      } catch (error: any) {
         console.error("Failed to fetch events:", error);
+        setError(error.message || "Failed to load events. Please try again.");
       } finally {
         setLoading(false);
       }
     };
 
     fetchEvents();
-  }, []);
+  }, [cmsLocale]);
 
   const formatDate = (isoDate: string) => {
     return new Date(isoDate).toLocaleDateString("en-GB", {
@@ -83,7 +105,7 @@ const Events = () => {
 
     const baseUrl = (process.env.NEXT_PUBLIC_STRAPI_URL || "").replace(
       /\/$/,
-      ""
+      "",
     );
     const path = imageUrl.startsWith("/") ? imageUrl : `/${imageUrl}`;
 
@@ -105,13 +127,19 @@ const Events = () => {
               viewport={{ once: true }}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-x-[30px] md:gap-y-[40px] place-items-stretch"
             >
-              {loading && (
-                <div className="w-full text-center py-20">
-                  <p className="text-base text-[#667085]">{t("loadingEvents")}</p>
+              {loading ? (
+                <div className="w-full py-20">
+                  <p className="text-base text-center text-[#667085]">
+                    {t("loadingEvents")}
+                  </p>
                 </div>
-              )}
-
-              {!loading &&
+              ) : error ? (
+                <div className="flex items-center justify-center w-full h-full">
+                  <p className="text-base md:text-[18px] text-red-500 text-center">
+                    {error}
+                  </p>
+                </div>
+              ) : (
                 events.map((event) => (
                   <motion.div
                     key={event.id}
@@ -122,17 +150,17 @@ const Events = () => {
                       {(() => {
                         const eventImageUrl = getEventImageUrl(event.image);
                         return (
-                      <div
-                        className="w-full h-[200px] sm:h-[220px] md:h-[240px] rounded-[16px] md:rounded-[24px] bg-cover bg-center"
-                        style={{
-                          backgroundImage: eventImageUrl
-                            ? `url('${eventImageUrl}')`
-                            : "none",
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                          backgroundRepeat: "no-repeat",
-                        }}
-                      ></div>
+                          <div
+                            className="w-full h-[200px] sm:h-[220px] md:h-[240px] rounded-[16px] md:rounded-[24px] bg-cover bg-center"
+                            style={{
+                              backgroundImage: eventImageUrl
+                                ? `url('${eventImageUrl}')`
+                                : "none",
+                              backgroundSize: "cover",
+                              backgroundPosition: "center",
+                              backgroundRepeat: "no-repeat",
+                            }}
+                          ></div>
                         );
                       })()}
                     </div>
@@ -161,7 +189,8 @@ const Events = () => {
                       </p>
                     </div>
                   </motion.div>
-                ))}
+                ))
+              )}
             </motion.div>
           </div>
         </div>
