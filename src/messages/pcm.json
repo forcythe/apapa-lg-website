@@ -966,6 +966,10 @@
     "projects": {
       "bannerTitle": "Projects",
       "projectsLoading": "Dey load projects...",
+      "projectProgress": "How Project Dey Go",
+      "projectCompletion": "E Suppose Finish for",
+      "objective": "Main Goal",
+      "results": "Wetin You Dey Expect",
       "projectsStats": {
         "badgeTitle": "Performance Dashboard",
         "label1": "Borehole wey dem sink",

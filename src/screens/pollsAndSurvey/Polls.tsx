@@ -19,9 +19,17 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const Polls = ({ poll }: { poll: Poll }) => {
+interface PollsProps {
+  poll: Poll;
+  refetch: () => void;
+  onPollUpdated: (updatedPoll: Poll) => void;
+}
+
+const Polls = ({ poll, refetch, onPollUpdated }: PollsProps) => {
   const [isShowNinModal, setIsShowNinModal] = useState(false);
   const [isShowVotingModal, setIsShowVotingModal] = useState(false);
+  const [nin, setNin] = useState("");
+
   return (
     <>
       <motion.div
@@ -33,9 +41,9 @@ const Polls = ({ poll }: { poll: Poll }) => {
           {poll.question}
         </h6>
         <div className="mb-8 flex flex-col gap-6">
-          {poll.options.map((opt, i) => (
+          {poll.options.map((opt) => (
             <div
-              key={i}
+              key={opt.id}
               className="relative w-full h-[76px] rounded-[12px] border-2 border-[#AA8B00] overflow-hidden"
             >
               <div
@@ -71,7 +79,8 @@ const Polls = ({ poll }: { poll: Poll }) => {
       {isShowNinModal && (
         <NinModal
           isShowNinModal={isShowNinModal}
-          onActionClick={() => {
+          onActionClick={(submittedNin) => {
+            setNin(submittedNin.trim());
             setIsShowVotingModal(true);
             setIsShowNinModal(false);
           }}
@@ -82,6 +91,9 @@ const Polls = ({ poll }: { poll: Poll }) => {
       {isShowVotingModal && (
         <VotingModal
           poll={poll}
+          nin={nin}
+          refetch={refetch}
+          onPollUpdated={onPollUpdated}
           isShowVotingModal={isShowVotingModal}
           onActionClick={() => {
             setIsShowVotingModal(false);

@@ -102,7 +102,7 @@ const SelectOption: React.FC<SelectOptionProps> = ({
                 className="px-6 py-4 text-primary font-medium hover:bg-gray-100 cursor-pointer border-b border-[#DDDDDD] last:border-0"
                 onClick={() => handleOptionSelect(option.title)}
               >
-                {t(option.title)}
+                {option.title}
               </div>
             ))}
           </motion.div>

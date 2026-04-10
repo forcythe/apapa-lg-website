@@ -7,7 +7,7 @@ export const initiatives: Project[] = [
     progress: 100,
     expectedCompletion: "Completed in October 2023",
     objectives:
-      "To promote oral health and improve the overall well-being of senior citizens in Apapa by providing free dental checkups, treatments, and health education. This outreach aims to reduce dental-related issues and raise awareness of proper oral hygiene among the elderly.",
+      "To promote oral health and improve the overall well-being of senior citizens in Apapa by providing free dental checkups, treatments, and health education. This outreach aims to reduce dental-related issues and r aise awareness of proper oral hygiene among the elderly.",
     results: [
       "Over 200 senior citizens received free dental consultations and treatments.",
       "Increased awareness of dental hygiene and preventive care among the elderly population.",
@@ -140,7 +140,7 @@ export const initiatives: Project[] = [
     results: [
       "Strengthened relationships between the community and the Royal Father.",
       "Increased understanding and unity among community members.",
-      "A memorable evening of cultural exchange, entertainment, and merriment.",
+      "A memorable evecwvnrwnvlwnning of cultural exchange, entertainment, and merriment.",
     ],
     imageSrc: "/image/initiative-100.png",
   },

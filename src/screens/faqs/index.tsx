@@ -10,25 +10,31 @@ import QuestionsAndAnswers from "./questionsAndAnswers";
 import { FaqItem, TabId } from "./faq.type";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const Faqs = () => {
-
   const t = useTranslations("Community.faqs");
+  const locale = useLocale();
+  const cmsLocale = locale === "pcm" ? "en" : locale;
 
   const [faqs, setFaqs] = useState<FaqItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState(
-    faqsNavigation.tabs[0].id as TabId
+    faqsNavigation.tabs[0].id as TabId,
   );
 
   useEffect(() => {
     const fetchFaqs = async () => {
       try {
+        const params = new URLSearchParams({
+          populate: "*",
+          locale: cmsLocale,
+        });
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/faqs`
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/faqs?${params.toString()}`,
         );
         const json = await res.json();
+        
         setFaqs(json.data || []);
       } catch (error) {
         console.error("Failed to fetch FAQs:", error);
@@ -38,7 +44,7 @@ const Faqs = () => {
     };
 
     fetchFaqs();
-  }, []);
+  }, [cmsLocale]);
 
   // const activeFaq = faqsNavigation?.faqs[activeTab];
   const activeFaqs = faqs.filter((faq) => faq.category === activeTab);

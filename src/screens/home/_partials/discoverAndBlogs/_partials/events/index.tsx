@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { useLocale, useTranslations } from "next-intl";
@@ -21,6 +21,7 @@ const itemVariants = {
 export default function Events() {
   const t = useTranslations("Home.events");
   const locale = useLocale();
+  const cmsLocale = locale === "pcm" ? "en" : locale;
 
   const [currentIndex, setCurrentIndex] = React.useState(2);
   const isMobile = useIsMobile(768);
@@ -31,26 +32,89 @@ export default function Events() {
 
   const handlePrev = () => {
     setCurrentIndex(
-      (prev) => (prev - 1 + slidesData.length) % slidesData.length
+      (prev) => (prev - 1 + slidesData.length) % slidesData.length,
     );
   };
 
   const [slidesData, setSlidesData] = React.useState<any[]>([]);
   const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState<string | null>(null);
 
-  React.useEffect(() => {
+  // useEffect(() => {
+  //   const fetchEvents = async () => {
+  //     try {
+  //       const params = new URLSearchParams({
+  //         populate: "*",
+  //         locale: cmsLocale,
+  //       });
+  //       const res = await fetch(
+  //         `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?${params.toString()}`,
+  //       );
+  //       const json = await res.json();
+
+  //       const normalized = json.data.map((item: any) => {
+  //         const dateObj = new Date(item.startDate);
+
+  //         return {
+  //           title: item.title,
+  //           date: dateObj.toLocaleDateString("en-GB", {
+  //             weekday: "short",
+  //             day: "numeric",
+  //             month: "short",
+  //             year: "numeric",
+  //           }),
+  //           time: dateObj.toLocaleTimeString("en-US", {
+  //             hour: "numeric",
+  //             minute: "2-digit",
+  //           }),
+  //           location: item.address,
+  //           image: `${process.env.NEXT_PUBLIC_STRAPI_URL}${item.image.url}`,
+  //         };
+  //       });
+
+  //       setSlidesData(normalized);
+  //     } catch (err) {
+  //       console.error("Failed to fetch events", err);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchEvents();
+  // }, [cmsLocale]);
+
+  useEffect(() => {
     const fetchEvents = async () => {
+      setLoading(true);
+      setError(null); // reset error
       try {
+        const params = new URLSearchParams({
+          populate: "*",
+          locale: cmsLocale,
+        });
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?populate=*`
+          `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?${params.toString()}`,
         );
+
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+
         const json = await res.json();
+
+        // Check if json.data exists and is an array
+        if (
+          !json?.data ||
+          !Array.isArray(json.data) ||
+          json.data.length === 0
+        ) {
+          throw new Error("No events found.");
+        }
 
         const normalized = json.data.map((item: any) => {
           const dateObj = new Date(item.startDate);
-
           return {
-            title: item.title,
+            title: item.title ?? "No Title",
             date: dateObj.toLocaleDateString("en-GB", {
               weekday: "short",
               day: "numeric",
@@ -61,21 +125,25 @@ export default function Events() {
               hour: "numeric",
               minute: "2-digit",
             }),
-            location: item.address,
-            image: `${process.env.NEXT_PUBLIC_STRAPI_URL}${item.image.url}`,
+            location: item.address ?? "No location",
+            image: item.image?.url
+              ? `${process.env.NEXT_PUBLIC_STRAPI_URL}${item.image.url}`
+              : "/fallback-image.png", // optional fallback
           };
         });
 
         setSlidesData(normalized);
-      } catch (err) {
-        console.error("Failed to fetch events", err);
+      } catch (err: any) {
+        console.error("Failed to fetch events:", err);
+        setError(err.message || "Failed to load events. Please try again.");
+        setSlidesData([]); // clear slides so nothing tries to render
       } finally {
         setLoading(false);
       }
     };
 
     fetchEvents();
-  }, []);
+  }, [cmsLocale]);
 
   const gap = isMobile ? 4 : 16;
 
@@ -121,7 +189,7 @@ export default function Events() {
           className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-3"
         >
           <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-           {t("pill")}
+            {t("pill")}
           </p>
         </motion.div>
 
@@ -138,9 +206,15 @@ export default function Events() {
 
       <div className="relative w-full overflow-hidden flex items-center justify-center h-[648px] md:h-[672px]">
         {loading ? (
-          <div className="relative w-full h-[648px] md:h-[672px] flex items-center justify-center">
+          <div className="flex items-center justify-center w-full h-full">
             <p className="text-base md:text-[18px] text-[#667085]">
               {t("loading")}
+            </p>
+          </div>
+        ) : error ? (
+          <div className="flex items-center justify-center w-full h-full">
+            <p className="text-base md:text-[18px] text-red-500 text-center">
+              {error}
             </p>
           </div>
         ) : (
