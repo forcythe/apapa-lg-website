@@ -11,6 +11,7 @@ import { cards } from "./departmentsAndUnitsPage.data";
 import FooterArrow from "../../../public/svg-component/FooterArrow";
 
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -59,9 +60,9 @@ const DepartmentsAndUnitsPage = () => {
                     {t(card.description)}
                   </p>
                   <div className="flex items-center gap-2">
-                    <p className="text-base md:text-[20px] md:leading-[32px] text-accent">
+                    <Link href={t(card.link)} className="text-base md:text-[20px] md:leading-[32px] text-accent">
                       {t("cards.btn")}
-                    </p>
+                    </Link>
                     <FooterArrow fill="#aa8b00" />
                   </div>
                   <Image

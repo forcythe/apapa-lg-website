@@ -11,6 +11,7 @@
   "dependencies": {
     "@dabeng/react-orgchart": "^1.0.3",
     "@dormammuuuuu/nextjs-orgchart": "^1.0.1-a",
+    "@strapi/blocks-react-renderer": "^1.0.2",
     "formik": "^2.4.6",
     "framer-motion": "^12.6.3",
     "i": "^0.3.7",

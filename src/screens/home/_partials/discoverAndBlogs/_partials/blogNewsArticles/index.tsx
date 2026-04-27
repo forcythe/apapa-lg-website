@@ -7,6 +7,7 @@ import { BlogItem, tabId } from "./blogNewsArticles.types";
 import { blogsNavigation } from "./blogNewsArticles.data";
 
 import FooterArrow from "../../../../../../../public/svg-component/FooterArrow";
+import { Link } from "@/i18n/navigation";
 
 const containerVariants = {
   hidden: {},
@@ -185,29 +186,33 @@ const BlogNewsArticles = () => {
               variants={itemVariants}
               className="w-full max-w-[476px] sm:min-h-[524px]"
             >
-              <div className="w-full p-2 min-h-[256px] rounded-[32px] bg-white shadow-md mb-6">
-                <div
-                  className="w-full min-h-[240px] rounded-[24px] bg-red-200 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url('${item.coverImage?.url ? backendUrl + item.coverImage.url : "/fallback.svg"}')`,
-                  }}
-                ></div>
-              </div>
+              <Link href={`/blog/${item.slug}`}>
+                <div className="w-full p-2 min-h-[256px] rounded-[32px] bg-white shadow-md mb-6">
+                  <div
+                    className="w-full min-h-[240px] rounded-[24px] bg-red-200 bg-cover bg-center"
+                    style={{
+                      backgroundImage: `url('${item.coverImage?.url ? (item.coverImage.url.startsWith("http") ? item.coverImage.url : backendUrl + item.coverImage.url) : "/fallback.svg"}')`,
+                    }}
+                  ></div>
+                </div>
+              </Link>
               <p className="text-[14px] leading-[24px] md:text-base text-[#B0B0B0] mb-3">
-                {new Date(item.createdAt).toDateString()}
+                {new Date(item.createdAt).toDateString()} {item.author && `| By ${item.author}`}
               </p>
-              <h6 className="mb-2 font-[FuturaLTBold] text-base md:text-[20px] md:leading-[28px]">
-                {item.title}
-              </h6>
-              <p className="text-[#667085] text-base md:text-[20px] md:leading-[32px] mb-3">
+              <Link href={`/blog/${item.slug}`}>
+                <h6 className="mb-2 font-[FuturaLTBold] text-base md:text-[20px] md:leading-[28px] hover:text-accent transition-colors">
+                  {item.title}
+                </h6>
+              </Link>
+              <p className="text-[#667085] text-base md:text-[20px] md:leading-[32px] mb-3 line-clamp-3">
                 {item.description}
               </p>
-              <div className="flex items-center gap-2">
-                <p className="text-base md:text-[20px] md:leading-[32px] text-accent">
+              <Link href={`/blog/${item.slug}`} className="flex items-center gap-2 group w-fit">
+                <p className="text-base md:text-[20px] md:leading-[32px] text-accent group-hover:underline">
                   {t("readMore")}
                 </p>
                 <FooterArrow fill="#aa8b00" />
-              </div>
+              </Link>
             </motion.div>
           ))}
         </motion.div>
