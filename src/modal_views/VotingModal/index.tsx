@@ -86,6 +86,7 @@ const VotingModal = ({
 
       try {
         setSubmitting(true);
+        const hashedNin = await hashNin(nin);
         const response = await fetch(
           `${API_BASE_URL}/api/polls/${poll.id}/vote`,
           {
@@ -94,7 +95,7 @@ const VotingModal = ({
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              nin: nin.trim(),
+              nin: hashedNin,
               optionId: values.selectedOption,
             }),
           },
