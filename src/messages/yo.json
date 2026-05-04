@@ -249,57 +249,75 @@
       "cards": {
         "title1": "Ẹ̀ka Ìṣàkóso àti Ètò Ẹnìyàn (Admin & Human Resources)",
         "description1": "Ẹ̀ka Ìṣàkóso àti Ètò Ẹnìyàn jẹ́ pàtàkì gan-an láti rí i dájú pé ilé-iṣẹ́ ń ṣiṣẹ́ dáadáa àti pé ìṣàkóso àwọn òṣìṣẹ́ ń lọ ní kíkún. Wọ́n ń ṣàbójútó ìṣàkóso òṣìṣẹ́, iṣakoso ọ́fiisi, àti ìdàgbàsókè àjọṣe ilé-iṣẹ́.",
+        "link1": "/government/organizational-structure/head-admin-human-resources",
 
         "title2": "Ẹ̀ka Ináwó àti Ìṣírò (Finance & Accounts)",
         "description2": "Ẹ̀ka Ináwó àti Ìṣírò ń ṣàbójútó ìlera owó ìjọba àgbègbè, ń jẹ́ kó kedere, tí ń sì bójú tó ìwà-òtítọ́ owó. Wọ́n ń rí sí ìròyìn owó, iṣẹ́ ìṣírò, àti ìfarahàn sí àwọn òfin tó yẹ.",
+        "link2": "/government/organizational-structure/head-finance-accounts",
 
         "title3": "Ẹ̀ka Iṣẹ́ àti Amáyédẹrùn",
         "description3": "Ẹ̀ka Iṣẹ́ àti Amáyédẹrùn ń bójú tó ètò, ìdàgbàsókè, àti ìtọju gbogbo àwọn iṣẹ́ amáyédẹrùn inú ìjọba àgbègbè.",
+        "link3": "/government/organizational-structure/head-works-and-infrastructure",
 
         "title4": "Ẹ̀ka Ogbìn àti Ìṣẹ́ Awùjọ",
         "description4": "Ẹ̀ka Ogbìn àti Ìṣẹ́ Awùjọ ń fojú kọ́ ìmúdàgba ogbin àti ìgbéga ìtójú àwùjọ láàárín agbègbè.",
+        "link4": "/government/organizational-structure/head-agric-and-social-services",
 
         "title5": "Ẹ̀ka Ẹ̀kọ́ àti Iṣẹ́ Ilé-Ìkàwé",
         "description5": "Ẹ̀ka Ẹ̀kọ́ àti Iṣẹ́ Ilé-Ìkàwé ń ṣàbójútó àwọn ètò ẹ̀kọ́ àti iṣẹ́ ilé-ìkàwé inú ìjọba àgbègbè.",
+        "link5": "/government/organizational-structure/head-education-and-library-services",
 
         "title6": "Ẹ̀ka Ètò Ẹnìyàn (Human Resources)",
         "description6": "Ẹ̀ka Ètò Ẹnìyàn ń rí i dájú pé ìṣàkóso òṣìṣẹ́, iṣakoso ọ́fiisi, àti ìdàgbàsókè àjọṣe ilé-iṣẹ́ ń ṣiṣẹ́ dáadáa nínú ìjọba àgbègbè.",
+        "link6": "/government/organizational-structure/head-admin-human-resources",
 
         "title7": "Ẹ̀ka Ètò, Ìṣúná, Ìwádìí àti Ìṣírò Ìtàn",
         "description7": "Ẹ̀ka Ètò, Ìṣúná, Ìwádìí àti Ìṣírò Ìtàn ń ṣàbójútó ètò, ìṣúná, ìwádìí, àti ìṣírò ìtàn láti ṣe ìtìlẹ́yìn fún ìpinnu tó dá lórí ìmọ̀.",
+        "link7": "/government/organizational-structure/head-planning-budget-research-statistics",
 
         "title8": "Ẹ̀ka Ọ̀ràn Àwọn Obìnrin àti Ìdínkù Ìyàjẹ́pọn",
         "description8": "Ẹ̀ka Ọ̀ràn Àwọn Obìnrin àti Ìdínkù Ìyàjẹ́pọn ń darí àwọn ètò láti mú ìtójú àwọn obìnrin dára sí i àti láti dín ìyàjẹ́pọn kúrò ní àwùjọ.",
+        "link8": "/government/organizational-structure/head-wapa",
 
         "title9": "Iṣẹ́ Ìlera Àkọ́kọ́",
         "description9": "Iṣẹ́ Ìlera Àkọ́kọ́ ń ṣàbójútó ìpèsè àwọn iṣẹ́ ìlera pàtàkì ní ìpele àwùjọ, pẹ̀lú ìdí lé e lórí ìdènà àrùn, ìmúlòlùfẹ̀ àrùn kíákíá, àti ìtọ́jú àrùn tí ó wọ́pọ̀.",
+        "link9": "/government/organizational-structure/head-primary-health-care-services",
 
         "title10": "Ẹ̀ka Iṣẹ́ Ayíká",
         "description10": "Ẹ̀ka Iṣẹ́ Ayíká ń ṣàbójútó ìtọju àti ààbò ayíká, pẹ̀lú ìmúlòlùfẹ̀ ìmótótó àti ìdàgbàsókè ayíká alágbero.",
+        "link10": "/government/organizational-structure/head-environmental-services-department",
 
         "title11": "Akòwé Ẹka Aṣòfin",
         "description11": "Akòwé Ẹka Aṣòfin ń bójú tó gbogbo ìlànà aṣòfin, tí ń sì rí i dájú pé iṣẹ́ Ẹka Aṣòfin ń lọ láìsí ìṣòro.",
+        "link11": "/government/organizational-structure/clerk-of-the-house",
 
         "title12": "Ẹ̀yà Ọ̀ràn Ìbánisọ̀rọ̀ Àwùjọ (Public Affairs)",
         "description12": "Ẹ̀yà Ọ̀ràn Ìbánisọ̀rọ̀ Àwùjọ ń ṣàbójútó ìbáṣepọ̀ pẹ̀lú àwùjọ, ìbánisọ̀rọ̀, àti ìfarahàn sí àwọn ilé-iṣẹ́ ìròyìn láti jẹ́ kó rọrùn fún ìtànkálẹ̀ ìròyìn.",
+        "link12": "/government/organizational-structure/head-public-affairs-unit",
 
         "title13": "Ẹ̀yà Àyẹ̀wò Ìṣúná (Audit)",
         "description13": "Ẹ̀yà Àyẹ̀wò Ìṣúná ń ṣàbójútó ìlànà àyẹ̀wò owó láti jẹ́ kó dájú pé owó ń lọ ní òdodo, a sì ń tẹ̀lé gbogbo àṣẹ òfin, tí a sì ń lo ohun-ini dáadáa.",
+        "link13": "/government/organizational-structure/head-audit-unit",
 
         "title14": "Ẹ̀yà ICT (Ìmọ̀ Ẹ̀rọ Alágbèéká àti Ìbánisọ̀rọ̀)",
         "description14": "Ẹ̀yà ICT ń ṣàbójútó ìdàgbàsókè, ìmúlò, àti ìtọju amáyédẹrùn ẹ̀rọ ìmọ̀-ẹrọ àti iṣẹ́ oní-nọ́mbà inú ìjọba àgbègbè.",
+        "link14": "/government/organizational-structure/head-ict-unit",
 
         "title15": "Ẹ̀yà Òfin",
         "description15": "Ẹ̀yà Òfin ń ṣàbójútó gbogbo ọ̀ràn òfin, ń fúnni ní ìmọ̀ràn òfin, ń rí i dájú pé a ń tẹ̀lé òfin, tí ń sì ṣàkóso ewu òfin.",
+        "link15": "/government/organizational-structure/head-legal-services",
 
         "title16": "Ẹ̀yà Ìrìnàjò Àlejò (Tourism)",
         "description16": "Ẹ̀yà Ìrìnàjò Àlejò ń gbé ìrìnàjò àlejò ga láàárín ìjọba àgbègbè láti mú ìdàgbàsókè ọrọ̀-ajé wá, láti bójú tó àṣà, àti láti mú ìrírí àlejò dára sí i.",
+        "link16": "/government/organizational-structure/head-tourism-unit",
 
         "title17": "Ẹ̀yà Rírà Ohun Èlò (Procurement)",
         "description17": "Ẹ̀yà Rírà Ohun Èlò ń ṣàbójútó gbogbo ìlànà rírà ohun èlò, iṣẹ́, àti amáyédẹrùn, tí ń rí i dájú pé ohun gbogbo ń lọ ní kedere, tí owó sì ń jẹ́ iye rẹ̀.",
+        "link17": "/government/organizational-structure/head-procurement-unit",
 
         "title18": "Alákóso Ìgbìmọ̀ (Council Manager)",
         "description18": "Alákóso Ìgbìmọ̀ ń bójú tó gbogbo iṣẹ́ ìṣàkóso ojoojúmọ́ inú ìjọba àgbègbè, tí ó sì ń ṣiṣẹ́ gẹ́gẹ́ bí olórí àgbà (Chief Executive Officer).",
+        "link18": "/government/organizational-structure/council-manager",
 
         "btn": "Kọ́ ẹ̀kọ́ síi!"
       }

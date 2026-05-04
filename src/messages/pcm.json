@@ -249,57 +249,75 @@
       "cards": {
         "title1": "Admin & Human Resources Department",
         "description1": "The Admin & Human Resources Department dey very important to make sure say the organization dey run smoothly and people management dey effective. Dem handle staff management, office administration, and organizational development.",
+        "link1": "/government/organizational-structure/head-admin-human-resources",
 
         "title2": "Finance & Accounts Department",
         "description2": "The Finance & Accounts Department dey handle the local government money matter, make sure say everything dey transparent and financially correct. Dem dey oversee financial reports, accounting work, and follow government regulations.",
+        "link2": "/government/organizational-structure/head-finance-accounts",
 
         "title3": "Works and Infrastructure Department",
         "description3": "The Works and Infrastructure Department dey supervise planning, development, and maintenance of all infrastructure projects for the local government.",
+        "link3": "/government/organizational-structure/head-works-and-infrastructure",
 
         "title4": "Agriculture and Social Services Department",
         "description4": "The Agriculture and Social Services Department dey focus on improving farming output and promote social welfare for the community.",
+        "link4": "/government/organizational-structure/head-agric-and-social-services",
 
         "title5": "Education and Library Services Department",
         "description5": "The Education and Library Services Department dey oversee education programs and library services within the local government.",
+        "link5": "/government/organizational-structure/head-education-and-library-services",
 
         "title6": "Human Resources Department",
         "description6": "The Human Resources Department dey make sure say staff management, office administration, and organizational development dey effective for the local government.",
+        "link6": "/government/organizational-structure/head-admin-human-resources",
 
         "title7": "Planning, Budget, Research & Statistics",
         "description7": "The Planning, Budget, Research & Statistics Department dey handle planning, budgeting, research, and statistics to support better and informed decision-making.",
+        "link7": "/government/organizational-structure/head-planning-budget-research-statistics",
 
         "title8": "Women Affairs and Poverty Alleviation",
         "description8": "The Women Affairs and Poverty Alleviation Department dey lead programs to improve women welfare and reduce poverty for the community.",
+        "link8": "/government/organizational-structure/head-wapa",
 
         "title9": "Primary Health Care Service",
         "description9": "The Primary Health Care Service dey oversee delivery of basic healthcare services for community level, with focus on prevention, early detection, and treatment of common health problems.",
+        "link9": "/government/organizational-structure/head-primary-health-care-services",
 
         "title10": "Environmental Services",
         "description10": "The Environmental Services Department dey responsible for managing and protecting the environment, including sanitation and environmental sustainability.",
+        "link10": "/government/organizational-structure/head-environmental-services-department",
 
         "title11": "Clerk of the Legislative Arm",
         "description11": "The Clerk of the Legislative Arm dey supervise legislative processes and make sure say the legislative body dey run smoothly.",
+        "link11": "/government/organizational-structure/clerk-of-the-house",
 
         "title12": "Public Affairs Unit",
         "description12": "The Public Affairs Unit dey handle public relations, communication, and media engagement to make sure information reach the public well.",
+        "link12": "/government/organizational-structure/head-public-affairs-unit",
 
         "title13": "Audit Unit",
         "description13": "The Audit Unit dey oversee audit processes to ensure financial correctness, compliance with regulations, and proper use of resources.",
+        "link13": "/government/organizational-structure/head-audit-unit",
 
         "title14": "ICT (Information and Communication Technology) Unit",
         "description14": "The ICT Unit dey manage development, implementation, and maintenance of the local government technology infrastructure and digital services.",
+        "link14": "/government/organizational-structure/head-ict-unit",
 
         "title15": "Legal Unit",
         "description15": "The Legal Unit dey handle legal matters, give legal advice, ensure compliance with laws, and manage legal risks.",
+        "link15": "/government/organizational-structure/head-legal-services",
 
         "title16": "Tourism Unit",
         "description16": "The Tourism Unit dey promote tourism for the local government area to boost economic growth, preserve culture, and improve visitor experience.",
+        "link16": "/government/organizational-structure/head-tourism-unit",
 
         "title17": "Procurement Unit",
         "description17": "The Procurement Unit dey manage how government dey buy goods, services, and works, make sure say everything dey transparent and value for money dey.",
+        "link17": "/government/organizational-structure/head-procurement-unit",
 
         "title18": "Council Manager",
         "description18": "The Council Manager dey oversee the daily administrative activities of the local government and act as the chief executive officer.",
+        "link18": "/government/organizational-structure/council-manager",
 
         "btn": "Learn More!"
       }
