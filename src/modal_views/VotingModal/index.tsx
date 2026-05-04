@@ -14,6 +14,18 @@ const API_BASE_URL =
   process.env.NEXT_PUBLIC_STRAPI_URL ||
   "https://apapa-lg-cms-production.up.railway.app";
 
+/**
+ * Hash a NIN string using SHA-256 via the Web Crypto API.
+ * Returns a hex-encoded hash so the raw NIN never leaves the browser.
+ */
+async function hashNin(nin: string): Promise<string> {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(nin.trim());
+  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
 const formatDateWithOrdinal = (isoDate: string) => {
   const date = new Date(isoDate);
 
@@ -74,6 +86,7 @@ const VotingModal = ({
 
       try {
         setSubmitting(true);
+        const hashedNin = await hashNin(nin);
         const response = await fetch(
           `${API_BASE_URL}/api/polls/${poll.id}/vote`,
           {
@@ -82,7 +95,7 @@ const VotingModal = ({
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              nin: nin.trim(),
+              nin: hashedNin,
               optionId: values.selectedOption,
             }),
           },

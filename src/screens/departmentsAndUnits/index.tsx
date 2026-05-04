@@ -11,6 +11,7 @@ import { cards } from "./departmentsAndUnitsPage.data";
 import FooterArrow from "../../../public/svg-component/FooterArrow";
 
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -44,13 +45,13 @@ const DepartmentsAndUnitsPage = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="flex flex-wrap gap-4 items-center justify-center"
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 justify-items-center"
             >
               {cards.map((card, index: number) => (
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  className="overflow-hidden relative w-full rounded-[16px] md:rounded-[32px] max-w-[480px] border border-[#D0D0D0] min-h-[368px] bg-[#F7F7F7] p-4 md:p-6"
+                  className="overflow-hidden relative w-full h-full rounded-[16px] md:rounded-[32px] max-w-[480px] border border-[#D0D0D0] min-h-[368px] bg-[#F7F7F7] p-4 md:p-6 flex flex-col"
                 >
                   <h6 className="text-base md:text-[20px] md:leading-[28px] text-[#101828] font-[FuturaLTBold] mb-2">
                     {t(card.title)}
@@ -59,9 +60,9 @@ const DepartmentsAndUnitsPage = () => {
                     {t(card.description)}
                   </p>
                   <div className="flex items-center gap-2">
-                    <p className="text-base md:text-[20px] md:leading-[32px] text-accent">
+                    <Link href={t(card.link)} className="text-base md:text-[20px] md:leading-[32px] text-accent">
                       {t("cards.btn")}
-                    </p>
+                    </Link>
                     <FooterArrow fill="#aa8b00" />
                   </div>
                   <Image
