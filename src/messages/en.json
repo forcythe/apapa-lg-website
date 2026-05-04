@@ -249,59 +249,77 @@
       "cards": {
         "title1": "Admin & Human Resources Department",
         "description1": "The Admin & Human Resources Department is critical in ensuring the smooth operation of the organization and managing its human capital. This department is responsible for a wide range of functions, including personnel management, office administration, and organizational development.",
+        "link1": "/government/organizational-structure/head-admin-human-resources",
 
         "title2": "Finance & Accounts Department",
         "description2": "The Finance & Accounts Department is responsible for managing the local government’s financial health, ensuring transparency, and maintaining financial integrity. This department oversees financial reporting, accounting practices, and compliance with applicable regulations.",
+        "link2": "/government/organizational-structure/head-finance-accounts",
 
         "title3": "Works and Infrastructure Department",
         "description3": "The Works and Infrastructure Department oversees the planning, development, and maintenance of infrastructure projects within the local government.",
+        "link3": "/government/organizational-structure/head-works-and-infrastructure",
 
         "title4": "Agriculture and Social Services Department",
         "description4": "The Agriculture and Social Services Department focuses on enhancing agricultural productivity and promoting social welfare within the community.",
+        "link4": "/government/organizational-structure/head-agric-and-social-services",
 
         "title5": "Education and Library Services Department",
         "description5": "The Education and Library Services Department is responsible for overseeing educational programs and library services within the local government.",
+        "link5": "/government/organizational-structure/head-education-and-library-services",
 
         "title6": "Human Resources Department",
         "description6": "The Human Resources Department ensures effective personnel management, office administration, and organizational development within the local government.",
+        "link6": "/government/organizational-structure/head-admin-human-resources",
 
         "title7": "Planning, Budget, Research & Statistics",
         "description7": "The Planning, Budget, Research & Statistics Department oversees planning, budgeting, research, and statistical functions to support informed decision-making.",
+        "link7": "/government/organizational-structure/head-planning-budget-research-statistics",
 
         "title8": "Women Affairs and Poverty Alleviation",
         "description8": "The Women Affairs and Poverty Alleviation Department leads initiatives aimed at improving the welfare of women and reducing poverty within the community.",
+        "link8": "/government/organizational-structure/head-wapa",
 
         "title9": "Primary Health Care Service",
         "description9": "The Primary Health Care Service oversees the delivery of essential healthcare services at the community level, focusing on prevention, early detection, and treatment of common health issues.",
+        "link9": "/government/organizational-structure/head-primary-health-care-services",
 
         "title10": "Environmental Services",
         "description10": "The Environmental Services Department is responsible for managing and protecting the environment, including sanitation and environmental sustainability efforts.",
+        "link10": "/government/organizational-structure/head-environmental-services-department",
 
         "title11": "Clerk of the Legislative Arm",
         "description11": "The Clerk of the Legislative Arm oversees legislative processes and ensures the smooth operation of the legislative body.",
+        "link11": "/government/organizational-structure/clerk-of-the-house",
 
         "title12": "Public Affairs Unit",
         "description12": "The Public Affairs Unit manages public relations, communications, and media engagement to ensure effective information dissemination.",
+        "link12": "/government/organizational-structure/head-public-affairs-unit",
 
         "title13": "Audit Unit",
         "description13": "The Audit Unit oversees auditing processes to ensure financial integrity, regulatory compliance, and effective resource utilization.",
+        "link13": "/government/organizational-structure/head-audit-unit",
 
         "title14": "ICT (Information and Communication Technology) Unit",
         "description14": "The ICT Unit manages the development, implementation, and maintenance of the local government’s technology infrastructure and digital services.",
+        "link14": "/government/organizational-structure/head-ict-unit",
 
         "title15": "Legal Unit",
         "description15": "The Legal Unit handles legal affairs, provides legal advice, ensures compliance with laws, and manages legal risks.",
+        "link15": "/government/organizational-structure/head-legal-services",
 
         "title16": "Tourism Unit",
         "description16": "The Tourism Unit promotes tourism within the local government area to boost economic growth, preserve cultural heritage, and enhance visitor experiences.",
+        "link16": "/government/organizational-structure/head-tourism-unit",
 
         "title17": "Procurement Unit",
         "description17": "The Procurement Unit manages procurement processes for goods, services, and works, ensuring transparency and value for money.",
+        "link17": "/government/organizational-structure/head-procurement-unit",
 
         "title18": "Council Manager",
         "description18": "The Council Manager oversees the day-to-day administrative operations of the local government and serves as the chief executive officer.",
+        "link18": "/government/organizational-structure/council-manager",
 
-        "btn": "Apply Now!"
+        "btn": "Learn More!"
       }
     }
   },
