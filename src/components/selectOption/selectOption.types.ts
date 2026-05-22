@@ -11,4 +11,5 @@ export interface SelectOptionProps {
   onBlur?: (event: React.FocusEvent<HTMLDivElement>) => void;
   error?: string;
   options: Option[];
+  t?: (key: string) => string;
 }

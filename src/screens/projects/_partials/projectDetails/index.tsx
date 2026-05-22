@@ -146,6 +146,7 @@ const ProjectDetails = ({ p }: { p: Project }) => {
           loading="lazy"
           placeholder="blur"
           blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
+          unoptimized
         />
       </motion.div>
     </motion.div>

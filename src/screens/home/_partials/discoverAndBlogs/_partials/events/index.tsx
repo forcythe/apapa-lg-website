@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 // import { slidesData } from "./events.data";
 import useIsMobile from "@/utils/helpers/useMobile";
@@ -319,61 +320,63 @@ export default function Events() {
                         zIndex,
                       }}
                     >
-                      <div
-                        className="shadow-lg flex flex-col bg-white p-2 rounded-[32px]"
-                        style={{
-                          width: `${effectiveWidth}px`,
-                          height: `${effectiveHeight}px`,
-                        }}
-                      >
-                        <div className="shadow-lg relative overflow-hidden z-[1] flex flex-col justify-between text-white px-4 py-5 md:p-[28px] rounded-[24px] w-full h-full">
-                          <div
-                            className="absolute z-[-1] inset-0 w-full"
-                            style={{
-                              backgroundImage: `
-                            linear-gradient(
-                                180deg,
-                                rgba(0, 0, 0, 1) 0%,
-                                rgba(0, 0, 0, 0) 25%,
-                                rgba(0, 0, 0, 0) 65%,
-                                rgba(0, 0, 0, 1) 100%
-                            )
-                            `,
-                              backgroundSize: "cover",
-                              backgroundPosition: "center",
-                            }}
-                          ></div>
-                          <div
-                            className="absolute z-[-2] inset-0 w-full"
-                            style={{
-                              backgroundImage: `url(${slide.image})`,
-                              backgroundSize: "cover",
-                              backgroundPosition: "center",
-                            }}
-                          ></div>
-                          <h3
-                            className={`font-[FuturaLTBold] text-white ${titleClasses}`}
-                          >
-                            {slide.title}
-                          </h3>
-                          <div>
-                            <div className="flex items-center gap-4 mb-3">
-                              <div className="flex items-center gap-2">
-                                <CalenderIcon />
-                                <p className={infoClasses}>{slide.date}</p>
+                      <Link href="/community/events">
+                        <div
+                          className="shadow-lg flex flex-col bg-white p-2 rounded-[32px] cursor-pointer"
+                          style={{
+                            width: `${effectiveWidth}px`,
+                            height: `${effectiveHeight}px`,
+                          }}
+                        >
+                          <div className="shadow-lg relative overflow-hidden z-[1] flex flex-col justify-between text-white px-4 py-5 md:p-[28px] rounded-[24px] w-full h-full">
+                            <div
+                              className="absolute z-[-1] inset-0 w-full"
+                              style={{
+                                backgroundImage: `
+                              linear-gradient(
+                                  180deg,
+                                  rgba(0, 0, 0, 1) 0%,
+                                  rgba(0, 0, 0, 0) 25%,
+                                  rgba(0, 0, 0, 0) 65%,
+                                  rgba(0, 0, 0, 1) 100%
+                              )
+                              `,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                              }}
+                            ></div>
+                            <div
+                              className="absolute z-[-2] inset-0 w-full"
+                              style={{
+                                backgroundImage: `url(${slide.image})`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                              }}
+                            ></div>
+                            <h3
+                              className={`font-[FuturaLTBold] text-white ${titleClasses}`}
+                            >
+                              {slide.title}
+                            </h3>
+                            <div>
+                              <div className="flex items-center gap-4 mb-3">
+                                <div className="flex items-center gap-2">
+                                  <CalenderIcon />
+                                  <p className={infoClasses}>{slide.date}</p>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                  <TimeIcon />
+                                  <p className={infoClasses}>{slide.time}</p>
+                                </div>
                               </div>
                               <div className="flex items-center gap-2">
-                                <TimeIcon />
-                                <p className={infoClasses}>{slide.time}</p>
+                                <LocationIcon />
+                                <p className={infoClasses}>{slide.location}</p>
                               </div>
-                            </div>
-                            <div className="flex items-center gap-2">
-                              <LocationIcon />
-                              <p className={infoClasses}>{slide.location}</p>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   );
                 })}

@@ -7,8 +7,6 @@ import { SelectOptionProps } from "./selectOption.types";
 
 import ArrowHeadIcon from "../../../public/svg-component/ArrowHeadIcon";
 
-import { useTranslations } from "next-intl";
-
 const SelectOption: React.FC<SelectOptionProps> = ({
   label,
   name,
@@ -17,9 +15,8 @@ const SelectOption: React.FC<SelectOptionProps> = ({
   onBlur,
   error,
   options,
+  t,
 }) => {
-
-  const t = useTranslations("Community.feedback");
 
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -80,7 +77,9 @@ const SelectOption: React.FC<SelectOptionProps> = ({
         onClick={handleToggle}
         className="w-full outline-none border border-[#22222226] rounded-[12px] py-4 px-3 min-h-[64px] bg-white text-base md:text-[20px] md:leading-[32px] placeholder:text-[#B0B0B0] cursor-pointer flex items-center justify-between"
       >
-        <span className={value ? "" : "text-[#B0B0B0]"}>{value || label}</span>
+        <span className={value ? "" : "text-[#B0B0B0]"}>
+          {value ? (t ? t(value) : value) : label}
+        </span>
         <ArrowHeadIcon
           className={`transition-transform duration-300 ease-in-out max-w-[20px] min-w-[20px] max-h-[20px] min-h-[20px] ${
             isOpen ? "rotate-180" : ""
@@ -102,7 +101,7 @@ const SelectOption: React.FC<SelectOptionProps> = ({
                 className="px-6 py-4 text-primary font-medium hover:bg-gray-100 cursor-pointer border-b border-[#DDDDDD] last:border-0"
                 onClick={() => handleOptionSelect(option.title)}
               >
-                {option.title}
+                {t ? t(option.title) : option.title}
               </div>
             ))}
           </motion.div>

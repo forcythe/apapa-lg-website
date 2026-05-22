@@ -9,6 +9,7 @@ import FooterArrow from "../../../../../public/svg-component/FooterArrow";
 import { quickLinks } from "./getInvolvedAndStayConnected.data";
 
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const GetInvolvedAndStayConnected = () => {
   const containerVariants = {
@@ -58,44 +59,49 @@ const GetInvolvedAndStayConnected = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-[40px] gap-x-6 md:auto-rows-[minmax(272px,1fr)]"
         >
-          {quickLinks.map((link) => (
-            <motion.div
-              key={link.id}
-              variants={itemVariants}
-              className="w-full max-w-[354px] md:min-h-[272px]"
-            >
-              {/* <div className="bg-[#FFF6CC] rounded-[12px] p-2 mb-4 min-h-[56px] max-h-[56px] max-w-[56px] min-w-[56px] md:min-h-[72px] md:min-w-[72px] md:max-h-[72px] md:max-w-[72px] flex items-center justify-center">
-                {
-                  <link.icon className="max-w-[40px] min-w-[40px] min-h-[40px] max-h-[40px] md:max-w-[56px] md:min-w-[56px] md:max-h-[56px] md:min-h-[56px]" />
-                }
-              </div>
-              <h6 className="font-[FuturaLTBold] text-[18px] leading-[28px] md:text-[20px] md:leading-[28px] md:mb-2">
-                {link.title}
-              </h6> */}
-              <div className="flex items-center gap-3 mb-3">
-                <div className="bg-[#FFF6CC] rounded-[8px] w-[40px] h-[40px] flex items-center justify-center">
-                  <link.icon className="w-6 h-6" />
-                </div>
+          {quickLinks.map((link) => {
+            const isExternal = link.href.startsWith("http");
+            return (
+              <motion.div
+                key={link.id}
+                variants={itemVariants}
+                className="w-full max-w-[354px] md:min-h-[272px]"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="bg-[#FFF6CC] rounded-[8px] w-[40px] h-[40px] flex items-center justify-center">
+                    <link.icon className="w-6 h-6" />
+                  </div>
 
-                <h6 className="font-[FuturaLTBold] text-[18px] leading-[28px] md:text-[20px]">
-                  {t(link.title)}
-                </h6>
-              </div>
-              <p className="text-base md:text-[20px] md:leading-[32px] text-[#667085] mb-5">
-                {t(link.description)}
-              </p>
-              <div className="flex items-center gap-2">
-                <a
-                  className="text-base md:text-[20px] md:leading-[32px] text-accent"
-                  href={link.href}
-                  target="_blank"
-                >
-                  {t(link.btnTitle)}
-                </a>
-                <FooterArrow fill="#aa8b00" />
-              </div>
-            </motion.div>
-          ))}
+                  <h6 className="font-[FuturaLTBold] text-[18px] leading-[28px] md:text-[20px]">
+                    {t(link.title)}
+                  </h6>
+                </div>
+                <p className="text-base md:text-[20px] md:leading-[32px] text-[#667085] mb-5">
+                  {t(link.description)}
+                </p>
+                <div className="flex items-center gap-2">
+                  {isExternal ? (
+                    <a
+                      className="text-base md:text-[20px] md:leading-[32px] text-accent"
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t(link.btnTitle)}
+                    </a>
+                  ) : (
+                    <Link
+                      className="text-base md:text-[20px] md:leading-[32px] text-accent"
+                      href={link.href}
+                    >
+                      {t(link.btnTitle)}
+                    </Link>
+                  )}
+                  <FooterArrow fill="#aa8b00" />
+                </div>
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
       <Image

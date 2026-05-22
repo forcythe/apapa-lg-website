@@ -33,7 +33,8 @@
     "pollsSurveys": "Polls and Surveys",
     "volunteerOpportunities": "Volunteer Opportunities",
     "faqs": "FAQs",
-    "initiatives": "Initiatives"
+    "initiatives": "Initiatives",
+    "blogs": "Blogs"
   },
   "Footer": {
     "sections": {
@@ -1026,7 +1027,7 @@
       "btn2": "Track Feedback",
       "successMessage": {
         "headText": "Thank You for Your Feedback!",
-        "subText": "If you get any question, abeg contact us for feedback@apapalga.ng or call our support line for +234 800 123 4567. Your message dey important to us and we go attend to am sharp sharp.",
+        "subText": "If you get any question, abeg contact us for feedback@apapa.lg.gov.ng or call our support line for +234 800 123 4567. Your message dey important to us and we go attend to am sharp sharp.",
         "btn": "Okay"
       }
     },
@@ -1075,6 +1076,16 @@
     "events": {
       "bannerTitle": "Apapa Events: Engage, Celebrate, and Connect",
       "loadingEvents": "Events dey load..."
+    },
+    "blog": {
+      "bannerTitle": "Blogs, News & Articles: Stay Informed",
+      "loadingBlogs": "Loading blogs...",
+      "tabs": {
+        "all": "All",
+        "blogs": "Blogs",
+        "news": "News",
+        "articles": "Articles"
+      }
     }
   }
 }

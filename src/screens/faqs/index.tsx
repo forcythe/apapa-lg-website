@@ -81,18 +81,6 @@ const Faqs = () => {
               ))}
             </div>
             <div className="max-w-[900px] mx-auto flex flex-col gap-6 w-full">
-              {/* {activeFaq && activeFaq.length > 0 ? (
-                activeFaq.map((faq) => (
-                  <QuestionsAndAnswers
-                    key={`${activeTab}-${faq.id}`}
-                    faq={faq}
-                  />
-                ))
-              ) : (
-                <p className="text-center text-gray-500 w-full">
-                  No results found for &quot;{activeTab}&quot;.
-                </p>
-              )} */}
               {!loading && activeFaqs.length > 0 ? (
                 activeFaqs.map((faq) => (
                   <QuestionsAndAnswers key={faq.documentId} faq={faq} />
@@ -102,7 +90,7 @@ const Faqs = () => {
                   No results found for &quot;{activeTab}&quot;.
                 </p>
               ) : (
-                <p className="text-center text-gray-400 w-full">
+                <p className="text-center text-gray-400 w-full ">
                   {t("loadingFaqs")}
                 </p>
               )}

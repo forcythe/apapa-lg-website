@@ -35,6 +35,19 @@ const Events = () => {
   const [events, setEvents] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [expandedIds, setExpandedIds] = useState<Set<number>>(new Set());
+
+  const toggleExpand = (id: number) => {
+    setExpandedIds((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(id)) {
+        newSet.delete(id);
+      } else {
+        newSet.add(id);
+      }
+      return newSet;
+    });
+  };
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -167,9 +180,26 @@ const Events = () => {
                     <h6 className="text-base md:text-[20px] md:leading-[28px] text-[#101828] font-[FuturaLTBold] mb-2">
                       {event.title}
                     </h6>
-                    <p className="text-base md:text-[20px] md:leading-[32px] text-[#667085] mb-4 md:mb-5">
-                      {event.description}
-                    </p>
+                    <div className="mb-4 md:mb-5">
+                      <p className="text-base md:text-[18px] md:leading-[28px] text-[#667085]">
+                        {(() => {
+                          const description = event.description || "";
+                          const isExpanded = expandedIds.has(event.id);
+                          if (description.length <= 150 || isExpanded) {
+                            return description;
+                          }
+                          return `${description.slice(0, 150)}...`;
+                        })()}
+                      </p>
+                      {event.description && event.description.length > 150 && (
+                        <button
+                          onClick={() => toggleExpand(event.id)}
+                          className="text-accent font-[FuturaLTBold] text-sm md:text-base mt-2 hover:underline transition-all"
+                        >
+                          {expandedIds.has(event.id) ? "Read Less" : "Read More"}
+                        </button>
+                      )}
+                    </div>
                     <div className="flex items-start gap-2 mb-3">
                       <CalenderIcon fill="#AA8B00" />
                       <p className="text-[14px] leading-[20px] md:text-base text-[#121212] min-w-0 break-words">

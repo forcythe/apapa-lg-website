@@ -145,6 +145,7 @@ const InitiativesPage = () => {
             loading="lazy"
             placeholder="blur"
             blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
+            unoptimized
           />
         </div>
       </div>

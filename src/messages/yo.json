@@ -33,7 +33,8 @@
     "pollsSurveys": "Idibo ati Iwadi",
     "volunteerOpportunities": "Awọn Aye Aṣekára",
     "faqs": "Awọn Ibeere Ti A Maa N Beere",
-    "initiatives": "Awọn Eto Igbesẹ"
+    "initiatives": "Awọn Eto Igbesẹ",
+    "blogs": "Bulọọgi"
   },
   "Footer": {
     "sections": {
@@ -1026,7 +1027,7 @@
       "btn2": "Tẹ̀lé Èrò",
       "successMessage": {
         "headText": "A dúpẹ́ fún Èrò Rẹ!",
-        "subText": "Tí o bá ní ìbéèrè kankan, jọ̀wọ́ kan sí wa ní feedback@apapalga.ng tàbí pe laini ìrànlọ́wọ́ wa ní +234 800 123 4567. A ṣe ìyàsọ́tọ̀ sí èrò rẹ, a ó sì fèsì sí i lọ́ọ́rẹ́-ọfẹ́.",
+        "subText": "Tí o bá ní ìbéèrè kankan, jọ̀wọ́ kan sí wa ní feedback@apapa.lg.gov.ng tàbí pe laini ìrànlọ́wọ́ wa ní +234 800 123 4567. A ṣe ìyàsọ́tọ̀ sí èrò rẹ, a ó sì fèsì sí i lọ́ọ́rẹ́-ọfẹ́.",
         "btn": "Ó DÁA"
       }
     },
@@ -1075,6 +1076,16 @@
     "events": {
       "bannerTitle": "Àwọn Ìṣẹ̀lẹ̀ Apapa: Kópa, Ṣe Ayẹyẹ, Kó Sopọ̀",
       "loadingEvents": "Ń gba àwọn ìṣẹ̀lẹ̀..."
+    },
+    "blog": {
+      "bannerTitle": "Blogs, News & Articles: Stay Informed",
+      "loadingBlogs": "Loading blogs...",
+      "tabs": {
+        "all": "Gbogbo",
+        "blogs": "Blogs",
+        "news": "Iroyin",
+        "articles": "Awọn nkan"
+      }
     }
   }
 }
