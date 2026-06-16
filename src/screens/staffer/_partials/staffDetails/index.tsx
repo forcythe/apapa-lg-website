@@ -98,14 +98,17 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
           </motion.div>
           <div className="w-full max-w-[600px] min-h-[300px] md:min-h-[616px] bg-white p-2 rounded-[32px] shadow-lg z-[1]">
             <div className="relative group overflow-hidden w-full rounded-[24px] min-h-[600px]">
-              <div
-                className="absolute inset-0 z-[-1] transition-transform duration-500 ease-in-out group-hover:scale-105 w-full"
-                style={{
-                  backgroundImage: "url('/svgs/HEAD_OF_HR.svg')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              />
+              {activeRole?.img && (
+                <Image
+                  src={activeRole.img}
+                  alt={activeRole.name ? t(activeRole.name) : "Staff image"}
+                  fill
+                  className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
+                />
+              )}
             </div>
           </div>
         </div>
