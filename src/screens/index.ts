@@ -11,5 +11,6 @@ export { default as FaqsPage } from "./faqs";
 export { default as VolunteerOpportunitiesPage } from "./volunteerOpportunities";
 export { default as FeedbackPortalPage } from "./feedbackPortal";
 export { default as PollsAndSurveyPage } from "./pollsAndSurvey";
+export { default as BlogsPage } from "./blogs";
 export { default as HousingServicesPage } from "./housingServices";
 export { default as SingleHousingServicesPage } from "./singleHousingServices";

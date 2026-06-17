@@ -33,7 +33,8 @@
     "pollsSurveys": "Polls and Surveys",
     "volunteerOpportunities": "Volunteer Opportunities",
     "faqs": "FAQs",
-    "initiatives": "Initiatives"
+    "initiatives": "Initiatives",
+    "blogs": "Blogs"
   },
   "Footer": {
     "sections": {
@@ -512,8 +513,8 @@
         "bannerTitle": "Secretary to the Local Government",
         "badgeTitle": "",
         "overview": "The Secretary to the Local Government is a senior administrative officer who plays a key role in supporting the local government’s governance and ensuring that its administrative processes run smoothly. The position typically involves both high-level coordination and operational responsibilities.ß",
-        "name": "",
-        "introduction": "",
+        "name": "Mr. John Bamidele",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
         "keyFunctions": {
           "title1": "Administrative Support",
           "description1": "Providing crucial administrative support to the local government council, including scheduling meetings, preparing agendas, taking minutes, and ensuring the smooth functioning of council sessions and decision-making.",
@@ -1049,7 +1050,7 @@
       "btn2": "Track Feedback",
       "successMessage": {
         "headText": "Thank you for your Feedback!",
-        "subText": "If you have any questions, please contact us at feedback@apapalga.ng or call our support line at +234 800 123 4567. We value your input and are committed to addressing your concerns promptly.",
+        "subText": "If you have any questions, please contact us at feedback@apapa.lg.gov.ng or call our support line at +234 800 123 4567. We value your input and are committed to addressing your concerns promptly.",
         "btn": "Okay"
       }
     },
@@ -1098,6 +1099,16 @@
     "events": {
       "bannerTitle": "Apapa Events: Engage, Celebrate, and Connect",
       "loadingEvents": "Loading events..."
+    },
+    "blog": {
+      "bannerTitle": "Blogs, News & Articles: Stay Informed",
+      "loadingBlogs": "Loading blogs...",
+      "tabs": {
+        "all": "All",
+        "blogs": "Blogs",
+        "news": "News",
+        "articles": "Articles"
+      }
     }
   }
 }

@@ -83,7 +83,7 @@ export const quickLinks = [
     description: "blogs.description",
     icon: BlogIcon,
     btnTitle: "blogs.btn",
-    href: "/",
+    href: "/blog",
   },
   {
     id: 10,

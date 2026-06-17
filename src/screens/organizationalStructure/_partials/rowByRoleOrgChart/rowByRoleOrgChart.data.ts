@@ -24,7 +24,7 @@ export const rowData: Row[] = [
       {
         id: "executive-chairman",
         role: "executiveChairman.role",
-        img: "/image/placeholder.jpeg",
+        img: "/svgs/HEAD_OF_HR.svg",
         bannerTitle: "executiveChairman.bannerTitle",
         badgeTitle: "executiveChairman.badgeTitle",
         overview: "executiveChairman.overview",
@@ -39,7 +39,7 @@ export const rowData: Row[] = [
       {
         id: "vice-chairman",
         role: "viceChairman.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA COUNCIL PHOTOS_/Head Management_/NO 002.png",
         bannerTitle: "viceChairman.bannerTitle",
         badgeTitle: "viceChairman.badgeTitle",
         overview: "viceChairman.overview",
@@ -96,7 +96,7 @@ export const rowData: Row[] = [
       {
         id: "council-manager",
         role: "councilManager.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA COUNCIL PHOTOS_/Head Management_/NO 003.png",
         bannerTitle: "councilManager.bannerTitle",
         badgeTitle: "councilManager.badgeTitle",
         overview: "councilManager.overview",
@@ -153,13 +153,13 @@ export const rowData: Row[] = [
       {
         id: "s-l-g",
         role: "slg.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA COUNCIL PHOTOS_/Head Management_/NO 006.png",
         bannerTitle: "slg.bannerTitle",
-        // badgeTitle: "VICE CHAIRMAN",
+        badgeTitle: "VICE CHAIRMAN",
         overview: "slg.overview",
-        // name: "MRS ADEBANJI S.O",
-        // introduction:
-        //   "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        name: "slg.name",
+        introduction:
+          "slg.introduction",
         keyFunctions: [
           {
             id: 1,
@@ -442,7 +442,7 @@ export const rowData: Row[] = [
       {
         id: "head-planning-budget-research-statistics",
         role: "headPlanningBudgetResearchStatistics.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA COUNCIL PHOTOS_/HOD_S/I.png",
         bannerTitle: "headPlanningBudgetResearchStatistics.bannerTitle",
         badgeTitle: "headPlanningBudgetResearchStatistics.badgeTitle",
         overview: "headPlanningBudgetResearchStatistics.overview",
@@ -774,7 +774,7 @@ export const rowData: Row[] = [
       {
         id: "head-legal-services",
         role: "headLegalUnit.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA COUNCIL PHOTOS_/Head Management_/NO 004.png",
         bannerTitle: "headLegalUnit.bannerTitle",
         badgeTitle: "headLegalUnit.badgeTitle",
         overview: "headLegalUnit.overview",

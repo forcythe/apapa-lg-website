@@ -86,59 +86,62 @@ export default async function BlogDetailPage({
         <Header />
       </div>
       <main className="min-h-screen bg-white pb-20">
-        {/* Hero Section */}
-        <div className="relative h-[300px] md:h-[450px] w-full overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('${imageUrl}')` }}
-          >
-            <div className="absolute inset-0 bg-black/40" />
-          </div>
-
-          <div className="relative h-full max-w-6xl mx-auto px-6 flex flex-col justify-end pb-10 md:pb-14">
+        <div className="max-w-5xl mx-auto px-6 pt-10 md:pt-16">
+          {/* Breadcrumb / Navigation */}
+          <div className="flex items-center gap-3 mb-8 md:mb-12 font-[FuturaLTBold] overflow-hidden">
             <Link
-              href="/"
-              className="flex items-center gap-2 text-white mb-8 hover:opacity-80 transition-opacity w-fit group"
+              href="/blog"
+              className="text-accent hover:opacity-80 transition-opacity whitespace-nowrap text-lg"
             >
-              <div className="rotate-180">
-                <FooterArrow fill="white" />
-              </div>
-              <span>Back to Home</span>
+              Our Blog
             </Link>
-
-            <div className="bg-accent3 w-fit px-4 py-2 rounded-lg mb-6">
-              <p className="text-black font-medium uppercase tracking-wider text-sm">
-                {blog.category}
-              </p>
+            <div className="flex-shrink-0 text-gray-300">
+              <FooterArrow fill="currentColor" />
             </div>
-
-            <h1 className="text-4xl md:text-6xl font-[FuturaLTBold] text-white max-w-4xl leading-tight line-clamp-2">
+            <span className="text-gray-400 text-lg truncate max-w-[250px] md:max-w-[500px]">
               {blog.title}
-            </h1>
+            </span>
           </div>
-        </div>
 
-        {/* Content Section */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 mt-10 md:mt-16">
-          <div className="max-w-4xl">
-            <div className="flex flex-wrap items-center gap-8 mb-12 pb-10 border-b border-gray-100">
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-full bg-accent2 flex items-center justify-center text-accent font-[FuturaLTBold] text-2xl shadow-sm">
-                  {blog.author?.[0] || "A"}
-                </div>
-                <div>
-                  <p className="text-xs uppercase tracking-wider text-gray-400 font-medium">Author</p>
-                  <p className="font-[FuturaLTBold] text-[#000000] text-lg">
-                    {blog.author || "Anonymous"}
-                  </p>
-                </div>
+          {/* Featured Image */}
+          <div className="relative aspect-[16/9] w-full mb-10 md:mb-14 overflow-hidden rounded-2xl md:rounded-[40px] shadow-2xl">
+            <img
+              src={imageUrl}
+              alt={blog.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Category */}
+          <div className="bg-accent3 w-fit px-3 py-1 rounded-full mb-6">
+            <p className="text-black font-medium uppercase tracking-widest text-[10px] md:text-xs">
+              {blog.category || "News"}
+            </p>
+          </div>
+
+          {/* Title */}
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-[FuturaLTBold] text-[#000000] leading-[1.1] mb-8 line-clamp-3">
+            {blog.title}
+          </h1>
+
+          {/* Metadata Section */}
+          <div className="flex flex-wrap items-center justify-between gap-6 py-8 border-y border-gray-100 mb-12">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-accent2 flex items-center justify-center text-accent font-[FuturaLTBold] text-xl md:text-2xl shadow-sm border border-accent/10">
+                {blog.author?.[0] || "A"}
               </div>
-
-              <div className="h-12 w-[1px] bg-gray-200 hidden md:block" />
-
               <div>
-                <p className="text-xs uppercase tracking-wider text-gray-400 font-medium">Published on</p>
-                <p className="font-[FuturaLTBold] text-[#000000] text-lg">
+                <p className="text-[10px] md:text-xs uppercase tracking-wider text-gray-400 font-bold mb-0.5">Author</p>
+                <p className="font-[FuturaLTBold] text-[#000000] text-base md:text-lg leading-tight">
+                  {blog.author || "Anonymous"}
+                </p>
+              </div>
+              
+              <div className="h-10 w-[1px] bg-gray-200 mx-2 hidden sm:block" />
+              
+              <div className="hidden sm:block">
+                <p className="text-[10px] md:text-xs uppercase tracking-wider text-gray-400 font-bold mb-0.5">Published</p>
+                <p className="font-[FuturaLTBold] text-[#000000] text-base md:text-lg leading-tight">
                   {new Date(blog.createdAt).toLocaleDateString("en-US", {
                     day: "numeric",
                     month: "long",
@@ -148,18 +151,41 @@ export default async function BlogDetailPage({
               </div>
             </div>
 
-            <BlogContent
-              content={blog.content}
-              fallbackText={blog.description}
-            />
-
-            <div className="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center">
+            <div className="flex items-center gap-4">
+              <div className="sm:hidden text-right">
+                <p className="text-[10px] uppercase tracking-wider text-gray-400 font-bold mb-0.5">Published</p>
+                <p className="font-[FuturaLTBold] text-[#000000] text-sm leading-tight">
+                  {new Date(blog.createdAt).toLocaleDateString("en-US", {
+                    day: "numeric",
+                    month: "short",
+                    year: "numeric",
+                  })}
+                </p>
+              </div>
               <ShareButton
                 title={blog.title}
                 text={blog.description}
                 url={`https://apapa.lg.gov.ng/blog/${blog.slug}`}
               />
             </div>
+          </div>
+
+          {/* Content Section */}
+          <div className="max-w-4xl mx-auto">
+            <BlogContent
+              content={blog.content}
+              fallbackText={blog.description}
+            />
+            
+            {/* Bottom Share (Optional) */}
+            {/* <div className="mt-20 pt-10 border-t border-gray-100 flex flex-col items-center gap-6">
+              <p className="text-gray-400 font-medium">Enjoyed this article? Share it with your network</p>
+              <ShareButton
+                title={blog.title}
+                text={blog.description}
+                url={`https://apapa.lg.gov.ng/blog/${blog.slug}`}
+              />
+            </div> */}
           </div>
         </div>
       </main>

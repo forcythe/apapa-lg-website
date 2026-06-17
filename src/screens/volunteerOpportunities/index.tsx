@@ -129,12 +129,30 @@ const VolunteerOpportunitiesPage = () => {
     },
     onSubmit: async (values, { resetForm }) => {
       setIsLoading(true);
-      setTimeout(() => {
-        console.log(values);
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            type: "volunteer",
+            data: values,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error("Failed to send email");
+        }
+
         setIsShowSuccessModal(true);
         resetForm();
+      } catch (error) {
+        console.error("Error submitting volunteer form:", error);
+        // You might want to show an error toast here
+      } finally {
         setIsLoading(false);
-      }, 4000);
+      }
     },
   });
 

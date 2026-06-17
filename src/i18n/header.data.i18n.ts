@@ -105,7 +105,8 @@ export const getHeaderRoutes = (t: TFn) => [
       { id: 3, path: "/community/polls-and-surveys", title: t("Nav.pollsSurveys") },
       { id: 4, path: "/community/volunteer-opportunities", title: t("Nav.volunteerOpportunities") },
       { id: 5, path: "/community/faqs", title: t("Nav.faqs") },
-      { id: 6, path: "/community/initiatives", title: t("Nav.initiatives") }
+      { id: 6, path: "/community/initiatives", title: t("Nav.initiatives") },
+      { id: 7, path: "/blog", title: t("Nav.blogs") }
     ],
   },
 ];

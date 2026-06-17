@@ -64,19 +64,36 @@ const FeedbackPortalPage = () => {
     },
   });
 
-  const handleShareFeedbackAction = (values: {
+  const handleShareFeedbackAction = async (values: {
     fullName?: string;
     email?: string;
     phone?: string;
     feedback?: string;
     feedbackCategory?: string;
   }) => {
-    setTimeout(() => {
-      console.log(values);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          type: "feedback",
+          data: values,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
+
       setIsShowSuccessModal(true);
       formik.resetForm();
+    } catch (error) {
+      console.error("Error submitting feedback:", error);
+    } finally {
       setIsLoading(false);
-    }, 4000);
+    }
   };
 
   const handleTrackFeedbackAction = (values: { trackingId?: string }) => {
@@ -190,6 +207,7 @@ const FeedbackPortalPage = () => {
                             : undefined
                         }
                         options={feedbackCategories}
+                        t={(key: string) => t(`feedback.${key}`)}
                       />
                       <InputField
                         type="text"
