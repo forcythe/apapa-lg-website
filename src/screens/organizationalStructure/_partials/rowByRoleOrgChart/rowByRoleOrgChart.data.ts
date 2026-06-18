@@ -39,7 +39,7 @@ export const rowData: Row[] = [
       {
         id: "vice-chairman",
         role: "viceChairman.role",
-        img: "/image/APAPA COUNCIL PHOTOS_/Head Management_/NO 002.png",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/Head%20Management_/NO%20002.png",
         bannerTitle: "viceChairman.bannerTitle",
         badgeTitle: "viceChairman.badgeTitle",
         overview: "viceChairman.overview",
@@ -96,7 +96,7 @@ export const rowData: Row[] = [
       {
         id: "council-manager",
         role: "councilManager.role",
-        img: "/image/APAPA COUNCIL PHOTOS_/Head Management_/NO 003.png",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/Head%20Management_/NO%20003.png",
         bannerTitle: "councilManager.bannerTitle",
         badgeTitle: "councilManager.badgeTitle",
         overview: "councilManager.overview",
@@ -153,7 +153,7 @@ export const rowData: Row[] = [
       {
         id: "s-l-g",
         role: "slg.role",
-        img: "/image/APAPA COUNCIL PHOTOS_/Head Management_/NO 006.png",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/Head%20Management_/NO%20006.png",
         bannerTitle: "slg.bannerTitle",
         badgeTitle: "VICE CHAIRMAN",
         overview: "slg.overview",
@@ -338,7 +338,7 @@ export const rowData: Row[] = [
       {
         id: "head-agric-and-social-services",
         role: "headAgricAndSocialServices.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/I.png",
         bannerTitle: "headAgricAndSocialServices.bannerTitle",
         badgeTitle: "headAgricAndSocialServices.badgeTitle",
         overview: "headAgricAndSocialServices.overview",
@@ -390,7 +390,7 @@ export const rowData: Row[] = [
       {
         id: "head-education-and-library-services",
         role: "headEducationAndLibraryServices.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/d.png",
         bannerTitle: "headEducationAndLibraryServices.bannerTitle",
         badgeTitle: "headEducationAndLibraryServices.badgeTitle",
         overview: "headEducationAndLibraryServices.overview",
@@ -442,7 +442,7 @@ export const rowData: Row[] = [
       {
         id: "head-planning-budget-research-statistics",
         role: "headPlanningBudgetResearchStatistics.role",
-        img: "/image/APAPA COUNCIL PHOTOS_/HOD_S/I.png",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/c.png",
         bannerTitle: "headPlanningBudgetResearchStatistics.bannerTitle",
         badgeTitle: "headPlanningBudgetResearchStatistics.badgeTitle",
         overview: "headPlanningBudgetResearchStatistics.overview",
@@ -494,7 +494,7 @@ export const rowData: Row[] = [
       {
         id: "head-wapa",
         role: "headWomenAffairsAndPovertyAlleviation.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/a.png",
         bannerTitle: "headWomenAffairsAndPovertyAlleviation.bannerTitle",
         badgeTitle: "headWomenAffairsAndPovertyAlleviation.badgeTitle",
         overview: "headWomenAffairsAndPovertyAlleviation.overview",
@@ -541,7 +541,7 @@ export const rowData: Row[] = [
       {
         id: "head-primary-health-care-services",
         role: "headPrimaryHealthCareService.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/f.png",
         bannerTitle: "headPrimaryHealthCareService.bannerTitle",
         badgeTitle: "headPrimaryHealthCareService.badgeTitle",
         overview: "headPrimaryHealthCareService.overview",
@@ -598,7 +598,7 @@ export const rowData: Row[] = [
       {
         id: "head-environmental-services-department",
         role: "headEnvironmentalServices.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/j.png",
         bannerTitle: "headEnvironmentalServices.bannerTitle",
         badgeTitle: "headEnvironmentalServices.badgeTitle",
         overview: "headEnvironmentalServices.overview",
@@ -717,7 +717,7 @@ export const rowData: Row[] = [
       {
         id: "head-ict-unit",
         role: "headIctUnit.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/k.png",
         bannerTitle: "headIctUnit.bannerTitle",
         badgeTitle: "headIctUnit.badgeTitle",
         overview: "headIctUnit.overview",
@@ -774,7 +774,7 @@ export const rowData: Row[] = [
       {
         id: "head-legal-services",
         role: "headLegalUnit.role",
-        img: "/image/APAPA COUNCIL PHOTOS_/Head Management_/NO 004.png",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/Head%20Management_/NO%20004.png",
         bannerTitle: "headLegalUnit.bannerTitle",
         badgeTitle: "headLegalUnit.badgeTitle",
         overview: "headLegalUnit.overview",
@@ -831,7 +831,7 @@ export const rowData: Row[] = [
       {
         id: "head-tourism-unit",
         role: "headTourismUnit.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/g.png",
         bannerTitle: "headTourismUnit.bannerTitle",
         badgeTitle: "headTourismUnit.badgeTitle",
         overview: "headTourismUnit.overview",
@@ -888,7 +888,7 @@ export const rowData: Row[] = [
       {
         id: "head-procurement-unit",
         role: "headProcurementUnit.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/b.png",
         bannerTitle: "headProcurementUnit.bannerTitle",
         badgeTitle: "headProcurementUnit.badgeTitle",
         overview: "headProcurementUnit.overview",
@@ -957,7 +957,7 @@ export const rowData: Row[] = [
       {
         id: "head-admin-human-resources",
         role: "headAdminAndHumanResources.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/m.png",
         bannerTitle: "headAdminAndHumanResources.bannerTitle",
         badgeTitle: "headAdminAndHumanResources.badgeTitle",
         overview: "headAdminAndHumanResources.overview",
@@ -1061,7 +1061,7 @@ export const rowData: Row[] = [
       {
         id: "head-public-affairs-unit",
         role: "headPublicAffairsUnit.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/h.png",
         bannerTitle: "headPublicAffairsUnit.bannerTitle",
         badgeTitle: "headPublicAffairsUnit.badgeTitle",
         overview: "headPublicAffairsUnit.overview",
@@ -1118,7 +1118,7 @@ export const rowData: Row[] = [
       {
         id: "head-audit-unit",
         role: "headAuditUnit.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/n.png",
         bannerTitle: "headAuditUnit.bannerTitle",
         badgeTitle: "headAuditUnit.badgeTitle",
         overview: "headAuditUnit.overview",
