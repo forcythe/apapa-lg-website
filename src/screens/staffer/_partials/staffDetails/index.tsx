@@ -100,6 +100,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
             <div className="relative group overflow-hidden w-full rounded-[24px] min-h-[600px]">
               {activeRole?.img && (
                 <Image
+                  key={activeRole.img}
                   src={activeRole.img}
                   alt={activeRole.name ? t(activeRole.name) : "Staff image"}
                   fill
