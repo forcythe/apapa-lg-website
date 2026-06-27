@@ -104,7 +104,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
                   src={activeRole.img}
                   alt={activeRole.name ? t(activeRole.name) : "Staff image"}
                   fill
-                  className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                  className="object-cover object-[center_30%] transition-transform duration-500 ease-in-out group-hover:scale-105"
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}

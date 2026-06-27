@@ -64,9 +64,10 @@ const NodeBox: React.FC<NodeBoxProps> = ({ role, rowId, roleId, image }) => {
       >
         <div className="absolute z-[4] -top-8 left-1/2 transform -translate-x-1/2 w-[88px] h-[88px] rounded-full bg-[#FFF6CC] flex items-center justify-center shadow-sm p-5">
           <div
-            className="min-w-[68px] h-[68px] rounded-full border-[6px] border-[#FFD100] bg-cover bg-center"
+            className="min-w-[68px] h-[68px] rounded-full border-[6px] border-[#FFD100] bg-cover"
             style={{
               backgroundImage: `url('${image}')`,
+              backgroundPosition: 'center 30%',
             }}
           />
         </div>
