@@ -211,7 +211,7 @@ export const rowData: Row[] = [
       {
         id: "legislative-arm",
         role: "legislativeArm.role",
-        img: "/image/placeholder.jpeg",
+        img: "/svgs/logoHead.svg",
         bannerTitle: "legislativeArm.bannerTitle",  
         overview: "legislativeArm.overview"
       },
@@ -655,7 +655,7 @@ export const rowData: Row[] = [
       {
         id: "clerk-of-the-house",
         role: "clerkOfLegislativeArm.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/R.png",
         bannerTitle: "clerkOfLegislativeArm.bannerTitle",
         badgeTitle: "clerkOfLegislativeArm.badgeTitle",
         overview: "clerkOfLegislativeArm.overview",

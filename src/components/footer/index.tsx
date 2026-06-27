@@ -48,7 +48,7 @@ const Footer = () => {
           zIndex: -1,
         }}
       ></div>
-      <div className="grid grid-cols-1 md:grid-cols-3 xxl:grid-cols-4 xxxl:grid-cols-5 mb-[150px] md:mb-[244px] gap-[24px] mg:gap-[32px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 xxl:grid-cols-4 xxxl:grid-cols-5 mb-[60px] md:mb-[80px] gap-[24px] mg:gap-[32px]">
         {Object.entries(footerLinks).map(([sectionTitle, links]) => (
           <div key={sectionTitle} className="w-full">
             <h3 className="text-[20px] leading-[28px] font-[FuturaLTBold] mb-8">

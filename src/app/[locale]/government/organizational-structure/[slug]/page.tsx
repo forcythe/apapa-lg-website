@@ -10,6 +10,11 @@ const StafferPage = dynamic(() => import("@/screens/staffer"), {
   loading: () => null,
 });
 
+const LegislativeArmOrgChartPage = dynamic(
+  () => import("@/screens/legislativeArmOrgChart"),
+  { loading: () => null }
+);
+
 export default function Staffer() {
   const { slug } = useParams();
   const router = useRouter();
@@ -25,6 +30,10 @@ export default function Staffer() {
 
   if (!activeRole) {
     return null;
+  }
+
+  if (slug === "legislative-arm") {
+    return <LegislativeArmOrgChartPage />;
   }
 
   return <StafferPage activeRole={activeRole} />;

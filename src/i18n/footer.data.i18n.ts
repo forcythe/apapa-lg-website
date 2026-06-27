@@ -137,19 +137,19 @@ export const socialLinks = [
   {
     id: 2,
     type: "X",
-    link: "/",
+    link: "https://x.com/ApapaLocalGovt?s=20",
     Icon: "/svgs/twitter.t.svg",
   },
   {
     id: 3,
     type: "Youtube",
-    link: "/",
+    link: "https://www.youtube.com/@ApapaLocalGovernment1",
     Icon: "/svgs/youtube.svg",
   },
   {
     id: 4,
     type: "Instagram",
-    link: "https://www.instagram.com/apapalocalgov/",
+    link: "https://www.instagram.com/apapalocalgov?igsh=MWhzaWpmZDJkcjV3MA%3D%3D&utm_source=qr",
     Icon: "/svgs/instagram.svg",
   },
 
