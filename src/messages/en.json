@@ -425,7 +425,7 @@
               "role": "Executive Chairman"
             },
             "5": {
-              "role": "Executive Chairman "
+              "role": "Sole Administrator"
             },
             "6": {
               "role": "Sole Administrator"
@@ -434,22 +434,22 @@
               "role": "Executive Secretary"
             },
             "8": {
-              "role": "Executive Chairman "
+              "role": "Executive Chairman"
             },
             "9": {
               "role": "Executive Secretary"
             },
             "10": {
-              "role": "Executive Chairman "
+              "role": "Executive Chairman"
             },
             "11": {
-              "role": "Executive Chairman "
+              "role": "Executive Chairman"
             },
             "12": {
               "role": "Sole Administrator"
             },
             "13": {
-              "role": "Sole Administrator"
+              "role": "Executive Chairman"
             }
           }
         }
@@ -893,10 +893,10 @@
           "description9": "Maintaining accurate records of all procurement activities, including contracts, orders, and payments, and preparing reports for senior management and regulatory bodies."
         }
       },
-      "areaOfficers": {
-        "role": "Area Officers",
-        "bannerTitle": "Area Officers Functions & Operations",
-        "overview": "..."
+      "specialAdviser": {
+        "role": "Special Advisers",
+        "bannerTitle": "Special Adviser Functions & Operations",
+        "overview": "Special Advisers are appointed experts who provide strategic guidance and specialized knowledge to the local government across a wide range of sectors including ICT, tourism, health, youth and sport, intergovernmental relations, market development, community affairs, elderly affairs, civic engagement, boundary matters, and city care services. They play a critical role in shaping policy, driving innovation, and ensuring that the council delivers effective and inclusive services to every ward and community within Apapa."
       },
       "headAdminAndHumanResources": {
         "role": "Head, Admin & Human Resources Department",

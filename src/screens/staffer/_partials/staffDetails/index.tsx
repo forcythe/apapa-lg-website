@@ -59,6 +59,49 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
         </div>
       </div>
 
+      {/* Team Grid Section */}
+      {activeRole?.team && activeRole.team.length > 0 && (
+        <div className="section-padding mb-[80px] md:mb-[120px]">
+          <div className="max-w-[1488px] w-full mx-auto">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+            >
+              {activeRole.team.map((member: any, index: number) => (
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                  className="flex flex-col items-center"
+                >
+                  <div className="group w-full bg-white rounded-[32px] border border-[#D0D0D0] p-2">
+                    <div className="relative w-full aspect-square overflow-hidden rounded-[24px]">
+                      <Image
+                        src={member.img}
+                        alt={member.name}
+                        fill
+                        className="object-cover object-[center_30%] transition-transform duration-500 ease-in-out group-hover:scale-105"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
+                      />
+                    </div>
+                  </div>
+                  <h6 className="mt-4 text-base md:text-[18px] font-[FuturaLTBold] text-[#101828] mb-1 text-center">
+                    {member.name}
+                  </h6>
+                  <p className="text-sm md:text-[15px] text-[#667085] leading-tight text-center max-w-[200px]">
+                    {member.title}
+                  </p>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+      )}
+
       {/* Role Details Section */}
       {activeRole?.name && (
         <div className="w-fit section-padding lg:w-full lg:max-w-[1320px] mx-auto min-h-[616px] flex flex-col lg:flex-row gap-[40px] justify-between mb-[80px] md:mb-[120px]">

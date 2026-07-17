@@ -412,19 +412,45 @@
           "badgeTitle": "Past Chairmen",
           "overview": "Over the years, Apapa Local Government don get leaders wey their contributions don shape the development and legacy of the area.",
           "timelineData": {
-            "1": { "role": "Executive Chairman" },
-            "2": { "role": "Sole Administrator" },
-            "3": { "role": "Executive Secretary" },
-            "4": { "role": "Executive Chairman" },
-            "5": { "role": "Executive Chairman" },
-            "6": { "role": "Sole Administrator" },
-            "7": { "role": "Executive Secretary" },
-            "8": { "role": "Executive Chairman" },
-            "9": { "role": "Executive Secretary" },
-            "10": { "role": "Executive Chairman" },
-            "11": { "role": "Executive Chairman" },
-            "12": { "role": "Sole Administrator" },
-            "13": { "role": "Sole Administrator" }
+            "1": {
+              "role": "Executive Chairman"
+            },
+            "2": {
+              "role": "Sole Administrator"
+            },
+            "3": {
+              "role": "Executive Secretary"
+            },
+            "4": {
+              "role": "Executive Chairman"
+            },
+            "5": {
+              "role": "Sole Administrator"
+            },
+            "6": {
+              "role": "Sole Administrator"
+            },
+            "7": {
+              "role": "Executive Secretary"
+            },
+            "8": {
+              "role": "Executive Chairman"
+            },
+            "9": {
+              "role": "Executive Secretary"
+            },
+            "10": {
+              "role": "Executive Chairman"
+            },
+            "11": {
+              "role": "Executive Chairman"
+            },
+            "12": {
+              "role": "Sole Administrator"
+            },
+            "13": {
+              "role": "Executive Chairman"
+            }
           }
         }
       },
@@ -870,10 +896,10 @@
           "description9": "Dey keep accurate records of procurement activities and prepare reports for senior management and regulators."
         }
       },
-      "areaOfficers": {
+      "specialAdviser": {
         "role": "Area Officers",
         "bannerTitle": "Area Officers Functions & Operations",
-        "overview": "..."
+        "overview": "Special Advisers na appointed experts wey dey give strategic advice and specialized knowledge to the local government for different areas like ICT, tourism, health, youth and sport, intergovernmental relations, market development, community affairs, elderly affairs, civic engagement, boundary matters, and city care services. Dem dey play important role for shaping policy, bringing new ideas, and making sure the council dey deliver good and inclusive services to every ward and community inside Apapa."
       },
       "headAdminAndHumanResources": {
         "role": "Oga/Head, Admin & Human Resources Department",
