@@ -60,8 +60,7 @@ export const visionMissionItems = [
   {
     icon: <SENIcon />,
     title: "visionMissionItems.title4",
-    description:
-      "visionMissionItems.description4",
+    description: "visionMissionItems.description4",
   },
 ];
 
@@ -71,8 +70,7 @@ export const manifestoSections = [
     backgroundImage: "/image/security.jpeg",
     title: "manifestoSections.01.title",
     tagLabel: "manifestoSections.01.tagLabel",
-    content:
-      "manifestoSections.01.content",
+    content: "manifestoSections.01.content",
     activities: [
       "manifestoSections.01.activities.activity1",
       "manifestoSections.01.activities.activity2",
@@ -87,8 +85,7 @@ export const manifestoSections = [
     backgroundImage: "/image/health.jpeg",
     title: "manifestoSections.02.title",
     tagLabel: null,
-    content:
-      "manifestoSections.02.content",
+    content: "manifestoSections.02.content",
     activities: [
       "manifestoSections.02.activities.activity1",
       "manifestoSections.02.activities.activity2",
@@ -103,8 +100,7 @@ export const manifestoSections = [
     backgroundImage: "/image/environment.jpeg",
     title: "manifestoSections.03.title",
     tagLabel: "manifestoSections.03.tagLabel",
-    content:
-      "manifestoSections.03.content",
+    content: "manifestoSections.03.content",
     activities: [
       "manifestoSections.03.activities.activity1",
       "manifestoSections.03.activities.activity2",
@@ -120,8 +116,7 @@ export const manifestoSections = [
     backgroundImage: "/image/education.jpeg",
     title: "manifestoSections.04.title",
     tagLabel: "manifestoSections.04.tagLabel",
-    content:
-      "manifestoSections.04.content",
+    content: "manifestoSections.04.content",
     activities: [
       "manifestoSections.04.activities.activity1",
       "manifestoSections.04.activities.activity2",
@@ -135,91 +130,104 @@ export const timelineData = [
   {
     name: "Hon. Owolabi Adele Elijah",
     role: "timelineData.1.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4173.PNG",
     date: "2017–2021",
     isEven: false,
   },
   {
     name: "Alh. Babatunde Iuqman Alao",
     role: "timelineData.2.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4160.PNG",
     date: "2016–2017",
     isEven: true,
   },
   {
     name: "Hon. Bolaji C. Dada",
     role: "timelineData.3.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4163.PNG",
     date: "2014-2016",
     isEven: false,
   },
   {
     name: "Hon. Ayodeji Adebayo Joseph",
     role: "timelineData.4.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4158.PNG",
     date: "2008-2014",
     isEven: true,
   },
   {
-    name: "Hon. Owolabi Adele Elijah",
-    role: "timelineData.5.role",
-    image: "/svgs/Image-1.svg",
-    date: "2017–2021",
-    isEven: false,
-  },
-  {
     name: "Alh. Fariudeen Akodu",
     role: "timelineData.6.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4157.PNG",
     date: "2007-2008",
-    isEven: true,
+    isEven: false,
   },
   {
     name: "Hon. Bolaji Akinboboye",
     role: "timelineData.7.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4153.PNG",
     date: "2006-2007",
-    isEven: false,
+    isEven: true,
   },
   {
     name: "Sen. Muniru A. Muse",
     role: "timelineData.8.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4154.PNG",
     date: "2003-2006",
-    isEven: true,
+    isEven: false,
   },
   {
     name: "Barr. Adebimpe Otutuloro",
     role: "timelineData.9.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4152.PNG",
     date: "2002-2003",
-    isEven: false,
+    isEven: true,
   },
   {
     name: "Sen. Muniru A. Muse",
     role: "timelineData.10.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4162.PNG",
     date: "1999-2002",
+    isEven: false,
+  },
+  {
+    name: "Eng. Bayo Erikitola",
+    role: "timelineData.5.role",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4161.PNG",
+    date: "1998 - 1999",
     isEven: true,
   },
   {
     name: "Alh. Nurudeen Saka",
     role: "timelineData.11.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4156.PNG",
     date: "1997-1998",
     isEven: false,
   },
   {
     name: "Mrs Adebayo Soares",
     role: "timelineData.12.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4155.PNG",
     date: "1997",
     isEven: true,
   },
   {
     name: "Prince (Dr) Funsho Adetiba",
     role: "timelineData.13.role",
-    image: "/svgs/Image-1.svg",
+    image:
+      "/image/APAPA%20COUNCIL%20PHOTOS_/Past%20chairman%E2%80%99s_/IMG_4159.PNG",
     date: "1980-1983",
     isEven: false,
   },

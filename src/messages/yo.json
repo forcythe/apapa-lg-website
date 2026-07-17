@@ -412,19 +412,45 @@
           "badgeTitle": "Àwọn Alákóso Àtijọ́",
           "overview": "Láàárín ọ̀pọ̀ ọdún, Ìjọba Ìbílẹ̀ Apapa ti jẹ́ adarí nipasẹ́ àwọn olórí tó ní ìran, tí iṣẹ́ wọn sì ti dá ìtàn àti ìdàgbàsókè agbègbè náà sílẹ̀.",
           "timelineData": {
-            "1": { "role": "Alákóso Àgbà" },
-            "2": { "role": "Alákóso Adájọ́sọ" },
-            "3": { "role": "Akòwé Alákóso" },
-            "4": { "role": "Alákóso Àgbà" },
-            "5": { "role": "Alákóso Àgbà" },
-            "6": { "role": "Alákóso Adájọ́sọ" },
-            "7": { "role": "Akòwé Alákóso" },
-            "8": { "role": "Alákóso Àgbà" },
-            "9": { "role": "Akòwé Alákóso" },
-            "10": { "role": "Alákóso Àgbà" },
-            "11": { "role": "Alákóso Àgbà" },
-            "12": { "role": "Alákóso Adájọ́sọ" },
-            "13": { "role": "Alákóso Adájọ́sọ" }
+            "1": {
+              "role": "Alága Aláṣẹ"
+            },
+            "2": {
+              "role": "Adarí Alákòóso Kan ṣoṣo"
+            },
+            "3": {
+              "role": "Akọ̀wé Aláṣẹ"
+            },
+            "4": {
+              "role": "Alága Aláṣẹ"
+            },
+            "5": {
+              "role": "Adarí Alákòóso Kan ṣoṣo"
+            },
+            "6": {
+              "role": "Adarí Alákòóso Kan ṣoṣo"
+            },
+            "7": {
+              "role": "Akọ̀wé Aláṣẹ"
+            },
+            "8": {
+              "role": "Alága Aláṣẹ"
+            },
+            "9": {
+              "role": "Akọ̀wé Aláṣẹ"
+            },
+            "10": {
+              "role": "Alága Aláṣẹ"
+            },
+            "11": {
+              "role": "Alága Aláṣẹ"
+            },
+            "12": {
+              "role": "Adarí Alákòóso Kan ṣoṣo"
+            },
+            "13": {
+              "role": "Alága Aláṣẹ"
+            }
           }
         }
       },
@@ -870,10 +896,10 @@
           "description9": "Pípamọ́ àkọsílẹ̀ tó peye nípa gbogbo iṣẹ́ rírà, pẹ̀lú kontrákì, orders, àti ìsanwó, àti ṣíṣe ìròyìn fún ìṣàkóso àgbà àti àwọn alaṣẹ ìtẹ̀lé òfin."
         }
       },
-      "areaOfficers": {
-        "role": "Àwọn Oṣiṣẹ́ Agbègbè",
-        "bannerTitle": "Àwọn Iṣẹ́ àti Ìṣiṣẹ́ Àwọn Oṣiṣẹ́ Agbègbè",
-        "overview": "..."
+      "specialAdviser": {
+        "role": "Àwọn Olùdámọ̀ràn Pàtàkì",
+        "bannerTitle": "Àwọn Iṣẹ́ àti Ìṣiṣẹ́ Àwọn Olùdámọ̀ràn Pàtàkì",
+        "overview": "Àwọn Olùmọ̀ràn Pàtàkì jẹ́ àwọn àmọ̀dájú tí a yàn láti pèsè ìtọ́sọ́nà àti ìmọ̀ pàtàkì fún ìjọba àgbègbè nínú onírúurú ẹ̀ka bíi ICT, irin-ajo, ìlera, àwọn ọ̀dọ́ àti eré ìdárayá, àjọṣepọ̀ àárín ìjọba, ìdàgbàsókè ọjà, àwùjọ, àwọn àgbàlagbà, ìkópa aráàlú, àwọn ọ̀ràn ààlà, àti àwọn iṣẹ́ ìtọ́jú ìlú. Wọ́n ṣe ipa tó ṣe pàtàkì nínú dídàpọ̀ ètò ìmúlò, ṣíṣe àwọn ìmọ̀ tuntun, àti rírí dípé ìgbìmọ̀ ń pèsè àwọn iṣẹ́ gbígbéṣẹ́ tó sì ń gbé gbogbo èèyàn lárugẹ nínú gbogbo àdúgbò àti àwùjọ Apapa."
       },
       "headAdminAndHumanResources": {
         "role": "Olórí, Ẹ̀ka Ìṣàkóso Ọ́fíìsì àti Oríṣun Ènìyàn (HR)",
