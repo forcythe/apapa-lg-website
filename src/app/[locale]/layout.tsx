@@ -6,12 +6,29 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
+const siteUrl = "https://apapa.lg.gov.ng";
+
 export const metadata: Metadata = {
-  title: "Apapa",
-  description: "****",
-  icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
+  title: {
+    default: "Apapa Local Government Area | Official Website",
+    template: "%s | Apapa Local Government",
+  },
+  description:
+    "Official website of Apapa Local Government Area, Lagos State. Access LG news, services, opportunities, community programs, and updates.",
+  metadataBase: new URL(siteUrl),
+  openGraph: {
+    type: "website",
+    siteName: "Apapa Local Government",
+    images: [
+      {
+        url: "/svgs/logoHead.svg",
+        width: 84,
+        height: 84,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
   },
 };
 

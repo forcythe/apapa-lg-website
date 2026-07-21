@@ -288,9 +288,9 @@
         "description10": "The Environmental Services Department is responsible for managing and protecting the environment, including sanitation and environmental sustainability efforts.",
         "link10": "/government/organizational-structure/head-environmental-services-department",
 
-        "title11": "Clerk of the Legislative Arm",
-        "description11": "The Clerk of the Legislative Arm oversees legislative processes and ensures the smooth operation of the legislative body.",
-        "link11": "/government/organizational-structure/clerk-of-the-house",
+        "title11": "The Legislative Arm",
+        "description11": "The Legislative Arm is responsible for lawmaking, oversight, and representation of the people of Apapa. It operates as a legislative body with defined roles and responsibilities to ensure effective governance and service delivery to the community.",
+        "link11": "/government/organizational-structure/legislative-arm",
 
         "title12": "Public Affairs Unit",
         "description12": "The Public Affairs Unit manages public relations, communications, and media engagement to ensure effective information dissemination.",
@@ -511,7 +511,7 @@
       "slg": {
         "role": "SLG",
         "bannerTitle": "Secretary to the Local Government",
-        "badgeTitle": "",
+        "badgeTitle": "SECRETARY TO THE LOCAL GOVERNMENT",
         "overview": "The Secretary to the Local Government is a senior administrative officer who plays a key role in supporting the local government’s governance and ensuring that its administrative processes run smoothly. The position typically involves both high-level coordination and operational responsibilities.ß",
         "name": "Mr. John Bamidele",
         "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
@@ -786,7 +786,7 @@
         "bannerTitle": "Head of ICT (Information and Communication Technology) Unit",
         "badgeTitle": "HEAD OF ICT ",
         "overview": "The Head of ICT (Information and Communication Technology) Unit is responsible for overseeing the development, implementation, and management of the organization's technology infrastructure and services.",
-        "name": "Mr. Shaodara Temidayo Jamiu",
+        "name": "Mr. Shodara Temidayo Jamiu",
         "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
         "keyFunctions": {
           "title1": "ICT Strategy and Planning",
