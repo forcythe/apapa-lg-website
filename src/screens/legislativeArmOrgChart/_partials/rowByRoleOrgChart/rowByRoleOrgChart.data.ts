@@ -49,8 +49,8 @@ export const rowData: Row[] = [
       },
       { id: "spacer-5", role: "", isSpacer: true },
       {
-        id: "chip-whip",
-        role: "Chip Whip",
+        id: "chief-whip",
+        role: "Chief Whip",
         name: "Hon. Liadi Saheed",
         img: "/image/APAPA%20COUNCIL%20PHOTOS_/Counsellors_/NO%204.png",
       },
@@ -73,40 +73,6 @@ export const rowData: Row[] = [
         role: "Clerk of the House",
         name: "Mr Adebomi  Abayomi. O.",
         img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/R.png",
-      },
-    ],
-  },
-  {
-    rowId: 5,
-    roles: [
-      { id: "spacer-9", role: "", isSpacer: true },
-      { id: "spacer-10", role: "", isSpacer: true },
-      {
-        id: "sergent-at-arm",
-        role: "Sergent @ Arm",
-        name: "Sergent @ Arm",
-        img: "/image/placeholder.jpeg",
-      },
-      { id: "spacer-11", role: "", isSpacer: true },
-      {
-        id: "clerk-at-table",
-        role: "Clerk @ Table",
-        name: "Clerk @ Table",
-        img: "/image/placeholder.jpeg",
-      },
-    ],
-  },
-  {
-    rowId: 6,
-    roles: [
-      { id: "spacer-12", role: "", isSpacer: true },
-      { id: "spacer-13", role: "", isSpacer: true },
-      { id: "spacer-14", role: "", isSpacer: true },
-      {
-        id: "other-legislative-staffs",
-        role: "Other Legislative Staffs",
-        name: "Other Legislative Staffs",
-        img: "/image/placeholder.jpeg",
       },
     ],
   },

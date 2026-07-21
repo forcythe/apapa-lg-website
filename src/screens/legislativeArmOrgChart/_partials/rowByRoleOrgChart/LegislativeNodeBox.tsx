@@ -47,7 +47,7 @@ const LegislativeNodeBox: React.FC<NodeBoxProps> = ({ role, name, image }) => {
           isShowCloseIcon={false}
         >
           <div className="flex flex-col items-center gap-6 relative">
-            <div className="absolute -top-[44px] -right-[36px] cursor-pointer scale-125" onClick={() => setIsOpen(false)}>
+            <div className="absolute -top-3 -right-3 xs:-top-[44px] xs:-right-[36px] z-10 cursor-pointer scale-125" onClick={() => setIsOpen(false)}>
               <ModalCloseIcon />
             </div>
             <div className="w-full max-w-[400px] bg-white p-2 rounded-[24px] shadow-lg">

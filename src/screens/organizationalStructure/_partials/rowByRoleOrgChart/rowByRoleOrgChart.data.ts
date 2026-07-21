@@ -162,7 +162,7 @@ export const rowData: Row[] = [
         role: "slg.role",
         img: "/image/APAPA%20COUNCIL%20PHOTOS_/Head%20Management_/NO%20006.png",
         bannerTitle: "slg.bannerTitle",
-        badgeTitle: "VICE CHAIRMAN",
+        badgeTitle: "slg.badgeTitle",
         overview: "slg.overview",
         name: "slg.name",
         introduction:
