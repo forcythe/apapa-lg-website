@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Official website of Apapa Local Government Area, Lagos State. Access LG news, services, opportunities, community programs, and updates.",
     url: "https://apapa.lg.gov.ng",
-    images: [{ url: "/svgs/logoHead.svg", width: 84, height: 84 }],
+    images: [{ url: "/image/logoHead.png", width: 1200, height: 630 }],
   },
 };
 

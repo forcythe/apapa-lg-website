@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "History of Apapa | Apapa Local Government",
     description:
       "Discover Apapa's journey from a fishing village to Nigeria's leading maritime and port hub, and its formation as a Local Government Area in 1977.",
-    images: [{ url: "/svgs/logoHead.svg", width: 84, height: 84 }],
+    images: [{ url: "/image/logoHead.png", width: 1200, height: 630 }],
   },
 };
 

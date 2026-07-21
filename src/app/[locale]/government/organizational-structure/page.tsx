@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Organizational Structure | Apapa Local Government",
     description:
       "View the organizational structure of Apapa Local Government, including the Executive Chairman, Council Manager, Supervisors, and department heads.",
-    images: [{ url: "/svgs/logoHead.svg", width: 84, height: 84 }],
+    images: [{ url: "/image/logoHead.png", width: 1200, height: 630 }],
   },
 };
 

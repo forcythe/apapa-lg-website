@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     siteName: "Apapa Local Government",
     images: [
       {
-        url: "/svgs/logoHead.svg",
-        width: 84,
-        height: 84,
+        url: "/image/logoHead.png",
+        width: 1200,
+        height: 630,
       },
     ],
   },
