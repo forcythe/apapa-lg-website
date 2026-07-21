@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Blogs, News & Articles | Apapa Local Government",
     description:
       "Stay informed with the latest updates, official news, and articles from Apapa Local Government.",
-    images: [{ url: "/svgs/logoHead.svg", width: 84, height: 84 }],
+    images: [{ url: "/image/logoHead.png", width: 1200, height: 630 }],
   },
 };
 

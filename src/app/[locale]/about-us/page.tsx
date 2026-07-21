@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "About Us | Apapa Local Government",
     description:
       "Learn about Apapa Local Government's mission, vision, and core values as we drive impactful governance and sustainable development in Nigeria's foremost port city.",
-    images: [{ url: "/svgs/logoHead.svg", width: 84, height: 84 }],
+    images: [{ url: "/image/logoHead.png", width: 1200, height: 630 }],
   },
 };
 

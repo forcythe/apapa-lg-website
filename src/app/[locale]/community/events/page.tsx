@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Events | Apapa Local Government",
     description:
       "Stay updated on upcoming and past community events hosted by Apapa Local Government — engage, celebrate, and connect with your community.",
-    images: [{ url: "/svgs/logoHead.svg", width: 84, height: 84 }],
+    images: [{ url: "/image/logoHead.png", width: 1200, height: 630 }],
   },
 };
 
