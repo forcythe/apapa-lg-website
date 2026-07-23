@@ -28,7 +28,7 @@ const getCustomStyleForRole = (
   rowId: number,
   roleId: string
 ): React.CSSProperties => {
-  if (rowId === 3 && roleId === "supervisors") {
+  if (rowId === 3 && roleId === "supervisors-and-special-advisers") {
     return { paddingLeft: "500px" };
   }
   if (rowId === 4 || rowId === 5) {
@@ -64,7 +64,7 @@ const getUpperLineClasses = (rowId: number): string => {
     case 4:
       return "max-w-[1210px] mx-auto ml-[-15px]";
     case 5:
-      return "max-w-[690px] mx-auto ml-[-15px]";
+      return "max-w-[1210px] mx-auto ml-[-15px]";
     case 2:
       return "max-w-[1008px] mx-auto";
     case 6:
@@ -76,36 +76,12 @@ const getUpperLineClasses = (rowId: number): string => {
   }
 };
 
-const getSecondaryLineClasses = (rowId: number): string => {
-  switch (rowId) {
-    case 5:
-      return "max-w-[500px] mx-auto top-[-100px] left-[198px]";
-    case 1:
-      return "max-w-[610px] mx-auto top-[50px] left-0";
-    default:
-      return "";
-  }
+const getSecondaryLineClasses = (_rowId: number): string => {
+  return "";
 };
 
-const getVerticalLineElement = (rowId: number): JSX.Element | null => {
-  switch (rowId) {
-    case 1:
-      return (
-        <div
-          className="absolute h-[2146px] w-[2px] left-0 bg-black top-[51px]"
-          key="vertical-line-1"
-        />
-      );
-    case 5:
-      return (
-        <div
-          className="absolute h-[505px] w-[2px] left-[196px] top-[-100px] bg-black"
-          key="vertical-line-5"
-        />
-      );
-    default:
-      return null;
-  }
+const getVerticalLineElement = (_rowId: number): JSX.Element | null => {
+  return null;
 };
 
 const RowByRoleOrgChart: React.FC = () => {
@@ -162,18 +138,6 @@ const RowByRoleOrgChart: React.FC = () => {
             )}
 
             {getVerticalLineElement(row.rowId)}
-
-            {/* {row.rowId === 1 && (
-              <div
-                className={`absolute h-[2146px] w-[2px] left-0 bg-black top-[51px]`}
-              />
-            )}
-
-            {row.rowId === 5 && (
-              <div
-                className={`absolute h-[505px] w-[2px] left-[196px] top-[-100px] bg-black`}
-              />
-            )} */}
           </div>
         );
       })}

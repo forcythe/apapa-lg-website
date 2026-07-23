@@ -541,13 +541,10 @@
         "bannerTitle": "Legislative Arm of the Local Government",
         "overview": ""
       },
-      "supervisors": {
-        "role": "Supervisors",
-        "bannerTitle": "Council Supervisors",
-        "badgeTitle": "",
-        "overview": "Council Supervisors in a local government are elected or appointed officials responsible for overseeing the implementation of various programs, projects, and services within specific sectors or departments. They serve as a link between the elected council and the local community, ensuring that the local government's policies and decisions are effectively executed at the grassroots level.",
-        "name": "",
-        "introduction": "",
+      "supervisorsAndSpecialAdvisers": {
+        "role": "Supervisors and Special Advisers",
+        "bannerTitle": "Supervisors and Special Advisers",
+        "overview": "Council Supervisors in a local government are elected or appointed officials responsible for overseeing the implementation of various programs, projects, and services within specific sectors or departments. They serve as a link between the elected council and the local community, ensuring that the local government's policies and decisions are effectively executed at the grassroots level. Special Advisers are appointed experts who provide strategic guidance and specialized knowledge to the local government across a wide range of sectors including ICT, tourism, health, youth and sport, intergovernmental relations, market development, community affairs, elderly affairs, civic engagement, boundary matters, and city care services. They play a critical role in shaping policy, driving innovation, and ensuring that the council delivers effective and inclusive services to every ward and community within Apapa.",
         "keyFunctions": {
           "title1": "Oversight of Local Services and Projects",
           "description1": "Supervisors are tasked with overseeing the delivery of services within their assigned sectors, which may include education, health, infrastructure, agriculture, housing, and others.",
@@ -894,9 +891,9 @@
         }
       },
       "specialAdviser": {
-        "role": "Special Advisers",
-        "bannerTitle": "Special Adviser Functions & Operations",
-        "overview": "Special Advisers are appointed experts who provide strategic guidance and specialized knowledge to the local government across a wide range of sectors including ICT, tourism, health, youth and sport, intergovernmental relations, market development, community affairs, elderly affairs, civic engagement, boundary matters, and city care services. They play a critical role in shaping policy, driving innovation, and ensuring that the council delivers effective and inclusive services to every ward and community within Apapa."
+        "role": "...",
+        "bannerTitle": "...",
+        "overview": "..."
       },
       "headAdminAndHumanResources": {
         "role": "Head, Admin & Human Resources Department",
@@ -926,6 +923,32 @@
         "role": "Head, Finance & Accounts Department",
         "bannerTitle": "Finance & Accounts Department Functions & Operations",
         "badgeTitle": "HEAD OF FINANCE AND ACCOUNTING",
+        "overview": "The Finance & Accounts Department is responsible for managing the local government’s financial health, ensuring transparency, and maintaining financial integrity. This department oversees financial reporting, accounting practices, and compliance with applicable regulations.",
+        "name": "MRS ADEPOJU-CONDE FOLUKE MARY",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "keyFunctions": {
+          "title1": "Financial Reporting",
+          "description1": "Prepare timely and accurate financial statements, including profit and loss statements, balance sheets, and cash flow statements. Ensure compliance with relevant accounting standards and financial regulations.",
+          "title2": "Accounting Operations",
+          "description2": "Manage day-to-day accounting functions, including accounts payable and receivable, payroll, and general ledger maintenance. Implement and oversee internal controls to mitigate financial risks.",
+          "title3": "Cash Flow Management",
+          "description3": "Monitor cash flow and financial transactions to ensure the organization has sufficient liquidity to meet its obligations. Develop strategies for optimizing cash management and investments.",
+          "title4": "Financial Analysis",
+          "description4": "Conduct financial analysis and cost-benefit assessments to support decision-making. Provide insights into financial performance and identify areas for improvement.",
+          "title5": "Audit and Compliance",
+          "description5": "Coordinate internal and external audits and ensure compliance with financial regulations. Implement recommendations from audits to enhance financial controls and processes.",
+          "title6": "Tax Management",
+          "description6": "Prepare and file tax returns, ensuring compliance with tax laws. Provide guidance on tax planning and implications of financial decisions.",
+          "title7": "Stakeholder Communication",
+          "description7": "Communicate financial performance and budget status to senior management and other stakeholders. Prepare presentations and reports for the board and various committees.",
+          "title8": "Staff Development",
+          "description8": "Supervise, train, and develop finance and accounting staff to enhance their skills and efficiency. Foster a constructive work environment and promote continuous learning in financial practices."
+        }
+      },
+      "councilTreasurer": {
+        "role": "Council Treasurer",
+        "bannerTitle": "Council Treasurer",
+        "badgeTitle": "COUNCIL TREASURER",
         "overview": "The Finance & Accounts Department is responsible for managing the local government’s financial health, ensuring transparency, and maintaining financial integrity. This department oversees financial reporting, accounting practices, and compliance with applicable regulations.",
         "name": "MRS ADEPOJU-CONDE FOLUKE MARY",
         "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
