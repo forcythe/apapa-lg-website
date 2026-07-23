@@ -29,27 +29,25 @@ const NodeBox: React.FC<NodeBoxProps> = ({ role, rowId, roleId, image }) => {
 
   const arrowBottom = (
     <div className="flex flex-col items-center">
-      {/* Vertical line */}
-      <div
-        className={`w-[2px] ${
-          roleId === "council-manager"
-            ? "h-[892px]"
-            : roleId === "legislative-arm"
-            ? "h-[318px]"
-            : "h-[100px]"
-        } bg-black`}
+      {roleId !== "legislative-arm" && (
+        <>
+          <div
+            className={`w-[2px] ${
+              roleId === "council-manager"
+                ? "h-[892px]"
+                : "h-[100px]"
+            } bg-black`}
+          />
+          <div
+        style={{
+          width: 0,
+          height: 0,
+          borderLeft: "5px solid transparent",
+          borderRight: "5px solid transparent",
+          borderTop: "7px solid black",
+        }}
       />
-      {/* Upward arrowhead flipped to point down from the node’s bottom */}
-      {roleId !== "council-manager" && roleId !== "legislative-arm" && (
-        <div
-          style={{
-            width: 0,
-            height: 0,
-            borderLeft: "5px solid transparent",
-            borderRight: "5px solid transparent",
-            borderTop: "7px solid black",
-          }}
-        />
+        </>
       )}
     </div>
   );

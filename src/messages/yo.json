@@ -543,13 +543,10 @@
         "bannerTitle": "Ẹ̀ka Aṣòfin ti Ìjọba Ìbílẹ̀",
         "overview": "..."
       },
-      "supervisors": {
-        "role": "Àwọn Alábòójútó (Supervisors)",
-        "bannerTitle": "Àwọn Alábòójútó Ìgbìmọ̀ (Council Supervisors)",
-        "badgeTitle": "",
-        "overview": "Àwọn Alábòójútó Ìgbìmọ̀ nínú ìjọba àgbègbè jẹ́ àwọn aṣojú tí a yàn tàbí tí a dìbò yàn láti bójú tó ìmúṣe àwọn ètò, iṣẹ́-ìṣe, àti iṣẹ́ ìjọba nínú ẹ̀ka pàtó. Wọ́n jẹ́ asopọ̀ láàárín ìgbìmọ̀ tí a dìbò yàn lélẹ̀ àti àwùjọ, kí ìlànà àti ìpinnu ìjọba àgbègbè lè ṣiṣẹ́ dáadáa ní ìpele ìpìlẹ̀ (grassroots).",
-        "name": "",
-        "introduction": "",
+      "supervisorsAndSpecialAdvisers": {
+        "role": "Àwọn Alábòójútó àti Àwọn Olùdámọ̀ràn Pàtàkì",
+        "bannerTitle": "Àwọn Alábòójútó àti Àwọn Olùdámọ̀ràn Pàtàkì",
+        "overview": "Àwọn Alábòójútó Ìgbìmọ̀ nínú ìjọba àgbègbè jẹ́ àwọn aṣojú tí a yàn tàbí tí a dìbò yàn láti bójú tó ìmúṣe àwọn ètò, iṣẹ́-ìṣe, àti iṣẹ́ ìjọba nínú ẹ̀ka pàtó. Wọ́n jẹ́ asopọ̀ láàárín ìgbìmọ̀ tí a dìbò yàn lélẹ̀ àti àwùjọ, kí ìlànà àti ìpinnu ìjọba àgbègbè lè ṣiṣẹ́ dáadáa ní ìpele ìpìlẹ̀ (grassroots). Àwọn Olùmọ̀ràn Pàtàkì jẹ́ àwọn àmọ̀dájú tí a yàn láti pèsè ìtọ́sọ́nà àti ìmọ̀ pàtàkì fún ìjọba àgbègbè nínú onírúurú ẹ̀ka bíi ICT, irin-ajo, ìlera, àwọn ọ̀dọ́ àti eré ìdárayá, àjọṣepọ̀ àárín ìjọba, ìdàgbàsókè ọjà, àwùjọ, àwọn àgbàlagbà, ìkópa aráàlú, àwọn ọ̀ràn ààlà, àti àwọn iṣẹ́ ìtọ́jú ìlú. Wọ́n ṣe ipa tó ṣe pàtàkì nínú dídàpọ̀ ètò ìmúlò, ṣíṣe àwọn ìmọ̀ tuntun, àti rírí dípé ìgbìmọ̀ ń pèsè àwọn iṣẹ́ gbígbéṣẹ́ tó sì ń gbé gbogbo èèyàn lárugẹ nínú gbogbo àdúgbò àti àwùjọ Apapa.",
         "keyFunctions": {
           "title1": "Ìbòjú-tó Iṣẹ́ àti Àwọn Iṣẹ́-ìṣe Àgbègbè",
           "description1": "Wọ́n ń bójú tó bí a ṣe ń pèsè iṣẹ́ nínú ẹ̀ka tí a yàn fún wọn, bíi ẹ̀kọ́, ìlera, amáyédẹrùn, ogbin, ilé, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ.",
@@ -929,6 +926,32 @@
         "role": "Olórí, Ẹ̀ka Ìṣúná àti Ìṣirò Owó",
         "bannerTitle": "Ìṣẹ́ àti Ìmúlò Ẹ̀ka Ìṣúná àti Ìṣirò Owó",
         "badgeTitle": "OLÓRÍ ÌṢÚNÁ ÀTI ÌṢIRÒ OWÓ",
+        "overview": "Ẹ̀ka Ìṣúná àti Ìṣirò Owó ló ń ṣàbójútó ìlera ìṣúná ìjọba ìbílẹ̀, rí i dájú pé ìhàn gbangba wà, àti pé ìwà òdodo/ìbáṣepọ̀ pẹ̀lú owó (financial integrity) wà. Ẹ̀ka yìí tún ń ṣàbójútó ìròyìn ìṣúná, ìmúlò ìṣirò owó, àti ìbámu pẹ̀lú òfin/ìlànà tó yẹ.",
+        "name": "MRS ADEPOJU-CONDE FOLUKE MARY",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "keyFunctions": {
+          "title1": "Ìròyìn Ìṣúná (Financial Reporting)",
+          "description1": "Ṣíṣe ìwé ìṣúná tó péye ní àkókò, pẹ̀lú profit and loss, balance sheet, àti cash flow. Rí i dájú pé ìbámu pẹ̀lú ìlànà ìṣirò owó àti òfin ìṣúná wà.",
+          "title2": "Ìṣẹ́ Ìṣirò Owó (Accounting Operations)",
+          "description2": "Ṣíṣàkóso iṣẹ́ ìṣirò owó ojoojúmọ́, pẹ̀lú accounts payable/receivable, payroll, àti ìtọju general ledger. Mímú ìṣàkóso inú (internal controls) ṣiṣẹ́ láti dín ewu ìṣúná kù.",
+          "title3": "Ìṣàkóso Owo Wíwòlé-Jáde (Cash Flow Management)",
+          "description3": "Títẹ̀lé cash flow àti ìṣúná ìbámu kí àjọ lè ní owó tó tó láti bá ojúṣe rẹ̀ lọ. Ṣíṣe ọ̀nà láti mu ìṣàkóso owó àti ìdókòwò dara.",
+          "title4": "Ìtúpalẹ̀ Ìṣúná (Financial Analysis)",
+          "description4": "Ṣíṣe ìtúpalẹ̀ ìṣúná àti cost-benefit láti ran ìpinnu lọ́wọ́. Pípèsè ìmúlò/ìmọ̀ràn nípa iṣẹ́ ìṣúná àti ibi tí a lè mu dara.",
+          "title5": "Àyẹ̀wò Ìṣúná àti Ìbámu (Audit and Compliance)",
+          "description5": "Ìṣọ̀kan àyẹ̀wò inú àti òde (audits) àti rí i dájú pé ìbámu pẹ̀lú òfin ìṣúná wà. Mímú àbá audit ṣiṣẹ́ láti mú internal controls àti ìlànà dara.",
+          "title6": "Ìṣàkóso Owó-ori (Tax Management)",
+          "description6": "Ṣíṣe àti fífi owó-ori (tax returns) sílẹ̀ ní ìbámu pẹ̀lú òfin owó-ori. Pípèsè ìmọ̀ràn nípa ìṣètò owó-ori àti ipa rẹ̀ lórí ìpinnu ìṣúná.",
+          "title7": "Ìbánisọ̀rọ̀ Pẹ̀lú Alábáṣiṣẹ́ (Stakeholder Communication)",
+          "description7": "Bíbánisọ̀rọ̀ nípa iṣẹ́ ìṣúná àti ipo ìṣúná pẹ̀lú ìṣàkóso àgbà àti alábáṣiṣẹ́. Ṣíṣe àfihàn (presentations) àti ìròyìn fún board àti kọ̀míìtì.",
+          "title8": "Ìdàgbàsókè Oṣiṣẹ́ (Staff Development)",
+          "description8": "Ṣíṣàbójútó, ìkẹ́kọ̀ọ́, àti ìdàgbàsókè oṣiṣẹ́ finance/accounting láti mú ọgbọn àti iṣẹ́ wọn dára. Dídá ayika iṣẹ́ rere sílẹ̀ àti gbigbega ẹ̀kọ́ títílọ́."
+        }
+      },
+      "councilTreasurer": {
+        "role": "Olùṣọ́ Owó Ìgbìmọ̀",
+        "bannerTitle": "Olùṣọ́ Owó Ìgbìmọ̀",
+        "badgeTitle": "OLÙṢỌ́ OWÓ ÌGBÌMỌ̀",
         "overview": "Ẹ̀ka Ìṣúná àti Ìṣirò Owó ló ń ṣàbójútó ìlera ìṣúná ìjọba ìbílẹ̀, rí i dájú pé ìhàn gbangba wà, àti pé ìwà òdodo/ìbáṣepọ̀ pẹ̀lú owó (financial integrity) wà. Ẹ̀ka yìí tún ń ṣàbójútó ìròyìn ìṣúná, ìmúlò ìṣirò owó, àti ìbámu pẹ̀lú òfin/ìlànà tó yẹ.",
         "name": "MRS ADEPOJU-CONDE FOLUKE MARY",
         "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",

@@ -96,9 +96,56 @@ export const rowData: Row[] = [
         ],
       },
       {
-        id: "spacer-1",
-        role: "",
-        isSpacer: true,
+        id: "council-treasurer",
+        role: "councilTreasurer.role",
+        img: "/image/placeholder.jpeg",
+        bannerTitle: "councilTreasurer.bannerTitle",
+        badgeTitle: "councilTreasurer.badgeTitle",
+        overview: "councilTreasurer.overview",
+        name: "councilTreasurer.name",
+        introduction: "councilTreasurer.introduction",
+        keyFunctions: [
+          {
+            id: 1,
+            title: "councilTreasurer.keyFunctions.title1",
+            desc: "councilTreasurer.keyFunctions.description1",
+          },
+          {
+            id: 2,
+            title: "councilTreasurer.keyFunctions.title2",
+            desc: "councilTreasurer.keyFunctions.description2",
+          },
+          {
+            id: 3,
+            title: "councilTreasurer.keyFunctions.title3",
+            desc: "councilTreasurer.keyFunctions.description3",
+          },
+          {
+            id: 4,
+            title: "councilTreasurer.keyFunctions.title4",
+            desc: "councilTreasurer.keyFunctions.description4",
+          },
+          {
+            id: 5,
+            title: "councilTreasurer.keyFunctions.title5",
+            desc: "councilTreasurer.keyFunctions.description5",
+          },
+          {
+            id: 6,
+            title: "councilTreasurer.keyFunctions.title6",
+            desc: "councilTreasurer.keyFunctions.description6",
+          },
+          {
+            id: 7,
+            title: "councilTreasurer.keyFunctions.title7",
+            desc: "councilTreasurer.keyFunctions.description7",
+          },
+          {
+            id: 8,
+            title: "councilTreasurer.keyFunctions.title8",
+            desc: "councilTreasurer.keyFunctions.description8",
+          },
+        ],
       },
       {
         id: "council-manager",
@@ -228,12 +275,11 @@ export const rowData: Row[] = [
     rowId: 3,
     roles: [
       {
-        id: "supervisors",
-        role: "supervisors.role",
+        id: "supervisors-and-special-advisers",
+        role: "supervisorsAndSpecialAdvisers.role",
         img: "/svgs/logoHead.svg",
-        bannerTitle: "supervisors.bannerTitle",
-        // badgeTitle: "VICE CHAIRMAN",
-        overview: "supervisors.overview",
+        bannerTitle: "supervisorsAndSpecialAdvisers.bannerTitle",
+        overview: "supervisorsAndSpecialAdvisers.overview",
         team: [
           {
             name: "Engr. Oluwatoyin Lawal",
@@ -275,52 +321,132 @@ export const rowData: Row[] = [
             title: "Supervisor for Political and Legislative Affairs",
             img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 17.png",
           },
+          {
+            name: "Mr Michael Kolawole",
+            title: "Special Adviser Special Duties",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 9.png",
+          },
+          {
+            name: "Miss Ruth Udemba",
+            title: "Special Adviser ICT",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 12.png",
+          },
+          {
+            name: "Miss Ibukunmi Akugbe Aluko",
+            title: "Special Adviser Intergovernmental Relations",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 13.png",
+          },
+          {
+            name: "Mr Omosuyi Olaolu O.",
+            title: "Special Adviser Tourism",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 16.png",
+          },
+          {
+            name: "Prince Adeyinka Yusuf Aromire",
+            title: "Special Adviser Youth and Sport",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 18.png",
+          },
+          {
+            name: "Mr Samuel Olawale Tairu",
+            title: "Special Adviser Health",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 19.png",
+          },
+          {
+            name: "Olasode Hammed O.",
+            title: "Special Adviser, Market Development",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/20.png",
+          },
+          {
+            name: "Babatunde Taofeek",
+            title: "Special Adviser, City Care Ward A",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/21.png",
+          },
+          {
+            name: "Aromire O. Samson",
+            title: "Special Adviser, City Care Ward E",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/22.png",
+          },
+          {
+            name: "Sandra Ilawole",
+            title: "Special Adviser Elderly Affairs",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/23.png",
+          },
+          {
+            name: "Oniyitan Modupe Grace",
+            title: "Special Adviser Civic Engagement",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/24.png",
+          },
+          {
+            name: "Olayiwola Adekunle",
+            title: "Special Adviser, Community Affairs",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/25.png",
+          },
+          {
+            name: "Adesola Adesanya-Atiroko",
+            title: "Special Adviser, City Care Ward C",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/26.png",
+          },
+          {
+            name: "Olusanya Olufemi",
+            title: "Special Adviser, City Care Ward D",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/27.png",
+          },
+          {
+            name: "Babalola Bankole Mogaji",
+            title: "Special Adviser, Boundary Matters",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/28.png",
+          },
+          {
+            name: "Arugba Michael",
+            title: "Special Adviser, City Care Ward B",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/29.png",
+          },
         ],
         keyFunctions: [
           {
             id: 1,
-            title: "supervisors.keyFunctions.title1",
-            desc: "supervisors.keyFunctions.description1",
+            title: "supervisorsAndSpecialAdvisers.keyFunctions.title1",
+            desc: "supervisorsAndSpecialAdvisers.keyFunctions.description1",
           },
           {
             id: 2,
-            title: "supervisors.keyFunctions.title2",
-            desc: "supervisors.keyFunctions.description2",
+            title: "supervisorsAndSpecialAdvisers.keyFunctions.title2",
+            desc: "supervisorsAndSpecialAdvisers.keyFunctions.description2",
           },
           {
             id: 3,
-            title: "supervisors.keyFunctions.title3",
-            desc: "supervisors.keyFunctions.description3",
+            title: "supervisorsAndSpecialAdvisers.keyFunctions.title3",
+            desc: "supervisorsAndSpecialAdvisers.keyFunctions.description3",
           },
           {
             id: 4,
-            title: "supervisors.keyFunctions.title4",
-            desc: "supervisors.keyFunctions.description4",
+            title: "supervisorsAndSpecialAdvisers.keyFunctions.title4",
+            desc: "supervisorsAndSpecialAdvisers.keyFunctions.description4",
           },
           {
             id: 5,
-            title: "supervisors.keyFunctions.title5",
-            desc: "supervisors.keyFunctions.description5",
+            title: "supervisorsAndSpecialAdvisers.keyFunctions.title5",
+            desc: "supervisorsAndSpecialAdvisers.keyFunctions.description5",
           },
           {
             id: 6,
-            title: "supervisors.keyFunctions.title6",
-            desc: "supervisors.keyFunctions.description6",
+            title: "supervisorsAndSpecialAdvisers.keyFunctions.title6",
+            desc: "supervisorsAndSpecialAdvisers.keyFunctions.description6",
           },
           {
             id: 7,
-            title: "supervisors.keyFunctions.title7",
-            desc: "supervisors.keyFunctions.description7",
+            title: "supervisorsAndSpecialAdvisers.keyFunctions.title7",
+            desc: "supervisorsAndSpecialAdvisers.keyFunctions.description7",
           },
           {
             id: 8,
-            title: "supervisors.keyFunctions.title8",
-            desc: "supervisors.keyFunctions.description8",
+            title: "supervisorsAndSpecialAdvisers.keyFunctions.title8",
+            desc: "supervisorsAndSpecialAdvisers.keyFunctions.description8",
           },
           {
             id: 9,
-            title: "supervisors.keyFunctions.title9",
-            desc: "supervisors.keyFunctions.description9",
+            title: "supervisorsAndSpecialAdvisers.keyFunctions.title9",
+            desc: "supervisorsAndSpecialAdvisers.keyFunctions.description9",
           },
         ],
       },
@@ -698,6 +824,58 @@ export const rowData: Row[] = [
           },
         ],
       },
+      {
+        id: "head-finance-accounts",
+        role: "headFinanceAndAccounts.role",
+        img: "/image/placeholder.jpeg",
+        bannerTitle: "headFinanceAndAccounts.bannerTitle",
+        badgeTitle: "headFinanceAndAccounts.badgeTitle",
+        overview: "headFinanceAndAccounts.overview",
+        name: "headFinanceAndAccounts.name",
+        introduction: "headFinanceAndAccounts.introduction",
+        keyFunctions: [
+          {
+            id: 1,
+            title: "headFinanceAndAccounts.keyFunctions.title1",
+            desc: "headFinanceAndAccounts.keyFunctions.description1",
+          },
+          {
+            id: 2,
+            title: "headFinanceAndAccounts.keyFunctions.title2",
+            desc: "headFinanceAndAccounts.keyFunctions.description2",
+          },
+          {
+            id: 3,
+            title: "headFinanceAndAccounts.keyFunctions.title3",
+            desc: "headFinanceAndAccounts.keyFunctions.description3",
+          },
+          {
+            id: 4,
+            title: "headFinanceAndAccounts.keyFunctions.title4",
+            desc: "headFinanceAndAccounts.keyFunctions.description4",
+          },
+          {
+            id: 5,
+            title: "headFinanceAndAccounts.keyFunctions.title5",
+            desc: "headFinanceAndAccounts.keyFunctions.description5",
+          },
+          {
+            id: 6,
+            title: "headFinanceAndAccounts.keyFunctions.title6",
+            desc: "headFinanceAndAccounts.keyFunctions.description6",
+          },
+          {
+            id: 7,
+            title: "headFinanceAndAccounts.keyFunctions.title7",
+            desc: "headFinanceAndAccounts.keyFunctions.description7",
+          },
+          {
+            id: 8,
+            title: "headFinanceAndAccounts.keyFunctions.title8",
+            desc: "headFinanceAndAccounts.keyFunctions.description8",
+          },
+        ],
+      },
       // {
       //   id: "clerk-of-the-house",
       //   role: "clerkOfLegislativeArm.role",
@@ -989,100 +1167,6 @@ export const rowData: Row[] = [
         ],
       },
       {
-        id: "special-adviser",
-        role: "specialAdviser.role",
-        img: "/svgs/logoHead.svg",
-        bannerTitle: "specialAdviser.bannerTitle",
-        overview: "specialAdviser.overview",
-        team: [
-          {
-            name: "Mr Michael Kolawole",
-            title: "Special Adviser Special Duties",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 9.png",
-          },
-          {
-            name: "Miss Ruth Udemba",
-            title: "Special Adviser ICT",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 12.png",
-          },
-          {
-            name: "Miss Ibukunmi Akugbe Aluko",
-            title: "Special Adviser Intergovernmental Relations",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 13.png",
-          },
-          {
-            name: "Mr Omosuyi Olaolu O.",
-            title: "Special Adviser Tourism",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 16.png",
-          },
-          {
-            name: "Prince Adeyinka Yusuf Aromire",
-            title: "Special Adviser Youth and Sport",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 18.png",
-          },
-          {
-            name: "Mr Samuel Olawale Tairu",
-            title: "Special Adviser Health",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 19.png",
-          },
-          {
-            name: "Olasode Hammed O.",
-            title: "Special Adviser, Market Development",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/20.png",
-          },
-          {
-            name: "Babatunde Taofeek",
-            title: "Special Adviser, City Care Ward A",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/21.png",
-          },
-          {
-            name: "Aromire O. Samson",
-            title: "Special Adviser, City Care Ward E",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/22.png",
-          },
-          {
-            name: "Sandra Ilawole",
-            title: "Special Adviser Elderly Affairs",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/23.png",
-          },
-          {
-            name: "Oniyitan Modupe Grace",
-            title: "Special Adviser Civic Engagement",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/24.png",
-          },
-          {
-            name: "Olayiwola Adekunle",
-            title: "Special Adviser, Community Affairs",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/25.png",
-          },
-          {
-            name: "Adesola Adesanya-Atiroko",
-            title: "Special Adviser, City Care Ward C",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/26.png",
-          },
-          {
-            name: "Olusanya Olufemi",
-            title: "Special Adviser, City Care Ward D",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/27.png",
-          },
-          {
-            name: "Babalola Bankole Mogaji",
-            title: "Special Adviser, Boundary Matters",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/28.png",
-          },
-          {
-            name: "Arugba Michael",
-            title: "Special Adviser, City Care Ward B",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/29.png",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    rowId: 6,
-    roles: [
-      {
         id: "head-admin-human-resources",
         role: "headAdminAndHumanResources.role",
         img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/m.png",
@@ -1129,63 +1213,6 @@ export const rowData: Row[] = [
           },
         ],
       },
-      {
-        id: "head-finance-accounts",
-        role: "headFinanceAndAccounts.role",
-        img: "/image/placeholder.jpeg",
-        bannerTitle: "headFinanceAndAccounts.bannerTitle",
-        badgeTitle: "headFinanceAndAccounts.badgeTitle",
-        overview: "headFinanceAndAccounts.overview",
-        name: "headFinanceAndAccounts.name",
-        introduction: "headFinanceAndAccounts.introduction",
-        keyFunctions: [
-          {
-            id: 1,
-            title: "headFinanceAndAccounts.keyFunctions.title1",
-            desc: "headFinanceAndAccounts.keyFunctions.description1",
-          },
-          {
-            id: 2,
-            title: "headFinanceAndAccounts.keyFunctions.title2",
-            desc: "headFinanceAndAccounts.keyFunctions.description2",
-          },
-          {
-            id: 3,
-            title: "headFinanceAndAccounts.keyFunctions.title3",
-            desc: "headFinanceAndAccounts.keyFunctions.description3",
-          },
-          {
-            id: 4,
-            title: "headFinanceAndAccounts.keyFunctions.title4",
-            desc: "headFinanceAndAccounts.keyFunctions.description4",
-          },
-          {
-            id: 5,
-            title: "headFinanceAndAccounts.keyFunctions.title5",
-            desc: "headFinanceAndAccounts.keyFunctions.description5",
-          },
-          {
-            id: 6,
-            title: "headFinanceAndAccounts.keyFunctions.title6",
-            desc: "headFinanceAndAccounts.keyFunctions.description6",
-          },
-          {
-            id: 7,
-            title: "headFinanceAndAccounts.keyFunctions.title7",
-            desc: "headFinanceAndAccounts.keyFunctions.description7",
-          },
-          {
-            id: 8,
-            title: "headFinanceAndAccounts.keyFunctions.title8",
-            desc: "headFinanceAndAccounts.keyFunctions.description8",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    rowId: 7,
-    roles: [
       {
         id: "head-public-affairs-unit",
         role: "headPublicAffairsUnit.role",
@@ -1299,6 +1326,95 @@ export const rowData: Row[] = [
             desc: "headAuditUnit.keyFunctions.description9",
           },
         ],
+      },
+      {
+        id: "special-adviser",
+        role: "specialAdviser.role",
+        img: "/svgs/logoHead.svg",
+        bannerTitle: "specialAdviser.bannerTitle",
+        overview: "specialAdviser.overview",
+        // team: [
+        //   {
+        //     name: "Mr Michael Kolawole",
+        //     title: "Special Adviser Special Duties",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 9.png",
+        //   },
+        //   {
+        //     name: "Miss Ruth Udemba",
+        //     title: "Special Adviser ICT",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 12.png",
+        //   },
+        //   {
+        //     name: "Miss Ibukunmi Akugbe Aluko",
+        //     title: "Special Adviser Intergovernmental Relations",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 13.png",
+        //   },
+        //   {
+        //     name: "Mr Omosuyi Olaolu O.",
+        //     title: "Special Adviser Tourism",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 16.png",
+        //   },
+        //   {
+        //     name: "Prince Adeyinka Yusuf Aromire",
+        //     title: "Special Adviser Youth and Sport",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 18.png",
+        //   },
+        //   {
+        //     name: "Mr Samuel Olawale Tairu",
+        //     title: "Special Adviser Health",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 19.png",
+        //   },
+        //   {
+        //     name: "Olasode Hammed O.",
+        //     title: "Special Adviser, Market Development",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/20.png",
+        //   },
+        //   {
+        //     name: "Babatunde Taofeek",
+        //     title: "Special Adviser, City Care Ward A",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/21.png",
+        //   },
+        //   {
+        //     name: "Aromire O. Samson",
+        //     title: "Special Adviser, City Care Ward E",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/22.png",
+        //   },
+        //   {
+        //     name: "Sandra Ilawole",
+        //     title: "Special Adviser Elderly Affairs",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/23.png",
+        //   },
+        //   {
+        //     name: "Oniyitan Modupe Grace",
+        //     title: "Special Adviser Civic Engagement",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/24.png",
+        //   },
+        //   {
+        //     name: "Olayiwola Adekunle",
+        //     title: "Special Adviser, Community Affairs",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/25.png",
+        //   },
+        //   {
+        //     name: "Adesola Adesanya-Atiroko",
+        //     title: "Special Adviser, City Care Ward C",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/26.png",
+        //   },
+        //   {
+        //     name: "Olusanya Olufemi",
+        //     title: "Special Adviser, City Care Ward D",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/27.png",
+        //   },
+        //   {
+        //     name: "Babalola Bankole Mogaji",
+        //     title: "Special Adviser, Boundary Matters",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/28.png",
+        //   },
+        //   {
+        //     name: "Arugba Michael",
+        //     title: "Special Adviser, City Care Ward B",
+        //     img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/29.png",
+        //   },
+        // ],
       },
     ],
   },

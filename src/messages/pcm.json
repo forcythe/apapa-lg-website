@@ -543,13 +543,10 @@
         "bannerTitle": "Legislative Arm of the Local Government",
         "overview": ""
       },
-      "supervisors": {
-        "role": "Supervisors",
-        "bannerTitle": "Council Supervisors",
-        "badgeTitle": "",
-        "overview": "Council Supervisors be officials wey dey oversee programs, projects, and services for different sectors. Dem dey act as bridge between council and community.",
-        "name": "",
-        "introduction": "",
+      "supervisorsAndSpecialAdvisers": {
+        "role": "Supervisors and Special Advisers",
+        "bannerTitle": "Supervisors and Special Advisers",
+        "overview": "Council Supervisors be officials wey dey oversee programs, projects, and services for different sectors. Dem dey act as bridge between council and community. Special Advisers na appointed experts wey dey give strategic advice and specialized knowledge to the local government for different areas like ICT, tourism, health, youth and sport, intergovernmental relations, market development, community affairs, elderly affairs, civic engagement, boundary matters, and city care services. Dem dey play important role for shaping policy, bringing new ideas, and making sure the council dey deliver good and inclusive services to every ward and community inside Apapa.",
         "keyFunctions": {
           "title1": "Project Oversight",
           "description1": "Dey oversee service delivery for sectors like health, education, and infrastructure.",
@@ -929,6 +926,32 @@
         "role": "Oga/Head, Finance & Accounts Department",
         "bannerTitle": "Finance & Accounts Department Functions & Operations",
         "badgeTitle": "OGA/HEAD OF FINANCE AND ACCOUNTING",
+        "overview": "Finance & Accounts Department dey manage financial health, ensure transparency, and maintain financial integrity. Dem dey oversee financial reporting, accounting practices, and compliance with regulations.",
+        "name": "MRS ADEPOJU-CONDE FOLUKE MARY",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, wey be Executive Chairman of Apapa Local Government Council, get plenty experience for both public and private sector. She get Bachelor of Arts (Hons) for Languages and Linguistics from University of Jos and Master of Arts for International Law and Diplomacy from University of Lagos. For her professional work, she don work as Head of Public Sector – South-Western Nigeria, Team Leader for Retail Banking, and Head of Corporate Affairs for Metropolitan Bank. For public service, she don serve as Special Assistant to Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As committed member of All Progressives Congress (APC), Hon. Senbanjo don contribute well-well to political and economic development of Apapa, and she don show say she be leader wey fit transform the community.",
+        "keyFunctions": {
+          "title1": "Financial Reporting",
+          "description1": "Dey prepare correct financial statements on time—profit and loss, balance sheet, and cash flow; ensure compliance with accounting standards and financial regulations.",
+          "title2": "Accounting Operations",
+          "description2": "Dey manage day-to-day accounting—payables/receivables, payroll, and general ledger; implement internal controls to reduce financial risk.",
+          "title3": "Cash Flow Management",
+          "description3": "Dey monitor cash flow and transactions to ensure liquidity; develop strategies to optimize cash management and investments.",
+          "title4": "Financial Analysis",
+          "description4": "Dey analyze finances and do cost-benefit assessments to support decisions; provide insights and identify improvement areas.",
+          "title5": "Audit and Compliance",
+          "description5": "Dey coordinate internal/external audits and ensure compliance with financial regulations; implement audit recommendations to improve controls.",
+          "title6": "Tax Management",
+          "description6": "Dey prepare and file tax returns; give guidance on tax planning and how decisions fit affect tax.",
+          "title7": "Stakeholder Communication",
+          "description7": "Dey communicate financial performance and budget status to management and stakeholders; prepare presentations/reports for board and committees.",
+          "title8": "Staff Development",
+          "description8": "Dey supervise, train, and develop finance/accounting staff to improve skills and efficiency; encourage continuous learning."
+        }
+      },
+      "councilTreasurer": {
+        "role": "Council Treasurer",
+        "bannerTitle": "Council Treasurer",
+        "badgeTitle": "COUNCIL TREASURER",
         "overview": "Finance & Accounts Department dey manage financial health, ensure transparency, and maintain financial integrity. Dem dey oversee financial reporting, accounting practices, and compliance with regulations.",
         "name": "MRS ADEPOJU-CONDE FOLUKE MARY",
         "introduction": "Hon. Idowu Adejumoke Senbanjo, wey be Executive Chairman of Apapa Local Government Council, get plenty experience for both public and private sector. She get Bachelor of Arts (Hons) for Languages and Linguistics from University of Jos and Master of Arts for International Law and Diplomacy from University of Lagos. For her professional work, she don work as Head of Public Sector – South-Western Nigeria, Team Leader for Retail Banking, and Head of Corporate Affairs for Metropolitan Bank. For public service, she don serve as Special Assistant to Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As committed member of All Progressives Congress (APC), Hon. Senbanjo don contribute well-well to political and economic development of Apapa, and she don show say she be leader wey fit transform the community.",
