@@ -98,7 +98,7 @@ export const rowData: Row[] = [
       {
         id: "council-treasurer",
         role: "councilTreasurer.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/Head%20Management_/NO%20007.png",
         bannerTitle: "councilTreasurer.bannerTitle",
         badgeTitle: "councilTreasurer.badgeTitle",
         overview: "councilTreasurer.overview",
@@ -827,7 +827,7 @@ export const rowData: Row[] = [
       {
         id: "head-finance-accounts",
         role: "headFinanceAndAccounts.role",
-        img: "/image/placeholder.jpeg",
+        img: "/image/APAPA%20COUNCIL%20PHOTOS_/Head%20Management_/NO%20007.png",
         bannerTitle: "headFinanceAndAccounts.bannerTitle",
         badgeTitle: "headFinanceAndAccounts.badgeTitle",
         overview: "headFinanceAndAccounts.overview",
