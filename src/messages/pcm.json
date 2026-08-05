@@ -43,12 +43,14 @@
       "services": "Services",
       "community": "Community"
     },
+    "contactTitle": "Contact Us",
+    "councilLandline": "Council Landline",
     "copyright": "© 2025 Apapa Local Government. All rights reserved."
   },
   "Home": {
     "hero": {
       "pill": "Welcome to Apapa",
-      "title": "Nigeria Main Gate to Global Trade",
+      "title": "Nigerians Main Gate to Global Trade",
       "desc": "Apapa get di busiest ports for Nigeria. E dey power business, connect companies, and push economic growth. Come explore opportunities for shipping, logistics, and trade for di heart of Nigeria maritime hub."
     },
     "insight": {
@@ -62,6 +64,8 @@
       "investment": "Investment",
       "truckTraffic": "Truck Traffic",
       "economicContribution": "Economic Contribution",
+      "weatherTagline": "Live from di Port City",
+      "weatherTitle": "Apapa Weather Watch",
       "chanceOfRain": "Chance of Rain",
       "welcomeTitle": "Welcome to di official website of Apapa Local Government.",
       "welcomeDesc": "As di Executive Chairman of Apapa Local Government (Di Port City Council), I happy well-well to welcome una to our lively community. For Apapa Local Government, we dey committed to turn our community to world-class local government wey go provide correct services and infrastructure for our people. Our mission na to build strong and sustainable environment wey go support di well-being and success of everybody.",
@@ -335,7 +339,7 @@
         "badgeTitle": "EXECUTIVE CHAIRMAN",
         "overview": "The Executive Chairman na the main oga for the local government. E dey in charge of how policies dey implemented and how daily administration dey run. This role dey very important for local governance because the chairman dey manage executive duties and make sure say all local government activities follow the policies wey the elected council set.",
         "name": "Hon. Idowu Adejumoke Senbanjo",
-        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, get plenty experience from both public and private sectors. She get Bachelor of Arts (Hons) for Languages and Linguistics from University of Jos and Master of Arts for International Law and Diplomacy from University of Lagos. For her professional career, she don work as Head of Public Sector – South-Western Nigeria, Team Leader for Retail Banking, and Head of Corporate Affairs for Metropolitan Bank. For public service, she serve as Special Assistant to Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As committed member of All Progressives Congress (APC), Hon. Senbanjo don contribute well well to the political and economic development of Apapa, making her a transformational leader for the community.",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, get plenty experience from both public and private sectors. She get Bachelor of Arts (Hons) for Languages and Linguistics from University of Jos and Master of Arts for International Law and Diplomacy from University of Lagos. For her professional career, she don work as Team Head of Public Sector – South-West Region, Team Leader for Retail Banking, and Head of Corporate Affairs for Metropolitan Bank. For public service, she serve as Senior Special Assistant to Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As committed member of All Progressives Congress (APC), Hon. Senbanjo don contribute well well to the political and economic development of Apapa, making her a transformational leader for the community.",
         "vision&Mission": {
           "badgeTitle": "Vision & Mission",
           "overview": "Hon. Senbanjo get strong commitment to transform Apapa to a modern port city wey go provide effective grassroots governance and development. Her administration dey focus on:",
@@ -351,9 +355,9 @@
           }
         },
         "manifesto": {
-          "badgeTitle": "Our Manifesto",
+          "badgeTitle": "Her Manifesto",
           "headTitle": "S.H.E.E",
-          "overview": "Our manifesto stand on four major focus areas which include security – traffic and transport, health, environment – infrastructure, education – skill acquisition and technology (S.H.E.E).",
+          "overview": "Her manifesto stand on four major focus areas which include security – traffic and transport, health, environment – infrastructure, education – skill acquisition and technology (S.H.E.E).",
           "manifestoSections": {
             "01": {
               "title": "Security",
@@ -384,7 +388,7 @@
             "03": {
               "title": "Environment",
               "tagLabel": "Infrastructure",
-              "content": "The Environment Services and Waste Management Department dey responsible for monitoring environmental issues wey fit affect people health and controlling factors wey fit cause harm.",
+              "content": "Environmental Sector and Waste Management Department dey responsible for monitoring environmental issues wey fit affect people health and controlling factors wey fit cause harm.",
               "activities": {
                 "activity1": "Regular desilting of drainage channels to reduce flooding",
                 "activity2": "Flood-free Apapa",
@@ -903,7 +907,7 @@
         "bannerTitle": "Admin & Human Resources Department Functions & Operations",
         "badgeTitle": "OGA/HEAD OF HUMAN RESOURCE",
         "overview": "Admin & Human Resources Department dey ensure organization dey run smoothly and dey manage staff/workforce. Dem dey handle plenty things like personnel management, office administration, and organizational development.",
-        "name": "Mrs. Adedeji Kemisola L.",
+        "name": "Mrs. Sofoluwe Olubunmi Mofoluto",
         "introduction": "Hon. Idowu Adejumoke Senbanjo, wey be Executive Chairman of Apapa Local Government Council, get plenty experience for both public and private sector. She get Bachelor of Arts (Hons) for Languages and Linguistics from University of Jos and Master of Arts for International Law and Diplomacy from University of Lagos. For her professional work, she don work as Head of Public Sector – South-Western Nigeria, Team Leader for Retail Banking, and Head of Corporate Affairs for Metropolitan Bank. For public service, she don serve as Special Assistant to Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As committed member of All Progressives Congress (APC), Hon. Senbanjo don contribute well-well to political and economic development of Apapa, and she don show say she be leader wey fit transform the community.",
         "keyFunctions": {
           "title1": "Recruitment and Staffing",

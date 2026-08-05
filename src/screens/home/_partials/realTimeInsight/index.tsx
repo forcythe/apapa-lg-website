@@ -364,9 +364,9 @@ const RealTimeInsight = () => {
               </div>
             </div>
 
-            <div className="w-full mb-4 min-h-[312px] border border-[#D0D0D0] rounded-[32px] py-6 px-[22px] md:py-[40px] md:px-[68px] bg-white backdrop-blur-xl relative overflow-hidden">
+            <div className="w-full mb-4 min-h-[312px] rounded-[32px] py-6 px-[22px] md:py-[40px] md:px-[68px] relative overflow-hidden bg-gradient-to-br from-[#121212] via-[#1E1D19] to-[#3A3208] shadow-custom ring-1 ring-[#FFD100]/30">
               <div
-                className="absolute inset-0 w-full h-full bg-cover bg-center"
+                className="absolute inset-0 w-full h-full bg-cover bg-center opacity-60"
                 style={{
                   backgroundImage: "url(/svgs/card-back-drop.svg)",
                   zIndex: -1,
@@ -374,22 +374,31 @@ const RealTimeInsight = () => {
               ></div>
               <div className="w-fit min-h-[232px] flex flex-col justify-between">
                 <div>
+                  <motion.p
+                    variants={textVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="text-accent3 text-sm md:text-base leading-[22px] font-[FuturaLTBold] uppercase tracking-wider mb-2"
+                  >
+                    {t("weatherTagline")}
+                  </motion.p>
                   <motion.h4
                     variants={textVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
-                    className="font-[FuturaLTBold] text-[20px] leading-[28px] mb-2 md:text-[28px] md:leading-[40px]"
+                    className="font-[FuturaLTBold] text-white text-[20px] leading-[28px] mb-2 md:text-[28px] md:leading-[40px]"
                   >
-                    Apapa
+                    {t("weatherTitle")}
                   </motion.h4>
-                  <div className="flex items-center gap-1 md:gap-2">
+                  <div className="flex items-center gap-2 md:gap-3">
                     <motion.p
                       variants={textVariants}
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: true, amount: 0.3 }}
-                      className="text-base md:text-[20px] md:leading-[32px]"
+                      className="text-white/80 text-base md:text-[20px] md:leading-[32px]"
                     >
                       {t("chanceOfRain")}
                     </motion.p>
@@ -398,7 +407,7 @@ const RealTimeInsight = () => {
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: true, amount: 0.3 }}
-                      className="text-accent text-base md:text-[20px] md:leading-[32px] py-1 px-2 rounded-[8px] bg-white"
+                      className="text-[#121212] text-base md:text-[20px] md:leading-[32px] py-1 px-2.5 rounded-[8px] bg-accent3 shadow-custom-sm font-[FuturaLTBold]"
                     >
                       {rainChanceDisplay}%
                     </motion.span>
@@ -409,14 +418,21 @@ const RealTimeInsight = () => {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="font-[FuturaLTBold] text-[28px] leading-[44px] md:text-[40px] md:leading-[60px] text-accent"
+                  className="font-[FuturaLTBold] text-white text-[28px] leading-[44px] md:text-[40px] md:leading-[60px]"
                 >
                   {inView ? <CountUp start={0} end={tempDisplay} duration={2} /> : 0}°
+                  <span className="text-accent3 text-[20px] md:text-[24px] align-top">
+                    C
+                  </span>
                 </motion.h6>
               </div>
-              <div className="absolute right-[20px] xs:right-[68px] top-[62px]">
+              <motion.div
+                animate={{ y: [0, -14, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute right-[20px] xs:right-[68px] top-[48px] drop-shadow-[0_12px_24px_rgba(255,209,0,0.25)]"
+              >
                 <CloudDesign />
-              </div>
+              </motion.div>
             </div>
           </div>
 

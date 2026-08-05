@@ -43,12 +43,14 @@
       "services": "Àwọn Ìṣẹ́",
       "community": "Àgbègbè Àwọn Ará Ìlú"
     },
+    "contactTitle": "Ìbánisọ̀rọ̀",
+    "councilLandline": "Landline Ìgbìmọ̀",
     "copyright": "© 2025 Apapa Local Government. All rights reserved."
   },
   "Home": {
     "hero": {
       "pill": "Kaabo si Apapa",
-      "title": "Ẹnu-ọna Naijiria si Iṣowo Kariaye",
+      "title": "Ọ̀nà Àbáwọlé àwọn ọmọ Nàìjíríà sí Ọjà Àgbáyé.",
       "desc": "Apapa ni awọn ibudo oko oju omi ti o ṣiṣẹ ju lọ ni Naijiria. O n mu iṣowo lagbara, n so awọn ile-iṣẹ pọ, o si n ṣe idagbasoke eto-ọrọ aje. Ṣawari awọn aye ninu gbigbe ẹru, eekaderi, ati iṣowo ni aarin ibudo oko oju omi Naijiria."
     },
     "insight": {
@@ -62,6 +64,8 @@
       "investment": "Idoko-owo",
       "truckTraffic": "Iṣipopada Kọlọkọ",
       "economicContribution": "Ilowosi Eto-ọrọ Aje",
+      "weatherTagline": "Láàyè láti Ìlú Ibúdó",
+      "weatherTitle": "Apapa Ojú-ọjọ́ Wọ́chì",
       "chanceOfRain": "Seese Ojo",
       "welcomeTitle": "Kaabo si oju opo wẹẹbu osise ti Ijọba Agbegbe Apapa.",
       "welcomeDesc": "Gẹgẹ bi Alaga Alase ti Ijọba Agbegbe Apapa (Igbimọ Ilu Ibudo), inu mi dun lati ki yin si agbegbe wa ti o kun fun aye. Ni Ijọba Agbegbe Apapa, a ti pinnu lati yi agbegbe wa pada si ijọba agbegbe ti o ni boṣewa agbaye, ti yoo pese awọn iṣẹ to dara ati amayederun to peye fun awọn ara ilu wa. Iṣẹ apinfunni wa ni lati ṣẹda agbegbe alagbero ati alagbara ti yoo ṣe atilẹyin ilera ati aṣeyọri gbogbo ara ilu.",
@@ -335,7 +339,7 @@
         "badgeTitle": "ALÁKÓSÓ ÀGBÀ",
         "overview": "Alákóso Àgbà ni olórí alákóso fún ìjọba ìbílẹ̀, ẹni tí ó jẹ́ ojúṣe rẹ̀ láti ṣàbójútó ìmúlò àwọn ìlànà àti iṣakoso ojoojúmọ́. Ipo yìí ṣe pàtàkì nínú ìṣàkóso ìbílẹ̀, nítorí Alákóso ni ń darí gbogbo iṣẹ́ alákóso kí ìjọba ìbílẹ̀ lè tẹ̀lé ìlànà tí ìgbìmọ̀ aṣojú yàn.",
         "name": "Hon. Idowu Adejumoke Senbanjo",
-        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí lọ́pọ̀lọpọ̀ láti apá ìjọba àti aládani. Ó ní Ìwé-ẹ̀rí BA (Hons) nínú Èdè àti Ẹ̀kọ́ Èdè láti Yunifásítì Jos àti MA nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Orílẹ̀-èdè láti Yunifásítì Lagos. Nípa iṣẹ́ rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Apá Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ nínú Ìṣúná Ilé-ifowopamọ́ Alátaja, àti Olórí Ìbáṣepọ̀ Ilé-iṣẹ́ ní Metropolitan Bank. Ní iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá sí Gomina Ìpínlẹ̀ Lagos lórí Ilé àti Olùrànlọ́wọ́ Pátá lórí Ìparí Ìyàwó Òsì. Gẹ́gẹ́ bí ọmọ ẹgbẹ́ olóòtítọ́ ti All Progressives Congress (APC), Hon. Senbanjo ti kópa lọ́pọ̀lọpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀-ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá sí àwùjọ.",
+        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alága Aláṣẹ Gíga ti Ìjọba Ìbílẹ̀ Apapa, ní ìrírí púpọ̀ nínú iṣẹ́ ìjọba àti ilé iṣẹ́ aládani. Ó ní Ìwé-ẹ̀rí Àkọ́kọ́ (B.A. Hons) nínú Èdè àti Ìmọ̀ Èdè láti Yunifásítì Jos, àti Ìwé-ẹ̀rí Màgísítà (M.A.) nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Orílẹ̀-Èdè láti Yunifásítì Lagos. Nípa iṣẹ́ amọ̀ràn rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹgbẹ́ Ẹka Ìjọba fún Àgbègbè Gúúsù Ìwọ̀ Oòrùn, Olórí Ẹgbẹ́ Ìfowópamọ́ Alátàjà, àti Olórí Ẹka Ìbáṣepọ̀ Ilé-iṣẹ́ ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Àgbà Pàtàkì fún Gómìnà Ìpínlẹ̀ Èkó lórí Ọ̀ràn Ilé àti Olùrànlọ́wọ́ Àgbà Pàtàkì lórí Ìparun Òṣì. Gẹ́gẹ́ bí ọmọ ẹgbẹ́ olóòtítọ́ ti ẹgbẹ́ All Progressives Congress (APC), Hon. Senbanjo ti ṣe àfikún ńlá sí ìdàgbàsókè òṣèlú àti ètò ọrọ̀ ajé ní Apapa, tí ó sì ti di aṣáájú tó ń mú ìyípadà rere wá fún àwùjọ.",
         "vision&Mission": {
           "badgeTitle": "Ìran àti Ètò",
           "overview": "Hon. Senbanjo ní ìfaramọ́ láti yí Apapa padà sí ìlú ibùdó ode-òní pẹ̀lú ìṣàkóso ìbílẹ̀ tó munadoko àti ìdàgbàsókè alákọ̀ọ́rẹ̀. Ìṣàkóso rẹ̀ ń fojú kọ́:",
@@ -351,9 +355,9 @@
           }
         },
         "manifesto": {
-          "badgeTitle": "Àfihàn Ètò Wa",
+          "badgeTitle": "Ìlànà Ìṣàkóso Rẹ̀",
           "headTitle": "S.H.E.E",
-          "overview": "Àfihàn ètò wa dá lórí àgbékalẹ̀ mẹ́rin: ààbò – ìrìnàjò àti ọkọ̀, ìlera, ayíká – amáyédẹrùn, ẹ̀kọ́ – ìkó-òye iṣẹ́ àti imọ̀-ẹ̀rọ (S.H.E.E).",
+          "overview": "Ìlànà Ìṣàkóso rẹ̀ dá lórí àgbékalẹ̀ pàtàkì mẹ́rin: ààbò, ìrìnàjò àti ọkọ̀ ojú-ọ̀nà; ìlera; àyíká àti amáyédẹrùn; àti ẹ̀kọ́, ìmúṣẹ́ ọgbọ́n iṣẹ́ pẹ̀lú ìmọ̀ ẹ̀rọ (S.H.E.E).",
           "manifestoSections": {
             "01": {
               "title": "Ààbò",
@@ -371,7 +375,7 @@
             "02": {
               "title": "Ìlera",
               "tagLabel": "Ìborí ìṣòro",
-              "content": "Ìlera dára ju owó lọ. Èrò yìí ni ó ń dari àwọn ètò ìlera àti ìtọju ará ilú wa. Ní ọdún mẹ́rin sẹ́yìn, a ti ra ọkọ̀ alágbára ìrànwọ́ pajawiri (ambulance) tí ó péye, a sì ti mú ilé ìwòsàn ìbílẹ̀ lagbara.",
+              "content": "Ìlera rere jẹ́ ohun tó ṣe pàtàkì. Ìdí nìyẹn tí a fi ń gbékalẹ̀ àwọn ètò ìlera tó dojú kọ àìní àwọn ènìyàn. Ní ọdún mẹ́rin sẹ́yìn, a ti pèsè ọkọ̀ alágbèéká ìtọju pajawiri (ambulance), a sì ń mú iṣẹ́ ilé ìtọju ìlera wa lágbára. A tún ń kọ́ àwọn ọdọ nípa ewu lílo oògùn olóró nípasẹ̀ àwọn ìpolongo àwùjọ, nítorí a gbà pé pẹ̀lú ìmọ̀ àti ìfaramo, a lè dín ìṣòro náà kù.",
               "activities": {
                 "activity1": "Ìṣiṣẹ́ ìlera wakati 24 ní Ijora Oloye, Abúlé Nanti àti Ilé-Ìwòsàn Oluwole",
                 "activity2": "Ìfọwọ́sowọ́pọ̀ pẹ̀lú ìjọba ìpínlẹ̀ fún ètò ìlera àwùjọ",
@@ -903,7 +907,7 @@
         "bannerTitle": "Ìṣẹ́ àti Ìmúlò Ẹ̀ka Ìṣàkóso Ọ́fíìsì àti Oríṣun Ènìyàn (HR)",
         "badgeTitle": "OLÓRÍ ORÍṢUN ÈNÌYÀN (HR)",
         "overview": "Ẹ̀ka Ìṣàkóso Ọ́fíìsì àti Oríṣun Ènìyàn (HR) jẹ́ pàtàkì nínú ríro pé iṣẹ́ àjọ ń lọ dáadáa àti nínú ìṣàkóso agbára ènìyàn. Ẹ̀ka yìí ló ń ṣàbójútó ọ̀pọ̀ iṣẹ́, pẹ̀lú ìṣàkóso oṣiṣẹ́, ìṣàkóso ọ́fíìsì, àti ìdàgbàsókè agbari.",
-        "name": "Mrs. Adedeji Kemisola L.",
+        "name": "Mrs. Sofoluwe Olubunmi Mofoluto",
         "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
         "keyFunctions": {
           "title1": "Ìgbanisise àti Ìdípo Oṣiṣẹ́ (Recruitment and Staffing)",

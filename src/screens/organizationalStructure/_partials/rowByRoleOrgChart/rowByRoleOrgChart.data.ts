@@ -288,12 +288,12 @@ export const rowData: Row[] = [
           },
           {
             name: "Mr. Olanrewaju Wasiu Adebayo",
-            title: "Supervisor for Budget and Planning",
+            title: "Supervisor for Budget, Planning and Finance",
             img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 7 .png",
           },
           {
             name: "Mr. Segun Moses",
-            title: "Supervisor for Transport & Traffic Management",
+            title: "Supervisor for Transport and Traffic Management",
             img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 8.png",
           },
           {
@@ -308,7 +308,7 @@ export const rowData: Row[] = [
           },
           {
             name: "Mr. Ademola Yakubu",
-            title: "Supervisor Agriculture & Social Development",
+            title: "Supervisor Agriculture and Social Development",
             img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 14.png",
           },
           {
