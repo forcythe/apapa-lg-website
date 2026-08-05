@@ -73,7 +73,24 @@ const Footer = () => {
           </div>
         ))}
         <div className="w-full">
-          <h3 className="text-[18px] leading-[8px] font-[FuturaLTBold] mb-6"></h3>
+          <h3 className="text-[20px] leading-[28px] font-[FuturaLTBold] mb-8">
+            {t("Footer.contactTitle")}
+          </h3>
+          <ul className="flex flex-col gap-5 w-fit mb-6">
+            <li className="w-fit">
+              <a
+                href="tel:+2348179377424"
+                className="flex items-center gap-2 transition-all duration-200 ease-in-out hover:translate-x-1"
+              >
+                <span className="text-[14px] leading-[24px] md:text-base font-medium">
+                  {t("Footer.councilLandline")}:
+                </span>
+                <span className="text-[14px] leading-[24px] md:text-base font-[FuturaLTBold]">
+                  +234 817 937 7424
+                </span>
+              </a>
+            </li>
+          </ul>
           <ul className="flex flex-wrap md:flex-nowrap items-center gap-4 md:gap-8 w-fit">
             {socialLinks.map(({ id, link, Icon }) => (
               <RenderSocialLinks key={id} Icon={Icon} link={link} />

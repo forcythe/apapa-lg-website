@@ -9,14 +9,68 @@ const CloudDesign = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M161.458 84.8379C155.426 77.6312 147.671 72.9312 138.663 70.8945C136.626 61.8079 133.101 53.9745 127.931 47.4729C127.774 47.2379 127.618 47.0029 127.461 46.8462C110.228 26.0095 82.0278 26.0879 62.9928 36.8979C46.6995 46.2195 32.8345 65.8812 40.1195 93.9245C23.4345 97.9979 15.7578 112.568 15.7578 125.728C15.7578 140.455 25.3928 156.983 46.8561 158.55H127.853C127.931 158.55 128.088 158.55 128.166 158.55C139.289 158.55 149.943 154.398 158.168 146.878C177.829 129.488 175.244 101.131 161.458 84.8379Z"
-        fill="#FFD100"
-      />
-      <path
-        d="M170.449 68.4605C170.449 71.1239 170.136 73.7089 169.352 76.2155C163.634 69.5572 156.349 64.6222 148.281 61.5672C145.774 53.7339 142.171 46.7622 137.471 40.6522C137.236 40.3389 137.001 40.0255 136.688 39.6339C138.176 39.3205 139.742 39.2422 141.231 39.2422C157.367 39.2422 170.449 52.3239 170.449 68.4605Z"
-        fill="#FFD100"
-      />
+      <defs>
+        <linearGradient
+          id="cloudFill"
+          x1="60"
+          y1="64"
+          x2="150"
+          y2="156"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#FFF9E3" />
+          <stop offset="0.45" stopColor="#FFD100" />
+          <stop offset="1" stopColor="#E8A817" />
+        </linearGradient>
+        <linearGradient
+          id="rayFill"
+          x1="146"
+          y1="16"
+          x2="146"
+          y2="70"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#FFD100" />
+          <stop offset="1" stopColor="#F5A623" />
+        </linearGradient>
+        <linearGradient
+          id="dropFill"
+          x1="96"
+          y1="150"
+          x2="96"
+          y2="172"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#8CC4FF" />
+          <stop offset="1" stopColor="#3D82F6" />
+        </linearGradient>
+      </defs>
+
+      <g opacity="0.4">
+        <circle cx="146" cy="46" r="24" fill="#FFD100" />
+      </g>
+
+      <circle cx="146" cy="46" r="17" fill="#FFC400" />
+
+      <g stroke="url(#rayFill)" strokeWidth="5" strokeLinecap="round">
+        <line x1="146" y1="12" x2="146" y2="20" />
+        <line x1="178" y1="46" x2="170" y2="46" />
+        <line x1="168" y1="21" x2="162" y2="27" />
+        <line x1="124" y1="21" x2="130" y2="27" />
+      </g>
+
+      <g fill="url(#cloudFill)">
+        <ellipse cx="96" cy="128" rx="62" ry="28" />
+        <circle cx="74" cy="98" r="28" />
+        <circle cx="112" cy="87" r="34" />
+        <circle cx="141" cy="113" r="24" />
+      </g>
+
+      <g fill="url(#dropFill)">
+        <path d="M84 150 C84 150 79 156 79 160 A5 5 0 0 0 89 160 C89 156 84 150 84 150 Z" />
+        <path d="M104 156 C104 156 99 162 99 166 A5 5 0 0 0 109 166 C109 162 104 156 104 156 Z" />
+        <path d="M124 150 C124 150 119 156 119 160 A5 5 0 0 0 129 160 C129 156 124 150 124 150 Z" />
+      </g>
     </svg>
   );
 };
