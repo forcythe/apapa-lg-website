@@ -287,7 +287,7 @@ export const rowData: Row[] = [
             img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 6.png",
           },
           {
-            name: "Mr. Olanrewaju Wasiu Adebayo",
+            name: "Mr. Olanrewaju Wasiu Adedayo",
             title: "Supervisor for Budget, Planning and Finance",
             img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 7 .png",
           },

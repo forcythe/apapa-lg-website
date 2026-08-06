@@ -50,7 +50,7 @@
   "Home": {
     "hero": {
       "pill": "Welcome to Apapa",
-      "title": "Nigerians Gateway to Global Trade",
+      "title": "The Port City Council-Gateway to Nigeria's Economy",
       "desc": "Home to the nation’s busiest ports, Apapa powers commerce, connects businesses, and drives economic growth. Explore opportunities in shipping, logistics, and trade at the heart of Nigeria’s maritime hub."
     },
     "insight": {
@@ -355,7 +355,7 @@
           }
         },
         "manifesto": {
-          "badgeTitle": "Her Manifesto",
+          "badgeTitle": "Vision & Mission",
           "headTitle": "S.H.E.E",
           "overview": "Her manifesto is anchored on four focus areas which includes security - traffic and transport, health, environment - infrastructure, education - skill acquisition and technology (S.H.E.E)",
           "manifestoSections": {
