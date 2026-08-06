@@ -28,14 +28,14 @@ export const quickLinks = [
     btnTitle: "healthcare.btn",
     href: "https://lagosstate.gov.ng/services/healthservices",
   },
-  {
-    id: 3,
-    title: "port.title",
-    description: "port.description",
-    icon: PSIcon,
-    btnTitle: "port.btn",
-    href: "/",
-  },
+  // {
+  //   id: 3,
+  //   title: "port.title",
+  //   description: "port.description",
+  //   icon: PSIcon,
+  //   btnTitle: "port.btn",
+  //   href: "/",
+  // },
   {
     id: 4,
     title: "events.title",

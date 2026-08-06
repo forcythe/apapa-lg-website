@@ -212,7 +212,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
       {/* Executive Chairman Additional Sections */}
       {activeRole?.id === "executive-chairman" && (
         <div>
-          <VisionMission />
+          {/* <VisionMission /> */}
           <Manifesto />
           <PastChairMen />
         </div>

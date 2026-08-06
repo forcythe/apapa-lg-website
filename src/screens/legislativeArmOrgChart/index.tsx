@@ -30,7 +30,7 @@ const LegislativeArmOrgChart = () => {
           Back
         </Link>
         <div className="w-full mx-auto">
-          <div className="w-full overflow-x-auto scrollbar-hide pl-4">
+          <div className="w-full overflow-x-auto scrollbar-hide px-4">
             <RowByRoleOrgChart />
           </div>
         </div>
