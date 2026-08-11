@@ -897,6 +897,15 @@
           "description9": "Pípamọ́ àkọsílẹ̀ tó peye nípa gbogbo iṣẹ́ rírà, pẹ̀lú kontrákì, orders, àti ìsanwó, àti ṣíṣe ìròyìn fún ìṣàkóso àgbà àti àwọn alaṣẹ ìtẹ̀lé òfin."
         }
       },
+      "areaOfficers": {
+        "role": "Area Officers",
+        "bannerTitle": "Area Officers Functions & Operations",
+        "badgeTitle": "AREA OFFICERS",
+        "overview": "Area Officers oversee community development and administrative matters across the council wards.",
+        "name": "Area Officers",
+        "introduction": "Area Officers oversee community development and administrative matters across the council wards.",
+        "keyFunctions": {}
+      },
       "specialAdviser": {
         "role": "Àwọn Olùdámọ̀ràn Pàtàkì",
         "bannerTitle": "Àwọn Iṣẹ́ àti Ìṣiṣẹ́ Àwọn Olùdámọ̀ràn Pàtàkì",

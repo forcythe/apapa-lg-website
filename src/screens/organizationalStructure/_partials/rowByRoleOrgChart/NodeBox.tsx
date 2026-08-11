@@ -10,52 +10,9 @@ interface NodeBoxProps {
 
 const NodeBox: React.FC<NodeBoxProps> = ({ role, rowId, roleId, image }) => {
   const extraHeightClass = rowId >= 4 && rowId <= 7 ? "min-h-[200px]" : "";
-  const arrowTop = (
-    <div className="flex flex-col items-center mb-[33px]">
-      {/* Vertical line */}
-      <div className="w-[2px] h-[100px] bg-black" />
-      {/* Downward arrowhead */}
-      <div
-        style={{
-          width: 0,
-          height: 0,
-          borderLeft: "5px solid transparent",
-          borderRight: "5px solid transparent",
-          borderTop: "7px solid black",
-        }}
-      />
-    </div>
-  );
-
-  const arrowBottom = (
-    <div className="flex flex-col items-center">
-      {roleId !== "legislative-arm" && (
-        <>
-          <div
-            className={`w-[2px] ${
-              roleId === "council-manager"
-                ? "h-[892px]"
-                : "h-[100px]"
-            } bg-black`}
-          />
-          <div
-        style={{
-          width: 0,
-          height: 0,
-          borderLeft: "5px solid transparent",
-          borderRight: "5px solid transparent",
-          borderTop: "7px solid black",
-        }}
-      />
-        </>
-      )}
-    </div>
-  );
 
   return (
-    <div className="flex flex-col items-center relative ">
-      {rowId > 1 && arrowTop}
-
+    <div className="flex flex-col items-center">
       <Link
         href={`/government/organizational-structure/${roleId}`}
         className="relative flex flex-col w-[188px]"
@@ -65,7 +22,7 @@ const NodeBox: React.FC<NodeBoxProps> = ({ role, rowId, roleId, image }) => {
             className="min-w-[68px] h-[68px] rounded-full border-[6px] border-[#FFD100] bg-cover"
             style={{
               backgroundImage: `url('${image}')`,
-              backgroundPosition: 'center 30%',
+              backgroundPosition: "center 30%",
             }}
           />
         </div>
@@ -73,14 +30,8 @@ const NodeBox: React.FC<NodeBoxProps> = ({ role, rowId, roleId, image }) => {
           className={`${extraHeightClass} relative text-sm bg-white pt-[64px] w-full border-2 border-[#FFD100] shadow-md pb-6 leading-[24px] rounded-[32px] text-black font-[FuturaLTBold] text-center px-4`}
         >
           {role}
-          <div className="absolute top-[112px] left-[83.5px]">
-            {((rowId === 2 && roleId === "council-manager") ||
-              (rowId === 2 && roleId === "legislative-arm")) &&
-              arrowBottom}
-          </div>
         </div>
       </Link>
-      {rowId === 1 && arrowBottom}
     </div>
   );
 };
