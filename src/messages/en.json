@@ -894,6 +894,15 @@
           "description9": "Maintaining accurate records of all procurement activities, including contracts, orders, and payments, and preparing reports for senior management and regulatory bodies."
         }
       },
+      "areaOfficers": {
+        "role": "Area Officers",
+        "bannerTitle": "Area Officers Functions & Operations",
+        "badgeTitle": "AREA OFFICERS",
+        "overview": "Area Officers oversee community development and administrative matters across the council wards.",
+        "name": "Area Officers",
+        "introduction": "Area Officers oversee community development and administrative matters across the council wards.",
+        "keyFunctions": {}
+      },
       "specialAdviser": {
         "role": "...",
         "bannerTitle": "...",
