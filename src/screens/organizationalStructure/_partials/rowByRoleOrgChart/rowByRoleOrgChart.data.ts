@@ -585,11 +585,29 @@ export const rowData: Row[] = [
         role: "areaOfficers.role",
         img: "/svgs/logoHead.svg",
         bannerTitle: "areaOfficers.bannerTitle",
-        badgeTitle: "AREA OFFICERS",
-        overview: "Area Officers oversee community development and administrative matters across the council wards.",
-        name: "Area Officers",
-        introduction: "Area Officers oversee community development and administrative matters across the council wards.",
+        // badgeTitle: "AREA OFFICERS",
+        overview: "areaOfficers.overview",
+        // name: "Area Officers",
+        // introduction: "Area Officers oversee community development and administrative matters across the council wards.",
         keyFunctions: [],
+        team: [
+          
+          {
+            name: "Mr Arogundade Lasisi Akeem",
+            title: "Area Officer A",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/p.png",
+          },
+          {
+            name: "Mr Bawa-Allah Ali",
+            title: "Area Officer B",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/o.png",
+          },
+          {
+            name: "Mr. Kila Olamilekan",
+            title: "Area Officer C",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/n.png",
+          },
+        ],
       },
       {
         id: "head-audit-unit",

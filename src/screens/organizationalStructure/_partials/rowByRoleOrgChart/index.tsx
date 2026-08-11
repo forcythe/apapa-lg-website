@@ -14,8 +14,8 @@ import { useTranslations } from "next-intl";
 /*  the parent -> child relationship is clearly readable.              */
 /* ------------------------------------------------------------------ */
 const NODE_WIDTH = 188;
-const CHART_WIDTH = 1720;
-const CHART_CENTER_X = 860;
+const CHART_WIDTH = 1400;
+const CHART_CENTER_X = 700;
 const CHART_HEIGHT = 1800;
 
 const ROW_TOP: Record<number, number> = {
@@ -36,27 +36,37 @@ const BAR_Y = {
 /* x position of every level-1/2/3 node (their centres) */
 const ROLE_X: Record<string, number> = {
   "executive-chairman": CHART_CENTER_X,
-  "vice-chairman": 360,
+  "vice-chairman": 200,
   "council-manager": CHART_CENTER_X,
-  "s-l-g": 1120,
-  "legislative-arm": 1380,
-  "supervisors-and-special-advisers": 1120,
-  "clerk-of-the-house": 1380,
+  "s-l-g": 960,
+  "legislative-arm": 1220,
+  "supervisors-and-special-advisers": 960,
+  "clerk-of-the-house": 1220,
 };
 
-/* evenly distributed, centred on the chart */
+/* Department Heads and the five Special Units lap on top of one another
+   (smaller centre-to-centre spacing than the box width) so all nine fit
+   the screen without horizontal scrolling. Boxes to the right sit on top. */
+const DEPT_SPACING = 151;
+const SPECIAL_SPACING = 136;
 const DEPARTMENT_XS = Array.from(
   { length: 9 },
-  (_, i) => 108 + i * NODE_WIDTH
+  (_, i) => 96 + i * DEPT_SPACING
 );
-const UNIT_XS = Array.from({ length: 7 }, (_, i) => 296 + i * NODE_WIDTH);
+
+/* Area Officers (left) and Procurement (right) keep their own spacing and
+   never overlap; only the five Special Units in between are lapped. */
+const AREA_OFFICERS_X = 210;
+const PROCUREMENT_X = 1190;
+const SPECIAL_UNIT_XS = Array.from(
+  { length: 5 },
+  (_, i) => 428 + i * SPECIAL_SPACING
+);
+const UNIT_XS = [AREA_OFFICERS_X, ...SPECIAL_UNIT_XS, PROCUREMENT_X];
 
 /* Area Officers (left) and Procurement (right) are independent branches.
    The five Special Units sit between them and are grouped on their own
    distribution line. */
-const SPECIAL_UNIT_XS = UNIT_XS.slice(1, 6); // Audit .. ICT
-const AREA_OFFICERS_X = UNIT_XS[0];
-const PROCUREMENT_X = UNIT_XS[UNIT_XS.length - 1];
 const SPECIAL_GROUP_CENTER = (SPECIAL_UNIT_XS[0] + SPECIAL_UNIT_XS[SPECIAL_UNIT_XS.length - 1]) / 2;
 
 interface Line {
@@ -229,13 +239,13 @@ const RowByRoleOrgChart: React.FC = () => {
           <marker
             id="arrowDown"
             viewBox="0 0 10 10"
-            refX="5"
-            refY="10"
-            markerWidth="8"
-            markerHeight="8"
+            refX="10"
+            refY="5"
+            markerWidth="6"
+            markerHeight="6"
             orient="auto"
           >
-            <path d="M0,0 L10,0 L5,10 z" fill="#000" />
+            <path d="M0,0 L10,5 L0,10 z" fill="#000" />
           </marker>
         </defs>
         {lines.map((l, i) => (
@@ -264,7 +274,8 @@ const RowByRoleOrgChart: React.FC = () => {
               style={{
                 left: x - NODE_WIDTH / 2,
                 top: ROW_TOP[row.rowId],
-                zIndex: 1,
+                zIndex:
+                  row.rowId === 4 || row.rowId === 5 ? 1 + index : 1,
               }}
             >
               <NodeBox
