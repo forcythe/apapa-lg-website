@@ -34,30 +34,32 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
   return (
     <div>
       {/* Overview Section */}
-      <div className="section-padding">
-        <div className="max-w-[1488px] w-full mx-auto">
-          <motion.div
-            variants={itemVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-6"
-          >
-            <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
-              Overview
-            </p>
-          </motion.div>
-          <motion.h6
-            variants={itemVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center max-w-[700px] mx-auto mb-[40px] md:mb-[120px]"
-          >
-            {t(activeRole?.overview)}
-          </motion.h6>
+      {activeRole?.overview && (
+        <div className="section-padding">
+          <div className="max-w-[1488px] w-full mx-auto">
+            <motion.div
+              variants={itemVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-6"
+            >
+              <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
+                Overview
+              </p>
+            </motion.div>
+            <motion.h6
+              variants={itemVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center max-w-[700px] mx-auto mb-[40px] md:mb-[120px]"
+            >
+              {t(activeRole?.overview)}
+            </motion.h6>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Team Grid Section */}
       {activeRole?.team && activeRole.team.length > 0 && (
