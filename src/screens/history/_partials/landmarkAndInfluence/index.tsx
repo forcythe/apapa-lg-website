@@ -2,6 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
 import { coreValues } from "./landmarkAndInfluence.data";
 
@@ -68,6 +70,8 @@ const LandmarkAndInfluence = () => {
           </motion.p>
         </motion.div>
 
+        
+
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -93,6 +97,58 @@ const LandmarkAndInfluence = () => {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* Kabiyesi's Palace — featured landmark in the same image shape as the page */}
+        <div className="w-full max-w-[1488px] mx-auto flex flex-col lg:flex-row items-start justify-between gap-8 mb-[120px]">
+          <motion.div
+            className="w-full max-w-[600px] mx-auto lg:mx-0"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <motion.div
+              className="w-fit bg-accent3 rounded-[8px] p-3 mb-3 mx-0 sm:mx-auto lg:mx-0"
+              variants={itemVariants}
+            >
+              <p className="text-base md:text-[20px] leading-[32px] text-[#000000]">
+                {t("landmarkAndInfluence.palace.badge")}
+              </p>
+            </motion.div>
+
+            <motion.h6
+              className="text-xl leading-[32px] md:text-[36px] text-left sm:text-center lg:text-left font-[FuturaLTBold] text-[#000000] mb-3"
+              variants={itemVariants}
+            >
+              {t("landmarkAndInfluence.palace.headTitle")}
+            </motion.h6>
+
+            <motion.p
+              className="text-base md:text-[20px] leading-[30px] text-left sm:text-center lg:text-left text-[#000000]"
+              variants={itemVariants}
+            >
+              {t("landmarkAndInfluence.palace.description")}
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            className="w-fit mx-auto max-w-[808px]"
+            variants={itemVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <Image
+              src="/svgs/kabiyesi-palace.svg"
+              alt={t("landmarkAndInfluence.palace.headTitle")}
+              width={808}
+              height={544}
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={TRANSPARENT_IMAGE_PLACEHOLDER}
+            />
+          </motion.div>
+        </div>
       </div>
     </div>
   );

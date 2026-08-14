@@ -15,11 +15,11 @@ const NodeBox: React.FC<NodeBoxProps> = ({ role, rowId, roleId, image }) => {
     <div className="flex flex-col items-center">
       <Link
         href={`/government/organizational-structure/${roleId}`}
-        className="relative flex flex-col w-[188px]"
+        className="relative flex flex-col w-[170px]"
       >
-        <div className="absolute z-[4] -top-8 left-1/2 transform -translate-x-1/2 w-[88px] h-[88px] rounded-full bg-[#FFF6CC] flex items-center justify-center shadow-sm p-5">
+        <div className="absolute z-[4] -top-8 left-1/2 transform -translate-x-1/2 w-[96px] h-[96px] rounded-full bg-[#FFF6CC] flex items-center justify-center shadow-sm p-5">
           <div
-            className="min-w-[68px] h-[68px] rounded-full border-[6px] border-[#FFD100] bg-cover"
+            className="min-w-[72px] h-[72px] rounded-full border-[6px] border-[#FFD100] bg-cover"
             style={{
               backgroundImage: `url('${image}')`,
               backgroundPosition: "center 30%",

@@ -10,6 +10,7 @@ import PastChairMen from "./PastChairMen";
 
 import Manifesto from "./Manifesto";
 import VisionMission from "./VissionMission";
+import ReadMoreText from "./ReadMoreText";
 
 import { useTranslations } from "next-intl";
 
@@ -106,7 +107,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
 
       {/* Role Details Section */}
       {activeRole?.name && (
-        <div className="w-fit section-padding lg:w-full lg:max-w-[1320px] mx-auto min-h-[616px] flex flex-col lg:flex-row gap-[40px] justify-between mb-[80px] md:mb-[120px]">
+        <div className="w-fit section-padding lg:w-full lg:max-w-[1320px] mx-auto min-h-[616px] flex flex-col lg:flex-row lg:items-start gap-[40px] justify-between mb-[80px] md:mb-[120px]">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -133,12 +134,12 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
               </motion.h6>
             )}
             {activeRole?.introduction && (
-              <motion.p
-                variants={itemVariants}
-                className="text-base text-left sm:text-center lg:text-left md:tex-[20px] md:leading-[32px] text-[#000000]"
-              >
-                {t(activeRole.introduction)}
-              </motion.p>
+              <motion.div variants={itemVariants}>
+                <ReadMoreText
+                  text={t(activeRole.introduction)}
+                  className="text-base text-left sm:text-center lg:text-left md:text-[20px] md:leading-[32px] text-[#000000]"
+                />
+              </motion.div>
             )}
           </motion.div>
           <div className="w-full max-w-[600px] min-h-[300px] md:min-h-[616px] bg-white p-2 rounded-[32px] shadow-lg z-[1]">
