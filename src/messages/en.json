@@ -44,13 +44,13 @@
       "community": "Community"
     },
     "contactTitle": "Contact Us",
-    "councilLandline": "Council Landline",
+    "councilLandline": "Landline",
     "copyright": "© 2025 Apapa Local Government. All rights reserved."
   },
   "Home": {
     "hero": {
       "pill": "Welcome to Apapa",
-      "title": "The Port City Council-Gateway to Nigeria's Economy",
+      "title": "The Port City Council Gateway to Nigeria's Economy",
       "desc": "Home to the nation’s busiest ports, Apapa powers commerce, connects businesses, and drives economic growth. Explore opportunities in shipping, logistics, and trade at the heart of Nigeria’s maritime hub."
     },
     "insight": {
@@ -225,6 +225,11 @@
         "badge": "Modern-Day Apapa",
         "headTitle": "Landmarks and Influence",
         "subTitle": "Apapa today is a bustling blend of residential, commercial, and industrial activities. It houses key national and regional landmarks including:",
+        "palace": {
+          "badge": "Royal Heritage",
+          "headTitle": "The Kabiyesi's Palace",
+          "description": "At the heart of Apapa lies the Kabiyesi's Palace — the traditional seat of the community's royal father and one of the area's most treasured landmarks. As the residence and ceremonial home of the Kabiyesi (traditional ruler), the palace stands as a living symbol of Apapa's rich heritage and the spiritual and cultural anchor of its people. For generations, it has been the centre of chieftaincy ceremonies, community deliberations, and festive celebrations, preserving the customs, values, and identity handed down through the ages. Its distinguished architecture and calm surroundings are a proud reminder that, amid Apapa's busy ports and bustling streets, the heartbeat of tradition continues to beat strong. The palace is not just a building — it is the enduring connection between Apapa's past, its people, and the customs that keep the community together."
+        },
         "coreValues": {
           "title1": "Nigerian Ports Authority (NPA) Headquarters",
           "description1": "The NPA Headquarters in Apapa serves as the administrative hub for Nigeria’s port operations, overseeing activities across the country’s major seaports and ensuring efficient maritime trade management.",
@@ -654,7 +659,7 @@
         "badgeTitle": "HEAD OF PLANNING, BUDGET, RESEARCH & STATISTICS",
         "overview": "The Head of Planning, Budget, Research & Statistics is responsible for overseeing the planning, budgeting, research, and statistical functions within an organization or institution.",
         "name": "MRS OLAJUMOKE ELIZABETH AKINLEHIN",
-        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "introduction": "Akinlehin Elizabeth Olajumoke is an accomplished professional with an academic background in Economics from Lagos State University (LASU). She has built valuable experience across the banking and public sectors, demonstrating strong skills in leadership, marketing, and organizational management. She previously worked in the banking sector, where she served as the Head of the Marketing Section, overseeing marketing activities and contributing to the growth and development of the institution. She has also gained experience working within local government, broadening her understanding of public administration and community-focused service. Through her professional journey, Mrs. Akinlehin has developed a strong commitment to excellence, leadership, and effective service to her organization and community.",
         "keyFunctions": {
           "title1": "Strategic Planning",
           "description1": "Leading the development and implementation of long-term strategic plans to guide the organization's goals, objectives, and resource allocation.",
@@ -704,7 +709,7 @@
         "badgeTitle": "HEAD OF PRIMARY HEALTH CARE SERVICE",
         "overview": "The Head of Primary Health Care Service is responsible for overseeing the delivery of essential healthcare services at the community level, focusing on prevention, early detection, and treatment of common health issues.",
         "name": "Dr. Oyewole Foluso",
-        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "introduction": "Dr. Oyewole Foluso is a dedicated Medical Officer of Health and Public Health Physician with extensive experience in healthcare and public health service. He currently serves as a Director on Grade Level 17, contributing his expertise to the advancement of public health and community well-being. Dr. Oyewole obtained his Bachelor of Medicine and Bachelor of Surgery (MBBS) degree from Ladoke Akintola University of Technology (LAUTECH), Ogbomoso, and later earned a Master of Public Health (MPH) from the University of Lagos. He joined the Lagos State Government as a Medical Officer of Health, where he has built a career dedicated to healthcare delivery, disease prevention, health promotion, and improving the well-being of communities. Through his professional journey, Dr. Oyewole has demonstrated a strong commitment to public health, medical service, leadership, and community development.",
         "keyFunctions": {
           "title1": "Program Management",
           "description1": "Designing, implementing, and overseeing primary health care programs, ensuring they address the health needs of the population, such as maternal and child health, immunization, disease prevention, and health education.",
@@ -1018,7 +1023,7 @@
         "badgeTitle": "HEAD OF AUDIT UNIT",
         "overview": "The Head of Audit Unit is responsible for overseeing the auditing processes within an organization to ensure financial integrity, compliance with laws and regulations, and the effective use of resources",
         "name": "Mr. Preston Babajide",
-        "introduction": "Hon. Idowu Adejumoke Senbanjo, the Executive Chairman of Apapa Local Government Council, brings extensive experience from both the public and private sectors. She holds a Bachelor of Arts (Hons) in Languages and Linguistics from the University of Jos and a Master of Arts in International Law and Diplomacy from the University of Lagos. Her professional career includes roles as Head of Public Sector – South-Western Nigeria, Team Leader in Retail Banking, and Head of Corporate Affairs at Metropolitan Bank. In public service, she has served as Special Assistant to the Lagos State Governor on Housing and Senior Special Assistant on Poverty Eradication. As a committed member of the All Progressives Congress (APC), Hon. Senbanjo has contributed significantly to the political and economic development of Apapa, making her a transformative leader for the community.",
+        "introduction": "Babajide Atanda Preston was born on 30th May 1970 in Lagos Island, Lagos State. He began his educational journey at Government Demonstration Primary School, now known as Onitolo Primary School, where he attended from 1976 to 1982 and obtained his Primary School Leaving Certificate. He subsequently attended State Grammar School, Eric Moore, School of Basic Studies, and Ilupeju College from 1982 to 1989, where he obtained his secondary school leaving certificate. Mr. Preston furthered his education at Lagos State Polytechnic and Ladoke Akintola University of Technology (LAUTECH). Between 1990 and 1993, he obtained his Ordinary National Diploma (OND) and Higher National Diploma (HND). He later earned a Master's degree in Business Administration (MBA), specializing in Financial Management, between 2005 and 2010. He is professionally affiliated with the following institutions: Institute of Chartered Economists of Nigeria Association of National Accountants of Nigeria Chartered Institute of Taxation of Nigeria Mr. Preston is a dedicated professional who values education, continuous development, and professional excellence. He is happily married and blessed with children.",
         "keyFunctions": {
           "title1": "Audit Planning and Strategy",
           "description1": "Developing and implementing an annual audit plan that covers key areas of financial, operational, and compliance risk across the organization.",

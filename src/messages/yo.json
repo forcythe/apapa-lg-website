@@ -44,7 +44,7 @@
       "community": "Àgbègbè Àwọn Ará Ìlú"
     },
     "contactTitle": "Ìbánisọ̀rọ̀",
-    "councilLandline": "Landline Ìgbìmọ̀",
+    "councilLandline": "Landline",
     "copyright": "© 2025 Apapa Local Government. All rights reserved."
   },
   "Home": {
@@ -225,6 +225,11 @@
         "badge": "Apapa Òde-Òní",
         "headTitle": "Àwọn Ààmì-Ilẹ̀ àti Ìpa",
         "subTitle": "Apapa lónìí jẹ́ àkúnya iṣẹ́ ibùgbé, ìṣòwò, àti ilé-iṣẹ́. Ó gbà ilé fún ọ̀pọ̀ ààmì-ilẹ̀ pàtàkì ti orílẹ̀-èdè àti agbègbè bíi:",
+        "palace": {
+          "badge": "Ẹ̀sin Àgbà",
+          "headTitle": "Ààfin Kabiyesi",
+          "description": "Ní àárín Apapa ni Ààfin Kabiyesi wà — ibùjókòó bàbá ọba ìbílẹ̀ àti ọ̀kan lára àwọn ààmì-ilẹ̀ tó ṣe pàtàkì jù lọ nínú agbègbè náà. Gẹ́gẹ́ bí ilé àti ibi ayẹyẹ Kabiyesi (olórí ìbílẹ̀), ààfin náà jẹ́ orísun ẹ̀mí àti àṣà fún àwọn ènìyàn Apapa. Fún ọ̀pọ̀ ìran, àwọn ayẹyẹ ìjẹ̀, àpérò àgbègbè, àti àwọn àjọyọ̀ ni a ti ń ṣe níbẹ̀ — tí ó sì ń pa àṣà, iye, àti ìdánimọ̀ tí a jogún síra pọ̀. Àwọn ojú ọ̀nà rẹ̀ tó dáa àti agbègbè rẹ̀ tó rọrùn jẹ́ ìránnilétí pé, láàrín àwọn ibùdó òkun tó kún fún iṣẹ́ àti àwọn òpópónà tí ń jà ní Apapa, ẹ̀mí àṣà ṣì ń lágbára. Ààfin kì í ṣe ilé lásán — ó jẹ́ ìsopọ̀ tí ń di Apapa àti àwọn ènìyàn rẹ̀, àti àwọn àṣà tí ń so àwùjọ pọ̀ ṣinṣin."
+        },
         "coreValues": {
           "title1": "Ọ́fiisi Àgbà NPA (Nigerian Ports Authority)",
           "description1": "Ọ́fiisi Àgbà NPA ní Apapa jẹ́ àárín ìṣàkóso fún gbogbo iṣẹ́ ibùdó Nàìjíríà, tí ń ṣàbójútó iṣẹ́ ní gbogbo àwọn ibùdó òkun pàtàkì, tí ó sì ń rí i dájú pé ìṣòwò òkun ń lọ dáadáa.",
@@ -657,7 +662,7 @@
         "badgeTitle": "OLÓRÍ ÌṢÈTÒ, ÌṢÚNÁ, ÌWÁDÌÍ & ÌṢIRÒ",
         "overview": "Olórí Ìṣètò, Ìṣúná, Ìwádìí àti Ìṣirò ló ń ṣàbójútó ìṣètò, ìṣúná, ìwádìí, àti iṣẹ́ ìṣirò nínú àjọ tàbí ilé-iṣẹ́.",
         "name": "MRS OLAJUMOKE ELIZABETH AKINLEHIN",
-        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "introduction": "Akinlehin Elizabeth Olajumoke jẹ́ akọ́ṣẹ́mọṣẹ́ tó ní ìrírí pẹ̀lú ẹ̀kọ́ Economics ní Lagos State University (LASU). Ó ti ní ìrírí tó ṣe pàtàkì nínú ẹka ilé-ifowopamọ́ àti ẹka ìjọba, níbi tí ó ti fi ọgbọ́n àti agbára hàn nínú aṣáájú, tita, àti ìṣàkóso ètò. Ó ti ṣiṣẹ́ tẹ́lẹ̀ nínú ẹka ilé-ifowopamọ́, níbi tí ó ti jẹ́ Olórí Ẹ̀ka Tita (Head of Marketing Section), tí ó ń bójú tó àwọn iṣẹ́ tita àti ríràn ilé-iṣẹ́ náà lọ́wọ́ láti dàgbà àti láti ní ìdàgbàsókè. Ó tún ti ní ìrírí iṣẹ́ nínú ìjọba ìbílẹ̀, èyí tó mú kí òye rẹ̀ nípa ìṣàkóso ìjọba àti iṣẹ́ tó dá lórí àǹfààní àwọn aráàlú túbọ̀ gbòòrò. Ní gbogbo ìrìnàjò iṣẹ́ rẹ̀, Ìyáàfin Akinlehin ti fi ìfaramọ́ tó lágbára hàn sí ìdàgbàsókè, aṣáájú rere, àti pípèsè iṣẹ́ tó péye fún ilé-iṣẹ́ àti àwùjọ rẹ̀.",
         "keyFunctions": {
           "title1": "Ìṣètò Ọ̀nà-Ìlà (Strategic Planning)",
           "description1": "Ṣíṣàkóso ìdàgbàsókè àti ìmúṣẹ ètò ìlànà pípẹ́ láti tọ́ka sí àfojúsùn, ìdí, àti bí a ṣe máa pín orísun (resource allocation) nínú àjọ.",
@@ -707,7 +712,7 @@
         "badgeTitle": "OLÓRÍ ÌṢẸ́ ÌLERA ÀKỌ́KỌ́",
         "overview": "Olórí Ìṣẹ́ Ìlera Àkọ́kọ́ ló ń ṣàbójútó pípèsè iṣẹ́ ìlera pàtàkì ní ipele àwùjọ, pẹ̀lú ìdènà àrùn, ìwádìí títẹ̀síwájú (early detection), àti ìtọju àwọn ìṣòro ìlera tó wọ́pọ̀.",
         "name": "Dr. Oyewole Foluso",
-        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "introduction": "Dókítà Oyewole Foluso jẹ́ Medical Officer of Health àti Public Health Physician tó ní ìrírí tó jinlẹ̀ nínú iṣẹ́ ìlera àti ìlera gbogbo ènìyàn. Ó ń ṣiṣẹ́ báyìí gẹ́gẹ́ bí Olùdarí ní Grade Level 17, níbi tí ó ti ń lo ìmọ̀ àti ìrírí rẹ̀ láti ṣe àfikún sí ìdàgbàsókè ìlera gbogbo ènìyàn àti àlàáfíà àwọn aráàlú. Dókítà Oyewole gba ìwé-ẹ̀rí Bachelor of Medicine and Bachelor of Surgery (MBBS) rẹ̀ ní Ladoke Akintola University of Technology (LAUTECH), Ogbomoso, ó sì tún gba Master of Public Health (MPH) ní University of Lagos. Ó darapọ̀ mọ́ Ìjọba Ìpínlẹ̀ Lagos gẹ́gẹ́ bí Medical Officer of Health, níbi tí ó ti kọ́ iṣẹ́ rẹ̀ síi pẹ̀lú ìfọkànsìn sí pípèsè iṣẹ́ ìlera, dídènà àrùn, ìgbéga ìlera, àti ìmúgbòòrò àlàáfíà àwọn aráàlú. Ní gbogbo ìrìnàjò iṣẹ́ rẹ̀, Dókítà Oyewole ti fi ìfaramọ́ tó lágbára hàn sí ìlera gbogbo ènìyàn, iṣẹ́ ìṣègùn, aṣáájú, àti ìdàgbàsókè àwùjọ.",
         "keyFunctions": {
           "title1": "Ìṣàkóso Ètò (Program Management)",
           "description1": "Ṣíṣe, mímú ṣiṣẹ́, àti ṣíṣàbójútó àwọn ètò ìlera àkọ́kọ́, kí wọ́n le bá àìní ìlera àwọn aráàlú mu, bí ìlera ìyá àti ọmọ, ajẹsára (immunization), ìdènà àrùn, àti ẹ̀kọ́ ìlera.",
@@ -1021,7 +1026,7 @@
         "badgeTitle": "OLÓRÍ Ẹ̀KA ÀYẸ̀WÒ ÌṢÚNÁ",
         "overview": "Olórí Ẹ̀ka Àyẹ̀wò Ìṣúná (Audit) ló ń ṣàbójútó ìlànà audit nínú àjọ, kí ìwà òdodo ìṣúná wà, kí ìbámu pẹ̀lú òfin/ìlànà wà, àti kí lílo orísun jẹ́ munadoko.",
         "name": "Mr. Preston Babajide",
-        "introduction": "Hon. Idowu Adejumoke Senbanjo, Alákóso Àgbà (Executive Chairman) ti Ìgbìmọ̀ Ìjọba Ìbílẹ̀ Apapa, ní ìrírí tó jinlẹ̀ láti apá ìjọba àti apá aládani. Ó ní ìwé-ẹ̀rí Bachelor of Arts (Hons) nínú Èdè àti Ìmọ̀-Èdè (Languages and Linguistics) láti Yunifásítì Jos, àti ìwé-ẹ̀rí Master of Arts nínú Òfin Àgbáyé àti Ìbáṣepọ̀ Òkè-Òkun (International Law and Diplomacy) láti Yunifásítì Lagos. Nínú iṣẹ́ amọdájú rẹ̀, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olórí Ẹ̀ka Ìjọba – Gúúsù Ìwọ̀-Oòrùn Nàìjíríà, Adarí Ẹgbẹ́ (Team Leader) nínú Retail Banking, àti Olórí Ìbáṣepọ̀ Ajọ (Head of Corporate Affairs) ní Metropolitan Bank. Nínú iṣẹ́ ìjọba, ó ti ṣiṣẹ́ gẹ́gẹ́ bí Olùrànlọ́wọ́ Pátá (Special Assistant) fún Gomina Ìpínlẹ̀ Lagos nípa Ilé (Housing) àti Olùrànlọ́wọ́ Àgbà Pátá (Senior Special Assistant) nípa Ìparí Ìyà (Poverty Eradication). Gẹ́gẹ́ bí ọmọ ẹgbẹ́ tó ní ìfẹ́kúfẹ̀ẹ́ sí iṣẹ́ (committed member) nínú All Progressives Congress (APC), Hon. Senbanjo ti kópa púpọ̀ nínú ìdàgbàsókè òṣèlú àti ọrọ̀ ajé Apapa, tí ó sì jẹ́ olórí tó ń mú ìyípadà rere wá fún àwùjọ.",
+        "introduction": "Wọ́n bí Babajide Atanda Preston ní ọjọ́ kẹẹ̀dọ́gbọ̀n (30) oṣù May, ọdún 1970 ní Lagos Island, Ìpínlẹ̀ Èkó. Ó bẹ̀rẹ̀ èkọ́ rẹ̀ ní Government Demonstration Primary School, tí wọ́n ń pè ní Onitolo Primary School báyìí, níbi tí ó ti lọ láti 1976 sí 1982, tí ó sì gba ìwé ẹ̀rí ipari ilé-ìwé alákọ̀ọ́bẹ̀rẹ̀ (Primary School Leaving Certificate). Lẹ́yìn náà, ó lọ sí State Grammar School, Eric Moore, School of Basic Studies, àti Ilupeju College láti 1982 sí 1989, níbi tí ó ti gba ìwé ẹ̀rí ipari ilé-ìwé girama (secondary school leaving certificate). Ọ̀gbẹ́ni Preston tẹ̀síwájú èkọ́ rẹ̀ ní Lagos State Polytechnic àti Ladoke Akintola University of Technology (LAUTECH). Láàárín 1990 sí 1993, ó gba Ordinary National Diploma (OND) àti Higher National Diploma (HND). Lẹ́yìn náà, ó gba ìwé-ẹ̀rí Master nínú Business Administration (MBA), tí ó fà pàtàkì nínú Financial Management, láàárín 2005 sí 2010. Ó jẹ́ ọmọ-ẹgbẹ́ àwọn ẹgbẹ́ òjìṣẹ́ wọ̀nyí: Institute of Chartered Economists of Nigeria Association of National Accountants of Nigeria Chartered Institute of Taxation of Nigeria Ọ̀gbẹ́ni Preston jẹ́ òjìṣẹ́ tó fẹ́ èkọ́, ìdàgbàsókè, àti ìdánilẹ́kọ̀ọ́ tó dáa. Ó ti ṣègbéyàwó, Ọlọ́run sì ti bùkún fún un pẹ̀lú àwọn ọmọ.",
         "keyFunctions": {
           "title1": "Ìṣètò Audit àti Ọ̀nà-Ìlà (Audit Planning and Strategy)",
           "description1": "Ṣíṣe àti mímú ètò audit ọdún ṣiṣẹ́ tó ń kó àwọn apá ewu ìṣúná, iṣẹ́, àti ìbámu jọ káàkiri àjọ.",
