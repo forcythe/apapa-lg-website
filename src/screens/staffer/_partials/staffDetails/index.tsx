@@ -42,7 +42,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
               variants={itemVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: "some" }}
               className="w-fit mx-auto bg-accent3 rounded-[8px] p-3 mb-6"
             >
               <p className="text-base md:text-[20px] md:leading-[32px] text-[#000000] text-center">
@@ -53,7 +53,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
               variants={itemVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: "some" }}
               className="text-base md:text-[20px] md:leading-[30px] text-[#000000] text-center max-w-[700px] mx-auto mb-[40px] md:mb-[120px]"
             >
               {t(activeRole?.overview)}
@@ -70,7 +70,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: "some" }}
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
             >
               {activeRole.team.map((member: any, index: number) => (
@@ -112,7 +112,7 @@ const StaffDetails = ({ activeRole }: { activeRole: any }) => {
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: "some" }}
             className="w-full max-w-[600px]"
           >
             {activeRole?.badgeTitle && (
