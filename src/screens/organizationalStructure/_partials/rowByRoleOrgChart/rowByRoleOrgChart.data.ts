@@ -275,6 +275,11 @@ export const rowData: Row[] = [
             img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 17.png",
           },
           {
+            name: "Aghamba Ngozi Jessica",
+            title: "Supervisor for Education",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/C.png",
+          },
+          {
             name: "Mr Michael Kolawole",
             title: "Special Adviser Special Duties",
             img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/NO 9.png",
@@ -605,7 +610,7 @@ export const rowData: Row[] = [
           {
             name: "Mr. Kila Olamilekan",
             title: "Area Officer C",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/n.png",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/HOD_S/q.png",
           },
         ],
       },
