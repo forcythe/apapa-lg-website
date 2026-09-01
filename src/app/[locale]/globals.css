@@ -10,6 +10,23 @@
 @font-face {
   font-family: FuturaLTBold;
   src: url("/fonts/FuturaLT-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: FuturaLTLight;
+  src: url("/fonts/Futura Lt BT Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: FuturaLT;
+  src: url("/fonts/FuturaLT.ttf");
+  font-weight: 400;
+}
+
+* {
+  font-family: FuturaLTLight, FuturaLT, ClashDisplay, sans-serif;
 }
 
 input,
@@ -28,7 +45,7 @@ div {
 body {
   color: var(--primary-background);
   background: transparent;
-  font-family: FuturaLT, ClashDisplay, sans-serif;
+  font-family: FuturaLTLight, FuturaLT, ClashDisplay, sans-serif;
   font-optical-sizing: auto;
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
