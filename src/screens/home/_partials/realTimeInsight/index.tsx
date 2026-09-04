@@ -7,13 +7,9 @@ import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { TRANSPARENT_IMAGE_PLACEHOLDER } from "@/utils/helpers/imagePlaceholder";
 
-import ProfileIcon from "../../../../../public/svg-component/ProfileIcon";
 import CargoIcon from "../../../../../public/svg-component/CargoIcon";
 import ContainerIcon from "../../../../../public/svg-component/ContainerIcon";
-import RevenueIcon from "../../../../../public/svg-component/RevenueIcon";
-import WalletIcon from "../../../../../public/svg-component/WalletIcon";
 import TruckIcon from "../../../../../public/svg-component/TruckIcon";
-import WorldIconNew from "../../../../../public/svg-component/WorldIconNew";
 import CloudDesign from "../../../../../public/svg-component/CloudDesign";
 
 import { useTranslations } from "next-intl";
@@ -196,19 +192,14 @@ const RealTimeInsight = () => {
                   className="py-4 xxxs:border-r xxxs:border-white xxxs:py-[34px] lg:py-[30px] pl-0 lg:pl-4 xxxs:pr-[28px] lg:pr-[36px] flex items-center justify-center flex-col gap-2"
                 >
                   <div className="max-w-[48px] min-w-[48px] max-h-[48px] min-h-[48px] bg-white rounded-[12px] flex items-center justify-center">
-                    <ProfileIcon />
+                    <CargoIcon />
                   </div>
                   <h4 className="text-[18px] leading-[28px] md:text-[24px] md:leading-[32px] font-[FuturaLTBold] m-0">
-                    {inView ? (
-                      <CountUp start={0} end={786700} duration={2} />
-                    ) : (
-                      0
-                    )}
-                    +
+                    {inView ? <CountUp start={0} end={535} duration={2} /> : 0}
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
                     <p className="text-base whitespace-nowrap">
-                      {t("population")}
+                      {t("noOfShips")}
                     </p>
                   </div>
                 </motion.div>
@@ -221,14 +212,17 @@ const RealTimeInsight = () => {
                   className="py-4 lg:border-r lg:border-white xxxs:py-[34px] lg:py-[30px] lg:px-[36px] flex items-center justify-center flex-col gap-2"
                 >
                   <div className="max-w-[48px] min-w-[48px] max-h-[48px] min-h-[48px] bg-white rounded-[12px] flex items-center justify-center">
-                    <CargoIcon />
+                    <ContainerIcon />
                   </div>
                   <h4 className="text-[18px] leading-[28px] md:text-[24px] md:leading-[32px] font-[FuturaLTBold] m-0">
-                    {inView ? <CountUp start={0} end={27} duration={2} /> : 0}
-                    M+
+                    {inView ? (
+                      <CountUp start={0} end={9896882} duration={2} />
+                    ) : (
+                      0
+                    )}
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
-                    <p className="text-base whitespace-nowrap">{t("cargo")}</p>
+                    <p className="text-base whitespace-nowrap">{t("nrt")}</p>
                   </div>
                 </motion.div>
 
@@ -243,13 +237,14 @@ const RealTimeInsight = () => {
                     <ContainerIcon />
                   </div>
                   <h4 className="text-[18px] leading-[28px] md:text-[24px] md:leading-[32px] font-[FuturaLTBold] m-0">
-                    {inView ? <CountUp start={0} end={2} duration={2} /> : 0}
-                    M+
+                    {inView ? (
+                      <CountUp start={0} end={18594154} duration={2} />
+                    ) : (
+                      0
+                    )}
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
-                    <p className="text-base whitespace-nowrap">
-                      {t("throughput")}
-                    </p>
+                    <p className="text-base whitespace-nowrap">{t("grt")}</p>
                   </div>
                 </motion.div>
 
@@ -261,16 +256,18 @@ const RealTimeInsight = () => {
                   className="py-4 xxxs:py-[34px] lg:py-[30px] pr-0 lg:pr-4 xxxs:pl-[28px] lg:pl-[36px] flex items-center justify-center flex-col gap-2"
                 >
                   <div className="max-w-[48px] min-w-[48px] max-h-[48px] min-h-[48px] bg-white rounded-[12px] flex items-center justify-center">
-                    <RevenueIcon />
+                    <CargoIcon />
                   </div>
                   <h4 className="text-[18px] leading-[28px] md:text-[24px] md:leading-[32px] font-[FuturaLTBold] m-0">
-                    ₦
-                    {inView ? <CountUp start={0} end={18.9} duration={2} /> : 0}
-                    B
+                    {inView ? (
+                      <CountUp start={0} end={10532176} duration={2} />
+                    ) : (
+                      0
+                    )}
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
                     <p className="text-base whitespace-nowrap">
-                      {t("revenue")}
+                      {t("importTonnage")}
                     </p>
                   </div>
                 </motion.div>
@@ -288,12 +285,15 @@ const RealTimeInsight = () => {
                     <CargoIcon />
                   </div>
                   <h4 className="text-[18px] leading-[28px] md:text-[24px] md:leading-[32px] font-[FuturaLTBold] m-0">
-                    {inView ? <CountUp start={0} end={5000} duration={2} /> : 0}
-                    +
+                    {inView ? (
+                      <CountUp start={0} end={1353370} duration={2} />
+                    ) : (
+                      0
+                    )}
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
                     <p className="text-base whitespace-nowrap">
-                      {t("shipsDocked")}
+                      {t("exportTonnage")}
                     </p>
                   </div>
                 </motion.div>
@@ -306,14 +306,18 @@ const RealTimeInsight = () => {
                   className="py-4 lg:border-r lg:border-white xxxs:py-[34px] lg:py-[30px] lg:px-[36px] flex items-center justify-center flex-col gap-2"
                 >
                   <div className="max-w-[48px] min-w-[48px] max-h-[48px] min-h-[48px] bg-white rounded-[12px] flex items-center justify-center">
-                    <WalletIcon />
+                    <TruckIcon />
                   </div>
                   <h4 className="text-[18px] leading-[28px] md:text-[24px] md:leading-[32px] font-[FuturaLTBold] m-0">
-                    ₦{inView ? <CountUp start={0} end={50} duration={2} /> : 0}+
+                    {inView ? (
+                      <CountUp start={0} end={9687} duration={2} />
+                    ) : (
+                      0
+                    )}
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
                     <p className="text-base whitespace-nowrap">
-                      {t("investment")}
+                      {t("vehicleUnit")}
                     </p>
                   </div>
                 </motion.div>
@@ -330,34 +334,14 @@ const RealTimeInsight = () => {
                   </div>
                   <h4 className="text-[18px] leading-[28px] md:text-[24px] md:leading-[32px] font-[FuturaLTBold] m-0">
                     {inView ? (
-                      <CountUp start={0} end={10000} duration={2} />
+                      <CountUp start={0} end={130187} duration={2} />
                     ) : (
                       0
                     )}
                   </h4>
                   <div className="w-full lg:min-w-[148px] flex items-center justify-center">
                     <p className="text-base whitespace-nowrap">
-                      {t("truckTraffic")}
-                    </p>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  variants={textVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.3 }}
-                  className="py-4 xxxs:py-[34px] lg:py-[30px] pr-0 lg:pr-4 xxxs:pl-[28px] lg:pl-[36px] flex items-center justify-center flex-col gap-2"
-                >
-                  <div className="max-w-[48px] min-w-[48px] max-h-[48px] min-h-[48px] bg-white rounded-[12px] flex items-center justify-center">
-                    <WorldIconNew />
-                  </div>
-                  <h4 className="text-[18px] leading-[28px] md:text-[24px] md:leading-[32px] font-[FuturaLTBold] m-0">
-                    {inView ? <CountUp start={0} end={600} duration={2} /> : 0}%
-                  </h4>
-                  <div className="w-full lg:min-w-[148px] flex items-center justify-center">
-                    <p className="text-base whitespace-nowrap">
-                      {t("economicContribution")}
+                      {t("vehicleTonnage")}
                     </p>
                   </div>
                 </motion.div>
