@@ -90,6 +90,16 @@ const Footer = () => {
                 </span>
               </a>
             </li>
+            <li className="w-fit">
+              <a
+                href="mailto:info@apapa.lg.gov.ng"
+                className="flex items-center gap-2 transition-all duration-200 ease-in-out hover:translate-x-1"
+              >
+                <span className="text-[14px] leading-[24px] md:text-base font-[FuturaLTBold]">
+                  info@apapa.lg.gov.ng
+                </span>
+              </a>
+            </li>
           </ul>
           <ul className="flex flex-wrap md:flex-nowrap items-center gap-4 md:gap-8 w-fit">
             {socialLinks.map(({ id, link, Icon }) => (
