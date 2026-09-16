@@ -352,7 +352,7 @@ export const rowData: Row[] = [
           {
             name: "Babalola Bankole Mogaji",
             title: "Special Adviser, Boundary Matters",
-            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/28.png",
+            img: "/image/APAPA%20COUNCIL%20PHOTOS_/Supervisors%20&%20Special%20Advisors_/29(1).png",
           },
           {
             name: "Arugba Michael",
